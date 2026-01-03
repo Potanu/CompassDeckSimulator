@@ -27,7 +27,7 @@ Initialize a new git repository?
 cd プロジェクト
 npm run dev
 ```
-`http://localhost:4321` で「Astro」が表示されればOK
+`http://localhost:4321/プロジェクト/` で「Astro」が表示されればOK
 
 ## GitHub Pages用の設定
 ▼`astro.config.mjs` を編集
