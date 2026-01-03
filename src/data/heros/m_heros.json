@@ -1,0 +1,688 @@
+[
+  {
+    "id": 1,
+    "key": "ATARI",
+    "label": "十文字 アタリ",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 2,
+    "key": "JUSTICE",
+    "label": "ジャスティス ハンコック",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 3,
+    "key": "RIRIKA",
+    "label": "魔法少女 リリカ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 4,
+    "key": "NOHO",
+    "label": "双挽 乃保",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 5,
+    "key": "TADAOMI",
+    "label": "桜華 忠臣",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 6,
+    "key": "JEANNE_DARC",
+    "label": "ジャンヌ ダルク",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 7,
+    "key": "MARCOS",
+    "label": "マルコス'55",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 8,
+    "key": "LUCIANO",
+    "label": "ルチアーノ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 9,
+    "key": "VOIDOLL",
+    "label": "Voidoll",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 10,
+    "key": "MATOI",
+    "label": "深川 まとい",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 11,
+    "key": "SOL_BADGUY",
+    "label": "ソル=バッドガイ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 1
+  },
+  {
+    "id": 12,
+    "key": "DIZZY",
+    "label": "ディズィー",
+    "heroRoleId": 3,
+    "collaborationTitleId": 1
+  },
+  {
+    "id": 13,
+    "key": "GUSTAV",
+    "label": "グスタフ ハイドリヒ",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 14,
+    "key": "TESLA",
+    "label": "ニコラ テスラ",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 15,
+    "key": "HATSUNE_MIKU",
+    "label": "初音 ミク",
+    "heroRoleId": 1,
+    "collaborationTitleId": 2
+  },
+  {
+    "id": 16,
+    "key": "VIOLETTA",
+    "label": "ヴィオレッタ ノワール",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 17,
+    "key": "COQUELICOT",
+    "label": "コクリコット ブランシュ",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 18,
+    "key": "RYU",
+    "label": "リュウ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 4
+  },
+  {
+    "id": 19,
+    "key": "CHUN_LI",
+    "label": "春麗",
+    "heroRoleId": 1,
+    "collaborationTitleId": 4
+  },
+  {
+    "id": 20,
+    "key": "MARIA",
+    "label": "マリア=S=レオンブルク",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 21,
+    "key": "ADAM",
+    "label": "アダム=ユーリエフ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 22,
+    "key": "THIRTEEN",
+    "label": "１３（サーティーン）",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 23,
+    "key": "HEROIC_DASHER",
+    "label": "かけだし勇者",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 24,
+    "key": "EMILIA",
+    "label": "エミリア",
+    "heroRoleId": 3,
+    "collaborationTitleId": 6
+  },
+  {
+    "id": 25,
+    "key": "REM",
+    "label": "レム",
+    "heroRoleId": 2,
+    "collaborationTitleId": 6
+  },
+  {
+    "id": 26,
+    "key": "KY_KISKE",
+    "label": "カイ＝キスク",
+    "heroRoleId": 2,
+    "collaborationTitleId": 1
+  },
+  {
+    "id": 27,
+    "key": "MEG_MEG",
+    "label": "メグメグ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 28,
+    "key": "KAGAMINE_RIN",
+    "label": "鏡音 リン",
+    "heroRoleId": 3,
+    "collaborationTitleId": 2
+  },
+  {
+    "id": 29,
+    "key": "KAGAMINE_REN",
+    "label": "鏡音 レン",
+    "heroRoleId": 4,
+    "collaborationTitleId": 2
+  },
+  {
+    "id": 30,
+    "key": "ISTAQA",
+    "label": "イスタカ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 31,
+    "key": "ZACK_AND_RACHEL",
+    "label": "ザック＆レイチェル",
+    "heroRoleId": 1,
+    "collaborationTitleId": 8
+  },
+  {
+    "id": 32,
+    "key": "KIRARA",
+    "label": "輝龍院きらら",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 33,
+    "key": "MONOKUMA",
+    "label": "モノクマ",
+    "heroRoleId": 4,
+    "collaborationTitleId": 9
+  },
+  {
+    "id": 34,
+    "key": "POROROTCHO",
+    "label": "ヴィーナス ポロロッチョ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 35,
+    "key": "AQUA",
+    "label": "アクア",
+    "heroRoleId": 1,
+    "collaborationTitleId": 10
+  },
+  {
+    "id": 36,
+    "key": "MEGUMIN",
+    "label": "めぐみん",
+    "heroRoleId": 4,
+    "collaborationTitleId": 10
+  },
+  {
+    "id": 37,
+    "key": "SON",
+    "label": "ソーン=ユーリエフ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 38,
+    "key": "LEVI",
+    "label": "リヴァイ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 11
+  },
+  {
+    "id": 39,
+    "key": "DELMIN",
+    "label": "デルミン",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 40,
+    "key": "THOMAS",
+    "label": "トマス",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 41,
+    "key": "NEKOMIYA_HINATA",
+    "label": "猫宮ひなた",
+    "heroRoleId": 3,
+    "collaborationTitleId": 12
+  },
+  {
+    "id": 42,
+    "key": "OKABE_RINTARO",
+    "label": "岡部 倫太郎",
+    "heroRoleId": 3,
+    "collaborationTitleId": 13
+  },
+  {
+    "id": 43,
+    "key": "REIYA",
+    "label": "零夜",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 44,
+    "key": "SABER_ALTER",
+    "label": "セイバーオルタ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 14
+  },
+  {
+    "id": 45,
+    "key": "GILGAMESH",
+    "label": "ギルガメッシュ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 14
+  },
+  {
+    "id": 46,
+    "key": "RURUKA",
+    "label": "魔法少女 ルルカ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 47,
+    "key": "PIERRE",
+    "label": "ピエール77世",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 48,
+    "key": "SATO_TADANOBU",
+    "label": "佐藤四郎兵衛忠信",
+    "heroRoleId": 4,
+    "collaborationTitleId": 15
+  },
+  {
+    "id": 49,
+    "key": "AIS_WALLENSTEIN",
+    "label": "アイズ・ヴァレンシュタイン",
+    "heroRoleId": 2,
+    "collaborationTitleId": 16
+  },
+  {
+    "id": 50,
+    "key": "AMAIRO",
+    "label": "狐ヶ咲 甘色",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 51,
+    "key": "NOCTIS",
+    "label": "ノクティス",
+    "heroRoleId": 2,
+    "collaborationTitleId": 17
+  },
+  {
+    "id": 52,
+    "key": "NIDHOGG",
+    "label": "HM-WA100 ニーズヘッグ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 53,
+    "key": "NAKAJIMA_ATSUSHI",
+    "label": "中島 敦",
+    "heroRoleId": 1,
+    "collaborationTitleId": 18
+  },
+  {
+    "id": 54,
+    "key": "AKUTAGAWA_RYUNOSUKE",
+    "label": "芥川 龍之介",
+    "heroRoleId": 3,
+    "collaborationTitleId": 18
+  },
+  {
+    "id": 55,
+    "key": "GAME_BAZOOKA_GIRL",
+    "label": "ゲームバズーカガール",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 56,
+    "key": "REISALIN_STOUT",
+    "label": "ライザリン・シュタウト",
+    "heroRoleId": 4,
+    "collaborationTitleId": 19
+  },
+  {
+    "id": 57,
+    "key": "ALICE",
+    "label": "青春アリス",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 58,
+    "key": "JOKER",
+    "label": "ジョーカー",
+    "heroRoleId": 1,
+    "collaborationTitleId": 20
+  },
+  {
+    "id": 59,
+    "key": "IGNIS",
+    "label": "イグニス=ウィル=ウィスプ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 60,
+    "key": "AINZ_OOAL_GOWN",
+    "label": "アインズ・ウール・ゴウン",
+    "heroRoleId": 3,
+    "collaborationTitleId": 21
+  },
+  {
+    "id": 61,
+    "key": "RINNE",
+    "label": "糸廻輪廻",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 62,
+    "key": "KIRITO",
+    "label": "キリト",
+    "heroRoleId": 2,
+    "collaborationTitleId": 22
+  },
+  {
+    "id": 63,
+    "key": "ASUNA",
+    "label": "アスナ",
+    "heroRoleId": 1,
+    "collaborationTitleId": 22
+  },
+  {
+    "id": 64,
+    "key": "BUGDOLL",
+    "label": "Bugdoll",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 65,
+    "key": "STELLEA",
+    "label": "ステリア・ララ・シルワ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 66,
+    "key": "RAM",
+    "label": "ラム",
+    "heroRoleId": 1,
+    "collaborationTitleId": 6
+  },
+  {
+    "id": 67,
+    "key": "YORHA_2B",
+    "label": "2B",
+    "heroRoleId": 2,
+    "collaborationTitleId": 23
+  },
+  {
+    "id": 68,
+    "key": "LOVEY",
+    "label": "ラヴィ・シュシュマルシュ",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 69,
+    "key": "RIMURU_TEMPEST",
+    "label": "リムル=テンペスト",
+    "heroRoleId": 2,
+    "collaborationTitleId": 24
+  },
+  {
+    "id": 70,
+    "key": "AL",
+    "label": "アル・ダハブ=アルカティア",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 71,
+    "key": "MIKOTO_MISAKA",
+    "label": "御坂美琴",
+    "heroRoleId": 2,
+    "collaborationTitleId": 25
+  },
+  {
+    "id": 72,
+    "key": "ACCELERATOR",
+    "label": "アクセラレータ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 25
+  },
+  {
+    "id": 73,
+    "key": "BLAZE_DRAGON",
+    "label": "天空王 ぶれいずどらごん",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 74,
+    "key": "BELL_CRANEL",
+    "label": "ベル・クラネル",
+    "heroRoleId": 1,
+    "collaborationTitleId": 16
+  },
+  {
+    "id": 75,
+    "key": "ROXY_MIGURDIA",
+    "label": "ロキシー・ミグルディア",
+    "heroRoleId": 3,
+    "collaborationTitleId": 26
+  },
+  {
+    "id": 76,
+    "key": "NANIGASHI",
+    "label": "某<なにがし>",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 77,
+    "key": "ROKKUMAN_EXE",
+    "label": "ロックマン.EXE ＆ 光熱斗",
+    "heroRoleId": 3,
+    "collaborationTitleId": 27
+  },
+  {
+    "id": 78,
+    "key": "CU_SITH",
+    "label": "クー・シー",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 79,
+    "key": "DENJI",
+    "label": "デンジ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 28
+  },
+  {
+    "id": 80,
+    "key": "POWER",
+    "label": "パワー",
+    "heroRoleId": 1,
+    "collaborationTitleId": 28
+  },
+  {
+    "id": 81,
+    "key": "AMISTAD",
+    "label": "アミスター=バランディン",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 82,
+    "key": "SHINON",
+    "label": "シノン",
+    "heroRoleId": 3,
+    "collaborationTitleId": 22
+  },
+  {
+    "id": 83,
+    "key": "TANYA_DEGURECHAFF",
+    "label": "ターニャ・デグレチャフ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 29
+  },
+  {
+    "id": 84,
+    "key": "URA",
+    "label": "鬼ヶ式うら",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 85,
+    "key": "COLLAPSE",
+    "label": "コラプス",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 86,
+    "key": "BONDREWD",
+    "label": "ボンドルド",
+    "heroRoleId": 2,
+    "collaborationTitleId": 30
+  },
+  {
+    "id": 87,
+    "key": "MILIPOYU",
+    "label": "みりぽゆ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 88,
+    "key": "GON_FREECSS",
+    "label": "ゴン=フリークス",
+    "heroRoleId": 2,
+    "collaborationTitleId": 31
+  },
+  {
+    "id": 89,
+    "key": "KILLUA_ZAOLDYECK",
+    "label": "キルア=ゾルディック",
+    "heroRoleId": 1,
+    "collaborationTitleId": 31
+  },
+  {
+    "id": 90,
+    "key": "CHII_CHAN",
+    "label": "チーちゃん",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 91,
+    "key": "TOUMA_KAMIJOU",
+    "label": "上条当麻",
+    "heroRoleId": 1,
+    "collaborationTitleId": 32
+  },
+  {
+    "id": 92,
+    "key": "PERLINIER",
+    "label": "ーペルリニエ",
+    "heroRoleId": 1,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 93,
+    "key": "SHADOW",
+    "label": "シャドウ",
+    "heroRoleId": 2,
+    "collaborationTitleId": 33
+  },
+  {
+    "id": 94,
+    "key": "POPUKO_AND_PIPIMI",
+    "label": "ポプ子＆ピピ美",
+    "heroRoleId": 4,
+    "collaborationTitleId": 34
+  },
+  {
+    "id": 95,
+    "key": "MELUNYA",
+    "label": "メルーニャ・ランチェルナ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 0
+  },
+  {
+    "id": 96,
+    "key": "SABER",
+    "label": "セイバー",
+    "heroRoleId": 1,
+    "collaborationTitleId": 35
+  },
+  {
+    "id": 97,
+    "key": "ARCHER",
+    "label": "アーチャー",
+    "heroRoleId": 2,
+    "collaborationTitleId": 35
+  },
+  {
+    "id": 98,
+    "key": "LANCER",
+    "label": "ランサー",
+    "heroRoleId": 3,
+    "collaborationTitleId": 35
+  }
+]

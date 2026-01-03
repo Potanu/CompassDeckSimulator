@@ -1,0 +1,704 @@
+[
+  {
+    "heroMedalId": 1,
+    "level": 1,
+    "count": 1,
+    "value": 1
+  },
+  {
+    "heroMedalId": 1,
+    "level": 1,
+    "count": 2,
+    "value": 1.3
+  },
+  {
+    "heroMedalId": 1,
+    "level": 1,
+    "count": 3,
+    "value": 1.7
+  },
+  {
+    "heroMedalId": 1,
+    "level": 2,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 1,
+    "level": 2,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 1,
+    "level": 2,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 1,
+    "level": 3,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 1,
+    "level": 3,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 1,
+    "level": 3,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 2,
+    "level": 1,
+    "count": 1,
+    "value": 1
+  },
+  {
+    "heroMedalId": 2,
+    "level": 1,
+    "count": 2,
+    "value": 1.3
+  },
+  {
+    "heroMedalId": 2,
+    "level": 1,
+    "count": 3,
+    "value": 1.7
+  },
+  {
+    "heroMedalId": 2,
+    "level": 2,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 2,
+    "level": 2,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 2,
+    "level": 2,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 2,
+    "level": 3,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 2,
+    "level": 3,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 2,
+    "level": 3,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 3,
+    "level": 1,
+    "count": 1,
+    "value": 1
+  },
+  {
+    "heroMedalId": 3,
+    "level": 1,
+    "count": 2,
+    "value": 1.3
+  },
+  {
+    "heroMedalId": 3,
+    "level": 1,
+    "count": 3,
+    "value": 1.7
+  },
+  {
+    "heroMedalId": 3,
+    "level": 2,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 3,
+    "level": 2,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 3,
+    "level": 2,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 3,
+    "level": 3,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 3,
+    "level": 3,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 3,
+    "level": 3,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 4,
+    "level": 1,
+    "count": 1,
+    "value": 1
+  },
+  {
+    "heroMedalId": 4,
+    "level": 1,
+    "count": 2,
+    "value": 1.3
+  },
+  {
+    "heroMedalId": 4,
+    "level": 1,
+    "count": 3,
+    "value": 1.7
+  },
+  {
+    "heroMedalId": 4,
+    "level": 2,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 4,
+    "level": 2,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 4,
+    "level": 2,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 4,
+    "level": 3,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 4,
+    "level": 3,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 4,
+    "level": 3,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 5,
+    "level": 1,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 5,
+    "level": 1,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 5,
+    "level": 1,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 5,
+    "level": 2,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 5,
+    "level": 2,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 5,
+    "level": 2,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 5,
+    "level": 3,
+    "count": 1,
+    "value": 4
+  },
+  {
+    "heroMedalId": 5,
+    "level": 3,
+    "count": 2,
+    "value": 5.2
+  },
+  {
+    "heroMedalId": 5,
+    "level": 3,
+    "count": 3,
+    "value": 6.8
+  },
+  {
+    "heroMedalId": 6,
+    "level": 1,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 6,
+    "level": 1,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 6,
+    "level": 1,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 6,
+    "level": 2,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 6,
+    "level": 2,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 6,
+    "level": 2,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 6,
+    "level": 3,
+    "count": 1,
+    "value": 4
+  },
+  {
+    "heroMedalId": 6,
+    "level": 3,
+    "count": 2,
+    "value": 5.2
+  },
+  {
+    "heroMedalId": 6,
+    "level": 3,
+    "count": 3,
+    "value": 6.8
+  },
+  {
+    "heroMedalId": 7,
+    "level": 1,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 7,
+    "level": 1,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 7,
+    "level": 1,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 7,
+    "level": 2,
+    "count": 1,
+    "value": 4
+  },
+  {
+    "heroMedalId": 7,
+    "level": 2,
+    "count": 2,
+    "value": 5.2
+  },
+  {
+    "heroMedalId": 7,
+    "level": 2,
+    "count": 3,
+    "value": 6.8
+  },
+  {
+    "heroMedalId": 7,
+    "level": 3,
+    "count": 1,
+    "value": 6
+  },
+  {
+    "heroMedalId": 7,
+    "level": 3,
+    "count": 2,
+    "value": 7.8
+  },
+  {
+    "heroMedalId": 7,
+    "level": 3,
+    "count": 3,
+    "value": 10.2
+  },
+  {
+    "heroMedalId": 8,
+    "level": 1,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 8,
+    "level": 1,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 8,
+    "level": 1,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 8,
+    "level": 2,
+    "count": 1,
+    "value": 5
+  },
+  {
+    "heroMedalId": 8,
+    "level": 2,
+    "count": 2,
+    "value": 6.5
+  },
+  {
+    "heroMedalId": 8,
+    "level": 2,
+    "count": 3,
+    "value": 8.5
+  },
+  {
+    "heroMedalId": 8,
+    "level": 3,
+    "count": 1,
+    "value": 7
+  },
+  {
+    "heroMedalId": 8,
+    "level": 3,
+    "count": 2,
+    "value": 9.1
+  },
+  {
+    "heroMedalId": 8,
+    "level": 3,
+    "count": 3,
+    "value": 11.9
+  },
+  {
+    "heroMedalId": 9,
+    "level": 1,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 9,
+    "level": 1,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 9,
+    "level": 1,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 9,
+    "level": 2,
+    "count": 1,
+    "value": 5
+  },
+  {
+    "heroMedalId": 9,
+    "level": 2,
+    "count": 2,
+    "value": 6.5
+  },
+  {
+    "heroMedalId": 9,
+    "level": 2,
+    "count": 3,
+    "value": 8.5
+  },
+  {
+    "heroMedalId": 9,
+    "level": 3,
+    "count": 1,
+    "value": 7
+  },
+  {
+    "heroMedalId": 9,
+    "level": 3,
+    "count": 2,
+    "value": 9.1
+  },
+  {
+    "heroMedalId": 9,
+    "level": 3,
+    "count": 3,
+    "value": 11.9
+  },
+  {
+    "heroMedalId": 10,
+    "level": 1,
+    "count": 1,
+    "value": 3
+  },
+  {
+    "heroMedalId": 10,
+    "level": 1,
+    "count": 2,
+    "value": 3.9
+  },
+  {
+    "heroMedalId": 10,
+    "level": 1,
+    "count": 3,
+    "value": 5.1
+  },
+  {
+    "heroMedalId": 10,
+    "level": 2,
+    "count": 1,
+    "value": 5
+  },
+  {
+    "heroMedalId": 10,
+    "level": 2,
+    "count": 2,
+    "value": 6.5
+  },
+  {
+    "heroMedalId": 10,
+    "level": 2,
+    "count": 3,
+    "value": 8.5
+  },
+  {
+    "heroMedalId": 10,
+    "level": 3,
+    "count": 1,
+    "value": 7
+  },
+  {
+    "heroMedalId": 10,
+    "level": 3,
+    "count": 2,
+    "value": 9.1
+  },
+  {
+    "heroMedalId": 10,
+    "level": 3,
+    "count": 3,
+    "value": 11.9
+  },
+  {
+    "heroMedalId": 11,
+    "level": 1,
+    "count": 1,
+    "value": 2
+  },
+  {
+    "heroMedalId": 11,
+    "level": 1,
+    "count": 2,
+    "value": 2.6
+  },
+  {
+    "heroMedalId": 11,
+    "level": 1,
+    "count": 3,
+    "value": 3.4
+  },
+  {
+    "heroMedalId": 11,
+    "level": 2,
+    "count": 1,
+    "value": 5
+  },
+  {
+    "heroMedalId": 11,
+    "level": 2,
+    "count": 2,
+    "value": 6.5
+  },
+  {
+    "heroMedalId": 11,
+    "level": 2,
+    "count": 3,
+    "value": 8.5
+  },
+  {
+    "heroMedalId": 11,
+    "level": 3,
+    "count": 1,
+    "value": 8
+  },
+  {
+    "heroMedalId": 11,
+    "level": 3,
+    "count": 2,
+    "value": 10.4
+  },
+  {
+    "heroMedalId": 11,
+    "level": 3,
+    "count": 3,
+    "value": 13.6
+  },
+  {
+    "heroMedalId": 12,
+    "level": 1,
+    "count": 1,
+    "value": 4
+  },
+  {
+    "heroMedalId": 12,
+    "level": 1,
+    "count": 2,
+    "value": 5.2
+  },
+  {
+    "heroMedalId": 12,
+    "level": 1,
+    "count": 3,
+    "value": 6.8
+  },
+  {
+    "heroMedalId": 12,
+    "level": 2,
+    "count": 1,
+    "value": 8
+  },
+  {
+    "heroMedalId": 12,
+    "level": 2,
+    "count": 2,
+    "value": 10.4
+  },
+  {
+    "heroMedalId": 12,
+    "level": 2,
+    "count": 3,
+    "value": 13.6
+  },
+  {
+    "heroMedalId": 12,
+    "level": 3,
+    "count": 1,
+    "value": 12
+  },
+  {
+    "heroMedalId": 12,
+    "level": 3,
+    "count": 2,
+    "value": 15.6
+  },
+  {
+    "heroMedalId": 12,
+    "level": 3,
+    "count": 3,
+    "value": 20.4
+  },
+  {
+    "heroMedalId": 13,
+    "level": 1,
+    "count": 1,
+    "value": 4
+  },
+  {
+    "heroMedalId": 13,
+    "level": 1,
+    "count": 2,
+    "value": 5.2
+  },
+  {
+    "heroMedalId": 13,
+    "level": 1,
+    "count": 3,
+    "value": 6.8
+  },
+  {
+    "heroMedalId": 13,
+    "level": 2,
+    "count": 1,
+    "value": 8
+  },
+  {
+    "heroMedalId": 13,
+    "level": 2,
+    "count": 2,
+    "value": 10.4
+  },
+  {
+    "heroMedalId": 13,
+    "level": 2,
+    "count": 3,
+    "value": 13.6
+  },
+  {
+    "heroMedalId": 13,
+    "level": 3,
+    "count": 1,
+    "value": 12
+  },
+  {
+    "heroMedalId": 13,
+    "level": 3,
+    "count": 2,
+    "value": 15.6
+  },
+  {
+    "heroMedalId": 13,
+    "level": 3,
+    "count": 3,
+    "value": 20.4
+  }
+]

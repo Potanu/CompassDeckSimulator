@@ -1,0 +1,5762 @@
+[
+  {
+    "card_id": 1,
+    "cooldownTime": 16,
+    "attack": 55,
+    "defense": 18,
+    "health": 363,
+    "abilityLabel": "前方に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 2,
+    "cooldownTime": 16,
+    "attack": 43,
+    "defense": 17,
+    "health": 512,
+    "abilityLabel": "前方に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 3,
+    "cooldownTime": 16,
+    "attack": 51,
+    "defense": 17,
+    "health": 427,
+    "abilityLabel": "前方に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 4,
+    "cooldownTime": 30,
+    "attack": 35,
+    "defense": 22,
+    "health": 528,
+    "abilityLabel": "前方の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 5,
+    "cooldownTime": 30,
+    "attack": 37,
+    "defense": 29,
+    "health": 374,
+    "abilityLabel": "前方の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 6,
+    "cooldownTime": 26,
+    "attack": 36,
+    "defense": 27,
+    "health": 453,
+    "abilityLabel": "前方の敵を 4秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 7,
+    "cooldownTime": 32,
+    "attack": 39,
+    "defense": 19,
+    "health": 589,
+    "abilityLabel": "遠くの敵を 弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 8,
+    "cooldownTime": 32,
+    "attack": 56,
+    "defense": 19,
+    "health": 467,
+    "abilityLabel": "遠くの敵を 2秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 9,
+    "cooldownTime": 16,
+    "attack": 54,
+    "defense": 18,
+    "health": 453,
+    "abilityLabel": "前方に連続攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 10,
+    "cooldownTime": 16,
+    "attack": 39,
+    "defense": 19,
+    "health": 589,
+    "abilityLabel": "前方に連続攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 11,
+    "cooldownTime": 16,
+    "attack": 54,
+    "defense": 18,
+    "health": 453,
+    "abilityLabel": "前方に連続攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 12,
+    "cooldownTime": 28,
+    "attack": 40,
+    "defense": 30,
+    "health": 397,
+    "abilityLabel": "周囲の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 13,
+    "cooldownTime": 24,
+    "attack": 36,
+    "defense": 28,
+    "health": 363,
+    "abilityLabel": "被ダメージを 40％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 14,
+    "cooldownTime": 25,
+    "attack": 34,
+    "defense": 21,
+    "health": 512,
+    "abilityLabel": "自分の移動速度を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 15,
+    "cooldownTime": 25,
+    "attack": 51,
+    "defense": 21,
+    "health": 341,
+    "abilityLabel": "自分の移動速度を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 16,
+    "cooldownTime": 25,
+    "attack": 55,
+    "defense": 18,
+    "health": 363,
+    "abilityLabel": "自分の移動速度を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 17,
+    "cooldownTime": 35,
+    "attack": 36,
+    "defense": 28,
+    "health": 363,
+    "abilityLabel": "自分の移動速度を 25秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 18,
+    "cooldownTime": 25,
+    "attack": 53,
+    "defense": 22,
+    "health": 352,
+    "abilityLabel": "自分の防御力を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 19,
+    "cooldownTime": 25,
+    "attack": 37,
+    "defense": 29,
+    "health": 374,
+    "abilityLabel": "自分の防御力を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 20,
+    "cooldownTime": 40,
+    "attack": 62,
+    "defense": 20,
+    "health": 408,
+    "abilityLabel": "味方チームの移動速度を 15秒間\n中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 21,
+    "cooldownTime": 20,
+    "attack": 4,
+    "defense": 2,
+    "health": 43,
+    "abilityLabel": "ライフ60％回復で スタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 22,
+    "cooldownTime": 38,
+    "attack": 39,
+    "defense": 19,
+    "health": 593,
+    "abilityLabel": "持続ダメージエリア発生の\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 23,
+    "cooldownTime": 32,
+    "attack": 43,
+    "defense": 33,
+    "health": 431,
+    "abilityLabel": "前方へウィングを展開し\n超射程多段ビーム攻撃（極小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 24,
+    "cooldownTime": 27,
+    "attack": 39,
+    "defense": 19,
+    "health": 589,
+    "abilityLabel": "前方の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 25,
+    "cooldownTime": 20,
+    "attack": 53,
+    "defense": 18,
+    "health": 444,
+    "abilityLabel": "前方の敵を 10秒間ポイズン\n（最大ライフ40％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 26,
+    "cooldownTime": 18,
+    "attack": 39,
+    "defense": 25,
+    "health": 592,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 27,
+    "cooldownTime": 28,
+    "attack": 61,
+    "defense": 25,
+    "health": 405,
+    "abilityLabel": "前方の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 28,
+    "cooldownTime": 36,
+    "attack": 61,
+    "defense": 25,
+    "health": 405,
+    "abilityLabel": "前方の敵のヒーロースキルパワーを\n20％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 29,
+    "cooldownTime": 24,
+    "attack": 51,
+    "defense": 30,
+    "health": 405,
+    "abilityLabel": "前方の敵を 8秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 30,
+    "cooldownTime": 28,
+    "attack": 43,
+    "defense": 22,
+    "health": 659,
+    "abilityLabel": "前方の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 31,
+    "cooldownTime": 20,
+    "attack": 43,
+    "defense": 32,
+    "health": 532,
+    "abilityLabel": "前方の敵を 10秒間吸血ポイズン\n（最大ライフ30％ダメージ＆吸収）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 32,
+    "cooldownTime": 20,
+    "attack": 42,
+    "defense": 21,
+    "health": 641,
+    "abilityLabel": "前方の敵を 10秒間ポイズン\n（最大ライフ40％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 33,
+    "cooldownTime": 20,
+    "attack": 36,
+    "defense": 27,
+    "health": 453,
+    "abilityLabel": "長射程のエネルギー攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 34,
+    "cooldownTime": 20,
+    "attack": 45,
+    "defense": 27,
+    "health": 363,
+    "abilityLabel": "長射程のエネルギー攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 35,
+    "cooldownTime": 20,
+    "attack": 59,
+    "defense": 19,
+    "health": 385,
+    "abilityLabel": "長射程のエネルギー攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 36,
+    "cooldownTime": 32,
+    "attack": 48,
+    "defense": 19,
+    "health": 576,
+    "abilityLabel": "遠くの敵を 2秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 37,
+    "cooldownTime": 18,
+    "attack": 43,
+    "defense": 33,
+    "health": 431,
+    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 38,
+    "cooldownTime": 32,
+    "attack": 56,
+    "defense": 33,
+    "health": 446,
+    "abilityLabel": "連打攻撃で敵を\n4秒間サイレントにする（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 39,
+    "cooldownTime": 16,
+    "attack": 41,
+    "defense": 20,
+    "health": 624,
+    "abilityLabel": "全周囲に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 40,
+    "cooldownTime": 16,
+    "attack": 48,
+    "defense": 19,
+    "health": 576,
+    "abilityLabel": "全周囲に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 41,
+    "cooldownTime": 16,
+    "attack": 38,
+    "defense": 24,
+    "health": 576,
+    "abilityLabel": "全周囲に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 42,
+    "cooldownTime": 18,
+    "attack": 37,
+    "defense": 29,
+    "health": 374,
+    "abilityLabel": "ライフを 40％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 43,
+    "cooldownTime": 18,
+    "attack": 53,
+    "defense": 18,
+    "health": 440,
+    "abilityLabel": "ライフを 40％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 44,
+    "cooldownTime": 20,
+    "attack": 37,
+    "defense": 28,
+    "health": 467,
+    "abilityLabel": "ライフを持続回復（10秒間で最大60％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 45,
+    "cooldownTime": 20,
+    "attack": 56,
+    "defense": 23,
+    "health": 373,
+    "abilityLabel": "ライフを持続回復（10秒間で最大60％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 46,
+    "cooldownTime": 26,
+    "attack": 40,
+    "defense": 30,
+    "health": 495,
+    "abilityLabel": "被ダメージを 45％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 47,
+    "cooldownTime": 35,
+    "attack": 53,
+    "defense": 22,
+    "health": 352,
+    "abilityLabel": "自分の移動速度を 25秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 48,
+    "cooldownTime": 35,
+    "attack": 38,
+    "defense": 29,
+    "health": 480,
+    "abilityLabel": "味方チーム攻撃力を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 49,
+    "cooldownTime": 35,
+    "attack": 41,
+    "defense": 31,
+    "health": 408,
+    "abilityLabel": "味方チーム攻撃力を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 50,
+    "cooldownTime": 28,
+    "attack": 58,
+    "defense": 24,
+    "health": 384,
+    "abilityLabel": "自分の 攻撃+防御+移動を 8秒間\n極小アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 51,
+    "cooldownTime": 25,
+    "attack": 47,
+    "defense": 19,
+    "health": 560,
+    "abilityLabel": "前方敵の移動速度を 10秒間 中ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 52,
+    "cooldownTime": 30,
+    "attack": 56,
+    "defense": 19,
+    "health": 467,
+    "abilityLabel": "前方敵の攻撃力を 10秒間 中ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 53,
+    "cooldownTime": 28,
+    "attack": 56,
+    "defense": 23,
+    "health": 373,
+    "abilityLabel": "前方敵の防御力を 8秒間 中ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 54,
+    "cooldownTime": 30,
+    "attack": 40,
+    "defense": 30,
+    "health": 397,
+    "abilityLabel": "前方敵の攻撃力を 10秒間 中ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 55,
+    "cooldownTime": 40,
+    "attack": 44,
+    "defense": 34,
+    "health": 442,
+    "abilityLabel": "敵チームの移動速度を 12秒間\n小ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 56,
+    "cooldownTime": 35,
+    "attack": 39,
+    "defense": 20,
+    "health": 601,
+    "abilityLabel": "ライフ100％回復で\nスタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 57,
+    "cooldownTime": 20,
+    "attack": 5,
+    "defense": 2,
+    "health": 47,
+    "abilityLabel": "ライフ60％回復で スタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 58,
+    "cooldownTime": 25,
+    "attack": 58,
+    "defense": 24,
+    "health": 384,
+    "abilityLabel": "敵に小ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 59,
+    "cooldownTime": 25,
+    "attack": 41,
+    "defense": 31,
+    "health": 408,
+    "abilityLabel": "敵に小ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 60,
+    "cooldownTime": 25,
+    "attack": 62,
+    "defense": 20,
+    "health": 408,
+    "abilityLabel": "敵に小ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 61,
+    "cooldownTime": 40,
+    "attack": 68,
+    "defense": 22,
+    "health": 442,
+    "abilityLabel": "敵の防御力が低下する\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 62,
+    "cooldownTime": 24,
+    "attack": 59,
+    "defense": 20,
+    "health": 493,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無力化し\n近距離的にカウンター攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 63,
+    "cooldownTime": 18,
+    "attack": 64,
+    "defense": 21,
+    "health": 419,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 64,
+    "cooldownTime": 16,
+    "attack": 64,
+    "defense": 21,
+    "health": 419,
+    "abilityLabel": "前方に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 65,
+    "cooldownTime": 16,
+    "attack": 37,
+    "defense": 29,
+    "health": 374,
+    "abilityLabel": "前方に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 66,
+    "cooldownTime": 20,
+    "attack": 64,
+    "defense": 21,
+    "health": 419,
+    "abilityLabel": "長射程のエネルギー攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 67,
+    "cooldownTime": 20,
+    "attack": 59,
+    "defense": 25,
+    "health": 394,
+    "abilityLabel": "長射程のエネルギー攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 68,
+    "cooldownTime": 20,
+    "attack": 59,
+    "defense": 20,
+    "health": 493,
+    "abilityLabel": "長射程のエネルギー攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 69,
+    "cooldownTime": 16,
+    "attack": 59,
+    "defense": 25,
+    "health": 394,
+    "abilityLabel": "前方に連続攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 70,
+    "cooldownTime": 16,
+    "attack": 42,
+    "defense": 32,
+    "health": 419,
+    "abilityLabel": "全周囲に攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 71,
+    "cooldownTime": 18,
+    "attack": 37,
+    "defense": 19,
+    "health": 572,
+    "abilityLabel": "ライフを 40％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 72,
+    "cooldownTime": 35,
+    "attack": 35,
+    "defense": 22,
+    "health": 528,
+    "abilityLabel": "自分の移動速度を 25秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 73,
+    "cooldownTime": 25,
+    "attack": 59,
+    "defense": 25,
+    "health": 394,
+    "abilityLabel": "自分の攻撃力を 12秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 74,
+    "cooldownTime": 35,
+    "attack": 42,
+    "defense": 21,
+    "health": 641,
+    "abilityLabel": "自分の移動速度を 25秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 75,
+    "cooldownTime": 25,
+    "attack": 42,
+    "defense": 21,
+    "health": 641,
+    "abilityLabel": "前方敵の移動速度を 10秒間 中ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 76,
+    "cooldownTime": 35,
+    "attack": 42,
+    "defense": 32,
+    "health": 419,
+    "abilityLabel": "ライフ100％回復で\nスタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 77,
+    "cooldownTime": 35,
+    "attack": 42,
+    "defense": 21,
+    "health": 641,
+    "abilityLabel": "ライフ100％回復で\nスタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 78,
+    "cooldownTime": 35,
+    "attack": 57,
+    "defense": 19,
+    "health": 374,
+    "abilityLabel": "ライフ100％回復で\nスタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 79,
+    "cooldownTime": 40,
+    "attack": 42,
+    "defense": 21,
+    "health": 641,
+    "abilityLabel": "敵の防御力が低下する\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 80,
+    "cooldownTime": 18,
+    "attack": 36,
+    "defense": 23,
+    "health": 544,
+    "abilityLabel": "前方に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 81,
+    "cooldownTime": 18,
+    "attack": 45,
+    "defense": 27,
+    "health": 363,
+    "abilityLabel": "前方に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 82,
+    "cooldownTime": 18,
+    "attack": 54,
+    "defense": 18,
+    "health": 453,
+    "abilityLabel": "前方に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 83,
+    "cooldownTime": 24,
+    "attack": 37,
+    "defense": 28,
+    "health": 467,
+    "abilityLabel": "前方の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 84,
+    "cooldownTime": 24,
+    "attack": 56,
+    "defense": 23,
+    "health": 373,
+    "abilityLabel": "前方の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 85,
+    "cooldownTime": 18,
+    "attack": 48,
+    "defense": 29,
+    "health": 384,
+    "abilityLabel": "前方の敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 86,
+    "cooldownTime": 22,
+    "attack": 67,
+    "defense": 22,
+    "health": 436,
+    "abilityLabel": "前方攻撃+ダメージの150％ライフ吸収\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 87,
+    "cooldownTime": 20,
+    "attack": 61,
+    "defense": 25,
+    "health": 405,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 88,
+    "cooldownTime": 24,
+    "attack": 68,
+    "defense": 22,
+    "health": 442,
+    "abilityLabel": "前方の敵を 9秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 89,
+    "cooldownTime": 24,
+    "attack": 44,
+    "defense": 22,
+    "health": 676,
+    "abilityLabel": "前方の敵を 9秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 90,
+    "cooldownTime": 18,
+    "attack": 64,
+    "defense": 21,
+    "health": 533,
+    "abilityLabel": "前方に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 91,
+    "cooldownTime": 22,
+    "attack": 40,
+    "defense": 20,
+    "health": 607,
+    "abilityLabel": "長射程の強力な攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 92,
+    "cooldownTime": 35,
+    "attack": 41,
+    "defense": 20,
+    "health": 624,
+    "abilityLabel": "遠くの敵を 弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 93,
+    "cooldownTime": 38,
+    "attack": 39,
+    "defense": 30,
+    "health": 493,
+    "abilityLabel": "遠くの敵を 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 94,
+    "cooldownTime": 38,
+    "attack": 59,
+    "defense": 25,
+    "health": 395,
+    "abilityLabel": "遠くの敵を 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 95,
+    "cooldownTime": 26,
+    "attack": 66,
+    "defense": 22,
+    "health": 431,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 96,
+    "cooldownTime": 26,
+    "attack": 61,
+    "defense": 20,
+    "health": 507,
+    "abilityLabel": "遠方攻撃+ダメージの70％ライフ吸収\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 97,
+    "cooldownTime": 20,
+    "attack": 43,
+    "defense": 39,
+    "health": 533,
+    "abilityLabel": "前方の敵を 8秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 98,
+    "cooldownTime": 16,
+    "attack": 59,
+    "defense": 25,
+    "health": 395,
+    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 99,
+    "cooldownTime": 16,
+    "attack": 43,
+    "defense": 33,
+    "health": 431,
+    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 100,
+    "cooldownTime": 22,
+    "attack": 41,
+    "defense": 25,
+    "health": 608,
+    "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 101,
+    "cooldownTime": 22,
+    "attack": 61,
+    "defense": 20,
+    "health": 507,
+    "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 102,
+    "cooldownTime": 22,
+    "attack": 68,
+    "defense": 22,
+    "health": 442,
+    "abilityLabel": "連続攻撃+ダメージの120％ライフ吸収\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 103,
+    "cooldownTime": 32,
+    "attack": 68,
+    "defense": 22,
+    "health": 442,
+    "abilityLabel": "連打攻撃でヒーロースキルパワーを\n最大35％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 104,
+    "cooldownTime": 32,
+    "attack": 42,
+    "defense": 21,
+    "health": 641,
+    "abilityLabel": "周囲の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 105,
+    "cooldownTime": 25,
+    "attack": 69,
+    "defense": 22,
+    "health": 449,
+    "abilityLabel": "周囲の敵を 打ち上げる 強力な攻撃\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 106,
+    "cooldownTime": 32,
+    "attack": 70,
+    "defense": 20,
+    "health": 608,
+    "abilityLabel": "周囲の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 107,
+    "cooldownTime": 18,
+    "attack": 42,
+    "defense": 31,
+    "health": 520,
+    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 108,
+    "cooldownTime": 18,
+    "attack": 44,
+    "defense": 34,
+    "health": 442,
+    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 109,
+    "cooldownTime": 23,
+    "attack": 62,
+    "defense": 21,
+    "health": 520,
+    "abilityLabel": "周囲の敵を 7秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 110,
+    "cooldownTime": 34,
+    "attack": 40,
+    "defense": 30,
+    "health": 494,
+    "abilityLabel": "周囲の敵を 10秒間ポイズン\n（最大ライフ30％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 111,
+    "cooldownTime": 26,
+    "attack": 44,
+    "defense": 22,
+    "health": 676,
+    "abilityLabel": "周囲攻撃+ダメージの50％ライフ吸収\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 112,
+    "cooldownTime": 26,
+    "attack": 68,
+    "defense": 22,
+    "health": 442,
+    "abilityLabel": "周囲攻撃+ダメージの50％ライフ吸収\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 113,
+    "cooldownTime": 22,
+    "attack": 52,
+    "defense": 21,
+    "health": 624,
+    "abilityLabel": "周囲の敵に 防御力無視の攻撃\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 114,
+    "cooldownTime": 28,
+    "attack": 75,
+    "defense": 23,
+    "health": 453,
+    "abilityLabel": "周囲の敵を 9秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 115,
+    "cooldownTime": 28,
+    "attack": 27,
+    "defense": 29,
+    "health": 661,
+    "abilityLabel": "周囲の敵を 9秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 116,
+    "cooldownTime": 21,
+    "attack": 70,
+    "defense": 20,
+    "health": 397,
+    "abilityLabel": "ライフを 60％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 117,
+    "cooldownTime": 21,
+    "attack": 56,
+    "defense": 34,
+    "health": 513,
+    "abilityLabel": "ライフを 60％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 118,
+    "cooldownTime": 32,
+    "attack": 41,
+    "defense": 31,
+    "health": 408,
+    "abilityLabel": "味方チーム全員のライフを25％回復\n+状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 119,
+    "cooldownTime": 25,
+    "attack": 59,
+    "defense": 20,
+    "health": 493,
+    "abilityLabel": "味方チーム全員のライフを30％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 120,
+    "cooldownTime": 25,
+    "attack": 59,
+    "defense": 25,
+    "health": 395,
+    "abilityLabel": "味方チーム全員のライフを30％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 121,
+    "cooldownTime": 9,
+    "attack": 64,
+    "defense": 27,
+    "health": 426,
+    "abilityLabel": "ライフを 20％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 122,
+    "cooldownTime": 26,
+    "attack": 51,
+    "defense": 20,
+    "health": 608,
+    "abilityLabel": "ライフを 40％回復 +ライフを持続回復\n（10秒間で最大40％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 123,
+    "cooldownTime": 24,
+    "attack": 44,
+    "defense": 34,
+    "health": 442,
+    "abilityLabel": "ライフを持続回復（10秒間で最大80％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 124,
+    "cooldownTime": 24,
+    "attack": 44,
+    "defense": 22,
+    "health": 676,
+    "abilityLabel": "ライフを持続回復（10秒間で最大80％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 125,
+    "cooldownTime": 45,
+    "attack": 42,
+    "defense": 21,
+    "health": 641,
+    "abilityLabel": "被ダメージを 30％減らす（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 126,
+    "cooldownTime": 28,
+    "attack": 55,
+    "defense": 21,
+    "health": 620,
+    "abilityLabel": "被ダメージを 50％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 127,
+    "cooldownTime": 32,
+    "attack": 61,
+    "defense": 44,
+    "health": 416,
+    "abilityLabel": "被ダメージを 70％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 128,
+    "cooldownTime": 38,
+    "attack": 39,
+    "defense": 29,
+    "health": 385,
+    "abilityLabel": "自分の移動速度を 24秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 129,
+    "cooldownTime": 38,
+    "attack": 62,
+    "defense": 20,
+    "health": 405,
+    "abilityLabel": "自分の移動速度を 24秒間 中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 130,
+    "cooldownTime": 30,
+    "attack": 56,
+    "defense": 19,
+    "health": 467,
+    "abilityLabel": "自分の攻撃力を 12秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 131,
+    "cooldownTime": 26,
+    "attack": 41,
+    "defense": 31,
+    "health": 408,
+    "abilityLabel": "自分の防御力を 6秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 132,
+    "cooldownTime": 45,
+    "attack": 59,
+    "defense": 25,
+    "health": 395,
+    "abilityLabel": "味方チームの防御力を 6秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 133,
+    "cooldownTime": 45,
+    "attack": 49,
+    "defense": 30,
+    "health": 395,
+    "abilityLabel": "味方チームの防御力を 6秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 134,
+    "cooldownTime": 60,
+    "attack": 41,
+    "defense": 30,
+    "health": 507,
+    "abilityLabel": "味方チームの移動速度を 12秒間\n中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 135,
+    "cooldownTime": 35,
+    "attack": 58,
+    "defense": 35,
+    "health": 466,
+    "abilityLabel": "通常攻撃で与えたダメージの\n90％ライフ吸収（15秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 136,
+    "cooldownTime": 32,
+    "attack": 38,
+    "defense": 24,
+    "health": 576,
+    "abilityLabel": "前方敵の移動速度を 10秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 137,
+    "cooldownTime": 32,
+    "attack": 62,
+    "defense": 20,
+    "health": 408,
+    "abilityLabel": "前方敵の移動速度を 10秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 138,
+    "cooldownTime": 65,
+    "attack": 41,
+    "defense": 25,
+    "health": 608,
+    "abilityLabel": "敵チームの攻撃力を 5秒間 中ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 139,
+    "cooldownTime": 25,
+    "attack": 66,
+    "defense": 22,
+    "health": 431,
+    "abilityLabel": "前方敵の防御力を 14秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 140,
+    "cooldownTime": 30,
+    "attack": 53,
+    "defense": 32,
+    "health": 427,
+    "abilityLabel": "前方敵の全行動速度を 2秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 141,
+    "cooldownTime": 20,
+    "attack": 5,
+    "defense": 3,
+    "health": 51,
+    "abilityLabel": "ライフ60％回復で スタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 142,
+    "cooldownTime": 28,
+    "attack": 45,
+    "defense": 35,
+    "health": 452,
+    "abilityLabel": "敵に中ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 143,
+    "cooldownTime": 36,
+    "attack": 66,
+    "defense": 22,
+    "health": 431,
+    "abilityLabel": "周囲の敵を 少し遠くに弾き飛ばす\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 144,
+    "cooldownTime": 70,
+    "attack": 39,
+    "defense": 19,
+    "health": 593,
+    "abilityLabel": "制圧済ポータルキーを\nダミーで守る（5秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 145,
+    "cooldownTime": 24,
+    "attack": 44,
+    "defense": 22,
+    "health": 676,
+    "abilityLabel": "敵を10秒間サイレントにする\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 146,
+    "cooldownTime": 25,
+    "attack": 42,
+    "defense": 31,
+    "health": 520,
+    "abilityLabel": "敵の視界を4秒間奪う\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 147,
+    "cooldownTime": 42,
+    "attack": 43,
+    "defense": 27,
+    "health": 640,
+    "abilityLabel": "敵の移動速度が低下する\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 148,
+    "cooldownTime": 45,
+    "attack": 64,
+    "defense": 21,
+    "health": 533,
+    "abilityLabel": "敵の防御力が超低下する\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 149,
+    "cooldownTime": 26,
+    "attack": 43,
+    "defense": 22,
+    "health": 659,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n近距離敵にカウンター攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 150,
+    "cooldownTime": 26,
+    "attack": 61,
+    "defense": 25,
+    "health": 405,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n周囲の敵にカウンター攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 151,
+    "cooldownTime": 22,
+    "attack": 52,
+    "defense": 21,
+    "health": 624,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n背後移動＆カウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 152,
+    "cooldownTime": 45,
+    "attack": 45,
+    "defense": 23,
+    "health": 693,
+    "abilityLabel": "前方敵の周囲を9連続攻撃し\n2秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 153,
+    "cooldownTime": 30,
+    "attack": 67,
+    "defense": 39,
+    "health": 362,
+    "abilityLabel": "前方に 強力な攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 154,
+    "cooldownTime": 26,
+    "attack": 66,
+    "defense": 25,
+    "health": 428,
+    "abilityLabel": "前方に 強力な攻撃（中ダメージ）\n+ショックウェーブ追撃（固定ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 155,
+    "cooldownTime": 22,
+    "attack": 28,
+    "defense": 55,
+    "health": 482,
+    "abilityLabel": "前方の敵を10秒間 吸血ポイズン\n（最大ライフ40％ダメージ＆吸収）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 156,
+    "cooldownTime": 28,
+    "attack": 47,
+    "defense": 36,
+    "health": 466,
+    "abilityLabel": "前方の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 157,
+    "cooldownTime": 18,
+    "attack": 64,
+    "defense": 27,
+    "health": 428,
+    "abilityLabel": "前方に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 158,
+    "cooldownTime": 24,
+    "attack": 41,
+    "defense": 30,
+    "health": 508,
+    "abilityLabel": "前方の敵を10秒間ポイズン\n（最大ライフ50％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 159,
+    "cooldownTime": 28,
+    "attack": 63,
+    "defense": 26,
+    "health": 417,
+    "abilityLabel": "前方の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 160,
+    "cooldownTime": 18,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "前方の敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 161,
+    "cooldownTime": 22,
+    "attack": 67,
+    "defense": 34,
+    "health": 413,
+    "abilityLabel": "前方攻撃+ダメージの150％ライフ吸収\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 162,
+    "cooldownTime": 24,
+    "attack": 43,
+    "defense": 33,
+    "health": 432,
+    "abilityLabel": "前方の敵を10秒間ポイズン\n（最大ライフ50％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 163,
+    "cooldownTime": 18,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "前方に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 164,
+    "cooldownTime": 38,
+    "attack": 61,
+    "defense": 20,
+    "health": 508,
+    "abilityLabel": "前方の敵のヒーロースキルパワーを\n25％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 165,
+    "cooldownTime": 20,
+    "attack": 62,
+    "defense": 21,
+    "health": 517,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 166,
+    "cooldownTime": 20,
+    "attack": 67,
+    "defense": 22,
+    "health": 439,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 167,
+    "cooldownTime": 28,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "前方の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 168,
+    "cooldownTime": 18,
+    "attack": 43,
+    "defense": 33,
+    "health": 432,
+    "abilityLabel": "前方の敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 169,
+    "cooldownTime": 22,
+    "attack": 45,
+    "defense": 22,
+    "health": 684,
+    "abilityLabel": "前方攻撃+ダメージの150％ライフ吸収\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 170,
+    "cooldownTime": 45,
+    "attack": 74,
+    "defense": 15,
+    "health": 305,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 171,
+    "cooldownTime": 20,
+    "attack": 25,
+    "defense": 46,
+    "health": 508,
+    "abilityLabel": "遠くの敵のライフを最大50％奪う\n（ダメージ量の200％回復）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 172,
+    "cooldownTime": 45,
+    "attack": 58,
+    "defense": 44,
+    "health": 355,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 173,
+    "cooldownTime": 20,
+    "attack": 68,
+    "defense": 26,
+    "health": 417,
+    "abilityLabel": "遠くの敵を 8秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 174,
+    "cooldownTime": 20,
+    "attack": 41,
+    "defense": 26,
+    "health": 672,
+    "abilityLabel": "遠くの敵を 8秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 175,
+    "cooldownTime": 24,
+    "attack": 61,
+    "defense": 20,
+    "health": 508,
+    "abilityLabel": "遠くの敵のヒーロースキルパワーを\n20％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 176,
+    "cooldownTime": 38,
+    "attack": 51,
+    "defense": 30,
+    "health": 406,
+    "abilityLabel": "遠くの敵を 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 177,
+    "cooldownTime": 22,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "長距離の強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 178,
+    "cooldownTime": 26,
+    "attack": 63,
+    "defense": 26,
+    "health": 417,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 179,
+    "cooldownTime": 26,
+    "attack": 64,
+    "defense": 21,
+    "health": 530,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 180,
+    "cooldownTime": 26,
+    "attack": 51,
+    "defense": 20,
+    "health": 609,
+    "abilityLabel": "遠方攻撃+ダメージの70％ライフ吸収\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 181,
+    "cooldownTime": 34,
+    "attack": 41,
+    "defense": 31,
+    "health": 517,
+    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）\n+自分の防御力を 5秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 182,
+    "cooldownTime": 22,
+    "attack": 71,
+    "defense": 3,
+    "health": 432,
+    "abilityLabel": "連続攻撃+ダメージの120％ライフ吸収\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 183,
+    "cooldownTime": 36,
+    "attack": 67,
+    "defense": 22,
+    "health": 439,
+    "abilityLabel": "敵を連打攻撃で 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 184,
+    "cooldownTime": 32,
+    "attack": 46,
+    "defense": 35,
+    "health": 462,
+    "abilityLabel": "連打攻撃でヒーロースキルパワーを\n最大35％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 185,
+    "cooldownTime": 36,
+    "attack": 52,
+    "defense": 21,
+    "health": 620,
+    "abilityLabel": "敵を連打攻撃で 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 186,
+    "cooldownTime": 16,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 187,
+    "cooldownTime": 22,
+    "attack": 61,
+    "defense": 20,
+    "health": 508,
+    "abilityLabel": "連続攻撃+ダメージの120％ライフ吸収\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 188,
+    "cooldownTime": 22,
+    "attack": 54,
+    "defense": 23,
+    "health": 363,
+    "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 189,
+    "cooldownTime": 16,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 190,
+    "cooldownTime": 28,
+    "attack": 30,
+    "defense": 15,
+    "health": 706,
+    "abilityLabel": "周囲の敵を10秒間 吸血ポイズン\n（最大ライフ40％ダメージ＆吸収）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 191,
+    "cooldownTime": 34,
+    "attack": 63,
+    "defense": 32,
+    "health": 316,
+    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）\n+自分の防御力を 5秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 192,
+    "cooldownTime": 44,
+    "attack": 60,
+    "defense": 30,
+    "health": 447,
+    "abilityLabel": "周囲の敵に ガードブレイク攻撃\n（ブレイク成功で大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 193,
+    "cooldownTime": 23,
+    "attack": 75,
+    "defense": 7,
+    "health": 395,
+    "abilityLabel": "周囲の敵を 7秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 194,
+    "cooldownTime": 32,
+    "attack": 47,
+    "defense": 36,
+    "health": 474,
+    "abilityLabel": "周囲の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 195,
+    "cooldownTime": 22,
+    "attack": 63,
+    "defense": 44,
+    "health": 417,
+    "abilityLabel": "周囲の敵に 防御力無視の攻撃\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 196,
+    "cooldownTime": 32,
+    "attack": 61,
+    "defense": 20,
+    "health": 508,
+    "abilityLabel": "周囲の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 197,
+    "cooldownTime": 25,
+    "attack": 54,
+    "defense": 33,
+    "health": 435,
+    "abilityLabel": "周囲の敵を 打ち上げる 強力な攻撃\n（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 198,
+    "cooldownTime": 18,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 199,
+    "cooldownTime": 28,
+    "attack": 41,
+    "defense": 25,
+    "health": 609,
+    "abilityLabel": "周囲の敵を 9秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 200,
+    "cooldownTime": 32,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "周囲の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 201,
+    "cooldownTime": 32,
+    "attack": 41,
+    "defense": 30,
+    "health": 508,
+    "abilityLabel": "周囲の敵に ガードブレイク攻撃\n（ブレイク成功で中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 202,
+    "cooldownTime": 32,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "周囲の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 203,
+    "cooldownTime": 32,
+    "attack": 43,
+    "defense": 22,
+    "health": 660,
+    "abilityLabel": "周囲の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 204,
+    "cooldownTime": 34,
+    "attack": 61,
+    "defense": 20,
+    "health": 508,
+    "abilityLabel": "周囲の敵を10秒間 ポイズン\n（最大ライフ30％ダメージ＆吸収）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 205,
+    "cooldownTime": 32,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "周囲の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 206,
+    "cooldownTime": 34,
+    "attack": 36,
+    "defense": 23,
+    "health": 701,
+    "abilityLabel": "ライフを 70％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 207,
+    "cooldownTime": 40,
+    "attack": 41,
+    "defense": 25,
+    "health": 685,
+    "abilityLabel": "味方チーム全員のライフを持続回復\n（10秒間で最大50％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 208,
+    "cooldownTime": 36,
+    "attack": 57,
+    "defense": 28,
+    "health": 508,
+    "abilityLabel": "ライフを 80％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 209,
+    "cooldownTime": 26,
+    "attack": 53,
+    "defense": 21,
+    "health": 631,
+    "abilityLabel": "ライフを持続回復（20秒間で最大70％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 210,
+    "cooldownTime": 32,
+    "attack": 62,
+    "defense": 21,
+    "health": 517,
+    "abilityLabel": "ライフを 90％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 211,
+    "cooldownTime": 36,
+    "attack": 43,
+    "defense": 37,
+    "health": 547,
+    "abilityLabel": "ライフを 80％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 212,
+    "cooldownTime": 26,
+    "attack": 44,
+    "defense": 22,
+    "health": 678,
+    "abilityLabel": "自分と周囲味方のライフ回復\n自分50％＆味方40％ +状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 213,
+    "cooldownTime": 32,
+    "attack": 44,
+    "defense": 22,
+    "health": 693,
+    "abilityLabel": "ライフを 90％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 214,
+    "cooldownTime": 40,
+    "attack": 67,
+    "defense": 22,
+    "health": 435,
+    "abilityLabel": "味方チーム全員のライフを持続回復\n（10秒間で最大50％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 215,
+    "cooldownTime": 21,
+    "attack": 64,
+    "defense": 27,
+    "health": 424,
+    "abilityLabel": "ライフを 60％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 216,
+    "cooldownTime": 25,
+    "attack": 43,
+    "defense": 22,
+    "health": 660,
+    "abilityLabel": "味方チーム全員のライフを 30％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 217,
+    "cooldownTime": 26,
+    "attack": 44,
+    "defense": 22,
+    "health": 678,
+    "abilityLabel": "ライフを持続回復（20秒間で最大70％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 218,
+    "cooldownTime": 24,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "ライフを持続回復（10秒間で最大80％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 219,
+    "cooldownTime": 21,
+    "attack": 59,
+    "defense": 24,
+    "health": 392,
+    "abilityLabel": "ライフを 60％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 220,
+    "cooldownTime": 40,
+    "attack": 61,
+    "defense": 20,
+    "health": 609,
+    "abilityLabel": "味方チーム全員のライフを持続回復\n（10秒間で最大50％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 221,
+    "cooldownTime": 40,
+    "attack": 61,
+    "defense": 20,
+    "health": 508,
+    "abilityLabel": "味方チーム全員のライフを持続回復\n（10秒間で最大50％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 222,
+    "cooldownTime": 28,
+    "attack": 69,
+    "defense": 15,
+    "health": 533,
+    "abilityLabel": "被ダメージを 50％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 223,
+    "cooldownTime": 32,
+    "attack": 60,
+    "defense": 14,
+    "health": 589,
+    "abilityLabel": "被ダメージを 70％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 224,
+    "cooldownTime": 36,
+    "attack": 57,
+    "defense": 28,
+    "health": 508,
+    "abilityLabel": "被ダメージを 80％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 225,
+    "cooldownTime": 36,
+    "attack": 67,
+    "defense": 22,
+    "health": 435,
+    "abilityLabel": "被ダメージを 80％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 226,
+    "cooldownTime": 36,
+    "attack": 43,
+    "defense": 32,
+    "health": 535,
+    "abilityLabel": "被ダメージを 80％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 227,
+    "cooldownTime": 45,
+    "attack": 41,
+    "defense": 30,
+    "health": 508,
+    "abilityLabel": "被ダメージを 30％減らす（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 228,
+    "cooldownTime": 28,
+    "attack": 76,
+    "defense": 35,
+    "health": 432,
+    "abilityLabel": "被ダメージを 50％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 229,
+    "cooldownTime": 45,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "被ダメージを 30％減らす（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 230,
+    "cooldownTime": 28,
+    "attack": 42,
+    "defense": 29,
+    "health": 740,
+    "abilityLabel": "被ダメージを 50％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 231,
+    "cooldownTime": 42,
+    "attack": 66,
+    "defense": 33,
+    "health": 355,
+    "abilityLabel": "自分の防御力を 8秒間 極大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 232,
+    "cooldownTime": 25,
+    "attack": 64,
+    "defense": 27,
+    "health": 424,
+    "abilityLabel": "自分の攻撃力を 8秒間 極大アップ +\n残ライフの25％を減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 233,
+    "cooldownTime": 30,
+    "attack": 63,
+    "defense": 26,
+    "health": 417,
+    "abilityLabel": "自分の攻撃力を 12秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 234,
+    "cooldownTime": 26,
+    "attack": 44,
+    "defense": 22,
+    "health": 672,
+    "abilityLabel": "自分の防御力を 6秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 235,
+    "cooldownTime": 30,
+    "attack": 52,
+    "defense": 21,
+    "health": 626,
+    "abilityLabel": "自分の攻撃力を 12秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 236,
+    "cooldownTime": 35,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "通常攻撃で与えたダメージの\n90％ライフ吸収（15秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 237,
+    "cooldownTime": 60,
+    "attack": 69,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "味方チームの移動速度を 12秒間\n中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 238,
+    "cooldownTime": 45,
+    "attack": 43,
+    "defense": 22,
+    "health": 660,
+    "abilityLabel": "味方チームの防御力を 6秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 239,
+    "cooldownTime": 26,
+    "attack": 41,
+    "defense": 30,
+    "health": 508,
+    "abilityLabel": "自分の防御力を 6秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 240,
+    "cooldownTime": 26,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "自分の防御力を 6秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 241,
+    "cooldownTime": 60,
+    "attack": 41,
+    "defense": 25,
+    "health": 609,
+    "abilityLabel": "味方チームの移動速度を 12秒間\n中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 242,
+    "cooldownTime": 25,
+    "attack": 56,
+    "defense": 30,
+    "health": 609,
+    "abilityLabel": "前方敵の防御力を 14秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 243,
+    "cooldownTime": 32,
+    "attack": 42,
+    "defense": 26,
+    "health": 626,
+    "abilityLabel": "前方敵の攻撃力を 12秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 244,
+    "cooldownTime": 30,
+    "attack": 63,
+    "defense": 21,
+    "health": 521,
+    "abilityLabel": "前方敵の全行動速度を 2秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 245,
+    "cooldownTime": 32,
+    "attack": 44,
+    "defense": 34,
+    "health": 439,
+    "abilityLabel": "前方敵の攻撃力を 12秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 246,
+    "cooldownTime": 32,
+    "attack": 43,
+    "defense": 22,
+    "health": 660,
+    "abilityLabel": "前方敵の攻撃力を 12秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 247,
+    "cooldownTime": 25,
+    "attack": 61,
+    "defense": 20,
+    "health": 508,
+    "abilityLabel": "前方敵の防御力を 14秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 248,
+    "cooldownTime": 32,
+    "attack": 47,
+    "defense": 16,
+    "health": 693,
+    "abilityLabel": "前方指定範囲内の敵背後に瞬間移動し\n3秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 249,
+    "cooldownTime": 26,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "ライフ100％回復スタート位置帰還+\n自分の移動速度を 7秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 250,
+    "cooldownTime": 26,
+    "attack": 44,
+    "defense": 33,
+    "health": 553,
+    "abilityLabel": "ライフ100％回復スタート位置帰還+\n自分の移動速度を 7秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 251,
+    "cooldownTime": 45,
+    "attack": 63,
+    "defense": 0,
+    "health": 660,
+    "abilityLabel": "敵の防御力が超低下する\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 252,
+    "cooldownTime": 28,
+    "attack": 66,
+    "defense": 22,
+    "health": 553,
+    "abilityLabel": "敵に中ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 253,
+    "cooldownTime": 34,
+    "attack": 45,
+    "defense": 34,
+    "health": 451,
+    "abilityLabel": "敵を4秒間スタンにする\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 254,
+    "cooldownTime": 25,
+    "attack": 61,
+    "defense": 10,
+    "health": 727,
+    "abilityLabel": "敵の視界を4秒間奪う\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 255,
+    "cooldownTime": 28,
+    "attack": 74,
+    "defense": 30,
+    "health": 406,
+    "abilityLabel": "敵に中ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 256,
+    "cooldownTime": 45,
+    "attack": 41,
+    "defense": 30,
+    "health": 508,
+    "abilityLabel": "敵の攻撃力が低下する\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 257,
+    "cooldownTime": 34,
+    "attack": 44,
+    "defense": 22,
+    "health": 666,
+    "abilityLabel": "敵を4秒間スタンにする\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 258,
+    "cooldownTime": 24,
+    "attack": 61,
+    "defense": 25,
+    "health": 406,
+    "abilityLabel": "敵を10秒間サイレントにする\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 259,
+    "cooldownTime": 45,
+    "attack": 43,
+    "defense": 22,
+    "health": 660,
+    "abilityLabel": "敵の攻撃力が低下する\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 260,
+    "cooldownTime": 26,
+    "attack": 55,
+    "defense": 40,
+    "health": 442,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n近距離敵にカウンター攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 261,
+    "cooldownTime": 26,
+    "attack": 64,
+    "defense": 27,
+    "health": 424,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n近距離敵にカウンター攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 262,
+    "cooldownTime": 26,
+    "attack": 51,
+    "defense": 20,
+    "health": 609,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n周囲の敵にカウンター攻撃（小ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 263,
+    "cooldownTime": 22,
+    "attack": 74,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n背後移動＆カウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 264,
+    "cooldownTime": 32,
+    "attack": 45,
+    "defense": 0,
+    "health": 743,
+    "abilityLabel": "自身にリング展開（7秒）+接触した敵を\n10秒間ポイズン（30％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 265,
+    "cooldownTime": 21,
+    "attack": 46,
+    "defense": 35,
+    "health": 576,
+    "abilityLabel": "前方の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 266,
+    "cooldownTime": 20,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "前方に 強力な攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 267,
+    "cooldownTime": 21,
+    "attack": 43,
+    "defense": 62,
+    "health": 543,
+    "abilityLabel": "前方の敵に 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 268,
+    "cooldownTime": 24,
+    "attack": 66,
+    "defense": 27,
+    "health": 424,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 269,
+    "cooldownTime": 24,
+    "attack": 65,
+    "defense": 21,
+    "health": 520,
+    "abilityLabel": "前方攻撃+ダメージの200％ライフ吸収\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 270,
+    "cooldownTime": 16,
+    "attack": 57,
+    "defense": 23,
+    "health": 693,
+    "abilityLabel": "前方の敵を 13秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 271,
+    "cooldownTime": 24,
+    "attack": 61,
+    "defense": 16,
+    "health": 613,
+    "abilityLabel": "前方の敵を10秒間 吸血ポイズン\n（最大ライフ50％ダメージ＆吸収）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 272,
+    "cooldownTime": 24,
+    "attack": 44,
+    "defense": 33,
+    "health": 612,
+    "abilityLabel": "前方の敵を 4秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 273,
+    "cooldownTime": 22,
+    "attack": 58,
+    "defense": 29,
+    "health": 519,
+    "abilityLabel": "前方の敵を7秒間ランダム状態異常にする\n（凍結のみ超低確率）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 274,
+    "cooldownTime": 28,
+    "attack": 66,
+    "defense": 0,
+    "health": 697,
+    "abilityLabel": "前方の敵を10秒間ポイズン\n（最大ライフ70％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 275,
+    "cooldownTime": 20,
+    "attack": 60,
+    "defense": 49,
+    "health": 476,
+    "abilityLabel": "長距離の強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 276,
+    "cooldownTime": 20,
+    "attack": 64,
+    "defense": 21,
+    "health": 533,
+    "abilityLabel": "長距離の強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 277,
+    "cooldownTime": 36,
+    "attack": 49,
+    "defense": 20,
+    "health": 592,
+    "abilityLabel": "遠くの敵を すっごい 弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 278,
+    "cooldownTime": 32,
+    "attack": 55,
+    "defense": 33,
+    "health": 437,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 279,
+    "cooldownTime": 28,
+    "attack": 62,
+    "defense": 26,
+    "health": 416,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 280,
+    "cooldownTime": 36,
+    "attack": 69,
+    "defense": 23,
+    "health": 423,
+    "abilityLabel": "遠くの敵を 4秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 281,
+    "cooldownTime": 27,
+    "attack": 68,
+    "defense": 27,
+    "health": 427,
+    "abilityLabel": "遠くの敵のヒーロースキルパワーを\n25％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 282,
+    "cooldownTime": 42,
+    "attack": 53,
+    "defense": 21,
+    "health": 640,
+    "abilityLabel": "遠くの敵を 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 283,
+    "cooldownTime": 28,
+    "attack": 69,
+    "defense": 23,
+    "health": 453,
+    "abilityLabel": "遠方攻撃+ダメージの300％ライフ吸収\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 284,
+    "cooldownTime": 18,
+    "attack": 46,
+    "defense": 34,
+    "health": 574,
+    "abilityLabel": "遠くの敵を 10秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 285,
+    "cooldownTime": 20,
+    "attack": 46,
+    "defense": 35,
+    "health": 579,
+    "abilityLabel": "遠くの敵を10秒間ポイズン\n（最大ライフ45％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 286,
+    "cooldownTime": 30,
+    "attack": 46,
+    "defense": 49,
+    "health": 470,
+    "abilityLabel": "遠くの敵を20秒間ポイズン\n（最大ライフ60％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 287,
+    "cooldownTime": 22,
+    "attack": 53,
+    "defense": 21,
+    "health": 640,
+    "abilityLabel": "前方に 強力な連続攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 288,
+    "cooldownTime": 24,
+    "attack": 46,
+    "defense": 60,
+    "health": 465,
+    "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 289,
+    "cooldownTime": 24,
+    "attack": 69,
+    "defense": 28,
+    "health": 442,
+    "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 290,
+    "cooldownTime": 36,
+    "attack": 66,
+    "defense": 41,
+    "health": 383,
+    "abilityLabel": "連打攻撃で広範囲に 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 291,
+    "cooldownTime": 28,
+    "attack": 66,
+    "defense": 22,
+    "health": 532,
+    "abilityLabel": "周囲の敵を 遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 292,
+    "cooldownTime": 14,
+    "attack": 56,
+    "defense": 61,
+    "health": 445,
+    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 293,
+    "cooldownTime": 45,
+    "attack": 40,
+    "defense": 25,
+    "health": 605,
+    "abilityLabel": "周囲の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 294,
+    "cooldownTime": 24,
+    "attack": 64,
+    "defense": 21,
+    "health": 533,
+    "abilityLabel": "周囲の敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 295,
+    "cooldownTime": 18,
+    "attack": 53,
+    "defense": 23,
+    "health": 693,
+    "abilityLabel": "全周囲に 強力な攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 296,
+    "cooldownTime": 20,
+    "attack": 44,
+    "defense": 27,
+    "health": 659,
+    "abilityLabel": "周囲攻撃+ダメージの600％ライフ吸収\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 297,
+    "cooldownTime": 16,
+    "attack": 43,
+    "defense": 27,
+    "health": 640,
+    "abilityLabel": "周囲の敵を10秒間ポイズン\n（最大ライフ30％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 298,
+    "cooldownTime": 38,
+    "attack": 53,
+    "defense": 21,
+    "health": 640,
+    "abilityLabel": "周囲の敵を 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 299,
+    "cooldownTime": 34,
+    "attack": 67,
+    "defense": 21,
+    "health": 517,
+    "abilityLabel": "周囲の敵のライフを 50％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 300,
+    "cooldownTime": 30,
+    "attack": 71,
+    "defense": 23,
+    "health": 465,
+    "abilityLabel": "周囲の敵のヒーロースキルパワーを\n30％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 301,
+    "cooldownTime": 34,
+    "attack": 56,
+    "defense": 34,
+    "health": 450,
+    "abilityLabel": "周囲の敵に ガードブレイク攻撃\n（ブレイク成功で大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 302,
+    "cooldownTime": 27,
+    "attack": 48,
+    "defense": 19,
+    "health": 582,
+    "abilityLabel": "ライフを100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 303,
+    "cooldownTime": 27,
+    "attack": 60,
+    "defense": 25,
+    "health": 399,
+    "abilityLabel": "味方チーム全員のライフを 40％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 304,
+    "cooldownTime": 28,
+    "attack": 56,
+    "defense": 33,
+    "health": 395,
+    "abilityLabel": "ライフを持続回復\n（10秒間で最大120％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 305,
+    "cooldownTime": 36,
+    "attack": 56,
+    "defense": 20,
+    "health": 592,
+    "abilityLabel": "味方チーム全員のライフを 35％回復\n+状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 306,
+    "cooldownTime": 12,
+    "attack": 52,
+    "defense": 21,
+    "health": 624,
+    "abilityLabel": "ライフを 30％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 307,
+    "cooldownTime": 45,
+    "attack": 68,
+    "defense": 26,
+    "health": 416,
+    "abilityLabel": "前方にあるポータルキー周囲に\n持続回復エリア展開（12秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 308,
+    "cooldownTime": 30,
+    "attack": 56,
+    "defense": 34,
+    "health": 525,
+    "abilityLabel": "前方の味方のライフを70％回復\n+状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 309,
+    "cooldownTime": 45,
+    "attack": 44,
+    "defense": 36,
+    "health": 547,
+    "abilityLabel": "味方チーム全員のライフを 60％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 310,
+    "cooldownTime": 36,
+    "attack": 46,
+    "defense": 23,
+    "health": 711,
+    "abilityLabel": "ライフを持続回復\n（20秒間で最大100％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 311,
+    "cooldownTime": 30,
+    "attack": 61,
+    "defense": 33,
+    "health": 320,
+    "abilityLabel": "自分と周囲味方のライフ回復\n自分60％＆味方50％ +状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 312,
+    "cooldownTime": 30,
+    "attack": 50,
+    "defense": 21,
+    "health": 631,
+    "abilityLabel": "被ダメージを 80％減らす（8秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 313,
+    "cooldownTime": 30,
+    "attack": 71,
+    "defense": 23,
+    "health": 465,
+    "abilityLabel": "被ダメージを 100％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 314,
+    "cooldownTime": 24,
+    "attack": 66,
+    "defense": 22,
+    "health": 547,
+    "abilityLabel": "被ダメージを 100％減らす（3秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 315,
+    "cooldownTime": 30,
+    "attack": 66,
+    "defense": 27,
+    "health": 437,
+    "abilityLabel": "被ダメージを ライフに変換する\n（3秒間 / 吸収量200％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 316,
+    "cooldownTime": 40,
+    "attack": 37,
+    "defense": 23,
+    "health": 560,
+    "abilityLabel": "自分の移動速度を 22秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 317,
+    "cooldownTime": 32,
+    "attack": 45,
+    "defense": 32,
+    "health": 457,
+    "abilityLabel": "自分の防御力を 8秒間 極大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 318,
+    "cooldownTime": 65,
+    "attack": 69,
+    "defense": 23,
+    "health": 501,
+    "abilityLabel": "味方チームの攻撃力を 9秒間\n極大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 319,
+    "cooldownTime": 26,
+    "attack": 66,
+    "defense": 28,
+    "health": 419,
+    "abilityLabel": "前方敵の防御力を 12秒間 極大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 320,
+    "cooldownTime": 42,
+    "attack": 64,
+    "defense": 25,
+    "health": 405,
+    "abilityLabel": "前方敵ガードブレイク +\nカードのバフ＆持続回復を打ち消す",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 321,
+    "cooldownTime": 35,
+    "attack": 64,
+    "defense": 27,
+    "health": 424,
+    "abilityLabel": "敵チームの防御力を 20秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 322,
+    "cooldownTime": 37,
+    "attack": 46,
+    "defense": 22,
+    "health": 676,
+    "abilityLabel": "敵チームの攻撃力を 4秒間 極大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 323,
+    "cooldownTime": 47,
+    "attack": 66,
+    "defense": 27,
+    "health": 437,
+    "abilityLabel": "前方敵の全行動速度を 4秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 324,
+    "cooldownTime": 45,
+    "attack": 66,
+    "defense": 22,
+    "health": 547,
+    "abilityLabel": "敵チームの カードバフ効果+\nライフ持続回復効果を打ち消す",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 325,
+    "cooldownTime": 30,
+    "attack": 65,
+    "defense": 20,
+    "health": 500,
+    "abilityLabel": "ライフ100％回復スタート位置帰還+\n自分の移動速度を 12秒間 大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 326,
+    "cooldownTime": 100,
+    "attack": 54,
+    "defense": 21,
+    "health": 647,
+    "abilityLabel": "前方にあるポータルキーに 瞬間移動",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 327,
+    "cooldownTime": 70,
+    "attack": 44,
+    "defense": 27,
+    "health": 655,
+    "abilityLabel": "一番近くの敵の背後に瞬間移動",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 328,
+    "cooldownTime": 20,
+    "attack": 5,
+    "defense": 3,
+    "health": 55,
+    "abilityLabel": "ライフ60％回復で スタート位置に戻る",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 329,
+    "cooldownTime": 30,
+    "attack": 55,
+    "defense": 16,
+    "health": 657,
+    "abilityLabel": "敵に大ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 330,
+    "cooldownTime": 32,
+    "attack": 52,
+    "defense": 21,
+    "health": 671,
+    "abilityLabel": "周囲の敵を かなり遠くに弾き飛ばす\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 331,
+    "cooldownTime": 32,
+    "attack": 44,
+    "defense": 22,
+    "health": 676,
+    "abilityLabel": "周囲の敵を 5秒間中心に引き寄せる\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 332,
+    "cooldownTime": 80,
+    "attack": 37,
+    "defense": 23,
+    "health": 558,
+    "abilityLabel": "制圧済ポータルキーを\nダミーで守る（7秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 333,
+    "cooldownTime": 36,
+    "attack": 71,
+    "defense": 23,
+    "health": 519,
+    "abilityLabel": "敵を5秒間スタンにする\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 334,
+    "cooldownTime": 42,
+    "attack": 71,
+    "defense": 27,
+    "health": 437,
+    "abilityLabel": "持続する大ダメージエリア発生の\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 335,
+    "cooldownTime": 26,
+    "attack": 57,
+    "defense": 23,
+    "health": 682,
+    "abilityLabel": "敵を14秒間サイレントにする\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 336,
+    "cooldownTime": 30,
+    "attack": 62,
+    "defense": 21,
+    "health": 520,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n近距離敵にカウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 337,
+    "cooldownTime": 30,
+    "attack": 63,
+    "defense": 32,
+    "health": 487,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n周囲の敵にカウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 338,
+    "cooldownTime": 25,
+    "attack": 57,
+    "defense": 15,
+    "health": 653,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n背後移動＆カウンター攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 339,
+    "cooldownTime": 15,
+    "attack": 54,
+    "defense": 27,
+    "health": 481,
+    "abilityLabel": "他のカードのクールダウン時間を\n5秒短縮（同効果カードは対象外）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 340,
+    "cooldownTime": 45,
+    "attack": 71,
+    "defense": 23,
+    "health": 465,
+    "abilityLabel": "周囲の敵ヒーローの視界を 8秒間奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 341,
+    "cooldownTime": 36,
+    "attack": 66,
+    "defense": 22,
+    "health": 547,
+    "abilityLabel": "前方にあるポータルキー周囲の敵を\n4秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 342,
+    "cooldownTime": 18,
+    "attack": 44,
+    "defense": 33,
+    "health": 547,
+    "abilityLabel": "前方にあるポータルキー周囲の敵を\n遠くに弾き飛ばす",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 343,
+    "cooldownTime": 50,
+    "attack": 55,
+    "defense": 22,
+    "health": 656,
+    "abilityLabel": "前方敵の周囲を9連続攻撃し\n2秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 344,
+    "cooldownTime": 30,
+    "attack": 66,
+    "defense": 27,
+    "health": 437,
+    "abilityLabel": "前方にあるポータルキー周囲の敵を\n10秒間サイレント+同効果エリアを展開",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 345,
+    "cooldownTime": 40,
+    "attack": 46,
+    "defense": 23,
+    "health": 711,
+    "abilityLabel": "敵が通れない壁を 6秒間設置する\n（接触でスタン3秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 346,
+    "cooldownTime": 10,
+    "attack": 58,
+    "defense": 29,
+    "health": 519,
+    "abilityLabel": "自身の直前発動カード効果をコピー\n（クールダウンが元カード×1.6倍）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 347,
+    "cooldownTime": 36,
+    "attack": 69,
+    "defense": 27,
+    "health": 437,
+    "abilityLabel": "前方へウィングを展開し\n超射程多段ビーム攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 348,
+    "cooldownTime": 26,
+    "attack": 61,
+    "defense": 13,
+    "health": 661,
+    "abilityLabel": "前方に 強力な攻撃\n（大ダメージ/ライフ減少時に威力増加）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 349,
+    "cooldownTime": 26,
+    "attack": 69,
+    "defense": 32,
+    "health": 407,
+    "abilityLabel": "前方の敵にガードブレイク攻撃\n（極大ダメージ）+残ライフの25％減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 350,
+    "cooldownTime": 26,
+    "attack": 57,
+    "defense": 13,
+    "health": 677,
+    "abilityLabel": "前方極大攻撃（自身残ライフ25％減少）\n+ダメージの1000％ライフ吸収",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 351,
+    "cooldownTime": 28,
+    "attack": 66,
+    "defense": 18,
+    "health": 468,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で極大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 352,
+    "cooldownTime": 28,
+    "attack": 68,
+    "defense": 11,
+    "health": 478,
+    "abilityLabel": "前方に 強力な攻撃（大ダメージ）\n+ショックウェーブ追撃（固定ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 353,
+    "cooldownTime": 20,
+    "attack": 57,
+    "defense": 29,
+    "health": 519,
+    "abilityLabel": "前方の敵ライフを 50％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 354,
+    "cooldownTime": 27,
+    "attack": 66,
+    "defense": 18,
+    "health": 468,
+    "abilityLabel": "前方の敵に\n防御力無視の攻撃（極大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 355,
+    "cooldownTime": 24,
+    "attack": 56,
+    "defense": 19,
+    "health": 626,
+    "abilityLabel": "前方攻撃+ダメージの200％ライフ吸収\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 356,
+    "cooldownTime": 26,
+    "attack": 67,
+    "defense": 28,
+    "health": 444,
+    "abilityLabel": "前方の敵にガードブレイク攻撃\n（極大ダメージ）+残ライフの25％減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 357,
+    "cooldownTime": 22,
+    "attack": 67,
+    "defense": 28,
+    "health": 444,
+    "abilityLabel": "前方の敵に強力な攻撃（極大ダメージ）+\n残ライフの25％減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 358,
+    "cooldownTime": 24,
+    "attack": 68,
+    "defense": 39,
+    "health": 441,
+    "abilityLabel": "前方攻撃+ダメージの200％ライフ吸収\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 359,
+    "cooldownTime": 34,
+    "attack": 47,
+    "defense": 35,
+    "health": 583,
+    "abilityLabel": "前方敵のヒーロースキルパワーを\n40％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 360,
+    "cooldownTime": 21,
+    "attack": 61,
+    "defense": 20,
+    "health": 651,
+    "abilityLabel": "前方の敵に 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 361,
+    "cooldownTime": 24,
+    "attack": 58,
+    "defense": 21,
+    "health": 653,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 362,
+    "cooldownTime": 20,
+    "attack": 66,
+    "defense": 22,
+    "health": 551,
+    "abilityLabel": "前方に 強力な攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 363,
+    "cooldownTime": 24,
+    "attack": 67,
+    "defense": 22,
+    "health": 555,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n（ブレイク成功で大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 364,
+    "cooldownTime": 16,
+    "attack": 64,
+    "defense": 21,
+    "health": 532,
+    "abilityLabel": "前方の敵を 13秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 365,
+    "cooldownTime": 34,
+    "attack": 68,
+    "defense": 22,
+    "health": 523,
+    "abilityLabel": "前方敵のヒーロースキルパワーを\n40％奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 366,
+    "cooldownTime": 20,
+    "attack": 57,
+    "defense": 22,
+    "health": 686,
+    "abilityLabel": "前方に 強力な攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 367,
+    "cooldownTime": 21,
+    "attack": 68,
+    "defense": 40,
+    "health": 441,
+    "abilityLabel": "前方の敵に 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 368,
+    "cooldownTime": 18,
+    "attack": 69,
+    "defense": 20,
+    "health": 534,
+    "abilityLabel": "遠くの敵を 10秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 369,
+    "cooldownTime": 45,
+    "attack": 69,
+    "defense": 15,
+    "health": 509,
+    "abilityLabel": "遠くの敵を 4秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 370,
+    "cooldownTime": 27,
+    "attack": 61,
+    "defense": 21,
+    "health": 679,
+    "abilityLabel": "遠くの敵を 10秒間 吸血ポイズン\n（最大ライフ50％ダメージ＆吸収）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 371,
+    "cooldownTime": 42,
+    "attack": 69,
+    "defense": 43,
+    "health": 459,
+    "abilityLabel": "遠くの敵を 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 372,
+    "cooldownTime": 45,
+    "attack": 60,
+    "defense": 20,
+    "health": 677,
+    "abilityLabel": "遠くの敵を 4秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 373,
+    "cooldownTime": 27,
+    "attack": 68,
+    "defense": 28,
+    "health": 508,
+    "abilityLabel": "長射程の強力な攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 374,
+    "cooldownTime": 32,
+    "attack": 67,
+    "defense": 21,
+    "health": 606,
+    "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 375,
+    "cooldownTime": 36,
+    "attack": 67,
+    "defense": 48,
+    "health": 429,
+    "abilityLabel": "遠くの敵を 4秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 376,
+    "cooldownTime": 28,
+    "attack": 63,
+    "defense": 17,
+    "health": 633,
+    "abilityLabel": "遠方攻撃+ダメージの300％ライフ吸収\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 377,
+    "cooldownTime": 32,
+    "attack": 67,
+    "defense": 45,
+    "health": 407,
+    "abilityLabel": "前方に 強力な連続攻撃（大ダメージ）\n+自分の防御力を 5秒間 極大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 378,
+    "cooldownTime": 32,
+    "attack": 69,
+    "defense": 23,
+    "health": 452,
+    "abilityLabel": "連打攻撃で\n4秒間サイレントにする（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 379,
+    "cooldownTime": 36,
+    "attack": 69,
+    "defense": 23,
+    "health": 489,
+    "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（極大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 380,
+    "cooldownTime": 34,
+    "attack": 68,
+    "defense": 44,
+    "health": 437,
+    "abilityLabel": "敵を連打攻撃で 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 381,
+    "cooldownTime": 24,
+    "attack": 68,
+    "defense": 27,
+    "health": 519,
+    "abilityLabel": "連続攻撃+ダメージの500％ライフ吸収\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 382,
+    "cooldownTime": 22,
+    "attack": 69,
+    "defense": 45,
+    "health": 452,
+    "abilityLabel": "前方に 強力な連続攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 383,
+    "cooldownTime": 24,
+    "attack": 58,
+    "defense": 22,
+    "health": 684,
+    "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 384,
+    "cooldownTime": 22,
+    "attack": 69,
+    "defense": 23,
+    "health": 532,
+    "abilityLabel": "前方に 強力な連続攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 385,
+    "cooldownTime": 36,
+    "attack": 68,
+    "defense": 34,
+    "health": 392,
+    "abilityLabel": "周囲の敵にガードブレイク攻撃\n（極大ダメージ）+残ライフの25％減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 386,
+    "cooldownTime": 30,
+    "attack": 56,
+    "defense": 11,
+    "health": 633,
+    "abilityLabel": "全周囲に 超強力な攻撃（極大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 387,
+    "cooldownTime": 27,
+    "attack": 69,
+    "defense": 23,
+    "health": 452,
+    "abilityLabel": "全周囲に ダウン付与の 強力な攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 388,
+    "cooldownTime": 34,
+    "attack": 66,
+    "defense": 18,
+    "health": 498,
+    "abilityLabel": "周囲の敵にガードブレイク攻撃\n（ブレイク成功で大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 389,
+    "cooldownTime": 27,
+    "attack": 69,
+    "defense": 19,
+    "health": 560,
+    "abilityLabel": "周囲の敵に 防御力無視の攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 390,
+    "cooldownTime": 23,
+    "attack": 68,
+    "defense": 40,
+    "health": 429,
+    "abilityLabel": "周囲攻撃+ダメージの600％ライフ吸収\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 391,
+    "cooldownTime": 24,
+    "attack": 68,
+    "defense": 42,
+    "health": 452,
+    "abilityLabel": "周囲の敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 392,
+    "cooldownTime": 18,
+    "attack": 41,
+    "defense": 39,
+    "health": 549,
+    "abilityLabel": "周囲の敵を20秒間ポイズン\n（最大ライフ50％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 393,
+    "cooldownTime": 21,
+    "attack": 69,
+    "defense": 33,
+    "health": 452,
+    "abilityLabel": "周囲の敵を 打ち上げる 強力な攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 394,
+    "cooldownTime": 14,
+    "attack": 69,
+    "defense": 17,
+    "health": 621,
+    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 395,
+    "cooldownTime": 20,
+    "attack": 43,
+    "defense": 31,
+    "health": 661,
+    "abilityLabel": "周囲の敵を 12秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 396,
+    "cooldownTime": 34,
+    "attack": 59,
+    "defense": 21,
+    "health": 676,
+    "abilityLabel": "周囲の敵にガードブレイク攻撃\n（ブレイク成功で大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 397,
+    "cooldownTime": 20,
+    "attack": 66,
+    "defense": 21,
+    "health": 570,
+    "abilityLabel": "周囲攻撃+ダメージの600％ライフ吸収\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 398,
+    "cooldownTime": 24,
+    "attack": 69,
+    "defense": 11,
+    "health": 585,
+    "abilityLabel": "周囲の敵に 防御力無視の攻撃\n（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 399,
+    "cooldownTime": 45,
+    "attack": 65,
+    "defense": 48,
+    "health": 432,
+    "abilityLabel": "周囲の敵を 5秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 400,
+    "cooldownTime": 18,
+    "attack": 62,
+    "defense": 21,
+    "health": 518,
+    "abilityLabel": "周囲の敵を20秒間ポイズン\n（最大ライフ50％ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 401,
+    "cooldownTime": 20,
+    "attack": 66,
+    "defense": 42,
+    "health": 476,
+    "abilityLabel": "周囲の敵を 12秒間サイレントにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 402,
+    "cooldownTime": 30,
+    "attack": 66,
+    "defense": 18,
+    "health": 560,
+    "abilityLabel": "自分のライフを40％回復\n+前方に持続回復エリア展開（10秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 403,
+    "cooldownTime": 15,
+    "attack": 65,
+    "defense": 11,
+    "health": 483,
+    "abilityLabel": "ライフを 30％回復\n（周囲に味方が居ない時 60％回復）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 404,
+    "cooldownTime": 28,
+    "attack": 60,
+    "defense": 20,
+    "health": 549,
+    "abilityLabel": "ライフ持続回復（10秒間100％）\n+接触味方に回復付与（10秒間100％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 405,
+    "cooldownTime": 38,
+    "attack": 58,
+    "defense": 29,
+    "health": 519,
+    "abilityLabel": "ライフを持続回復（4秒間で最大300％）\n+状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 406,
+    "cooldownTime": 30,
+    "attack": 66,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "ライフを 70％回復 +ライフを持続回復\n（10秒間で最大70％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 407,
+    "cooldownTime": 27,
+    "attack": 51,
+    "defense": 21,
+    "health": 616,
+    "abilityLabel": "ライフを 70％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 408,
+    "cooldownTime": 30,
+    "attack": 51,
+    "defense": 21,
+    "health": 616,
+    "abilityLabel": "自分と周囲味方のライフ回復\n自分60％＆味方50％ +状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 409,
+    "cooldownTime": 12,
+    "attack": 66,
+    "defense": 37,
+    "health": 432,
+    "abilityLabel": "ライフを 30％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 410,
+    "cooldownTime": 27,
+    "attack": 61,
+    "defense": 20,
+    "health": 509,
+    "abilityLabel": "ライフを 70％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 411,
+    "cooldownTime": 27,
+    "attack": 69,
+    "defense": 21,
+    "health": 559,
+    "abilityLabel": "味方チーム全員のライフを 40％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 412,
+    "cooldownTime": 28,
+    "attack": 53,
+    "defense": 22,
+    "health": 661,
+    "abilityLabel": "ライフを持続回復\n（10秒間で最大120％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 413,
+    "cooldownTime": 50,
+    "attack": 66,
+    "defense": 22,
+    "health": 529,
+    "abilityLabel": "味方チーム全員のライフを 80％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 414,
+    "cooldownTime": 27,
+    "attack": 69,
+    "defense": 31,
+    "health": 448,
+    "abilityLabel": "ライフを 70％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 415,
+    "cooldownTime": 45,
+    "attack": 69,
+    "defense": 35,
+    "health": 426,
+    "abilityLabel": "味方チーム全員のライフを 60％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 416,
+    "cooldownTime": 36,
+    "attack": 69,
+    "defense": 23,
+    "health": 569,
+    "abilityLabel": "ライフを持続回復\n（20秒間で最大100％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 417,
+    "cooldownTime": 12,
+    "attack": 43,
+    "defense": 27,
+    "health": 650,
+    "abilityLabel": "ライフを 30％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 418,
+    "cooldownTime": 28,
+    "attack": 67,
+    "defense": 26,
+    "health": 507,
+    "abilityLabel": "ライフを持続回復\n（10秒間で最大120％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 419,
+    "cooldownTime": 50,
+    "attack": 67,
+    "defense": 39,
+    "health": 432,
+    "abilityLabel": "味方チーム全員のライフを持続回復\n（10秒間で最大70％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 420,
+    "cooldownTime": 45,
+    "attack": 41,
+    "defense": 25,
+    "health": 661,
+    "abilityLabel": "前方にあるポータルキー周囲に\n持続回復エリア展開（12秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 421,
+    "cooldownTime": 27,
+    "attack": 68,
+    "defense": 40,
+    "health": 437,
+    "abilityLabel": "ライフを100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 422,
+    "cooldownTime": 50,
+    "attack": 56,
+    "defense": 22,
+    "health": 661,
+    "abilityLabel": "味方チーム全員のライフを持続回復\n（10秒間で最大70％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 423,
+    "cooldownTime": 27,
+    "attack": 69,
+    "defense": 22,
+    "health": 559,
+    "abilityLabel": "ライフを100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 424,
+    "cooldownTime": 26,
+    "attack": 56,
+    "defense": 11,
+    "health": 678,
+    "abilityLabel": "被ダメージを 70％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 425,
+    "cooldownTime": 36,
+    "attack": 67,
+    "defense": 37,
+    "health": 412,
+    "abilityLabel": "被ダメージを 100％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 426,
+    "cooldownTime": 32,
+    "attack": 68,
+    "defense": 22,
+    "health": 523,
+    "abilityLabel": "被ダメージを ライフに変換する\n（6秒間 / 吸収量200％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 427,
+    "cooldownTime": 30,
+    "attack": 64,
+    "defense": 21,
+    "health": 534,
+    "abilityLabel": "被ダメージを 60％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 428,
+    "cooldownTime": 30,
+    "attack": 53,
+    "defense": 21,
+    "health": 638,
+    "abilityLabel": "被ダメージを ライフに変換する\n（3秒間 / 吸収量200％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 429,
+    "cooldownTime": 32,
+    "attack": 54,
+    "defense": 22,
+    "health": 673,
+    "abilityLabel": "被ダメージを ライフに変換する\n（6秒間 / 吸収量200％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 430,
+    "cooldownTime": 30,
+    "attack": 63,
+    "defense": 21,
+    "health": 554,
+    "abilityLabel": "被ダメージを 80％減らす（8秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 431,
+    "cooldownTime": 10,
+    "attack": 56,
+    "defense": 21,
+    "health": 660,
+    "abilityLabel": "被ダメージを 70％減らす（3秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 432,
+    "cooldownTime": 30,
+    "attack": 63,
+    "defense": 10,
+    "health": 689,
+    "abilityLabel": "被ダメージを 100％減らす（6秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 433,
+    "cooldownTime": 24,
+    "attack": 69,
+    "defense": 13,
+    "health": 559,
+    "abilityLabel": "被ダメージを 100％減らす（3秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 434,
+    "cooldownTime": 30,
+    "attack": 69,
+    "defense": 34,
+    "health": 448,
+    "abilityLabel": "被ダメージを 80％減らす（8秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 435,
+    "cooldownTime": 32,
+    "attack": 59,
+    "defense": 30,
+    "health": 532,
+    "abilityLabel": "自分の 攻撃+防御+移動を 12秒間\n中アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 436,
+    "cooldownTime": 28,
+    "attack": 69,
+    "defense": 43,
+    "health": 392,
+    "abilityLabel": "自分の防御力を 6秒間 極大アップ\n+自身周囲の味方も防御力アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 437,
+    "cooldownTime": 36,
+    "attack": 69,
+    "defense": 30,
+    "health": 382,
+    "abilityLabel": "自分の移動速度を 18秒間 大アップ +\n背中に純白の六枚羽を生成（例外有り）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 438,
+    "cooldownTime": 30,
+    "attack": 69,
+    "defense": 18,
+    "health": 509,
+    "abilityLabel": "自分の攻撃力を 10秒間 極大アップ +\n残ライフの25％を減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 439,
+    "cooldownTime": 45,
+    "attack": 52,
+    "defense": 21,
+    "health": 627,
+    "abilityLabel": "自分の攻撃+防御+移動を9秒間大アップ\n+ 自身にサイレント（9秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 440,
+    "cooldownTime": 24,
+    "attack": 63,
+    "defense": 47,
+    "health": 414,
+    "abilityLabel": "自分の防御力を 6秒間 極大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 441,
+    "cooldownTime": 30,
+    "attack": 63,
+    "defense": 47,
+    "health": 418,
+    "abilityLabel": "自分の防御力を 10秒間 極大アップ\n残ライフの25％を減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 442,
+    "cooldownTime": 40,
+    "attack": 58,
+    "defense": 20,
+    "health": 636,
+    "abilityLabel": "通常攻撃で与えたダメージの\n150％ライフ吸収（25秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 443,
+    "cooldownTime": 32,
+    "attack": 52,
+    "defense": 26,
+    "health": 685,
+    "abilityLabel": "自分の防御力を 8秒間 極大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 444,
+    "cooldownTime": 65,
+    "attack": 69,
+    "defense": 22,
+    "health": 432,
+    "abilityLabel": "味方チームの移動速度を 15秒間\n大アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 445,
+    "cooldownTime": 34,
+    "attack": 56,
+    "defense": 20,
+    "health": 661,
+    "abilityLabel": "前方敵の全行動速度を 3秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 446,
+    "cooldownTime": 26,
+    "attack": 69,
+    "defense": 15,
+    "health": 580,
+    "abilityLabel": "前方敵の防御力を 12秒間 極大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 447,
+    "cooldownTime": 47,
+    "attack": 65,
+    "defense": 21,
+    "health": 513,
+    "abilityLabel": "前方敵の全行動速度を 4秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 448,
+    "cooldownTime": 45,
+    "attack": 44,
+    "defense": 27,
+    "health": 655,
+    "abilityLabel": "敵チームの カードのバフ効果+\nライフ持続回復効果を打ち消す",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 449,
+    "cooldownTime": 35,
+    "attack": 58,
+    "defense": 22,
+    "health": 686,
+    "abilityLabel": "敵チームの防御力を 20秒間 大ダウン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 450,
+    "cooldownTime": 36,
+    "attack": 67,
+    "defense": 22,
+    "health": 518,
+    "abilityLabel": "前方指定範囲内にいる\n敵の背後に瞬間移動",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 451,
+    "cooldownTime": 22,
+    "attack": 69,
+    "defense": 20,
+    "health": 695,
+    "abilityLabel": "敵の視界を6秒間奪う\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 452,
+    "cooldownTime": 30,
+    "attack": 67,
+    "defense": 22,
+    "health": 560,
+    "abilityLabel": "敵に大ダメージを与える\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 453,
+    "cooldownTime": 30,
+    "attack": 67,
+    "defense": 15,
+    "health": 554,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n周囲の敵にカウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 454,
+    "cooldownTime": 30,
+    "attack": 67,
+    "defense": 46,
+    "health": 356,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n周囲の敵にカウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 455,
+    "cooldownTime": 30,
+    "attack": 69,
+    "defense": 23,
+    "health": 495,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n近距離敵にカウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 456,
+    "cooldownTime": 30,
+    "attack": 65,
+    "defense": 44,
+    "health": 429,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n近距離敵にカウンター攻撃（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 457,
+    "cooldownTime": 36,
+    "attack": 59,
+    "defense": 20,
+    "health": 661,
+    "abilityLabel": "前方指定範囲内の敵を9連続攻撃し\n2秒間スタンにする",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 458,
+    "cooldownTime": 32,
+    "attack": 69,
+    "defense": 47,
+    "health": 458,
+    "abilityLabel": "前方にスモークエリア 7秒展開\n（敵からのターゲット回避）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 459,
+    "cooldownTime": 38,
+    "attack": 65,
+    "defense": 19,
+    "health": 610,
+    "abilityLabel": "自身にリング展開（7秒）\n+接触した敵を4秒間スタン",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 460,
+    "cooldownTime": 666,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "近う寄れ 桜のごとく 散らせよう\n（前方極小ダメージ攻撃。加うるに…）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 461,
+    "cooldownTime": 13,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "無罪なのに追われてんだ助けてくれ！\n…あ、バレちまうからこのカードで\n誰かを倒したりしねえようにな？な？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 462,
+    "cooldownTime": 101,
+    "attack": 23,
+    "defense": 14,
+    "health": 187,
+    "abilityLabel": "すごく遠くの獲物を 容赦なく\n引き寄せてあげるわ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 463,
+    "cooldownTime": 686,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "見てるッスよ師匠！\nこれが自分流のゲームバズーカッス！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 464,
+    "cooldownTime": 999,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "超広範囲の敵を 容赦なく 引き寄せる",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 465,
+    "cooldownTime": 999,
+    "attack": 32,
+    "defense": 16,
+    "health": 485,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 466,
+    "cooldownTime": 999,
+    "attack": 32,
+    "defense": 16,
+    "health": 485,
+    "abilityLabel": "全ポータルキー周囲に\n涼しげな持続回復エリア展開（20秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 467,
+    "cooldownTime": 998,
+    "attack": 49,
+    "defense": 16,
+    "health": 317,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 468,
+    "cooldownTime": 997,
+    "attack": 32,
+    "defense": 24,
+    "health": 317,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 469,
+    "cooldownTime": 996,
+    "attack": 23,
+    "defense": 9,
+    "health": 280,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 470,
+    "cooldownTime": 995,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 471,
+    "cooldownTime": 994,
+    "attack": 19,
+    "defense": 14,
+    "health": 233,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 472,
+    "cooldownTime": 993,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 473,
+    "cooldownTime": 992,
+    "attack": 23,
+    "defense": 14,
+    "health": 187,
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 474,
+    "cooldownTime": 40,
+    "attack": 44,
+    "defense": 22,
+    "health": 676,
+    "abilityLabel": "味方チームの 攻撃+防御+移動を\n12秒間 小アップ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 475,
+    "cooldownTime": 999,
+    "attack": 49,
+    "defense": 16,
+    "health": 317,
+    "abilityLabel": "自分の攻撃+防御+移動を6秒間大アップ\n+ 自身にポイズン（999秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 476,
+    "cooldownTime": 999,
+    "attack": 32,
+    "defense": 16,
+    "health": 485,
+    "abilityLabel": "敵チーム攻撃+防御+移動を\n7秒間アップ + ポイズン（7秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 477,
+    "cooldownTime": 999,
+    "attack": 49,
+    "defense": 16,
+    "health": 317,
+    "abilityLabel": "自分の攻撃+防御+移動を12秒間中アップ\n+ 自身にサイレント（999秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 478,
+    "cooldownTime": 999,
+    "attack": 22,
+    "defense": 17,
+    "health": 280,
+    "abilityLabel": "4秒間 敵チーム攻撃力+防御力を\n大ダウン（移動力 極小ダウン）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 479,
+    "cooldownTime": 150,
+    "attack": 47,
+    "defense": 28,
+    "health": 373,
+    "abilityLabel": "最後に自分を倒した 敵の背後に\n瞬間移動",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 480,
+    "cooldownTime": 180,
+    "attack": 56,
+    "defense": 23,
+    "health": 374,
+    "abilityLabel": "周囲の敵を すっごい遠くに弾き飛ばす\n罠を設置（20秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 481,
+    "cooldownTime": 140,
+    "attack": 47,
+    "defense": 19,
+    "health": 560,
+    "abilityLabel": "制圧済ポータルキーを\nダミーで守る（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 482,
+    "cooldownTime": 85,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "ボクの真心こめたプレゼントを\nビックリドッキリ受け取ってね？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 483,
+    "cooldownTime": 93,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "お嬢を愛し捧げる運命の赤い糸を\n編み上げて献上し……あ、不要ですか",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 484,
+    "cooldownTime": 65,
+    "attack": 56,
+    "defense": 19,
+    "health": 467,
+    "abilityLabel": "超広範囲の 敵ヒーローの視界を\n4秒間奪う",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 485,
+    "cooldownTime": 999,
+    "attack": 40,
+    "defense": 30,
+    "health": 397,
+    "abilityLabel": "カンリシャケンゲンデ BGMヲ\nキョウセイヘンコウ シマス",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 486,
+    "cooldownTime": 999,
+    "attack": 47,
+    "defense": 19,
+    "health": 560,
+    "abilityLabel": "みんなのチャットの色を\nドリーム☆ピンクに変えちゃうよ！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 487,
+    "cooldownTime": 65,
+    "attack": 4,
+    "defense": 3,
+    "health": 40,
+    "abilityLabel": "連合宇宙軍バリアで80％被ダメージ減少\nさあ大きな声で「テャアッ」（3秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 488,
+    "cooldownTime": 45,
+    "attack": 4,
+    "defense": 3,
+    "health": 40,
+    "abilityLabel": "すっごい　じゃんぷ　できるよ\nぜったいすたん　しちゃうけど（15秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 489,
+    "cooldownTime": 66,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "前方にあるポータルキー周囲に\nメグメグ特製バクダンを投下投下！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 490,
+    "cooldownTime": 130,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "ライフを13％回復し\n罪深き堕天使の翼を授けよう（13秒）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 491,
+    "cooldownTime": 88,
+    "attack": 19,
+    "defense": 14,
+    "health": 233,
+    "abilityLabel": "ユラン=ブルク氷帝国で謳われる\n伝説の騎士スノーマンを召喚します",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 492,
+    "cooldownTime": 25,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "あーしの生放送用ドローンを\n貸してあげるから感謝なさい！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 493,
+    "cooldownTime": 999,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "みんなのチャットの色を\nニート☆オレンジに変えちゃうよ！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 494,
+    "cooldownTime": 314,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "チェリーパイのチェリーパイによる\nチェリーパイのためのチェリーパイ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 495,
+    "cooldownTime": 196,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "イーグルを神鳥と崇める戦士よ\n汝に偉大なる<神の眼>を与えん",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 496,
+    "cooldownTime": 530,
+    "attack": 23,
+    "defense": 9,
+    "health": 280,
+    "abilityLabel": "天に導かれし戦士を\n天上の楽園へと誘おう ただし…",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 497,
+    "cooldownTime": 222,
+    "attack": 6,
+    "defense": 2,
+    "health": 37,
+    "abilityLabel": "アタシと一緒ニ 双挽チェーンソウデ\nギャリギャリ愉シんじゃお？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 498,
+    "cooldownTime": 477,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "カンリシャケンゲンデ カツテノ\nイレギュラーヲ サイゲン シマス",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 499,
+    "cooldownTime": 88,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "兄様が連れてきてくださった\n伝説の騎士様を魔術で模倣しました",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 500,
+    "cooldownTime": 10,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "よーっく見てろよ！\nオレのドットモンスター軍団参上！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 501,
+    "cooldownTime": 14,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "今年こそ上手に作ってみせるの☆\nみんな喜んでくれるかなあ？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 502,
+    "cooldownTime": 310,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "チョコミント味のオニギリと\nクマの融合体のおいしいやつです",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 503,
+    "cooldownTime": 999,
+    "attack": 19,
+    "defense": 14,
+    "health": 233,
+    "abilityLabel": "新団員のピアノの練習用に\n少し大きめのピアノを発注しましたの",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 504,
+    "cooldownTime": 217,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "ナマリダマでオネダリして作った\nメグメグのトクチューヒンだよだよ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 505,
+    "cooldownTime": 999,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "カンリシャケンゲンデ トクベツナ\nモニュメントヲ ツクリマシタ カピッ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 506,
+    "cooldownTime": 22,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "深川屋 特製花火を用意したから\n楽しんでいっておくれよ！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 507,
+    "cooldownTime": 17,
+    "attack": 23,
+    "defense": 14,
+    "health": 187,
+    "abilityLabel": "この歌を あいつの元へ 届けよう\n（長射程極小ダメージ攻撃。そして…）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 508,
+    "cooldownTime": 696,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "おとうさん おかあさん おにいちゃん\nまだかなあ まいごかなあ？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 509,
+    "cooldownTime": 424,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "お嬢様 アフタヌーンティーのご用意が\n……お嬢様？ お嬢様いずこですか!?",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 510,
+    "cooldownTime": 808,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "秘密結社\"MMM\"へようこそ 歓迎するよ\nまずは[コレ]を召喚してみようか",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 511,
+    "cooldownTime": 83,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "ずっと いっしょ だよ？\n……何のことかって？ うふふ、内緒！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 512,
+    "cooldownTime": 666,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "俺の痛みを分けてやろう…\nお前に耐えられるとは思えんがな",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 513,
+    "cooldownTime": 77,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "よく来たな！アミーコォ！\nまずはオレ様特製トマトはどうだい？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 514,
+    "cooldownTime": 859,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "俺は自分の仕事をしただけだ\nさあ、星を見ながら祝杯だ！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 515,
+    "cooldownTime": 999,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "カンリシャケンゲンデ トクセイノ\nモニュメントヲ セッチシマス カピッ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 516,
+    "cooldownTime": 144,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "誰かが引いた道を進むのはつまらないわ\nキミもそう思うでしょ？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 517,
+    "cooldownTime": 100,
+    "attack": 23,
+    "defense": 14,
+    "health": 187,
+    "abilityLabel": "機体損傷率100％……やむを得ない\n悪いな、最終手段を使わせてもらう！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 518,
+    "cooldownTime": 777,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "まけそうだけど あきらめないよ\nゆうしゃの さくせん はつどう！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 519,
+    "cooldownTime": 130,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "罪深き堕天使 嗤う堕天使 背負う月は\n罪か罰か それとも救いか",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 520,
+    "cooldownTime": 5,
+    "attack": 19,
+    "defense": 14,
+    "health": 233,
+    "abilityLabel": "リリカちゃんについて知りたい？ならまず\nは「魔法少女リリカ☆ルルカ5周年記念\nフィギュア付きBlu-rayBOX」を貸し……",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 521,
+    "cooldownTime": 124,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "やや 主殿の背中に怨霊が大集合だね\n狐火で祓うから動かないで コンッ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 522,
+    "cooldownTime": 222,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "ゆららにドッキリ仕掛ける放送開始！\nSNS拡散＆コメントもよろしくね！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 523,
+    "cooldownTime": 13,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "明日は 先輩とトランプちゃんに\n告白のやり方を相談するお茶会です！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 524,
+    "cooldownTime": 666,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "意気や良し 冥土の土産に見せてやろう\n我の真の力を解放する！！！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 525,
+    "cooldownTime": 999,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "カンリシャケンゲンデ カクベツナ\nモニュメントヲ ハイチシマス カピッ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 526,
+    "cooldownTime": 88,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "我が国で伝統的に建設される\n暖を取るための建物を召喚しましょう",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 527,
+    "cooldownTime": 196,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "刮目せよ これがティワロロ族の神鳥\nイーグルを讃えるための証だ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 528,
+    "cooldownTime": 82,
+    "attack": 23,
+    "defense": 9,
+    "health": 280,
+    "abilityLabel": "ガサ入れだ！鉄拳制裁！\n怪盗は牢屋にぶち込んでやるぜ！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 529,
+    "cooldownTime": 16,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "ふふ とても綺麗なお花ですね\nなんという名前なのでしょうか？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 530,
+    "cooldownTime": 88,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "カッコイイ兄様を氷像で表現しました\nえへへ、どうでしょうか！？！？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 531,
+    "cooldownTime": 999,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "カンリシャケンゲンデ BGMヲ\nキョウセイヘンコウ シテヤロウ\nガピッ！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 532,
+    "cooldownTime": 23,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "この子ヲ双挽チェーンソウをミンナで\nギャリギャリ愉シめる改造シたの",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 533,
+    "cooldownTime": 10,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "8ビットの底力を見せてやる！\nドットモンスター軍団、オレに続け！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 534,
+    "cooldownTime": 217,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "誰かがメグメグを狙ってるけど\nハビーが守ってくれるでしょでしょ？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 535,
+    "cooldownTime": 999,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "カンリシャケンゲンデ サイコウノ\nモニュメントヲ サクセイデス カピッ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 536,
+    "cooldownTime": 83,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "リリカは ここで 力不足が ステッキが\nリリカは リリカは 必要なの……？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 537,
+    "cooldownTime": 229,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "我こそは吸血鬼の王…って おにぃさん\n何それ 何す……いやあああああああ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 538,
+    "cooldownTime": 29,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "これはお肉とお野菜とお魚を使った\nチョコミント味のおいしいやつです",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 539,
+    "cooldownTime": 124,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "カンリシャケンゲンデ カツテノ\nボウヘキシステムヲ サイゲン シマス",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 540,
+    "cooldownTime": 10,
+    "attack": 19,
+    "defense": 14,
+    "health": 233,
+    "abilityLabel": "では音楽の授業を始めますわ\nわたくしと一緒にお勉強しましょうね？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 541,
+    "cooldownTime": 696,
+    "attack": 19,
+    "defense": 12,
+    "health": 280,
+    "abilityLabel": "コクリコ おるすばんできるんだよ\nテディラビが いっしょだもん！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 542,
+    "cooldownTime": 3,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "チェリーパイ…それは儚くも美しい\n悲劇と喜劇でチェリーパイなのよ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 543,
+    "cooldownTime": 823,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "ルー君・・・？どこにいるの？\nルー君・・・・・・・・・・・・・・",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 544,
+    "cooldownTime": 10,
+    "attack": 23,
+    "defense": 9,
+    "health": 280,
+    "abilityLabel": "すげえお宝をゲットしたぜ子分！\n早速広い場所で開けてみるってな！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 545,
+    "cooldownTime": 10,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "殺し屋に日々の鍛錬は義務ですらある\n……お前にも体験させてやろう",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 546,
+    "cooldownTime": 666,
+    "attack": 25,
+    "defense": 12,
+    "health": 222,
+    "abilityLabel": "「我が覇道を拒む者は切り捨てる\n背を任せるぞグスタフ！」\n「良かろう、今ぞ絶望の始まりだ！」",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 547,
+    "cooldownTime": 859,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "祝杯も済んだし少し運動するか\n試作兵器「テヤァ流星群」来い！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 548,
+    "cooldownTime": 21,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "吾輩の真の奥義を見せてやろう\n「しん・ぶれいずどらごん！！！」",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 549,
+    "cooldownTime": 94,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "ニャーク！新機能チェックだ！\nMODE-FURI-FURI- 起動！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 550,
+    "cooldownTime": 96,
+    "attack": 23,
+    "defense": 9,
+    "health": 280,
+    "abilityLabel": "また まっくろ しちゃった なかま\nにんげん まっくろ ぶじ かなあ？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 551,
+    "cooldownTime": 877,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "お嬢様がまた脱走…いや、分身！？\nしかし私の目はごまかせませんぞ",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 552,
+    "cooldownTime": 999,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "団長の素晴らしさを一言で？\n…猟兵団紅薔薇を率いる至上の戦士で\nあり、慈愛に満ちたお方で、聖王国の\n第一王女として次代の聖王候補の実績\n……",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 553,
+    "cooldownTime": 132,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "あぁ今日のリリカも可愛かったなぁ…\n写真は壁に貼って音声と動画データも\n確認しなきゃ！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 554,
+    "cooldownTime": 19,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "やや 隠遁術で隠れてコッソリ食べる\n丸熊堂のお菓子は高いけど格別だね\nここで一句…",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 555,
+    "cooldownTime": 30,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "どうしたおチビ デートが退屈か？\nふふっ、では大切なおチビのために\n陰陽師の秘術をみせてあげよう",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 556,
+    "cooldownTime": 108,
+    "attack": 23,
+    "defense": 9,
+    "health": 280,
+    "abilityLabel": "「太陽さんポカポカだ～\n　お昼寝日和だねラヴィちゃん！」\n「ステリア、ラヴィが吸血鬼だって\n　忘れてない！？」",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 557,
+    "cooldownTime": 138,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "人類と共同研究していた時の遺物\n廃棄前に試してみるかいアネモネさん",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 558,
+    "cooldownTime": 872,
+    "attack": 28,
+    "defense": 9,
+    "health": 233,
+    "abilityLabel": "花火の季節だねえ…深川屋の特製花火\n今年は隣で見てくれるかい？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 559,
+    "cooldownTime": 10,
+    "attack": 23,
+    "defense": 9,
+    "health": 280,
+    "abilityLabel": "たいちょー！ デカゾンビっぴ\n討×伐記念に 一緒に写真とろー？",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 560,
+    "cooldownTime": 6,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "昼寝してたら訓練を思いついたッス！\n特訓して師匠をぶっちぎりで\nぶっ飛ば……超えてみせるッス！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 561,
+    "cooldownTime": 25,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "最高のイタズラを思い付いちゃた！\nいくよ、工作アームズ はっし～ん！",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 562,
+    "cooldownTime": 999,
+    "attack": 20,
+    "defense": 15,
+    "health": 198,
+    "abilityLabel": "味方チーム全員のライフを\n2019%回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 563,
+    "cooldownTime": 999,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "味方チーム全員のライフを\n2021%回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 564,
+    "cooldownTime": 999,
+    "attack": 30,
+    "defense": 10,
+    "health": 198,
+    "abilityLabel": "味方チーム全員のライフを\n2021%回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 565,
+    "cooldownTime": 999,
+    "attack": 20,
+    "defense": 10,
+    "health": 303,
+    "abilityLabel": "味方チーム全員のライフを\n2022%回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 566,
+    "cooldownTime": 999,
+    "attack": 28,
+    "defense": 12,
+    "health": 187,
+    "abilityLabel": "味方チーム全員のライフを\n2023%回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 567,
+    "cooldownTime": 27,
+    "attack": 67,
+    "defense": 22,
+    "health": 560,
+    "abilityLabel": "ライフを100％回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 568,
+    "cooldownTime": 37,
+    "attack": 65,
+    "defense": 13,
+    "health": 619,
+    "abilityLabel": "長射程の強力な攻撃（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 569,
+    "cooldownTime": 50,
+    "attack": 62,
+    "defense": 20,
+    "health": 533,
+    "abilityLabel": "前方広範囲に 強力な連続攻撃\n（大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 570,
+    "cooldownTime": 34,
+    "attack": 74,
+    "defense": 20,
+    "health": 279,
+    "abilityLabel": "周囲の敵にガードブレイク攻撃\n（大ダメージ）+残ライフの25％減少",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 571,
+    "cooldownTime": 34,
+    "attack": 57,
+    "defense": 28,
+    "health": 508,
+    "abilityLabel": "被ダメージを 60％減らす（10秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 572,
+    "cooldownTime": 36,
+    "attack": 67,
+    "defense": 18,
+    "health": 537,
+    "abilityLabel": "被ダメージを 80％減らす（8秒間）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 573,
+    "cooldownTime": 28,
+    "attack": 69,
+    "defense": 24,
+    "health": 488,
+    "abilityLabel": "前方に 超強力な攻撃（極大ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 574,
+    "cooldownTime": 45,
+    "attack": 67,
+    "defense": 47,
+    "health": 366,
+    "abilityLabel": "連打攻撃で敵を\n2秒間スタンにする（中ダメージ）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 575,
+    "cooldownTime": 20,
+    "attack": 69,
+    "defense": 9,
+    "health": 542,
+    "abilityLabel": "ライフを 50％回復 +状態異常回復",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 576,
+    "cooldownTime": 24,
+    "attack": 60,
+    "defense": 18,
+    "health": 557,
+    "abilityLabel": "前方に 強力な攻撃（大ダメージ）\n+敵を撃破時 ライフ回復（100％）",
+    "createdDate": "2026-01-02T15:00:00.000Z",
+    "updatedDate": "2026-01-02T15:00:00.000Z"
+  }
+]

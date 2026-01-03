@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "key": "SPRINTER",
+    "label": "スプリンター",
+    "imagePath": "icons/podiatry_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+  },
+  {
+    "id": 2,
+    "key": "ATTACKER",
+    "label": "アタッカー",
+    "imagePath": "icons/swords_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+  },
+  {
+    "id": 3,
+    "key": "GUNNER",
+    "label": "ガンナー",
+    "imagePath": "icons/wand_stars_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+  },
+  {
+    "id": 4,
+    "key": "TANK",
+    "label": "タンク",
+    "imagePath": "icons/shield_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+  }
+]

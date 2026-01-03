@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "key": "REGULAR",
+    "label": "通常"
+  },
+  {
+    "id": 2,
+    "key": "COLLABORATION",
+    "label": "コラボ"
+  },
+  {
+    "id": 3,
+    "key": "SEASON",
+    "label": "シーズン"
+  },
+  {
+    "id": 4,
+    "key": "EVENT",
+    "label": "イベント"
+  }
+]

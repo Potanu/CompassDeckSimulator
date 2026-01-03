@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "key": "NEAR",
+    "label": "近距離"
+  },
+  {
+    "id": 2,
+    "key": "FAR",
+    "label": "遠距離"
+  },
+  {
+    "id": 3,
+    "key": "RUSH",
+    "label": "連続"
+  },
+  {
+    "id": 4,
+    "key": "CIRCLE",
+    "label": "周囲"
+  },
+  {
+    "id": 5,
+    "key": "HEAL",
+    "label": "回復"
+  },
+  {
+    "id": 6,
+    "key": "GUARD",
+    "label": "ガード"
+  },
+  {
+    "id": 7,
+    "key": "BUFF",
+    "label": "強化"
+  },
+  {
+    "id": 8,
+    "key": "DEBUFF",
+    "label": "弱体化"
+  },
+  {
+    "id": 9,
+    "key": "WARP",
+    "label": "移動"
+  },
+  {
+    "id": 10,
+    "key": "TRAP",
+    "label": "設置"
+  },
+  {
+    "id": 11,
+    "key": "COUNTER",
+    "label": "カウンター"
+  },
+  {
+    "id": 12,
+    "key": "OTHER",
+    "label": "その他"
+  }
+]

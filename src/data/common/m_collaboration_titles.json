@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "key": "NONE",
+    "label": "オリジナル"
+  },
+  {
+    "id": 1,
+    "key": "GUILTY_GEAR",
+    "label": "GUILTY GEAR Xrd REV 2"
+  },
+  {
+    "id": 2,
+    "key": "VOCALOID",
+    "label": "ボーカロイド"
+  },
+  {
+    "id": 3,
+    "key": "HACKA_DOLL",
+    "label": "ハッカドール"
+  },
+  {
+    "id": 4,
+    "key": "STREET_FIGHTER_5",
+    "label": "ストリートファイターⅤ"
+  },
+  {
+    "id": 5,
+    "key": "REFLECTION",
+    "label": "THE REFLECTION"
+  },
+  {
+    "id": 6,
+    "key": "RE_ZERO",
+    "label": "re.ゼロから始める異世界生活"
+  },
+  {
+    "id": 7,
+    "key": "BEATLESS",
+    "label": "BEATLESS"
+  },
+  {
+    "id": 8,
+    "key": "SATSURIKU",
+    "label": "殺戮の天使"
+  },
+  {
+    "id": 9,
+    "key": "DANGAN_RONPA",
+    "label": "ダンガンロンパ"
+  },
+  {
+    "id": 10,
+    "key": "KONOSUBA",
+    "label": "この素晴らしい世界に祝福を！"
+  },
+  {
+    "id": 11,
+    "key": "SHINGEKI",
+    "label": "進撃の巨人"
+  },
+  {
+    "id": 12,
+    "key": "NEKOMIYA",
+    "label": "猫宮ひなた"
+  },
+  {
+    "id": 13,
+    "key": "STEINS_GATE",
+    "label": "STEINS;GATE"
+  },
+  {
+    "id": 14,
+    "key": "FATE_STAY_NIGHT",
+    "label": "Fate/stay night"
+  },
+  {
+    "id": 15,
+    "key": "CHO_KABUKI",
+    "label": "超歌舞伎×千本桜"
+  },
+  {
+    "id": 16,
+    "key": "DANMACHI",
+    "label": "ダンジョンに出会いを求めるのは間違っているだろうか"
+  },
+  {
+    "id": 17,
+    "key": "FINAL_FANTASY_15",
+    "label": "ファイナルファンタジーXV"
+  },
+  {
+    "id": 18,
+    "key": "BUNGOU",
+    "label": "文豪ストレイドッグス"
+  },
+  {
+    "id": 19,
+    "key": "ATELIER_RYZA_2",
+    "label": "ライザのアトリエ2"
+  },
+  {
+    "id": 20,
+    "key": "PERSONA_5",
+    "label": "ペルソナ5"
+  },
+  {
+    "id": 21,
+    "key": "OVERROAD",
+    "label": "オーバーロード"
+  },
+  {
+    "id": 22,
+    "key": "SWORD_ART_ONLINE",
+    "label": "ソードアート・オンライン"
+  },
+  {
+    "id": 23,
+    "key": "NIER_AUTOMATA",
+    "label": "ニーアオートマタ"
+  },
+  {
+    "id": 24,
+    "key": "TENSURA",
+    "label": "転生したらスライムだった件"
+  },
+  {
+    "id": 25,
+    "key": "TOARU_RAILGUN",
+    "label": "とある科学の超電磁砲T"
+  },
+  {
+    "id": 26,
+    "key": "MUSHOKU_TENSEI",
+    "label": "無職転生"
+  },
+  {
+    "id": 27,
+    "key": "ROCKMAN_EXE",
+    "label": "ロックマンエグゼ"
+  },
+  {
+    "id": 28,
+    "key": "CHAINSAW_MAN",
+    "label": "チェンソーマン"
+  },
+  {
+    "id": 29,
+    "key": "YOJO_SENKI",
+    "label": "幼女戦記"
+  },
+  {
+    "id": 30,
+    "key": "MADE_IN_ABYSS",
+    "label": "メイドインアビス"
+  },
+  {
+    "id": 31,
+    "key": "HUNTER_HUNTER",
+    "label": "HUNTER×HUNTER"
+  },
+  {
+    "id": 32,
+    "key": "TOARU_INDEX_3",
+    "label": "とある魔術の禁書目録Ⅲ"
+  },
+  {
+    "id": 33,
+    "key": "KAGE_JITSU",
+    "label": "陰の実力者になりたくて！"
+  },
+  {
+    "id": 34,
+    "key": "POP_TEAM_EPIC",
+    "label": "ポプテピピック"
+  },
+  {
+    "id": 35,
+    "key": "FATE_STRANGE_FAKE",
+    "label": "Fate/strange Fake"
+  }
+]

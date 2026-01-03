@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "key": "NONE",
+    "label": "無"
+  },
+  {
+    "id": 2,
+    "key": "SHORT",
+    "label": "短"
+  },
+  {
+    "id": 3,
+    "key": "LONG",
+    "label": "長"
+  }
+]

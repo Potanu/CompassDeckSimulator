@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "key": "FIRE",
+    "label": "火"
+  },
+  {
+    "id": 2,
+    "key": "WATER",
+    "label": "水"
+  },
+  {
+    "id": 3,
+    "key": "WOOD",
+    "label": "木"
+  },
+  {
+    "id": 4,
+    "key": "NONE",
+    "label": "無"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "key": "ATK_UP",
+    "label": "攻撃力アップ"
+  },
+  {
+    "id": 2,
+    "key": "DEF_UP",
+    "label": "防御力アップ"
+  },
+  {
+    "id": 3,
+    "key": "HP_UP",
+    "label": "体力アップ"
+  },
+  {
+    "id": 4,
+    "key": "MOVE_SPEED_UP",
+    "label": "移動速度アップ"
+  },
+  {
+    "id": 5,
+    "key": "HS_GAIN_UP",
+    "label": "HS増加量アップ"
+  },
+  {
+    "id": 6,
+    "key": "COOLDOWN_REDUCTION",
+    "label": "クールタイム短縮"
+  },
+  {
+    "id": 7,
+    "key": "CAPTURE_SPEED_UP",
+    "label": "拠点制圧速度アップ"
+  },
+  {
+    "id": 8,
+    "key": "RESIST_FIRE_UP",
+    "label": "火属性耐性アップ"
+  },
+  {
+    "id": 9,
+    "key": "RESIST_WATER_UP",
+    "label": "水属性耐性アップ"
+  },
+  {
+    "id": 10,
+    "key": "RESIST_WOOD_UP",
+    "label": "木属性耐性アップ"
+  },
+  {
+    "id": 11,
+    "key": "RESIST_STUN_UP",
+    "label": "スタン耐性アップ"
+  },
+  {
+    "id": 12,
+    "key": "RESIST_SILENT_UP",
+    "label": "サイレント耐性アップ"
+  },
+  {
+    "id": 13,
+    "key": "RESIST_POISON_UP",
+    "label": "ポイズン耐性アップ"
+  }
+]

@@ -1,0 +1,872 @@
+[
+  {
+    "id": 1,
+    "key": "NEAR",
+    "label": "近"
+  },
+  {
+    "id": 2,
+    "key": "FAR",
+    "label": "遠"
+  },
+  {
+    "id": 3,
+    "key": "RUSH",
+    "label": "連"
+  },
+  {
+    "id": 4,
+    "key": "CIRCLE",
+    "label": "周"
+  },
+  {
+    "id": 5,
+    "key": "HEAL",
+    "label": "癒"
+  },
+  {
+    "id": 6,
+    "key": "GUARD",
+    "label": "防"
+  },
+  {
+    "id": 7,
+    "key": "BUFF",
+    "label": "強"
+  },
+  {
+    "id": 8,
+    "key": "DEBUFF",
+    "label": "弱"
+  },
+  {
+    "id": 9,
+    "key": "WARP",
+    "label": "移"
+  },
+  {
+    "id": 10,
+    "key": "TRAP",
+    "label": "罠"
+  },
+  {
+    "id": 11,
+    "key": "COUNTER",
+    "label": "返"
+  },
+  {
+    "id": 12,
+    "key": "DISPEL",
+    "label": "除"
+  },
+  {
+    "id": 13,
+    "key": "POISON",
+    "label": "毒"
+  },
+  {
+    "id": 14,
+    "key": "SILENCE",
+    "label": "黙"
+  },
+  {
+    "id": 15,
+    "key": "STUN",
+    "label": "止"
+  },
+  {
+    "id": 16,
+    "key": "FLASH",
+    "label": "閃"
+  },
+  {
+    "id": 17,
+    "key": "DISRUPT",
+    "label": "害"
+  },
+  {
+    "id": 18,
+    "key": "UNIT",
+    "label": "人"
+  },
+  {
+    "id": 19,
+    "key": "PUSH",
+    "label": "押"
+  },
+  {
+    "id": 20,
+    "key": "PULL",
+    "label": "引"
+  },
+  {
+    "id": 21,
+    "key": "BREAK",
+    "label": "破"
+  },
+  {
+    "id": 22,
+    "key": "PIERCE",
+    "label": "貫"
+  },
+  {
+    "id": 23,
+    "key": "STEAL",
+    "label": "奪"
+  },
+  {
+    "id": 24,
+    "key": "ABSORB",
+    "label": "吸"
+  },
+  {
+    "id": 25,
+    "key": "REGEN",
+    "label": "続"
+  },
+  {
+    "id": 26,
+    "key": "BLAST",
+    "label": "爆"
+  },
+  {
+    "id": 27,
+    "key": "KEY",
+    "label": "鍵"
+  },
+  {
+    "id": 28,
+    "key": "ALL",
+    "label": "全"
+  },
+  {
+    "id": 29,
+    "key": "RETREAT",
+    "label": "帰"
+  },
+  {
+    "id": 30,
+    "key": "WAVE",
+    "label": "波"
+  },
+  {
+    "id": 31,
+    "key": "CURE",
+    "label": "異"
+  },
+  {
+    "id": 32,
+    "key": "ENEMY",
+    "label": "敵"
+  },
+  {
+    "id": 33,
+    "key": "WALL",
+    "label": "壁"
+  },
+  {
+    "id": 34,
+    "key": "COPY",
+    "label": "偽"
+  },
+  {
+    "id": 35,
+    "key": "SHOT",
+    "label": "撃"
+  },
+  {
+    "id": 36,
+    "key": "HASTE",
+    "label": "縮"
+  },
+  {
+    "id": 37,
+    "key": "SMOKE",
+    "label": "煙"
+  },
+  {
+    "id": 38,
+    "key": "RING",
+    "label": "帯"
+  },
+  {
+    "id": 39,
+    "key": "WING",
+    "label": "翼"
+  },
+  {
+    "id": 40,
+    "key": "LAUNCH",
+    "label": "昇"
+  },
+  {
+    "id": 41,
+    "key": "FRONT",
+    "label": "前"
+  },
+  {
+    "id": 42,
+    "key": "EXPAND",
+    "label": "拡"
+  },
+  {
+    "id": 43,
+    "key": "BOOST",
+    "label": "加"
+  },
+  {
+    "id": 44,
+    "key": "KNOCKDOWN",
+    "label": "倒"
+  },
+  {
+    "id": 45,
+    "key": "DEPLOY",
+    "label": "置"
+  },
+  {
+    "id": 46,
+    "key": "AWAY",
+    "label": "離"
+  },
+  {
+    "id": 47,
+    "key": "APPLY",
+    "label": "与"
+  },
+  {
+    "id": 48,
+    "key": "SYNC",
+    "label": "共"
+  },
+  {
+    "id": 1001,
+    "key": "SPECIAL_0001",
+    "label": "曲"
+  },
+  {
+    "id": 1002,
+    "key": "SPECIAL_0002",
+    "label": "色"
+  },
+  {
+    "id": 1003,
+    "key": "SPECIAL_0003",
+    "label": "義"
+  },
+  {
+    "id": 1004,
+    "key": "SPECIAL_0004",
+    "label": "跳"
+  },
+  {
+    "id": 1005,
+    "key": "SPECIAL_0005",
+    "label": "堕"
+  },
+  {
+    "id": 1006,
+    "key": "SPECIAL_0006",
+    "label": "雪"
+  },
+  {
+    "id": 1007,
+    "key": "SPECIAL_0007",
+    "label": "映"
+  },
+  {
+    "id": 1008,
+    "key": "SPECIAL_0008",
+    "label": "神"
+  },
+  {
+    "id": 1009,
+    "key": "SPECIAL_0009",
+    "label": "絆"
+  },
+  {
+    "id": 1010,
+    "key": "SPECIAL_0010",
+    "label": "天"
+  },
+  {
+    "id": 1011,
+    "key": "SPECIAL_0011",
+    "label": "斬"
+  },
+  {
+    "id": 1012,
+    "key": "SPECIAL_0012",
+    "label": "拠"
+  },
+  {
+    "id": 1013,
+    "key": "SPECIAL_0013",
+    "label": "物"
+  },
+  {
+    "id": 1014,
+    "key": "SPECIAL_0014",
+    "label": "夢"
+  },
+  {
+    "id": 1015,
+    "key": "SPECIAL_0015",
+    "label": "握"
+  },
+  {
+    "id": 1016,
+    "key": "SPECIAL_0016",
+    "label": "奏"
+  },
+  {
+    "id": 1017,
+    "key": "SPECIAL_0017",
+    "label": "欠"
+  },
+  {
+    "id": 1018,
+    "key": "SPECIAL_0018",
+    "label": "役"
+  },
+  {
+    "id": 1019,
+    "key": "SPECIAL_0019",
+    "label": "花"
+  },
+  {
+    "id": 1020,
+    "key": "SPECIAL_0020",
+    "label": "歌"
+  },
+  {
+    "id": 1021,
+    "key": "SPECIAL_0021",
+    "label": "逆"
+  },
+  {
+    "id": 1022,
+    "key": "SPECIAL_0022",
+    "label": "捜"
+  },
+  {
+    "id": 1023,
+    "key": "SPECIAL_0023",
+    "label": "密"
+  },
+  {
+    "id": 1024,
+    "key": "SPECIAL_0024",
+    "label": "歪"
+  },
+  {
+    "id": 1025,
+    "key": "SPECIAL_0025",
+    "label": "食"
+  },
+  {
+    "id": 1026,
+    "key": "SPECIAL_0026",
+    "label": "星"
+  },
+  {
+    "id": 1027,
+    "key": "SPECIAL_0027",
+    "label": "薇"
+  },
+  {
+    "id": 1028,
+    "key": "SPECIAL_0028",
+    "label": "自"
+  },
+  {
+    "id": 1029,
+    "key": "SPECIAL_0029",
+    "label": "択"
+  },
+  {
+    "id": 1030,
+    "key": "SPECIAL_0030",
+    "label": "推"
+  },
+  {
+    "id": 1031,
+    "key": "SPECIAL_0031",
+    "label": "甘"
+  },
+  {
+    "id": 1032,
+    "key": "SPECIAL_0032",
+    "label": "企"
+  },
+  {
+    "id": 1033,
+    "key": "SPECIAL_0033",
+    "label": "議"
+  },
+  {
+    "id": 1034,
+    "key": "SPECIAL_0034",
+    "label": "手"
+  },
+  {
+    "id": 1035,
+    "key": "SPECIAL_0035",
+    "label": "膨"
+  },
+  {
+    "id": 1036,
+    "key": "SPECIAL_0036",
+    "label": "檻"
+  },
+  {
+    "id": 1037,
+    "key": "SPECIAL_0037",
+    "label": "祈"
+  },
+  {
+    "id": 1038,
+    "key": "SPECIAL_0038",
+    "label": "憧"
+  },
+  {
+    "id": 1039,
+    "key": "SPECIAL_0039",
+    "label": "狙"
+  },
+  {
+    "id": 1040,
+    "key": "SPECIAL_0040",
+    "label": "杖"
+  },
+  {
+    "id": 1041,
+    "key": "SPECIAL_0041",
+    "label": "喚"
+  },
+  {
+    "id": 1042,
+    "key": "SPECIAL_0042",
+    "label": "魚"
+  },
+  {
+    "id": 1043,
+    "key": "SPECIAL_0043",
+    "label": "録"
+  },
+  {
+    "id": 1044,
+    "key": "SPECIAL_0044",
+    "label": "問"
+  },
+  {
+    "id": 1045,
+    "key": "SPECIAL_0045",
+    "label": "集"
+  },
+  {
+    "id": 1046,
+    "key": "SPECIAL_0046",
+    "label": "像"
+  },
+  {
+    "id": 1047,
+    "key": "SPECIAL_0047",
+    "label": "声"
+  },
+  {
+    "id": 1048,
+    "key": "SPECIAL_0048",
+    "label": "宝"
+  },
+  {
+    "id": 1049,
+    "key": "SPECIAL_0049",
+    "label": "的"
+  },
+  {
+    "id": 1050,
+    "key": "SPECIAL_0050",
+    "label": "盟"
+  },
+  {
+    "id": 1051,
+    "key": "SPECIAL_0051",
+    "label": "王"
+  },
+  {
+    "id": 1052,
+    "key": "SPECIAL_0052",
+    "label": "鮫"
+  },
+  {
+    "id": 1053,
+    "key": "SPECIAL_0053",
+    "label": "黒"
+  },
+  {
+    "id": 1054,
+    "key": "SPECIAL_0054",
+    "label": "装"
+  },
+  {
+    "id": 1055,
+    "key": "SPECIAL_0055",
+    "label": "長"
+  },
+  {
+    "id": 1056,
+    "key": "SPECIAL_0056",
+    "label": "真"
+  },
+  {
+    "id": 1057,
+    "key": "SPECIAL_0057",
+    "label": "句"
+  },
+  {
+    "id": 1058,
+    "key": "SPECIAL_0058",
+    "label": "式"
+  },
+  {
+    "id": 1059,
+    "key": "SPECIAL_0059",
+    "label": "枕"
+  },
+  {
+    "id": 1060,
+    "key": "SPECIAL_0060",
+    "label": "力"
+  },
+  {
+    "id": 1061,
+    "key": "SPECIAL_0061",
+    "label": "丹"
+  },
+  {
+    "id": 1062,
+    "key": "SPECIAL_0062",
+    "label": "勇"
+  },
+  {
+    "id": 1063,
+    "key": "SPECIAL_0063",
+    "label": "飛"
+  },
+  {
+    "id": 1064,
+    "key": "SPECIAL_0064",
+    "label": "腕"
+  },
+  {
+    "id": 1065,
+    "key": "SPECIAL_0065",
+    "label": "三"
+  },
+  {
+    "id": 1066,
+    "key": "SPECIAL_0066",
+    "label": "桜"
+  },
+  {
+    "id": 1067,
+    "key": "SPECIAL_0067",
+    "label": "十"
+  },
+  {
+    "id": 1068,
+    "key": "SPECIAL_0068",
+    "label": "仇"
+  },
+  {
+    "id": 1069,
+    "key": "SPECIAL_0069",
+    "label": "驚"
+  },
+  {
+    "id": 1070,
+    "key": "SPECIAL_0070",
+    "label": "縫"
+  },
+  {
+    "id": 1071,
+    "key": "SPECIAL_0071",
+    "label": "正"
+  },
+  {
+    "id": 1072,
+    "key": "SPECIAL_0072",
+    "label": "美"
+  },
+  {
+    "id": 1073,
+    "key": "SPECIAL_0073",
+    "label": "狩"
+  },
+  {
+    "id": 1074,
+    "key": "SPECIAL_0074",
+    "label": "警"
+  },
+  {
+    "id": 1075,
+    "key": "SPECIAL_0075",
+    "label": "怪"
+  },
+  {
+    "id": 1076,
+    "key": "SPECIAL_0076",
+    "label": "夜"
+  },
+  {
+    "id": 1077,
+    "key": "SPECIAL_0077",
+    "label": "魂"
+  },
+  {
+    "id": 1078,
+    "key": "SPECIAL_0078",
+    "label": "秘"
+  },
+  {
+    "id": 1079,
+    "key": "SPECIAL_0079",
+    "label": "薔"
+  },
+  {
+    "id": 1080,
+    "key": "SPECIAL_0080",
+    "label": "四"
+  },
+  {
+    "id": 1081,
+    "key": "SPECIAL_0081",
+    "label": "月"
+  },
+  {
+    "id": 1082,
+    "key": "SPECIAL_0082",
+    "label": "思"
+  },
+  {
+    "id": 1083,
+    "key": "SPECIAL_0083",
+    "label": "兄"
+  },
+  {
+    "id": 1084,
+    "key": "SPECIAL_0084",
+    "label": "侵"
+  },
+  {
+    "id": 1085,
+    "key": "SPECIAL_0085",
+    "label": "魔"
+  },
+  {
+    "id": 1086,
+    "key": "SPECIAL_0086",
+    "label": "泣"
+  },
+  {
+    "id": 1087,
+    "key": "SPECIAL_0087",
+    "label": "菜"
+  },
+  {
+    "id": 1088,
+    "key": "SPECIAL_0088",
+    "label": "去"
+  },
+  {
+    "id": 1089,
+    "key": "SPECIAL_0089",
+    "label": "楽"
+  },
+  {
+    "id": 1090,
+    "key": "SPECIAL_0090",
+    "label": "兎"
+  },
+  {
+    "id": 1091,
+    "key": "SPECIAL_0091",
+    "label": "字"
+  },
+  {
+    "id": 1092,
+    "key": "SPECIAL_0092",
+    "label": "囁"
+  },
+  {
+    "id": 1093,
+    "key": "SPECIAL_0093",
+    "label": "財"
+  },
+  {
+    "id": 1094,
+    "key": "SPECIAL_0094",
+    "label": "射"
+  },
+  {
+    "id": 1095,
+    "key": "SPECIAL_0095",
+    "label": "同"
+  },
+  {
+    "id": 1096,
+    "key": "SPECIAL_0096",
+    "label": "彗"
+  },
+  {
+    "id": 1097,
+    "key": "SPECIAL_0097",
+    "label": "空"
+  },
+  {
+    "id": 1098,
+    "key": "SPECIAL_0098",
+    "label": "犬"
+  },
+  {
+    "id": 1099,
+    "key": "SPECIAL_0099",
+    "label": "変"
+  },
+  {
+    "id": 1100,
+    "key": "SPECIAL_0100",
+    "label": "団"
+  },
+  {
+    "id": 1101,
+    "key": "SPECIAL_0101",
+    "label": "写"
+  },
+  {
+    "id": 1102,
+    "key": "SPECIAL_0102",
+    "label": "一"
+  },
+  {
+    "id": 1103,
+    "key": "SPECIAL_0103",
+    "label": "ヶ"
+  },
+  {
+    "id": 1104,
+    "key": "SPECIAL_0104",
+    "label": "膝"
+  },
+  {
+    "id": 1105,
+    "key": "SPECIAL_0105",
+    "label": "重"
+  },
+  {
+    "id": 1106,
+    "key": "SPECIAL_0106",
+    "label": "牡"
+  },
+  {
+    "id": 1107,
+    "key": "SPECIAL_0107",
+    "label": "武"
+  },
+  {
+    "id": 1108,
+    "key": "SPECIAL_0108",
+    "label": "作"
+  },
+  {
+    "id": 1109,
+    "key": "SPECIAL_0109",
+    "label": "愛"
+  },
+  {
+    "id": 1110,
+    "key": "SPECIAL_0110",
+    "label": "鎮"
+  },
+  {
+    "id": 1111,
+    "key": "SPECIAL_0111",
+    "label": "紅"
+  },
+  {
+    "id": 1112,
+    "key": "SPECIAL_0112",
+    "label": "不"
+  },
+  {
+    "id": 1113,
+    "key": "SPECIAL_0113",
+    "label": "並"
+  },
+  {
+    "id": 1114,
+    "key": "SPECIAL_0114",
+    "label": "肉"
+  },
+  {
+    "id": 1115,
+    "key": "SPECIAL_0115",
+    "label": "過"
+  },
+  {
+    "id": 1116,
+    "key": "SPECIAL_0116",
+    "label": "音"
+  },
+  {
+    "id": 1117,
+    "key": "SPECIAL_0117",
+    "label": "熊"
+  },
+  {
+    "id": 1118,
+    "key": "SPECIAL_0118",
+    "label": "文"
+  },
+  {
+    "id": 1119,
+    "key": "SPECIAL_0119",
+    "label": "猫"
+  },
+  {
+    "id": 1120,
+    "key": "SPECIAL_0120",
+    "label": "猿"
+  },
+  {
+    "id": 1121,
+    "key": "SPECIAL_0121",
+    "label": "副"
+  },
+  {
+    "id": 1122,
+    "key": "SPECIAL_0122",
+    "label": "鬼"
+  },
+  {
+    "id": 1123,
+    "key": "SPECIAL_0123",
+    "label": "無"
+  },
+  {
+    "id": 1124,
+    "key": "SPECIAL_0124",
+    "label": "羅"
+  },
+  {
+    "id": 1125,
+    "key": "SPECIAL_0125",
+    "label": "本"
+  },
+  {
+    "id": 1126,
+    "key": "SPECIAL_0126",
+    "label": "工"
+  }
+]
