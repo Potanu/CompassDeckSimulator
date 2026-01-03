@@ -1,0 +1,30 @@
+---
+import '../styles/role-icon.css';
+import { HeroRoleType } from '../types/heros/HeroRoleType';
+import heroRoleTypes from "../data/heros/m_hero_role_types.json";
+
+type Props = {
+  role: HeroRoleType;
+  size?: number;
+};
+
+const { role, size = 38 } = Astro.props;
+const baseIcon = '/CompassDeckSimulator/icons/hexagon_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg';
+
+const roleIcons: Record<HeroRoleType, { base: string; front: string }> = {} as const;
+
+heroRoleTypes.forEach(hero => {
+  roleIcons[hero.id as HeroRoleType] = {
+    base: baseIcon,
+    front: '/CompassDeckSimulator/' + hero.imagePath
+  };
+});
+---
+
+<div
+  class="role-icon"
+  style={`width:${size}px; height:${size}px;`}
+>
+  <img src={roleIcons[role].base} class="base" alt="" />
+  <img src={roleIcons[role].front} class="front" alt="" />
+</div>

@@ -1,0 +1,72 @@
+---
+import '../styles/footer.css';
+import heros from "../data/heros/m_heros.json";
+import RoleIcon from './RoleIcon.astro';
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="dropdown-wrapper">
+      <!-- ヒーロー選択ドロップダウン -->
+      <div class="dropdown">
+        <button id="dropdown-trigger" class="dropdown-trigger">
+          <span class="trigger-content">ヒーローを選択してね</span>
+          <span class="dropdown-trigger-arrow" />
+        </button>
+        <ul class="dropdown-menu">
+          {heros.map((hero) =>(
+          <li>
+            <button class="dropdown-item" type="button">
+              <RoleIcon role={hero.heroRoleId} />
+              <span>{hero.label}</span>
+            </button>
+          </li>
+          ))} 
+        </ul>
+      </div>
+      <!-- 詳細設定アイコン -->
+      <div class="displaySetting">
+        <img src="/CompassDeckSimulator/icons/settings_heart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" width="32" height="32" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const dropdown = document.querySelector('.dropdown');
+  const trigger = dropdown.querySelector('.dropdown-trigger');
+  const menu = dropdown.querySelector('.dropdown-menu');
+  const triggerLabel = document.querySelector('.trigger-content');
+  const items = document.querySelectorAll('.dropdown-item');
+  const arrow = trigger.querySelector('.dropdown-trigger-arrow');
+
+  const ARROW_CLOSED = '▼';
+  const ARROW_OPEN = '▲';
+
+  arrow.textContent = ARROW_CLOSED;
+
+  // 項目クリックでラベル更新＆閉じる
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+    const label = item.querySelector('span').textContent;
+    triggerLabel.textContent = label;
+    document.body.classList.remove('dropdown-open');
+    arrow.textContent = ARROW_CLOSED;
+    menu.classList.remove('open');
+    });
+  });
+
+  // トリガークリックで開閉
+  trigger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    arrow.textContent = menu.classList.contains('open') ? ARROW_OPEN : ARROW_CLOSED;
+  });
+
+  // メニュー外をクリックしたら閉じる
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      menu.classList.remove('open');
+      arrow.textContent = ARROW_CLOSED;
+    }
+  });
+</script>
