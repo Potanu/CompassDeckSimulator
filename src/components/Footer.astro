@@ -1,7 +1,13 @@
 ---
 import '../styles/footer.css';
-import heros from "../data/heros/m_heros.json";
 import RoleIcon from './RoleIcon.astro';
+
+import { HeroRoleType } from "./types/heros";
+import { ImageAsset } from '../types/common';
+import { getAllHero } from "../accessors/heros/getData.ts";
+import { getImageAssetById } from "../accessors/common/getData.ts";
+
+const GEAR_HEART_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(ImageAsset.GEAR_HEART).imagePath}`;
 ---
 
 <footer class="footer">
@@ -14,7 +20,7 @@ import RoleIcon from './RoleIcon.astro';
           <span class="dropdown-trigger-arrow" />
         </button>
         <ul class="dropdown-menu">
-          {heros.map((hero) =>(
+          {getAllHero().map((hero) =>(
           <li>
             <button class="dropdown-item" type="button">
               <RoleIcon role={hero.heroRoleId} />
@@ -26,7 +32,7 @@ import RoleIcon from './RoleIcon.astro';
       </div>
       <!-- 詳細設定アイコン -->
       <div class="displaySetting">
-        <img src="/CompassDeckSimulator/icons/settings_heart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" width="32" height="32" />
+        <img src= {GEAR_HEART_IMAGE_PATH} width="32" height="32" />
       </div>
     </div>
   </div>
