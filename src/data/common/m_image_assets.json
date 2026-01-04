@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "key": "NONE",
+    "imagePath": "",
+    "label": "なし"
+  },
+  {
+    "id": 1,
+    "key": "HEXAGON",
+    "imagePath": "icons/hexagon_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "六角形"
+  },
+  {
+    "id": 2,
+    "key": "SHOES",
+    "imagePath": "icons/podiatry_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "足"
+  },
+  {
+    "id": 3,
+    "key": "SWORD",
+    "imagePath": "icons/swords_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "剣"
+  },
+  {
+    "id": 4,
+    "key": "WAND_STARS",
+    "imagePath": "icons/wand_stars_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "星の杖"
+  },
+  {
+    "id": 5,
+    "key": "SHIELD",
+    "imagePath": "icons/shield_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "盾"
+  },
+  {
+    "id": 6,
+    "key": "HEART",
+    "imagePath": "icons/favorite_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "ハート"
+  },
+  {
+    "id": 7,
+    "key": "GEAR_HEART",
+    "imagePath": "icons/settings_heart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "歯車（ハート）"
+  },
+  {
+    "id": 8,
+    "key": "CARD_RED",
+    "imagePath": "decks/trading_card02_red.png",
+    "label": "カード（赤）"
+  },
+  {
+    "id": 9,
+    "key": "CARD_BLUE",
+    "imagePath": "decks/trading_card01_blue.png",
+    "label": "カード（青）"
+  },
+  {
+    "id": 10,
+    "key": "CARD_GREEN",
+    "imagePath": "decks/trading_card04_green.png",
+    "label": "カード（緑）"
+  },
+  {
+    "id": 11,
+    "key": "CARD_PURPLE",
+    "imagePath": "decks/trading_card06_purple.png",
+    "label": "カード（紫）"
+  }
+]
