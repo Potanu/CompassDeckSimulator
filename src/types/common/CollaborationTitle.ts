@@ -36,5 +36,5 @@ export const CollaborationTitle = {
    POP_TEAM_EPIC:           34,     // ポプテピピック
    FATE_STRANGE_FAKE:       35,     // Fate/strange Fake
 } as const;
-    
+
 export type CollaborationTitle = typeof CollaborationTitle[keyof typeof CollaborationTitle];

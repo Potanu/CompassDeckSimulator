@@ -12,5 +12,5 @@ export const CardSkillType = {
    COUNTER:                 11,     // カウンター
    OTHER:                   12,     // その他
 } as const;
-    
+
 export type CardSkillType = typeof CardSkillType[keyof typeof CardSkillType];

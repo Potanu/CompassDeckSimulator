@@ -13,5 +13,5 @@ export const HeroMedalType = {
    RESIST_SILENT_UP:        12,     // サイレント耐性アップ
    RESIST_POISON_UP:        13,     // ポイズン耐性アップ
 } as const;
-    
+
 export type HeroMedalType = typeof HeroMedalType[keyof typeof HeroMedalType];

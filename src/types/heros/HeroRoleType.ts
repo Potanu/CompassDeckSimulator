@@ -4,5 +4,5 @@ export const HeroRoleType = {
    GUNNER:                  3,      // ガンナー
    TANK:                    4,      // タンク
 } as const;
-    
+
 export type HeroRoleType = typeof HeroRoleType[keyof typeof HeroRoleType];

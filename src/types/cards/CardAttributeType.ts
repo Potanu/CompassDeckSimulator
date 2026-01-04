@@ -174,5 +174,5 @@ export const CardAttributeType = {
    SPECIAL_0125:            1125,   // 本
    SPECIAL_0126:            1126,   // 工
 } as const;
-    
+
 export type CardAttributeType = typeof CardAttributeType[keyof typeof CardAttributeType];

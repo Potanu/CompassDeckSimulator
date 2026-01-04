@@ -4,5 +4,5 @@ export const CardRarityType = {
    SR:                      3,      // SR
    UR:                      4,      // UR
 } as const;
-    
+
 export type CardRarityType = typeof CardRarityType[keyof typeof CardRarityType];

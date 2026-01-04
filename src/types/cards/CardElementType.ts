@@ -4,5 +4,5 @@ export const CardElementType = {
    WOOD:                    3,      // 木
    NONE:                    4,      // 無
 } as const;
-    
+
 export type CardElementType = typeof CardElementType[keyof typeof CardElementType];

@@ -4,5 +4,5 @@ export const CardCategoryType = {
    SEASON:                  3,      // シーズン
    EVENT:                   4,      // イベント
 } as const;
-    
+
 export type CardCategoryType = typeof CardCategoryType[keyof typeof CardCategoryType];
