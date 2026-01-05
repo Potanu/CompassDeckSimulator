@@ -43,9 +43,9 @@
   },
   {
     "id": 7,
-    "key": "GEAR_HEART",
-    "imagePath": "icons/settings_heart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
-    "label": "歯車（ハート）"
+    "key": "SETTING_MEDAL",
+    "imagePath": "icons/award_star_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "設定（メダル）"
   },
   {
     "id": 8,

@@ -7,7 +7,7 @@ import { ImageAsset } from '../types/common';
 import { getAllHero } from "../accessors/heros/getData.ts";
 import { getImageAssetById } from "../accessors/common/getData.ts";
 
-const GEAR_HEART_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(ImageAsset.GEAR_HEART).imagePath}`;
+const SETTING_MEDAL_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(ImageAsset.SETTING_MEDAL).imagePath}`;
 ---
 
 <footer class="footer">
@@ -32,7 +32,7 @@ const GEAR_HEART_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(ImageAs
       </div>
       <!-- 詳細設定アイコン -->
       <div class="displaySetting">
-        <img src= {GEAR_HEART_IMAGE_PATH} width="32" height="32" />
+        <img src= {SETTING_MEDAL_IMAGE_PATH} width="32" height="32" />
       </div>
     </div>
   </div>
