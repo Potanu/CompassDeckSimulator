@@ -11,6 +11,15 @@ export const ImageAsset = {
    CARD_BLUE:               9,      // カード（青）
    CARD_GREEN:              10,     // カード（緑）
    CARD_PURPLE:             11,     // カード（紫）
+   SPEECH_BUBBLE:           12,     // 吹き出し
+   CLOCK:                   13,     // 時計
+   KEY:                     14,     // 鍵
+   BOLT:                    15,     // 雷
+   BEAKER:                  16,     // ビーカー
+   HUMAN:                   17,     // 人
+   LEAF:                    18,     // 木属性
+   WATER:                   19,     // 水属性
+   FIRE:                    20,     // 火属性
 } as const;
 
 export type ImageAsset = typeof ImageAsset[keyof typeof ImageAsset];

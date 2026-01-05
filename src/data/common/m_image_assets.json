@@ -70,5 +70,59 @@
     "key": "CARD_PURPLE",
     "imagePath": "decks/trading_card06_purple.png",
     "label": "カード（紫）"
+  },
+  {
+    "id": 12,
+    "key": "SPEECH_BUBBLE",
+    "imagePath": "icons/sms_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "吹き出し"
+  },
+  {
+    "id": 13,
+    "key": "CLOCK",
+    "imagePath": "icons/history_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "時計"
+  },
+  {
+    "id": 14,
+    "key": "KEY",
+    "imagePath": "icons/key_vertical_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "鍵"
+  },
+  {
+    "id": 15,
+    "key": "BOLT",
+    "imagePath": "icons/bolt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "雷"
+  },
+  {
+    "id": 16,
+    "key": "BEAKER",
+    "imagePath": "icons/experiment_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "ビーカー"
+  },
+  {
+    "id": 17,
+    "key": "HUMAN",
+    "imagePath": "icons/accessibility_new_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "人"
+  },
+  {
+    "id": 18,
+    "key": "LEAF",
+    "imagePath": "icons/nest_eco_leaf_24dp_75FB4C_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "木属性"
+  },
+  {
+    "id": 19,
+    "key": "WATER",
+    "imagePath": "icons/water_drop_24dp_5985E1_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "水属性"
+  },
+  {
+    "id": 20,
+    "key": "FIRE",
+    "imagePath": "icons/mode_heat_24dp_EA3323_FILL1_wght400_GRAD0_opsz24.svg",
+    "label": "火属性"
   }
 ]
