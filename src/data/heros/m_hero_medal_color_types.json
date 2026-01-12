@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "key": "SILVER",
+    "label": "シルバー",
+    "color": "#646464"
+  },
+  {
+    "id": 2,
+    "key": "YELLOW",
+    "label": "黄色",
+    "color": "#928d00"
+  },
+  {
+    "id": 3,
+    "key": "GREEN",
+    "label": "緑",
+    "color": "#225a01"
+  },
+  {
+    "id": 4,
+    "key": "PURPLE",
+    "label": "紫",
+    "color": "#3e015a"
+  }
+]

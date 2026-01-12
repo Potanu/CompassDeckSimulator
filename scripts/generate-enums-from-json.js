@@ -21,6 +21,7 @@ const groups = [
       { entity: "Hero",               json: "m_heros.json" },
       { entity: "HeroRoleType",       json: "m_hero_role_types.json" },
       { entity: "HeroMedalType",      json: "m_hero_medal_types.json" },
+      { entity: "HeroMedalColorType", json: "m_hero_medal_color_types.json" },
     ],
   },
   {
