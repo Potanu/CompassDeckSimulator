@@ -1,0 +1,61 @@
+/* =========================================================
+   MedalSettingsPanel Components
+   ========================================================= */
+.medal-panel {
+  position: fixed;
+
+  bottom: var(--footer-height);
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: var(--footer-width);
+  max-width: 100%;
+
+  background: #000000B3;
+  color: #fff;
+
+  padding: 40px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+
+  z-index: var(--z-medal-settings-panel);
+}
+
+.medal-panel.is-hidden {
+  display: none;
+}
+
+/* ---------------------------------------------------------
+   １行目説明
+   --------------------------------------------------------- */
+.panel-title {
+  display: flex;
+  align-items: baseline;
+  align-self: flex-start;
+  gap: 8px;
+}
+
+.panel-title .main {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.panel-title .sub {
+  font-size: 16px;
+  color: #888;
+}
+
+/* ---------------------------------------------------------
+   ２行目メダル表示
+   --------------------------------------------------------- */
+.medal-row {
+  display: flex;
+  gap: 56px;
+}
+
+

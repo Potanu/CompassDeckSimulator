@@ -1,15 +1,19 @@
+/* =========================================================
+   Footer Components
+   ========================================================= */
 .footer {
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
+  height: var(--footer-height);
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
 	margin-top: 2rem;
-	z-index: 1000;
+	z-index: var(--z-footer);
 
 	background: #111;
 	color: #fff;
@@ -18,11 +22,13 @@
 
 .footer-content {
 	position: relative;
-	width: 420px;
+	width: var(--footer-width);
 	max-width: 100%;
 }
 
-/* ヒーロー選択プルダウン */
+/* ---------------------------------------------------------
+   ヒーロー選択プルダウン
+   --------------------------------------------------------- */
 .dropdown {
 	position: relative;
 	overflow: visible;
@@ -123,7 +129,7 @@
 	overflow-y: auto;
 }
 
-.dropdown-menu.open {
+.dropdown-menu.is-active {
   opacity: 1;
   display: block;
   visibility: visible;
@@ -137,13 +143,6 @@
   pointer-events: auto;
 }
 
-.dropdown-menu li a {
-  display: block;
-  padding: 8px 16px;
-  color: #fff;
-  text-decoration: none;
-}
-
 .dropdown-trigger-arrow {
   position: absolute;
   right: 15px;
@@ -153,22 +152,45 @@
   pointer-events: none;
 }
 
-/* 設定アイコン */
-.displaySetting {
+/* ---------------------------------------------------------
+   メダル設定アイコン
+   --------------------------------------------------------- */
+.medalSetting {
   position: relative;
-  max-width: 32px;
-  height: 32px;
+  background:#6b00ff;
+  max-width: 40px;
+  height: 40px;
 }
 
-.displaySetting img {
+.medalSetting.is-active {
+  background: #250157;
+  opacity: 1;
+  display: block;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.medalSetting img {
+  display: block;
   width: 100%;
   height: 100%;
 }
 
+/* =========================================================
+   端末別レイアウト
+   ========================================================= */
+/* タブレット（768px〜） */
+@media (min-width: 768px) {
+  .dropdown-toggle,
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+
+/* デスクトップ（1024px〜） */
 @media screen and (min-width: 1024px) {
   .dropdown-toggle,
   .dropdown-menu {
     width: 100%;
-    max-width: 420px;
   }
 }

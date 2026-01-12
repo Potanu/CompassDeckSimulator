@@ -1,6 +1,7 @@
 ---
 import '../styles/footer.css';
 import RoleIcon from './RoleIcon.astro';
+import MedalSettingsPanel from "./MedalSettingsPanel.astro";
 
 import { HeroRoleType } from "./types/heros";
 import { ImageAsset } from '../types/common';
@@ -9,7 +10,6 @@ import { getImageAssetById } from "../accessors/common/getData.ts";
 
 const SETTING_MEDAL_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(ImageAsset.SETTING_MEDAL).imagePath}`;
 ---
-
 <footer class="footer">
   <div class="footer-content">
     <div class="dropdown-wrapper">
@@ -21,23 +21,23 @@ const SETTING_MEDAL_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(Imag
         </button>
         <ul class="dropdown-menu">
           {getAllHero().map((hero) =>(
-          <li>
             <button class="dropdown-item" type="button">
               <RoleIcon role={hero.heroRoleId} />
               <span>{hero.label}</span>
             </button>
-          </li>
+          
           ))} 
         </ul>
       </div>
       <!-- 詳細設定アイコン -->
-      <div class="displaySetting">
+      <button class="medalSetting" id="medal-settings-trigger">
         <img src= {SETTING_MEDAL_IMAGE_PATH} width="32" height="32" />
-      </div>
+      </button>
     </div>
   </div>
 </footer>
 
+<!-- ヒーロー選択ドロップダウン -->
 <script>
   const dropdown = document.querySelector('.dropdown');
   const trigger = dropdown.querySelector('.dropdown-trigger');
@@ -58,21 +58,46 @@ const SETTING_MEDAL_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(Imag
     triggerLabel.textContent = label;
     document.body.classList.remove('dropdown-open');
     arrow.textContent = ARROW_CLOSED;
-    menu.classList.remove('open');
+    menu.classList.remove('is-active');
     });
   });
 
   // トリガークリックで開閉
   trigger.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    arrow.textContent = menu.classList.contains('open') ? ARROW_OPEN : ARROW_CLOSED;
+    menu.classList.toggle('is-active');
+    arrow.textContent = menu.classList.contains('is-active') ? ARROW_OPEN : ARROW_CLOSED;
   });
 
   // メニュー外をクリックしたら閉じる
-  document.addEventListener('click', (e) => {
-    if (!dropdown.contains(e.target)) {
-      menu.classList.remove('open');
-      arrow.textContent = ARROW_CLOSED;
+  document.addEventListener(
+    'pointerdown',
+    (e) => {
+      if (!menu.contains(e.target) && !trigger.contains(e.target)) {
+        menu.classList.remove('is-active');
+        arrow.textContent = ARROW_CLOSED;
+      }
+    },
+    true
+  );
+</script>
+
+<!-- 詳細設定アイコン -->
+<script>
+  const trigger = document.getElementById("medal-settings-trigger");
+  const panel = document.getElementById("medal-settings");
+
+ // トリガークリックで開閉
+  trigger?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    trigger?.classList.toggle('is-active');
+    panel?.classList.toggle("is-hidden");
+  });
+
+    // パネル外クリックで閉じる
+  document.addEventListener("click", () => {
+    if (!panel?.classList.contains("is-hidden")) {
+      trigger?.classList.remove('is-active');
+      panel?.classList.add("is-hidden");
     }
   });
 </script>

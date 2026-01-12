@@ -1,0 +1,70 @@
+/* =========================================================
+   MedalIcon Components
+   ========================================================= */
+.medal-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.medal-icon .base {
+  position: absolute;
+  inset: 0;
+  background: #646464;
+  
+  /*八角形を描画*/
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+.medal-icon .front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+}
+
+.medal-icon .level {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+
+  background: #00000080;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: center;
+
+  border-radius: 999px; /*黒背景を楕円にする*/
+}
+
+.medal-label {
+  position: absolute;
+  top: 100%;
+  margin-top: 6px;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.5;
+}

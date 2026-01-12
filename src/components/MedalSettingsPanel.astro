@@ -1,0 +1,20 @@
+---
+import '../styles/medal-settings-panel.css';
+import { ImageAsset } from '../types/common';
+import { HeroMedalType } from "../types/heros";
+import { getAllgetHeroRoleTypeById } from "../accessors/heros/getData.ts";
+import { getImageAssetById } from "../accessors/common/getData.ts";
+import MedalIcon from './MedalIcon.astro';
+---
+<div id="medal-settings" class="medal-panel is-hidden">
+  <div class="panel-title">
+    <span class="main">強化メダル</span>
+    <span class="sub">【タップで変更】</span>
+  </div>
+
+  <div class="medal-row">
+    <MedalIcon type={HeroMedalType.RESIST_STUN_UP} level=1 />
+    <MedalIcon type={HeroMedalType.RESIST_SILENT_UP} level=2 />
+    <MedalIcon type={HeroMedalType.RESIST_POISON_UP} level=3 />
+  </div>
+</div>

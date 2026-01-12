@@ -7,10 +7,11 @@ import { getImageAssetById } from "../accessors/common/getData.ts";
 const BASE_ICON = '/CompassDeckSimulator/' + getImageAssetById(ImageAsset.HEXAGON).imagePath;
 const roleIcons: Record<HeroRoleType, string> = {} as const;
 
-roleIcons[HeroRoleType.SPRINTER]  = '/CompassDeckSimulator/' + getImageAssetById(ImageAsset.SHOES).imagePath;
-roleIcons[HeroRoleType.ATTACKER]  = '/CompassDeckSimulator/' + getImageAssetById(ImageAsset.SWORD).imagePath;
-roleIcons[HeroRoleType.GUNNER]    = '/CompassDeckSimulator/' + getImageAssetById(ImageAsset.WAND_STARS).imagePath;
-roleIcons[HeroRoleType.TANK]      = '/CompassDeckSimulator/' + getImageAssetById(ImageAsset.SHIELD).imagePath;
+const assetPath = (asset: ImageAsset) => `/CompassDeckSimulator/${getImageAssetById(asset).imagePath}`;
+roleIcons[HeroRoleType.SPRINTER]  = assetPath(ImageAsset.SHOES);
+roleIcons[HeroRoleType.ATTACKER]  = assetPath(ImageAsset.SWORD);
+roleIcons[HeroRoleType.GUNNER]    = assetPath(ImageAsset.WAND_STARS);
+roleIcons[HeroRoleType.TANK]      = assetPath(ImageAsset.SHIELD);
 
 const { role, size = 38 } = Astro.props;
 ---
@@ -19,6 +20,6 @@ const { role, size = 38 } = Astro.props;
   class="role-icon"
   style={`width:${size}px; height:${size}px;`}
 >
-  <img src={BASE_ICON} class="base" alt="" />
-  <img src={roleIcons[role]} class="front" alt="" />
+  <img src={BASE_ICON} class="role-icon-base" alt="" />
+  <img src={roleIcons[role]} class="role-icon-front" alt="" />
 </div>

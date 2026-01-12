@@ -1,0 +1,32 @@
+---
+import '../styles/medal-icon.css';
+import { HeroMedalType } from "../types/heros";
+import { ImageAsset } from '../types/common';
+import { getImageAssetById } from "../accessors/common/getData.ts";
+import { getHeroMedalTypeById } from "../accessors/heros/getData.ts"
+
+const medalIcons: Record<HeroMedalType, string> = {} as const;
+const assetPath = (asset: ImageAsset) => `/CompassDeckSimulator/${getImageAssetById(asset).imagePath}`;
+medalIcons[HeroMedalType.ATK_UP]             = assetPath(ImageAsset.SWORD);
+medalIcons[HeroMedalType.DEF_UP]             = assetPath(ImageAsset.SHIELD);
+medalIcons[HeroMedalType.HP_UP]              = assetPath(ImageAsset.HEART);
+medalIcons[HeroMedalType.MOVE_SPEED_UP]      = assetPath(ImageAsset.SHOES);
+medalIcons[HeroMedalType.HS_GAIN_UP]         = assetPath(ImageAsset.HUMAN);
+medalIcons[HeroMedalType.COOLDOWN_REDUCTION] = assetPath(ImageAsset.CLOCK);
+medalIcons[HeroMedalType.CAPTURE_SPEED_UP]   = assetPath(ImageAsset.KEY);
+medalIcons[HeroMedalType.RESIST_FIRE_UP]     = assetPath(ImageAsset.FIRE);
+medalIcons[HeroMedalType.RESIST_WATER_UP]    = assetPath(ImageAsset.WATER);
+medalIcons[HeroMedalType.RESIST_WOOD_UP]     = assetPath(ImageAsset.LEAF);
+medalIcons[HeroMedalType.RESIST_STUN_UP]     = assetPath(ImageAsset.BOLT);
+medalIcons[HeroMedalType.RESIST_SILENT_UP]   = assetPath(ImageAsset.SPEECH_BUBBLE);
+medalIcons[HeroMedalType.RESIST_POISON_UP]   = assetPath(ImageAsset.BEAKER);
+
+const { type, level, isShowLabel = true } = Astro.props;
+---
+
+<div class="medal-icon">
+  <div class="base"></div>
+  <img src={medalIcons[type]} class="front" alt="" />
+  {level != null && (<div class="level">+{level}</div>)}
+  {isShowLabel == true && (<div class="medal-label">{getHeroMedalTypeById(type).label}</div>)}
+</div>
