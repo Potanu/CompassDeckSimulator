@@ -124,5 +124,11 @@
     "key": "FIRE",
     "imagePath": "icons/mode_heat_24dp_EA3323_FILL1_wght400_GRAD0_opsz24.svg",
     "label": "火属性"
+  },
+  {
+    "id": 21,
+    "key": "PAINT",
+    "imagePath": "icons/colors_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg",
+    "label": "ペンキ"
   }
 ]

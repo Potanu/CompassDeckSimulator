@@ -20,6 +20,7 @@ export const ImageAsset = {
    LEAF:                    18,     // 木属性
    WATER:                   19,     // 水属性
    FIRE:                    20,     // 火属性
+   PAINT:                   21,     // ペンキ
 } as const;
 
 export type ImageAsset = typeof ImageAsset[keyof typeof ImageAsset];
