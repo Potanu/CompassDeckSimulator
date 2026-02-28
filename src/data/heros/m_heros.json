@@ -684,5 +684,12 @@
     "label": "ランサー",
     "heroRoleId": 3,
     "collaborationTitleId": 35
+  },
+  {
+    "id": 99,
+    "key": "FIRST",
+    "label": "✟ファースト✟",
+    "heroRoleId": 4,
+    "collaborationTitleId": 0
   }
 ]
