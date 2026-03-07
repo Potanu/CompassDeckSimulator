@@ -1181,23 +1181,23 @@
   },
   {
     "card_id": 119,
-    "cooldownTime": 25,
+    "cooldownTime": 22,
     "attack": 59,
     "defense": 20,
     "health": 493,
     "abilityLabel": "味方チーム全員のライフを30％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 120,
-    "cooldownTime": 25,
+    "cooldownTime": 22,
     "attack": 59,
     "defense": 25,
     "health": 395,
     "abilityLabel": "味方チーム全員のライフを30％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 121,
@@ -2053,11 +2053,11 @@
     "card_id": 206,
     "cooldownTime": 34,
     "attack": 36,
-    "defense": 23,
+    "defense": 36,
     "health": 701,
     "abilityLabel": "ライフを 70％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 207,
@@ -2151,13 +2151,13 @@
   },
   {
     "card_id": 216,
-    "cooldownTime": 25,
+    "cooldownTime": 22,
     "attack": 43,
     "defense": 22,
     "health": 660,
     "abilityLabel": "味方チーム全員のライフを 30％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 217,
@@ -3102,12 +3102,12 @@
   {
     "card_id": 311,
     "cooldownTime": 30,
-    "attack": 61,
+    "attack": 64,
     "defense": 33,
-    "health": 320,
+    "health": 373,
     "abilityLabel": "自分と周囲味方のライフ回復\n自分60％＆味方50％ +状態異常回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 312,
@@ -4011,23 +4011,23 @@
   },
   {
     "card_id": 402,
-    "cooldownTime": 30,
+    "cooldownTime": 33,
     "attack": 66,
     "defense": 18,
     "health": 560,
     "abilityLabel": "自分のライフを40％回復\n+前方に持続回復エリア展開（10秒）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 403,
     "cooldownTime": 15,
     "attack": 65,
-    "defense": 11,
-    "health": 483,
+    "defense": 21,
+    "health": 542,
     "abilityLabel": "ライフを 30％回復\n（周囲に味方が居ない時 60％回復）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 404,
@@ -4054,30 +4054,30 @@
     "cooldownTime": 30,
     "attack": 66,
     "defense": 22,
-    "health": 432,
+    "health": 529,
     "abilityLabel": "ライフを 70％回復 +ライフを持続回復\n（10秒間で最大70％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 407,
     "cooldownTime": 27,
-    "attack": 51,
+    "attack": 56,
     "defense": 21,
     "health": 616,
     "abilityLabel": "ライフを 70％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 408,
     "cooldownTime": 30,
-    "attack": 51,
+    "attack": 56,
     "defense": 21,
     "health": 616,
     "abilityLabel": "自分と周囲味方のライフ回復\n自分60％＆味方50％ +状態異常回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 409,
@@ -4093,11 +4093,11 @@
     "card_id": 410,
     "cooldownTime": 27,
     "attack": 61,
-    "defense": 20,
-    "health": 509,
+    "defense": 30,
+    "health": 539,
     "abilityLabel": "ライフを 70％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 411,
@@ -4124,20 +4124,20 @@
     "cooldownTime": 50,
     "attack": 66,
     "defense": 22,
-    "health": 529,
+    "health": 610,
     "abilityLabel": "味方チーム全員のライフを 80％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 414,
     "cooldownTime": 27,
     "attack": 69,
-    "defense": 31,
+    "defense": 41,
     "health": 448,
     "abilityLabel": "ライフを 70％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 415,
