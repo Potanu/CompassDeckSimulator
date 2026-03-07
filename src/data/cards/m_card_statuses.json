@@ -1225,9 +1225,9 @@
     "attack": 44,
     "defense": 34,
     "health": 442,
-    "abilityLabel": "ライフを持続回復（10秒間で最大80％）",
+    "abilityLabel": "ライフを持続回復（10秒間で最大90％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 124,
@@ -1235,9 +1235,9 @@
     "attack": 44,
     "defense": 22,
     "health": 676,
-    "abilityLabel": "ライフを持続回復（10秒間で最大80％）",
+    "abilityLabel": "ライフを持続回復（10秒間で最大90％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 125,
@@ -1805,9 +1805,9 @@
     "attack": 41,
     "defense": 31,
     "health": 517,
-    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）\n+自分の防御力を 5秒間 大アップ",
+    "abilityLabel": "前方に 強力な連続攻撃（中ダメージ）\n+自分の防御力を 6秒間 大アップ",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 182,
@@ -1905,9 +1905,9 @@
     "attack": 63,
     "defense": 32,
     "health": 316,
-    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）\n+自分の防御力を 5秒間 大アップ",
+    "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）\n+自分の防御力を 6秒間 大アップ",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 192,
@@ -2175,9 +2175,9 @@
     "attack": 66,
     "defense": 22,
     "health": 432,
-    "abilityLabel": "ライフを持続回復（10秒間で最大80％）",
+    "abilityLabel": "ライフを持続回復（10秒間で最大90％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 219,
@@ -2742,22 +2742,22 @@
   {
     "card_id": 275,
     "cooldownTime": 20,
-    "attack": 60,
+    "attack": 62,
     "defense": 49,
-    "health": 476,
+    "health": 512,
     "abilityLabel": "長距離の強力な攻撃（中ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 276,
     "cooldownTime": 20,
-    "attack": 64,
+    "attack": 66,
     "defense": 21,
-    "health": 533,
+    "health": 549,
     "abilityLabel": "長距離の強力な攻撃（中ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 277,
@@ -2782,12 +2782,12 @@
   {
     "card_id": 279,
     "cooldownTime": 28,
-    "attack": 62,
-    "defense": 26,
+    "attack": 65,
+    "defense": 35,
     "health": 416,
     "abilityLabel": "遠くの敵に 防御力無視の攻撃\n（中ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 280,
@@ -2871,23 +2871,23 @@
   },
   {
     "card_id": 288,
-    "cooldownTime": 24,
+    "cooldownTime": 20,
     "attack": 46,
     "defense": 60,
     "health": 465,
     "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（大ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 289,
-    "cooldownTime": 24,
+    "cooldownTime": 20,
     "attack": 69,
     "defense": 28,
     "health": 442,
     "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（大ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 290,
@@ -2912,12 +2912,12 @@
   {
     "card_id": 292,
     "cooldownTime": 14,
-    "attack": 56,
+    "attack": 58,
     "defense": 61,
     "health": 445,
     "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 293,
@@ -2994,10 +2994,10 @@
     "cooldownTime": 30,
     "attack": 71,
     "defense": 23,
-    "health": 465,
-    "abilityLabel": "周囲の敵のヒーロースキルパワーを\n30％奪う",
+    "health": 536,
+    "abilityLabel": "周囲の敵のヒーロースキルパワーを\n40％奪う",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 301,
@@ -3035,9 +3035,9 @@
     "attack": 56,
     "defense": 33,
     "health": 395,
-    "abilityLabel": "ライフを持続回復\n（10秒間で最大120％）",
+    "abilityLabel": "ライフを持続回復\n（10秒間で最大140％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 305,
@@ -3095,9 +3095,9 @@
     "attack": 46,
     "defense": 23,
     "health": 711,
-    "abilityLabel": "ライフを持続回復\n（20秒間で最大100％）",
+    "abilityLabel": "ライフを持続回復\n（20秒間で最大120％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 311,
@@ -3141,13 +3141,13 @@
   },
   {
     "card_id": 315,
-    "cooldownTime": 30,
+    "cooldownTime": 28,
     "attack": 66,
-    "defense": 27,
+    "defense": 33,
     "health": 437,
     "abilityLabel": "被ダメージを ライフに変換する\n（3秒間 / 吸収量200％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 316,
@@ -3191,13 +3191,13 @@
   },
   {
     "card_id": 320,
-    "cooldownTime": 42,
+    "cooldownTime": 40,
     "attack": 64,
     "defense": 25,
-    "health": 405,
+    "health": 456,
     "abilityLabel": "前方敵ガードブレイク +\nカードのバフ＆持続回復を打ち消す",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 321,
@@ -3212,12 +3212,12 @@
   {
     "card_id": 322,
     "cooldownTime": 37,
-    "attack": 46,
+    "attack": 53,
     "defense": 22,
     "health": 676,
     "abilityLabel": "敵チームの攻撃力を 4秒間 極大ダウン",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 323,
@@ -3231,13 +3231,13 @@
   },
   {
     "card_id": 324,
-    "cooldownTime": 45,
-    "attack": 66,
+    "cooldownTime": 42,
+    "attack": 68,
     "defense": 22,
     "health": 547,
     "abilityLabel": "敵チームの カードバフ効果+\nライフ持続回復効果を打ち消す",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 325,
@@ -3401,23 +3401,23 @@
   },
   {
     "card_id": 341,
-    "cooldownTime": 36,
-    "attack": 66,
+    "cooldownTime": 34,
+    "attack": 68,
     "defense": 22,
     "health": 547,
     "abilityLabel": "前方にあるポータルキー周囲の敵を\n4秒間スタンにする",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 342,
     "cooldownTime": 18,
-    "attack": 44,
+    "attack": 60,
     "defense": 33,
     "health": 547,
     "abilityLabel": "前方にあるポータルキー周囲の敵を\n遠くに弾き飛ばす",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 343,
@@ -3434,10 +3434,10 @@
     "cooldownTime": 30,
     "attack": 66,
     "defense": 27,
-    "health": 437,
+    "health": 519,
     "abilityLabel": "前方にあるポータルキー周囲の敵を\n10秒間サイレント+同効果エリアを展開",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 345,
@@ -3463,21 +3463,21 @@
     "card_id": 347,
     "cooldownTime": 36,
     "attack": 69,
-    "defense": 27,
+    "defense": 38,
     "health": 437,
     "abilityLabel": "前方へウィングを展開し\n超射程多段ビーム攻撃（中ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 348,
-    "cooldownTime": 26,
+    "cooldownTime": 24,
     "attack": 61,
     "defense": 13,
     "health": 661,
     "abilityLabel": "前方に 強力な攻撃\n（大ダメージ/ライフ減少時に威力増加）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 349,
@@ -3563,11 +3563,11 @@
     "card_id": 357,
     "cooldownTime": 22,
     "attack": 67,
-    "defense": 28,
-    "health": 444,
+    "defense": 33,
+    "health": 455,
     "abilityLabel": "前方の敵に強力な攻撃（極大ダメージ）+\n残ライフの25％減少",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 358,
@@ -3674,10 +3674,10 @@
     "cooldownTime": 18,
     "attack": 69,
     "defense": 20,
-    "health": 534,
+    "health": 610,
     "abilityLabel": "遠くの敵を 10秒間サイレントにする",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 369,
@@ -3724,10 +3724,10 @@
     "cooldownTime": 27,
     "attack": 68,
     "defense": 28,
-    "health": 508,
+    "health": 593,
     "abilityLabel": "長射程の強力な攻撃（大ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 374,
@@ -3765,9 +3765,9 @@
     "attack": 67,
     "defense": 45,
     "health": 407,
-    "abilityLabel": "前方に 強力な連続攻撃（大ダメージ）\n+自分の防御力を 5秒間 極大アップ",
+    "abilityLabel": "前方に 強力な連続攻撃（大ダメージ）\n+自分の防御力を 6秒間 極大アップ",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 378,
@@ -3781,13 +3781,13 @@
   },
   {
     "card_id": 379,
-    "cooldownTime": 36,
+    "cooldownTime": 34,
     "attack": 69,
     "defense": 23,
     "health": 489,
     "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（極大ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 380,
@@ -3821,13 +3821,13 @@
   },
   {
     "card_id": 383,
-    "cooldownTime": 24,
+    "cooldownTime": 20,
     "attack": 58,
     "defense": 22,
     "health": 684,
     "abilityLabel": "連打攻撃で 防御力無視の攻撃\n（大ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 384,
@@ -3921,23 +3921,23 @@
   },
   {
     "card_id": 393,
-    "cooldownTime": 21,
+    "cooldownTime": 20,
     "attack": 69,
     "defense": 33,
-    "health": 452,
+    "health": 532,
     "abilityLabel": "周囲の敵を 打ち上げる 強力な攻撃\n（大ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 394,
     "cooldownTime": 14,
     "attack": 69,
-    "defense": 17,
+    "defense": 28,
     "health": 621,
     "abilityLabel": "全周囲に 強力な攻撃（中ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 395,
@@ -3962,12 +3962,12 @@
   {
     "card_id": 397,
     "cooldownTime": 20,
-    "attack": 66,
+    "attack": 68,
     "defense": 21,
-    "health": 570,
+    "health": 622,
     "abilityLabel": "周囲攻撃+ダメージの600％ライフ吸収\n（大ダメージ）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 398,
@@ -4055,7 +4055,7 @@
     "attack": 66,
     "defense": 22,
     "health": 529,
-    "abilityLabel": "ライフを 70％回復 +ライフを持続回復\n（10秒間で最大70％）",
+    "abilityLabel": "ライフを 70％回復 +ライフを持続回復\n（10秒間で最大90％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
     "updatedDate": "2026-03-06T15:00:00.000Z"
   },
@@ -4065,7 +4065,7 @@
     "attack": 56,
     "defense": 21,
     "health": 616,
-    "abilityLabel": "ライフを 70％回復",
+    "abilityLabel": "ライフを 80％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
     "updatedDate": "2026-03-06T15:00:00.000Z"
   },
@@ -4095,7 +4095,7 @@
     "attack": 61,
     "defense": 30,
     "health": 539,
-    "abilityLabel": "ライフを 70％回復",
+    "abilityLabel": "ライフを 80％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
     "updatedDate": "2026-03-06T15:00:00.000Z"
   },
@@ -4115,9 +4115,9 @@
     "attack": 53,
     "defense": 22,
     "health": 661,
-    "abilityLabel": "ライフを持続回復\n（10秒間で最大120％）",
+    "abilityLabel": "ライフを持続回復\n（10秒間で最大140％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 413,
@@ -4125,7 +4125,7 @@
     "attack": 66,
     "defense": 22,
     "health": 610,
-    "abilityLabel": "味方チーム全員のライフを 80％回復",
+    "abilityLabel": "味方チーム全員のライフを 100％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
     "updatedDate": "2026-03-06T15:00:00.000Z"
   },
@@ -4135,7 +4135,7 @@
     "attack": 69,
     "defense": 41,
     "health": 448,
-    "abilityLabel": "ライフを 70％回復",
+    "abilityLabel": "ライフを 80％回復",
     "createdDate": "2026-01-02T15:00:00.000Z",
     "updatedDate": "2026-03-06T15:00:00.000Z"
   },
@@ -4155,9 +4155,9 @@
     "attack": 69,
     "defense": 23,
     "health": 569,
-    "abilityLabel": "ライフを持続回復\n（20秒間で最大100％）",
+    "abilityLabel": "ライフを持続回復\n（20秒間で最大120％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 417,
@@ -4175,9 +4175,9 @@
     "attack": 67,
     "defense": 26,
     "health": 507,
-    "abilityLabel": "ライフを持続回復\n（10秒間で最大120％）",
+    "abilityLabel": "ライフを持続回復\n（10秒間で最大140％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 419,
@@ -4232,12 +4232,12 @@
   {
     "card_id": 424,
     "cooldownTime": 26,
-    "attack": 56,
+    "attack": 62,
     "defense": 11,
     "health": 678,
     "abilityLabel": "被ダメージを 70％減らす（6秒間）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 425,
@@ -4253,11 +4253,11 @@
     "card_id": 426,
     "cooldownTime": 32,
     "attack": 68,
-    "defense": 22,
+    "defense": 31,
     "health": 523,
-    "abilityLabel": "被ダメージを ライフに変換する\n（6秒間 / 吸収量200％）",
+    "abilityLabel": "被ダメージを ライフに変換する\n（8秒間 / 吸収量200％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 427,
@@ -4271,23 +4271,23 @@
   },
   {
     "card_id": 428,
-    "cooldownTime": 30,
-    "attack": 53,
+    "cooldownTime": 28,
+    "attack": 56,
     "defense": 21,
     "health": 638,
     "abilityLabel": "被ダメージを ライフに変換する\n（3秒間 / 吸収量200％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 429,
     "cooldownTime": 32,
-    "attack": 54,
+    "attack": 59,
     "defense": 22,
     "health": 673,
-    "abilityLabel": "被ダメージを ライフに変換する\n（6秒間 / 吸収量200％）",
+    "abilityLabel": "被ダメージを ライフに変換する\n（8秒間 / 吸収量200％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 430,
@@ -4305,9 +4305,9 @@
     "attack": 56,
     "defense": 21,
     "health": 660,
-    "abilityLabel": "被ダメージを 70％減らす（3秒間）",
+    "abilityLabel": "被ダメージを 90％減らす（3秒間）",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 432,
@@ -4351,13 +4351,13 @@
   },
   {
     "card_id": 436,
-    "cooldownTime": 28,
+    "cooldownTime": 27,
     "attack": 69,
     "defense": 43,
     "health": 392,
     "abilityLabel": "自分の防御力を 6秒間 極大アップ\n+自身周囲の味方も防御力アップ",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 437,
@@ -4391,13 +4391,13 @@
   },
   {
     "card_id": 440,
-    "cooldownTime": 24,
+    "cooldownTime": 22,
     "attack": 63,
     "defense": 47,
     "health": 414,
     "abilityLabel": "自分の防御力を 6秒間 極大アップ",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 441,
@@ -4422,12 +4422,12 @@
   {
     "card_id": 443,
     "cooldownTime": 32,
-    "attack": 52,
+    "attack": 56,
     "defense": 26,
     "health": 685,
     "abilityLabel": "自分の防御力を 8秒間 極大アップ",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 444,
@@ -4442,12 +4442,12 @@
   {
     "card_id": 445,
     "cooldownTime": 34,
-    "attack": 56,
-    "defense": 20,
+    "attack": 61,
+    "defense": 24,
     "health": 661,
     "abilityLabel": "前方敵の全行動速度を 3秒間 大ダウン",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 446,
@@ -4462,22 +4462,22 @@
   {
     "card_id": 447,
     "cooldownTime": 47,
-    "attack": 65,
+    "attack": 68,
     "defense": 21,
-    "health": 513,
+    "health": 549,
     "abilityLabel": "前方敵の全行動速度を 4秒間 大ダウン",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 448,
-    "cooldownTime": 45,
-    "attack": 44,
-    "defense": 27,
+    "cooldownTime": 42,
+    "attack": 63,
+    "defense": 16,
     "health": 655,
     "abilityLabel": "敵チームの カードのバフ効果+\nライフ持続回復効果を打ち消す",
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-06T15:00:00.000Z"
   },
   {
     "card_id": 449,
