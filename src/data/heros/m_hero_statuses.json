@@ -67,9 +67,9 @@
     "id": 9,
     "attack": 0.9,
     "defense": 1.45,
-    "health": 1,
+    "health": 1.1,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   },
   {
     "id": 10,
@@ -114,10 +114,10 @@
   {
     "id": 15,
     "attack": 1.05,
-    "defense": 0.75,
+    "defense": 0.7,
     "health": 1.05,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   },
   {
     "id": 16,
@@ -315,9 +315,9 @@
     "id": 40,
     "attack": 1.45,
     "defense": 0.65,
-    "health": 1.5,
+    "health": 1.4,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   },
   {
     "id": 41,
@@ -458,10 +458,10 @@
   {
     "id": 58,
     "attack": 1.35,
-    "defense": 1.45,
+    "defense": 1.25,
     "health": 0.9,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-02-27T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   },
   {
     "id": 59,
@@ -627,9 +627,9 @@
     "id": 79,
     "attack": 1.5,
     "defense": 0.6,
-    "health": 1.05,
+    "health": 1.1,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   },
   {
     "id": 80,
@@ -771,24 +771,24 @@
     "id": 97,
     "attack": 1.5,
     "defense": 1.35,
-    "health": 0.95,
+    "health": 0.9,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   },
   {
     "id": 98,
     "attack": 1.2,
     "defense": 0.75,
-    "health": 0.9,
+    "health": 0.85,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-02-27T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   },
   {
     "id": 99,
     "attack": 1.4,
-    "defense": 0.8,
+    "defense": 0.9,
     "health": 1.1,
     "createdDate": "2026-02-27T15:00:00.000Z",
-    "updatedDate": "2026-02-27T15:00:00.000Z"
+    "updatedDate": "2026-03-28T15:00:00.000Z"
   }
 ]
