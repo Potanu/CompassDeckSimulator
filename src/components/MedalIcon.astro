@@ -3,7 +3,7 @@ import '../styles/medal-icon.css';
 import { HeroMedalType } from "../types/heros";
 import { ImageAsset } from '../types/common';
 import { getImageAssetById } from "../accessors/common/getData.ts";
-import { getHeroMedalTypeById } from "../accessors/heros/getData.ts"
+import { getHeroMedalTypeById, getHeroMedalColorTypeById } from "../accessors/heros/getData.ts"
 
 const medalIcons: Record<HeroMedalType, string> = {} as const;
 const assetPath = (asset: ImageAsset) => `/CompassDeckSimulator/${getImageAssetById(asset).imagePath}`;
@@ -21,11 +21,11 @@ medalIcons[HeroMedalType.RESIST_STUN_UP]     = assetPath(ImageAsset.BOLT);
 medalIcons[HeroMedalType.RESIST_SILENT_UP]   = assetPath(ImageAsset.SPEECH_BUBBLE);
 medalIcons[HeroMedalType.RESIST_POISON_UP]   = assetPath(ImageAsset.BEAKER);
 
-const { type, level, isShowLabel = true } = Astro.props;
+const { type, level = 1, color = 1, isShowLabel = true } = Astro.props;
 ---
 
 <div class="medal-icon">
-  <div class="base"></div>
+  <div class="base" style={`background: ${getHeroMedalColorTypeById(color).color};`}></div>
   <img src={medalIcons[type]} class="front" alt="" />
   {level != null && (<div class="level">+{level}</div>)}
   {isShowLabel == true && (<div class="medal-label">{getHeroMedalTypeById(type).label}</div>)}

@@ -1,8 +1,8 @@
 ---
 import '../styles/medal-settings-panel.css';
 import { ImageAsset } from '../types/common';
-import { HeroMedalType } from "../types/heros";
-import { getAllgetHeroRoleTypeById } from "../accessors/heros/getData.ts";
+import { HeroMedalType, HeroMedalColorType } from "../types/heros";
+import { getAllgetHeroRoleTypeById, getHeroMedalColorTypeById } from "../accessors/heros/getData.ts";
 import { getImageAssetById } from "../accessors/common/getData.ts";
 import MedalIcon from './MedalIcon.astro';
 ---
@@ -13,8 +13,17 @@ import MedalIcon from './MedalIcon.astro';
   </div>
 
   <div class="medal-row">
-    <MedalIcon type={HeroMedalType.RESIST_STUN_UP} level=1 />
-    <MedalIcon type={HeroMedalType.RESIST_SILENT_UP} level=2 />
-    <MedalIcon type={HeroMedalType.RESIST_POISON_UP} level=3 />
+    <MedalIcon type={HeroMedalType.RESIST_STUN_UP}    level=1 color={HeroMedalColorType.SILVER} />
+    <MedalIcon type={HeroMedalType.RESIST_SILENT_UP}  level=2 color={HeroMedalColorType.PURPLE} />
+    <MedalIcon type={HeroMedalType.RESIST_POISON_UP}  level=3 color={HeroMedalColorType.GREEN}  />
   </div>
 </div>
+
+<script>
+  const medalButton = document.querySelector('.medal-icon .front');
+  const sheet = document.getElementById('bottomSheet');
+
+  medalButton.addEventListener('click', () => {
+    sheet.classList.toggle('open');
+  });
+</script>

@@ -34,16 +34,20 @@
   height: 32px;
 }
 
+.medal-icon .front:hover {
+  transform: scale(1.1);
+}
+
 .medal-icon .level {
   position: absolute;
-  right: -4px;
+  right: -10px;
   bottom: -4px;
 
   min-width: 22px;
   height: 22px;
   padding: 0 6px;
 
-  background: #00000080;
+  background: #13046bf0;
   color: #fff;
 
   font-size: 14px;
@@ -51,7 +55,27 @@
   line-height: 22px;
   text-align: center;
 
-  border-radius: 999px; /*黒背景を楕円にする*/
+  border-radius: 999px; /*背景を楕円にする*/
+}
+
+.medal-icon .color {
+  position: absolute;
+  left: -10px;
+  top: -12px;
+
+  width: 30px;
+  height: 30px;
+  padding: 0 6px;
+
+  background: #13046bf0;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: center;
+
+  border-radius: 50%; /*背景を円にする*/
 }
 
 .medal-label {
