@@ -5758,5 +5758,45 @@
     "cardCategoryId": 1,
     "cardCastTimeId": 1,
     "collaborationTitleId": 0
+  },
+  {
+    "id": 577,
+    "label": "【チェンソーマン】レゼ",
+    "cardElementId": 3,
+    "cardRarityId": 4,
+    "cardSkillId": 4,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 28
+  },
+  {
+    "id": 578,
+    "label": "【チェンソーマン】チェンソーマン",
+    "cardElementId": 1,
+    "cardRarityId": 4,
+    "cardSkillId": 11,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 28
+  },
+  {
+    "id": 579,
+    "label": "天使の悪魔",
+    "cardElementId": 3,
+    "cardRarityId": 3,
+    "cardSkillId": 6,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 28
+  },
+  {
+    "id": 580,
+    "label": "ビーム",
+    "cardElementId": 2,
+    "cardRarityId": 3,
+    "cardSkillId": 9,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 28
   }
 ]

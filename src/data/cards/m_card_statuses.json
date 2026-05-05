@@ -5758,5 +5758,45 @@
     "abilityLabel": "前方に 強力な攻撃（大ダメージ）\n+敵を撃破時 ライフ回復（100％）",
     "createdDate": "2026-01-02T15:00:00.000Z",
     "updatedDate": "2026-01-02T15:00:00.000Z"
+  },
+  {
+    "card_id": 577,
+    "cooldownTime": 34,
+    "attack": 68,
+    "defense": 40,
+    "health": 410,
+    "abilityLabel": "全周囲に 強力な攻撃（大ダメージ）\n+自分の防御力を 6秒間 超アップ",
+    "createdDate": "2026-05-04T15:00:00.000Z",
+    "updatedDate": "2026-05-04T15:00:00.000Z"
+  },
+  {
+    "card_id": 578,
+    "cooldownTime": 27,
+    "attack": 68,
+    "defense": 11,
+    "health": 617,
+    "abilityLabel": "4秒間 最初に受けた攻撃を無効化し\n敵にカウンター連打攻撃(極大ダメージ)",
+    "createdDate": "2026-05-04T15:00:00.000Z",
+    "updatedDate": "2026-05-04T15:00:00.000Z"
+  },
+  {
+    "card_id": 579,
+    "cooldownTime": 32,
+    "attack": 69,
+    "defense": 30,
+    "health": 467,
+    "abilityLabel": "被ダメージを 70％減らす（6秒間）",
+    "createdDate": "2026-05-04T15:00:00.000Z",
+    "updatedDate": "2026-05-04T15:00:00.000Z"
+  },
+  {
+    "card_id": 580,
+    "cooldownTime": 32,
+    "attack": 71,
+    "defense": 13,
+    "health": 508,
+    "abilityLabel": "前方に瞬間移動して ライフを30％回復",
+    "createdDate": "2026-05-04T15:00:00.000Z",
+    "updatedDate": "2026-05-04T15:00:00.000Z"
   }
 ]

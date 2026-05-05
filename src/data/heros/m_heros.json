@@ -691,5 +691,12 @@
     "label": "✟ファースト✟",
     "heroRoleId": 4,
     "collaborationTitleId": 0
+  },
+  {
+    "id": 100,
+    "key": "REZE",
+    "label": "レゼ",
+    "heroRoleId": 3,
+    "collaborationTitleId": 28
   }
 ]
