@@ -20,10 +20,39 @@ import MedalIcon from './MedalIcon.astro';
 </div>
 
 <script>
-  const medalButton = document.querySelector('.medal-icon .front');
-  const sheet = document.getElementById('bottomSheet');
+  // メダル本体
+  const medalButtons = document.querySelectorAll('.medal-main-button');
 
-  medalButton.addEventListener('click', () => {
-    sheet.classList.toggle('open');
+  // +1〜3
+  const levelButtons = document.querySelectorAll('.medal-level-button');
+
+  // シート
+  const medalSheet = document.getElementById('medalTypeSheet');
+  const levelSheet = document.getElementById('medalLevelSheet');
+
+  // メダル種類変更
+  medalButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      medalSheet?.classList.toggle('open');
+      levelSheet?.classList.remove('open');
+    });
+  });
+
+  // レベル変更
+  levelButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      levelSheet?.classList.toggle('open');
+      medalSheet?.classList.remove('open');
+    });
+  });
+
+  // 外側クリックで閉じる
+  document.addEventListener('click', () => {
+    medalSheet?.classList.remove('open');
+    levelSheet?.classList.remove('open');
   });
 </script>

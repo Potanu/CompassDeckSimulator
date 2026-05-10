@@ -34,11 +34,33 @@
   height: 32px;
 }
 
-.medal-icon .front:hover {
-  transform: scale(1.1);
+.medal-icon .medal-main-button {
+  all: unset;
+
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  cursor: pointer;
+
+  border-radius: 12px;
+
+  transition:
+    transform 0.15s,
+    filter 0.15s;
 }
 
-.medal-icon .level {
+.medal-icon .medal-main-button:hover {
+  filter: brightness(1.1);
+}
+
+.medal-icon .medal-main-button:active {
+  transform: scale(0.96);
+}
+
+.medal-icon .medal-level-button {
+  all: unset;
   position: absolute;
   right: -10px;
   bottom: -4px;
@@ -56,6 +78,14 @@
   text-align: center;
 
   border-radius: 999px; /*背景を楕円にする*/
+}
+
+.medal-icon .medal-level-button:hover {
+  filter: brightness(1.1);
+}
+
+.medal-icon .medal-level-button:active {
+  transform: scale(0.96);
 }
 
 .medal-icon .color {

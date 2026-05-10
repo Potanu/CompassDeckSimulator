@@ -25,8 +25,23 @@ const { type, level = 1, color = 1, isShowLabel = true } = Astro.props;
 ---
 
 <div class="medal-icon">
-  <div class="base" style={`background: ${getHeroMedalColorTypeById(color).color};`}></div>
-  <img src={medalIcons[type]} class="front" alt="" />
-  {level != null && (<div class="level">+{level}</div>)}
-  {isShowLabel == true && (<div class="medal-label">{getHeroMedalTypeById(type).label}</div>)}
+  <!-- メダル種類変更 -->
+  <button class="medal-main-button">
+    <div class="base" style={`background: ${getHeroMedalColorTypeById(color).color};`} />
+    <img src={medalIcons[type]} class="front" />
+  </button>
+
+  <!-- レベル変更 -->
+  {level != null && (
+    <button class="medal-level-button"> 
+      +{level}
+    </button>
+  )}
+
+  <!-- メダル説明表示切替 -->
+  {isShowLabel == true && (
+    <div class="medal-label">
+      {getHeroMedalTypeById(type).label}
+    </div>
+  )}
 </div>
