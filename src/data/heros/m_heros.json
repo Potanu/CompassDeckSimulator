@@ -698,5 +698,12 @@
     "label": "レゼ",
     "heroRoleId": 3,
     "collaborationTitleId": 28
+  },
+  {
+    "id": 101,
+    "key": "charles",
+    "label": "シャルル・リヒター",
+    "heroRoleId": 2,
+    "collaborationTitleId": 0
   }
 ]

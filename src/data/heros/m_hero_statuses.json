@@ -250,10 +250,10 @@
   {
     "id": 32,
     "attack": 0.95,
-    "defense": 0.75,
+    "defense": 0.8,
     "health": 0.85,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-05-30T15:00:00.000Z"
   },
   {
     "id": 33,
@@ -483,9 +483,9 @@
     "id": 61,
     "attack": 1.4,
     "defense": 0.7,
-    "health": 0.95,
+    "health": 1,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-05-30T15:00:00.000Z"
   },
   {
     "id": 62,
@@ -530,10 +530,10 @@
   {
     "id": 67,
     "attack": 1.35,
-    "defense": 1.35,
+    "defense": 1.25,
     "health": 0.85,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-05-30T15:00:00.000Z"
   },
   {
     "id": 68,
@@ -546,10 +546,10 @@
   {
     "id": 69,
     "attack": 1.45,
-    "defense": 0.95,
+    "defense": 0.85,
     "health": 1.05,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-05-30T15:00:00.000Z"
   },
   {
     "id": 70,
@@ -722,10 +722,10 @@
   {
     "id": 91,
     "attack": 1.05,
-    "defense": 0.5,
+    "defense": 0.2,
     "health": 1.1,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-05-30T15:00:00.000Z"
   },
   {
     "id": 92,
@@ -795,8 +795,16 @@
     "id": 100,
     "attack": 1.4,
     "defense": 0.85,
-    "health": 1.05,
+    "health": 1,
     "createdDate": "2026-05-04T15:00:00.000Z",
-    "updatedDate": "2026-05-04T15:00:00.000Z"
+    "updatedDate": "2026-05-30T15:00:00.000Z"
+  },
+  {
+    "id": 101,
+    "attack": 1.2,
+    "defense": 1.05,
+    "health": 0.85,
+    "createdDate": "2026-05-30T15:00:00.000Z",
+    "updatedDate": "2026-05-30T15:00:00.000Z"
   }
 ]
