@@ -1,10 +1,18 @@
 :root {
   --z-base: 0;
+  --z-header: 100;
   --z-footer: 100;
   --z-medal-settings-panel: 200;
+  --z-deck-view: 200;
 
   --footer-height: 64px;
   --footer-width: 420px;
+
+  --header-height: 80px;
+  --header-width: 420px;
+
+  --deck-card-height: 84px;
+  --deck-card-width: 60px;
 }
 
 html {

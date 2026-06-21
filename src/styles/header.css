@@ -1,0 +1,20 @@
+/* =========================================================
+   Header Components
+   ========================================================= */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: var(--header-height);
+
+	display: flex;
+	align-items: center;
+
+	z-index: var(--z-header);
+}
+
+.header-content {
+	font-size: 12px;
+}

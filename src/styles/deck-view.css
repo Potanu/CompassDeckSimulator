@@ -1,0 +1,88 @@
+/* =========================================================
+   Deck-view Components
+   ========================================================= */
+.deck-view {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	z-index: var(--z-deck-view);
+	gap: 1rem;
+}
+
+.deck-view-content {
+  width: var(--footer-width);
+  max-width: 100%;
+}
+
+.deck {
+  display: grid;
+	width: 100%;
+
+  grid-template-columns:
+  	var(--deck-card-width)    /* カード */
+    1fr     /* 中央 */
+    80px;  /* ボタン */
+
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.deck-card {
+  width: var(--deck-card-width);
+  height: var(--deck-card-height);
+}
+
+.deck-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.deck-name {
+	font-size: 12px;
+}
+
+.deck-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.deck-category {
+  font-size: 12px;
+  line-height: 1;
+
+	padding: 0.2rem 0.3rem;
+  border: 1px solid #666;
+  border-radius: 9999px;
+}
+
+.deck-ct {
+  display: flex;
+	font-size: 14px;
+  gap: 0.5rem;
+}
+
+.deck-ct-label {
+  color: black;
+}
+
+.deck-ct-current {
+	color: red;
+}
+
+.deck-ct-default {
+  color: black;
+}
+
+.deck-actions {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: .4rem;
+}

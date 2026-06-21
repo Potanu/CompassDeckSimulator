@@ -1,6 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import DeckView from '../components/DeckView.astro';
+import StatusView from '../components/StatusView.astro';
 import MedalSettingsPanel from "../components/MedalSettingsPanel.astro";
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
@@ -14,12 +16,14 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <h1>{pageTitle}</h1>
+    <Header />
     <main>
-      <slot />
+      <slot>
+        <DeckView />
+        <StatusView />
+      </slot>
     </main>
-
     <Footer />
-
     <MedalSettingsPanel />
     <script>
     </script>
