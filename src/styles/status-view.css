@@ -1,0 +1,82 @@
+/* =========================================================
+   Status-view Components
+   ========================================================= */
+
+.status-title {
+  font-size: 12px;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.status-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  z-index: var(--z-status-view);
+  gap: 1rem;
+}
+
+.status-view-content {
+  width: var(--footer-width);
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  --green: 0%;
+  --red: 0%;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.5rem;
+}
+
+.status-name {
+  font-size: 14px;
+  font-weight: bold;
+  width: 40px;
+}
+
+.status-gauge {
+  position: relative;
+  flex: 1;
+  height: 24px;
+  border: 1px solid #8a8a8a;
+  border-radius: 6px;
+  background: #8f8f8f;
+  overflow: hidden;
+}
+
+.status-gauge-green {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--green);
+  background: #3cb043;
+}
+
+.status-gauge-red {
+  position: absolute;
+  top: 0;
+  left: calc(var(--green) - var(--red));
+  width: var(--red);
+  height: 100%;
+  background: #d43c3c;
+}
+
+.status-gauge-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 0 0 2px black;
+  padding-right: 0px;
+}

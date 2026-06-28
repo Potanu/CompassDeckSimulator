@@ -3,9 +3,7 @@
    ========================================================= */
 .deck-view {
 	width: 100%;
-
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	position: relative;
 	align-items: center;

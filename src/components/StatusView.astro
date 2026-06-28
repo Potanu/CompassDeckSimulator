@@ -1,5 +1,56 @@
 ---
 import '../styles/status-view.css';
+
+const statuses = [
+  {
+    name: "攻撃",
+    value: 864,
+    max: 753,
+    green: 70,
+    red: 8,
+  },
+  {
+    name: "防御",
+    value: 721,
+    max: 680,
+    green: 60,
+    red: 5,
+  },
+  {
+    name: "体力",
+    value: 1050,
+    max: 920,
+    green: 85,
+    red: 10,
+  },
+];
 ---
-<status-view class="status-view">
-</status-view>
+
+<div class="status-view">
+  <div class="status-view-content">
+    <div class="status-title">
+      ■ デッキ総合力
+    </div>
+
+    {statuses.map((status) => (
+      <div
+        class="status"
+        style={`--green:${status.green}%; --red:${status.red}%;`}
+      >
+        <div class="status-name">
+          {status.name}
+        </div>
+
+        <div class="status-gauge">
+          <div class="status-gauge-green"></div>
+          <div class="status-gauge-red"></div>
+
+          <div class="status-gauge-text">
+            <span class="status-value">{status.value}</span>
+            <span class="status-max">（{status.max}）</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

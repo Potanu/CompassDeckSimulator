@@ -1,9 +1,10 @@
 :root {
   --z-base: 0;
-  --z-header: 100;
-  --z-footer: 100;
-  --z-medal-settings-panel: 200;
-  --z-deck-view: 200;
+  --z-deck-view: 100;
+  --z-status-view: 100;
+  --z-header: 200;
+  --z-footer: 200;
+  --z-medal-settings-panel: 300;
 
   --footer-height: 64px;
   --footer-width: 420px;
