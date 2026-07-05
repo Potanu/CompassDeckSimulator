@@ -1,0 +1,94 @@
+/* =========================================================
+   Deck-list-view Components
+   ========================================================= */
+.deck-list-view{
+  width:300px;
+  position: relative;
+  border:1px solid #555;
+}
+
+.deck-list-view .sort-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.deck-list-view .item{
+  border-bottom:1px solid #888;
+}
+
+.deck-list-view summary{
+  list-style:none;
+  cursor:pointer;
+  padding:6px 10px;
+  user-select:none;
+}
+
+.deck-list-view summary::-webkit-details-marker{
+  display:none;
+}
+
+.deck-list-view .summary.rare{
+  background:#d9e8ff;
+}
+
+.deck-list-view .summary.normal{
+  background:#e7f4dd;
+}
+
+.deck-list-view .detail{
+  padding:10px;
+  background:#fff;
+}
+
+.deck-list-view .info-row{
+  display:flex;
+  margin-bottom:6px;
+}
+
+.deck-list-view .title{
+  width:90px;
+  font-weight:bold;
+}
+
+.deck-list-view .status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.deck-list-view .status-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  width: 100%;
+  align-items: center;
+}
+
+.deck-list-view .bar{
+  height:12px;
+  background:#ddd;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.deck-list-view .fill{
+  height:100%;
+}
+
+.deck-list-view .atk{
+  background:#ff5555;
+}
+
+.deck-list-view .def{
+  background:#5599ff;
+}
+
+.deck-list-view .hp{
+  background:#55cc55;
+}
+
+.button-area {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}

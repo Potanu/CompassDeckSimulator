@@ -1,5 +1,6 @@
 ---
 import '../styles/deck-view.css';
+import DeckListView from "./DeckListView.astro";
 ---
 <deck-view class="deck-view">
   	<div class="deck-view-content">
@@ -24,7 +25,7 @@ import '../styles/deck-view.css';
 			</div>
 
 			<div class="deck-actions">
-				<button>入れ替え</button>
+				<button class="openDeckList">入れ替え</button>
 				<button>説明</button>
 			</div>
 		</div>
@@ -50,7 +51,7 @@ import '../styles/deck-view.css';
 			</div>
 
 			<div class="deck-actions">
-				<button>入れ替え</button>
+				<button class="openDeckList">入れ替え</button>
 				<button>説明</button>
 			</div>
 		</div>
@@ -76,7 +77,7 @@ import '../styles/deck-view.css';
 			</div>
 
 			<div class="deck-actions">
-				<button>入れ替え</button>
+				<button class="openDeckList">入れ替え</button>
 				<button>説明</button>
 			</div>
 		</div>
@@ -102,9 +103,59 @@ import '../styles/deck-view.css';
 			</div>
 
 			<div class="deck-actions">
-				<button>入れ替え</button>
+				<button class="openDeckList">入れ替え</button>
 				<button>説明</button>
 			</div>
 		</div>
   	</div>
 </deck-view>
+
+<!-- モーダル -->
+<div id="deckListOverlay" class="overlay hidden">
+  <div class="overlay-content">
+    <DeckListView />
+  </div>
+</div>
+
+<script>
+const overlay = document.getElementById("deckListOverlay");
+
+document.querySelectorAll(".openDeckList").forEach(button => {
+    button.addEventListener("click", () => {
+        overlay.classList.remove("hidden");
+    });
+});
+
+overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+        overlay.classList.add("hidden");
+    }
+});
+</script>
+
+<style>
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.hidden{
+  display:none;
+}
+
+.overlay-content{
+  position:relative;
+  width:90%;
+  max-width:420px;
+  max-height:90vh;
+  overflow:auto;
+  background:#fff;
+  border-radius:12px;
+  padding:16px;
+}
+</style>

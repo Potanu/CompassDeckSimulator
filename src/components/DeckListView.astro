@@ -1,0 +1,135 @@
+---
+import '../styles/deck-list-view.css';
+
+const items = [
+  {
+    id: 1,
+    name: "血塗れチェーンソウ",
+    rarity: "rare",
+    attack: 43,
+    defense: 17,
+    hp: 512,
+    skill: "前方に攻撃（小ダメージ）",
+    cooldown: 16,
+  },
+  {
+    id: 2,
+    name: "ドリーム☆ステッキ",
+    rarity: "normal",
+    attack: 18,
+    defense: 40,
+    hp: 280,
+    skill: "回復",
+    cooldown: 8,
+  },
+  {
+    id: 3,
+    name: "凶天浄血 モートルフート",
+    rarity: "normal",
+    attack: 60,
+    defense: 22,
+    hp: 430,
+    skill: "範囲攻撃",
+    cooldown: 20,
+  },
+];
+---
+
+<div class="deck-list-view">
+
+  {items.map(item => (
+
+    <details class="item">
+
+      <summary class={`summary ${item.rarity}`}>
+        {item.name}
+      </summary>
+
+      <div class="detail">
+
+        <div class="info-row">
+          <span class="title">スキル</span>
+          <span>{item.skill}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="title">クールダウン</span>
+          <span>{item.cooldown}秒</span>
+        </div>
+
+        <div class="status">
+
+          <div class="status-row">
+            <span>攻撃</span>
+
+            <div class="bar">
+              <div
+                class="fill atk"
+                style={`width:${item.attack}%`}
+              ></div>
+            </div>
+
+            <span>{item.attack}</span>
+          </div>
+
+          <div class="status-row">
+            <span>防御</span>
+
+            <div class="bar">
+              <div
+                class="fill def"
+                style={`width:${item.defense}%`}
+              ></div>
+            </div>
+
+            <span>{item.defense}</span>
+          </div>
+
+          <div class="status-row">
+            <span>体力</span>
+
+            <div class="bar">
+              <div
+                class="fill hp"
+                style={`width:${item.hp / 6}%`}
+              ></div>
+            </div>
+
+            <span>{item.hp}</span>
+          </div>
+
+        </div>
+
+        <button class="use-btn">
+          使う
+        </button>
+
+      </div>
+
+    </details>
+
+  ))}
+</div>
+<div class="button-area">
+    <button class="sort-btn">ソート</button>
+</div>
+
+<script>
+document.querySelectorAll(".item").forEach((detail) => {
+
+    detail.addEventListener("toggle", () => {
+
+        if (!detail.open) return;
+
+        document.querySelectorAll(".item").forEach((other) => {
+
+            if (other !== detail) {
+                other.open = false;
+            }
+
+        });
+
+    });
+
+});
+</script>
