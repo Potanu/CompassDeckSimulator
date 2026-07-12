@@ -18,22 +18,32 @@
 }
 
 .deck-list-view summary{
-  list-style:none;
-  cursor:pointer;
-  padding:6px 10px;
-  user-select:none;
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
 
 .deck-list-view summary::-webkit-details-marker{
   display:none;
 }
 
-.deck-list-view .summary.rare{
-  background:#d9e8ff;
+.deck-list-view .name{
+  flex:1;
+  font-size: 11px;
 }
 
-.deck-list-view .summary.normal{
-  background:#e7f4dd;
+.deck-list-view .rarity {
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.deck-list-view .attribute-type {
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 30px;
+  text-align: center;
 }
 
 .deck-list-view .detail{
@@ -43,12 +53,18 @@
 
 .deck-list-view .info-row{
   display:flex;
+  font-size: 14px;
   margin-bottom:6px;
 }
 
-.deck-list-view .title{
-  width:90px;
-  font-weight:bold;
+.deck-list-view .skill-row .title {
+  width: 60px;
+}
+
+.deck-list-view .cooldown-row {
+  display: grid;
+  grid-template-columns: 90px 60px 90px 60px;
+  align-items: center;
 }
 
 .deck-list-view .status {
@@ -62,6 +78,12 @@
   grid-template-columns: 40px 1fr 40px;
   width: 100%;
   align-items: center;
+}
+
+.deck-list-view .button-row{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:10px;
 }
 
 .deck-list-view .bar{

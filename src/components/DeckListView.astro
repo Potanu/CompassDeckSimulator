@@ -1,115 +1,118 @@
 ---
 import '../styles/deck-list-view.css';
+import cards from "../data/cards/m_cards.json";
+import cardRarities from "../data/cards/m_card_rarity_types.json";
+import cardAttributeTypes from "../data/cards/m_card_attribute_types.json";
+import cardAttributes from "../data/cards/m_card_attributes.json";
+import cardStatuses from "../data/cards/m_card_statuses.json";
+import cardSkills from "../data/cards/m_card_skill_types.json";
+import cardElements from "../data/cards/m_card_element_types.json";
+import cardCaterories from "../data/cards/m_card_category_types.json";
+import cardCastTimes from "../data/cards/m_card_cast_time_types.json";
 
-const items = [
-  {
-    id: 1,
-    name: "血塗れチェーンソウ",
-    rarity: "rare",
-    attack: 43,
-    defense: 17,
-    hp: 512,
-    skill: "前方に攻撃（小ダメージ）",
-    cooldown: 16,
-  },
-  {
-    id: 2,
-    name: "ドリーム☆ステッキ",
-    rarity: "normal",
-    attack: 18,
-    defense: 40,
-    hp: 280,
-    skill: "回復",
-    cooldown: 8,
-  },
-  {
-    id: 3,
-    name: "凶天浄血 モートルフート",
-    rarity: "normal",
-    attack: 60,
-    defense: 22,
-    hp: 430,
-    skill: "範囲攻撃",
-    cooldown: 20,
-  },
-];
+const cardRarityMap = Object.fromEntries(cardRarities.map(x => [x.id, x]));
+const cardAttributeTypeMap = Object.fromEntries(cardAttributeTypes.map(x => [x.id, x]));
+const cardSkillMap = Object.fromEntries(cardSkills.map(x => [x.id, x]));
+const cardElementMap = Object.fromEntries(cardElements.map(x => [x.id, x]));
+const cardCategoryMap = Object.fromEntries(cardCaterories.map(x => [x.id, x]));
+const cardCastTimeMap = Object.fromEntries(cardCastTimes.map(x => [x.id, x]));
+
+const cardAttributeMap = {};
+cardAttributes.forEach(attribute => {
+  if (!cardAttributeMap[attribute.cardId]) {
+    cardAttributeMap[attribute.cardId] = cardAttributeTypeMap[attribute.cardAttributeTypeId];
+  }
+});
+
+const cardStatusMap = {};
+cardStatuses.forEach(x => {
+  cardStatusMap[x.card_id] = {
+    cooldownTime: x.cooldownTime,
+    attack: x.attack,
+    defense: x.defense,
+    health: x.health,
+    abilityLabel: x.abilityLabel
+  };
+});
 ---
 
 <div class="deck-list-view">
-
-  {items.map(item => (
-
+  {cards.map(card => (
     <details class="item">
 
-      <summary class={`summary ${item.rarity}`}>
-        {item.name}
+      <summary>
+        <span class="rarity">
+          {cardRarityMap[card.cardRarityId].label}
+        </span>
+        <span class="name">
+          {card.label}
+        </span>
+        <span class="attribute-type">
+          {cardAttributeMap[card.id].label}
+        </span>
       </summary>
 
       <div class="detail">
 
-        <div class="info-row">
-          <span class="title">スキル</span>
-          <span>{item.skill}</span>
+      <div class="info-row skill-row">
+        <span class="title">スキル</span>
+        <span>{cardSkillMap[card.cardSkillId].label}</span>
+      </div>
+
+      <div class="info-row cooldown-row">
+        <span class="title">クール</span>
+        <span>{cardStatusMap[card.id].cooldownTime}秒</span>
+
+        <span class="title">発動時間</span>
+        <span>{cardCastTimeMap[card.cardCastTimeId].label}</span>
+      </div>
+
+      <div class="status">
+        <div class="status-row">
+          <span>攻撃</span>
+          <div class="bar">
+            <div
+              class="fill atk"
+              style={`width:attack`}
+            ></div>
+          </div>
+          <span>{cardStatusMap[card.id].attack}</span>
         </div>
 
-        <div class="info-row">
-          <span class="title">クールダウン</span>
-          <span>{item.cooldown}秒</span>
+        <div class="status-row">
+          <span>防御</span>
+          <div class="bar">
+            <div
+              class="fill def"
+              style={`width:defense`}
+            ></div>
+          </div>
+          <span>{cardStatusMap[card.id].defense}</span>
         </div>
 
-        <div class="status">
-
-          <div class="status-row">
-            <span>攻撃</span>
-
-            <div class="bar">
-              <div
-                class="fill atk"
-                style={`width:${item.attack}%`}
-              ></div>
-            </div>
-
-            <span>{item.attack}</span>
+        <div class="status-row">
+          <span>体力</span>
+          <div class="bar">
+            <div
+              class="fill hp"
+              style={`width:hp/6`}
+            ></div>
           </div>
-
-          <div class="status-row">
-            <span>防御</span>
-
-            <div class="bar">
-              <div
-                class="fill def"
-                style={`width:${item.defense}%`}
-              ></div>
-            </div>
-
-            <span>{item.defense}</span>
-          </div>
-
-          <div class="status-row">
-            <span>体力</span>
-
-            <div class="bar">
-              <div
-                class="fill hp"
-                style={`width:${item.hp / 6}%`}
-              ></div>
-            </div>
-
-            <span>{item.hp}</span>
-          </div>
-
+          <span>{cardStatusMap[card.id].health}</span>
         </div>
+      </div>
 
+      <div class="button-row">
         <button class="use-btn">
           使う
         </button>
-
       </div>
 
+    </div>
     </details>
-
   ))}
 </div>
+
 <div class="button-area">
     <button class="sort-btn">ソート</button>
 </div>

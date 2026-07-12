@@ -1,6092 +1,4062 @@
 [
   {
     "cardId": 1,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 2,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 3,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 4,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 4,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 5,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 5,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 6,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 6,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 7,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 7,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 8,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 8,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 9,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 10,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 11,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 11,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 12,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 13,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 14,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 15,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 16,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 17,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 18,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 19,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 20,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 20,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 21,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 21,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 22,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 22,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 23,
-    "cardAttributeTypeId": 35,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 35
   },
   {
     "cardId": 23,
-    "cardAttributeTypeId": 39,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 39
   },
   {
     "cardId": 24,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 24,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 25,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 25,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 26,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 26,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 27,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 27,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 28,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 28,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 29,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 29,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 30,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 30,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 31,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 31,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 31,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 32,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 33,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 34,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 35,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 36,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 36,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 37,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 37,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 38,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 39,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 40,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 41,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 42,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 43,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 44,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 44,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 45,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 45,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 46,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 47,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 48,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 48,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 49,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 49,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 50,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 51,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 52,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 53,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 54,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 55,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 55,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 56,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 56,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 57,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 57,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 58,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 58,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 59,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 59,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 60,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 60,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 61,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 61,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 62,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 63,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 63,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 64,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 65,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 66,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 67,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 68,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 69,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 70,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 71,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 72,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 73,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 74,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 75,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 76,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 76,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 77,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 77,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 78,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 78,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 79,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 79,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 80,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 81,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 82,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 83,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 83,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 84,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 84,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 85,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 85,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 86,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 86,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 87,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 87,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 88,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 88,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 89,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 89,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 90,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 91,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 92,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 92,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 93,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 93,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 94,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 94,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 95,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 95,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 96,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 96,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 97,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 97,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 98,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 99,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 100,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 100,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 101,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 101,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 102,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 102,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 103,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 103,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 104,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 104,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 105,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 105,
-    "cardAttributeTypeId": 40,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 40
   },
   {
     "cardId": 106,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 106,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 107,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 108,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 109,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 109,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 110,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 110,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 111,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 111,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 112,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 112,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 113,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 113,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 114,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 114,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 115,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 115,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 116,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 117,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 118,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 118,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 118,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 119,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 119,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 120,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 120,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 121,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 122,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 122,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 123,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 123,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 124,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 124,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 125,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 126,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 127,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 128,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 129,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 130,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 131,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 132,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 132,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 133,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 133,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 134,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 134,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 135,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 135,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 136,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 137,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 138,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 138,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 139,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 140,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 141,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 141,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 142,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 142,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 143,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 143,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 144,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 144,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 145,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 145,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 146,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 146,
-    "cardAttributeTypeId": 16,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 16
   },
   {
     "cardId": 147,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 147,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 148,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 148,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 149,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 150,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 151,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 151,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 151,
-    "cardAttributeTypeId": 32,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 32
   },
   {
     "cardId": 152,
-    "cardAttributeTypeId": 18,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 18
   },
   {
     "cardId": 152,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 153,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 154,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 154,
-    "cardAttributeTypeId": 30,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 30
   },
   {
     "cardId": 155,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 155,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 155,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 156,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 156,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 157,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 158,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 158,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 159,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 159,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 160,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 160,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 161,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 161,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 162,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 162,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 163,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 164,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 164,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 165,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 165,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 166,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 166,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 167,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 167,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 168,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 168,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 169,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 169,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 170,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 170,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 171,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 171,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 172,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 172,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 173,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 173,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 174,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 174,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 175,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 175,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 176,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 176,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 177,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 177,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 178,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 178,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 179,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 179,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 180,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 180,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 181,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 181,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 182,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 182,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 183,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 183,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 184,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 184,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 185,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 185,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 186,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 187,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 187,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 188,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 188,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 189,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 190,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 190,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 190,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 191,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 191,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 192,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 192,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 193,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 193,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 194,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 194,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 195,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 195,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 196,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 196,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 197,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 197,
-    "cardAttributeTypeId": 40,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 40
   },
   {
     "cardId": 198,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 199,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 199,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 200,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 200,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 201,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 201,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 202,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 202,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 203,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 203,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 204,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 204,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 205,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 205,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 206,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 207,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 207,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 207,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 208,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 209,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 209,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 210,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 211,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 212,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 212,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 212,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 213,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 214,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 214,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 214,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 215,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 216,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 216,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 217,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 217,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 218,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 218,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 219,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 219,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 219,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 220,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 220,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 220,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 221,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 222,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 223,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 224,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 225,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 226,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 227,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 228,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 229,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 230,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 231,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 232,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 233,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 234,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 235,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 236,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 236,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 237,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 237,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 238,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 238,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 239,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 240,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 241,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 241,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 242,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 243,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 244,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 245,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 246,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 247,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 248,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 248,
-    "cardAttributeTypeId": 32,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 32
   },
   {
     "cardId": 248,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 249,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 249,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 250,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 250,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 251,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 251,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 252,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 252,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 253,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 253,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 254,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 254,
-    "cardAttributeTypeId": 16,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 16
   },
   {
     "cardId": 255,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 255,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 256,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 256,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 257,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 257,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 258,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 258,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 259,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 259,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 260,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 261,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 262,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 263,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 263,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 263,
-    "cardAttributeTypeId": 32,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 32
   },
   {
     "cardId": 264,
-    "cardAttributeTypeId": 38,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 38
   },
   {
     "cardId": 264,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 265,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 265,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 266,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 267,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 267,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 268,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 268,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 269,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 269,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 270,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 270,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 271,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 271,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 271,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 272,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 272,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 273,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 273,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 274,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 275,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 276,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 277,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 277,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 278,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 278,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 279,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 279,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 280,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 280,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 281,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 281,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 282,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 282,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 283,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 283,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 284,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 284,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 285,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 285,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 286,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 286,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 287,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 288,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 288,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 289,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 289,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 290,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 290,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 290,
-    "cardAttributeTypeId": 42,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 42
   },
   {
     "cardId": 291,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 291,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 292,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 293,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 293,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 294,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 294,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 295,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 296,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 296,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 297,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 297,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 298,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 298,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 299,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 299,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 300,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 300,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 301,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 301,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 302,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 303,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 303,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 304,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 304,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 305,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 305,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 305,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 306,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 307,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 307,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 307,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 308,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 308,
-    "cardAttributeTypeId": 18,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 18
   },
   {
     "cardId": 308,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 309,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 309,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 310,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 310,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 311,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 311,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 311,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 312,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 313,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 314,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 315,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 315,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 316,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 317,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 318,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 318,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 319,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 320,
-    "cardAttributeTypeId": 12,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 12
   },
   {
     "cardId": 320,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 321,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 321,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 322,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 322,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 323,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 324,
-    "cardAttributeTypeId": 12,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 12
   },
   {
     "cardId": 324,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 325,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 325,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 326,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 326,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 327,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 327,
-    "cardAttributeTypeId": 32,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 32
   },
   {
     "cardId": 328,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 328,
-    "cardAttributeTypeId": 29,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 29
   },
   {
     "cardId": 329,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 329,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 330,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 330,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 331,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 331,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 332,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 332,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 333,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 333,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 334,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 334,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 335,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 335,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 336,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 337,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 338,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 338,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 338,
-    "cardAttributeTypeId": 32,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 32
   },
   {
     "cardId": 339,
-    "cardAttributeTypeId": 36,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 36
   },
   {
     "cardId": 340,
-    "cardAttributeTypeId": 16,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 16
   },
   {
     "cardId": 341,
-    "cardAttributeTypeId": 17,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 17
   },
   {
     "cardId": 341,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 341,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 342,
-    "cardAttributeTypeId": 17,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 17
   },
   {
     "cardId": 342,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 342,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 343,
-    "cardAttributeTypeId": 18,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 18
   },
   {
     "cardId": 343,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 344,
-    "cardAttributeTypeId": 17,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 17
   },
   {
     "cardId": 344,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 344,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 345,
-    "cardAttributeTypeId": 33,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 33
   },
   {
     "cardId": 345,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 346,
-    "cardAttributeTypeId": 34,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 34
   },
   {
     "cardId": 347,
-    "cardAttributeTypeId": 35,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 35
   },
   {
     "cardId": 347,
-    "cardAttributeTypeId": 39,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 39
   },
   {
     "cardId": 348,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 348,
-    "cardAttributeTypeId": 43,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 43
   },
   {
     "cardId": 349,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 349,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 350,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 350,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 351,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 351,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 352,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 352,
-    "cardAttributeTypeId": 30,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 30
   },
   {
     "cardId": 353,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 353,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 354,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 354,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 355,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 355,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 356,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 356,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 357,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 358,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 358,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 359,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 359,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 360,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 360,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 361,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 361,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 362,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 363,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 363,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 364,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 364,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 365,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 365,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 366,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 367,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 367,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 368,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 368,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 369,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 369,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 370,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 370,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 370,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 371,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 371,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 372,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 372,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 373,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 374,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 374,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 375,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 375,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 376,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 376,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 377,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 377,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 378,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 378,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 379,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 379,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 380,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 380,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 381,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 381,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 382,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 383,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 383,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 384,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 385,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 385,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 386,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 387,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 387,
-    "cardAttributeTypeId": 44,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 44
   },
   {
     "cardId": 388,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 388,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 389,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 389,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 390,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 390,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 391,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 391,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 392,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 392,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 393,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 393,
-    "cardAttributeTypeId": 40,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 40
   },
   {
     "cardId": 394,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 395,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 395,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 396,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 396,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 397,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 397,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 398,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 398,
-    "cardAttributeTypeId": 22,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 22
   },
   {
     "cardId": 399,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 399,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 400,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 400,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 401,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 401,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 402,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 402,
-    "cardAttributeTypeId": 45,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 45
   },
   {
     "cardId": 403,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 403,
-    "cardAttributeTypeId": 46,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 46
   },
   {
     "cardId": 404,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 404,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 404,
-    "cardAttributeTypeId": 47,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 47
   },
   {
     "cardId": 405,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 405,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 405,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 406,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 406,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 407,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 408,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 408,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 408,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 409,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 410,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 411,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 411,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 412,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 412,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 413,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 413,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 414,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 415,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 415,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 416,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 416,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 417,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 418,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 418,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 419,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 419,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 419,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 420,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 420,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 420,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 421,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 422,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 422,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 422,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 423,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 424,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 425,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 426,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 426,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 427,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 428,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 428,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 429,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 429,
-    "cardAttributeTypeId": 24,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 24
   },
   {
     "cardId": 430,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 431,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 432,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 433,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 434,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 435,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 436,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 436,
-    "cardAttributeTypeId": 48,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 48
   },
   {
     "cardId": 437,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 437,
-    "cardAttributeTypeId": 39,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 39
   },
   {
     "cardId": 438,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 439,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 439,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 440,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 441,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 442,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 442,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 443,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 444,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 444,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 445,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 446,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 447,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 448,
-    "cardAttributeTypeId": 12,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 12
   },
   {
     "cardId": 448,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 449,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 449,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 450,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 450,
-    "cardAttributeTypeId": 32,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 32
   },
   {
     "cardId": 450,
-    "cardAttributeTypeId": 41,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 41
   },
   {
     "cardId": 451,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 451,
-    "cardAttributeTypeId": 16,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 16
   },
   {
     "cardId": 452,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 452,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 453,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 454,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 455,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 456,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 457,
-    "cardAttributeTypeId": 18,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 18
   },
   {
     "cardId": 457,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 457,
-    "cardAttributeTypeId": 41,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 41
   },
   {
     "cardId": 458,
-    "cardAttributeTypeId": 37,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 37
   },
   {
     "cardId": 459,
-    "cardAttributeTypeId": 38,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 38
   },
   {
     "cardId": 459,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 460,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 460,
-    "cardAttributeTypeId": 1066,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1066
   },
   {
     "cardId": 461,
-    "cardAttributeTypeId": 1065,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1065
   },
   {
     "cardId": 461,
-    "cardAttributeTypeId": 1067,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1067
   },
   {
     "cardId": 462,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 462,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 463,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 463,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 464,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 464,
-    "cardAttributeTypeId": 20,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 20
   },
   {
     "cardId": 465,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 465,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 466,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 466,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 466,
-    "cardAttributeTypeId": 25,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 25
   },
   {
     "cardId": 467,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 467,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 468,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 468,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 469,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 469,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 470,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 470,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 471,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 471,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 472,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 472,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 473,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 473,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 474,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 474,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 475,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 475,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 476,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 476,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 476,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 477,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 477,
-    "cardAttributeTypeId": 14,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 14
   },
   {
     "cardId": 478,
-    "cardAttributeTypeId": 8,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 8
   },
   {
     "cardId": 478,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 479,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 479,
-    "cardAttributeTypeId": 1068,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1068
   },
   {
     "cardId": 480,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 480,
-    "cardAttributeTypeId": 19,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 19
   },
   {
     "cardId": 481,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 481,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 482,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 482,
-    "cardAttributeTypeId": 1069,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1069
   },
   {
     "cardId": 483,
-    "cardAttributeTypeId": 10,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 10
   },
   {
     "cardId": 483,
-    "cardAttributeTypeId": 1070,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1070
   },
   {
     "cardId": 484,
-    "cardAttributeTypeId": 16,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 16
   },
   {
     "cardId": 485,
-    "cardAttributeTypeId": 1001,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1001
   },
   {
     "cardId": 486,
-    "cardAttributeTypeId": 1002,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1002
   },
   {
     "cardId": 487,
-    "cardAttributeTypeId": 1003,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1003
   },
   {
     "cardId": 487,
-    "cardAttributeTypeId": 1071,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1071
   },
   {
     "cardId": 488,
-    "cardAttributeTypeId": 1004,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1004
   },
   {
     "cardId": 488,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 489,
-    "cardAttributeTypeId": 17,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 17
   },
   {
     "cardId": 489,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 489,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 490,
-    "cardAttributeTypeId": 1005,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1005
   },
   {
     "cardId": 491,
-    "cardAttributeTypeId": 1006,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1006
   },
   {
     "cardId": 492,
-    "cardAttributeTypeId": 1007,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1007
   },
   {
     "cardId": 493,
-    "cardAttributeTypeId": 1002,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1002
   },
   {
     "cardId": 494,
-    "cardAttributeTypeId": 1008,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1008
   },
   {
     "cardId": 494,
-    "cardAttributeTypeId": 1072,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1072
   },
   {
     "cardId": 494,
-    "cardAttributeTypeId": 1109,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1109
   },
   {
     "cardId": 495,
-    "cardAttributeTypeId": 1009,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1009
   },
   {
     "cardId": 495,
-    "cardAttributeTypeId": 1073,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1073
   },
   {
     "cardId": 495,
-    "cardAttributeTypeId": 39,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 39
   },
   {
     "cardId": 496,
-    "cardAttributeTypeId": 1010,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1010
   },
   {
     "cardId": 497,
-    "cardAttributeTypeId": 1011,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1011
   },
   {
     "cardId": 497,
-    "cardAttributeTypeId": 1011,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1011
   },
   {
     "cardId": 498,
-    "cardAttributeTypeId": 1012,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1012
   },
   {
     "cardId": 498,
-    "cardAttributeTypeId": 1074,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1074
   },
   {
     "cardId": 499,
-    "cardAttributeTypeId": 1006,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1006
   },
   {
     "cardId": 500,
-    "cardAttributeTypeId": 1013,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1013
   },
   {
     "cardId": 500,
-    "cardAttributeTypeId": 1075,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1075
   },
   {
     "cardId": 501,
-    "cardAttributeTypeId": 1014,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1014
   },
   {
     "cardId": 502,
-    "cardAttributeTypeId": 1015,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1015
   },
   {
     "cardId": 503,
-    "cardAttributeTypeId": 1016,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1016
   },
   {
     "cardId": 504,
-    "cardAttributeTypeId": 1017,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1017
   },
   {
     "cardId": 505,
-    "cardAttributeTypeId": 1018,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1018
   },
   {
     "cardId": 506,
-    "cardAttributeTypeId": 1019,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1019
   },
   {
     "cardId": 506,
-    "cardAttributeTypeId": 1076,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1076
   },
   {
     "cardId": 507,
-    "cardAttributeTypeId": 1020,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1020
   },
   {
     "cardId": 507,
-    "cardAttributeTypeId": 1077,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1077
   },
   {
     "cardId": 507,
-    "cardAttributeTypeId": 1110,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1110
   },
   {
     "cardId": 508,
-    "cardAttributeTypeId": 1021,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1021
   },
   {
     "cardId": 509,
-    "cardAttributeTypeId": 1022,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1022
   },
   {
     "cardId": 510,
-    "cardAttributeTypeId": 1023,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1023
   },
   {
     "cardId": 510,
-    "cardAttributeTypeId": 1078,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1078
   },
   {
     "cardId": 511,
-    "cardAttributeTypeId": 1024,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1024
   },
   {
     "cardId": 512,
-    "cardAttributeTypeId": 17,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 17
   },
   {
     "cardId": 512,
-    "cardAttributeTypeId": 27,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 27
   },
   {
     "cardId": 512,
-    "cardAttributeTypeId": 13,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 13
   },
   {
     "cardId": 513,
-    "cardAttributeTypeId": 1025,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1025
   },
   {
     "cardId": 514,
-    "cardAttributeTypeId": 1026,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1026
   },
   {
     "cardId": 515,
-    "cardAttributeTypeId": 1018,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1018
   },
   {
     "cardId": 516,
-    "cardAttributeTypeId": 1027,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1027
   },
   {
     "cardId": 516,
-    "cardAttributeTypeId": 1079,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1079
   },
   {
     "cardId": 516,
-    "cardAttributeTypeId": 1111,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1111
   },
   {
     "cardId": 517,
-    "cardAttributeTypeId": 1028,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1028
   },
   {
     "cardId": 517,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 518,
-    "cardAttributeTypeId": 1029,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1029
   },
   {
     "cardId": 518,
-    "cardAttributeTypeId": 1080,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1080
   },
   {
     "cardId": 519,
-    "cardAttributeTypeId": 39,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 39
   },
   {
     "cardId": 519,
-    "cardAttributeTypeId": 1081,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1081
   },
   {
     "cardId": 520,
-    "cardAttributeTypeId": 1030,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1030
   },
   {
     "cardId": 521,
-    "cardAttributeTypeId": 1031,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1031
   },
   {
     "cardId": 522,
-    "cardAttributeTypeId": 1032,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1032
   },
   {
     "cardId": 523,
-    "cardAttributeTypeId": 1033,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1033
   },
   {
     "cardId": 523,
-    "cardAttributeTypeId": 1082,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1082
   },
   {
     "cardId": 523,
-    "cardAttributeTypeId": 1112,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1112
   },
   {
     "cardId": 524,
-    "cardAttributeTypeId": 1034,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1034
   },
   {
     "cardId": 525,
-    "cardAttributeTypeId": 1018,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1018
   },
   {
     "cardId": 526,
-    "cardAttributeTypeId": 1006,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1006
   },
   {
     "cardId": 527,
-    "cardAttributeTypeId": 1035,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1035
   },
   {
     "cardId": 528,
-    "cardAttributeTypeId": 1036,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1036
   },
   {
     "cardId": 529,
-    "cardAttributeTypeId": 1037,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1037
   },
   {
     "cardId": 530,
-    "cardAttributeTypeId": 1038,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1038
   },
   {
     "cardId": 530,
-    "cardAttributeTypeId": 1083,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1083
   },
   {
     "cardId": 531,
-    "cardAttributeTypeId": 1001,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1001
   },
   {
     "cardId": 531,
-    "cardAttributeTypeId": 1084,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1084
   },
   {
     "cardId": 532,
-    "cardAttributeTypeId": 26,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 26
   },
   {
     "cardId": 532,
-    "cardAttributeTypeId": 1011,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1011
   },
   {
     "cardId": 533,
-    "cardAttributeTypeId": 1013,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1013
   },
   {
     "cardId": 533,
-    "cardAttributeTypeId": 1075,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1075
   },
   {
     "cardId": 533,
-    "cardAttributeTypeId": 1113,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1113
   },
   {
     "cardId": 534,
-    "cardAttributeTypeId": 1039,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1039
   },
   {
     "cardId": 535,
-    "cardAttributeTypeId": 1018,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1018
   },
   {
     "cardId": 536,
-    "cardAttributeTypeId": 1040,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1040
   },
   {
     "cardId": 536,
-    "cardAttributeTypeId": 1085,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1085
   },
   {
     "cardId": 537,
-    "cardAttributeTypeId": 1041,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1041
   },
   {
     "cardId": 537,
-    "cardAttributeTypeId": 1086,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1086
   },
   {
     "cardId": 538,
-    "cardAttributeTypeId": 1042,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1042
   },
   {
     "cardId": 538,
-    "cardAttributeTypeId": 1087,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1087
   },
   {
     "cardId": 538,
-    "cardAttributeTypeId": 1114,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1114
   },
   {
     "cardId": 539,
-    "cardAttributeTypeId": 1043,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1043
   },
   {
     "cardId": 539,
-    "cardAttributeTypeId": 1088,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1088
   },
   {
     "cardId": 539,
-    "cardAttributeTypeId": 1115,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1115
   },
   {
     "cardId": 540,
-    "cardAttributeTypeId": 1044,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1044
   },
   {
     "cardId": 540,
-    "cardAttributeTypeId": 1089,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1089
   },
   {
     "cardId": 540,
-    "cardAttributeTypeId": 1116,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1116
   },
   {
     "cardId": 541,
-    "cardAttributeTypeId": 1045,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1045
   },
   {
     "cardId": 541,
-    "cardAttributeTypeId": 1090,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1090
   },
   {
     "cardId": 541,
-    "cardAttributeTypeId": 1117,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1117
   },
   {
     "cardId": 542,
-    "cardAttributeTypeId": 1046,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1046
   },
   {
     "cardId": 542,
-    "cardAttributeTypeId": 1091,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1091
   },
   {
     "cardId": 542,
-    "cardAttributeTypeId": 1118,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1118
   },
   {
     "cardId": 543,
-    "cardAttributeTypeId": 1047,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1047
   },
   {
     "cardId": 543,
-    "cardAttributeTypeId": 1092,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1092
   },
   {
     "cardId": 544,
-    "cardAttributeTypeId": 1048,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1048
   },
   {
     "cardId": 544,
-    "cardAttributeTypeId": 1093,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1093
   },
   {
     "cardId": 545,
-    "cardAttributeTypeId": 1049,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1049
   },
   {
     "cardId": 545,
-    "cardAttributeTypeId": 1094,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1094
   },
   {
     "cardId": 546,
-    "cardAttributeTypeId": 1050,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1050
   },
   {
     "cardId": 546,
-    "cardAttributeTypeId": 1095,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1095
   },
   {
     "cardId": 547,
-    "cardAttributeTypeId": 1026,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1026
   },
   {
     "cardId": 547,
-    "cardAttributeTypeId": 1096,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1096
   },
   {
     "cardId": 548,
-    "cardAttributeTypeId": 1051,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1051
   },
   {
     "cardId": 548,
-    "cardAttributeTypeId": 1097,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1097
   },
   {
     "cardId": 548,
-    "cardAttributeTypeId": 1010,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1010
   },
   {
     "cardId": 549,
-    "cardAttributeTypeId": 1052,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1052
   },
   {
     "cardId": 549,
-    "cardAttributeTypeId": 1098,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1098
   },
   {
     "cardId": 549,
-    "cardAttributeTypeId": 1119,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1119
   },
   {
     "cardId": 550,
-    "cardAttributeTypeId": 1053,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1053
   },
   {
     "cardId": 551,
-    "cardAttributeTypeId": 1054,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1054
   },
   {
     "cardId": 551,
-    "cardAttributeTypeId": 1099,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1099
   },
   {
     "cardId": 551,
-    "cardAttributeTypeId": 1120,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1120
   },
   {
     "cardId": 552,
-    "cardAttributeTypeId": 1055,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1055
   },
   {
     "cardId": 552,
-    "cardAttributeTypeId": 1100,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1100
   },
   {
     "cardId": 552,
-    "cardAttributeTypeId": 1121,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1121
   },
   {
     "cardId": 553,
-    "cardAttributeTypeId": 1056,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1056
   },
   {
     "cardId": 553,
-    "cardAttributeTypeId": 1101,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1101
   },
   {
     "cardId": 553,
-    "cardAttributeTypeId": 1078,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1078
   },
   {
     "cardId": 554,
-    "cardAttributeTypeId": 1057,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1057
   },
   {
     "cardId": 554,
-    "cardAttributeTypeId": 1102,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1102
   },
   {
     "cardId": 555,
-    "cardAttributeTypeId": 1058,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1058
   },
   {
     "cardId": 555,
-    "cardAttributeTypeId": 1103,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1103
   },
   {
     "cardId": 555,
-    "cardAttributeTypeId": 1122,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1122
   },
   {
     "cardId": 556,
-    "cardAttributeTypeId": 1059,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1059
   },
   {
     "cardId": 556,
-    "cardAttributeTypeId": 1104,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1104
   },
   {
     "cardId": 557,
-    "cardAttributeTypeId": 1060,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1060
   },
   {
     "cardId": 557,
-    "cardAttributeTypeId": 1105,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1105
   },
   {
     "cardId": 557,
-    "cardAttributeTypeId": 1123,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1123
   },
   {
     "cardId": 558,
-    "cardAttributeTypeId": 1061,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1061
   },
   {
     "cardId": 558,
-    "cardAttributeTypeId": 1106,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1106
   },
   {
     "cardId": 559,
-    "cardAttributeTypeId": 1062,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1062
   },
   {
     "cardId": 559,
-    "cardAttributeTypeId": 1107,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1107
   },
   {
     "cardId": 559,
-    "cardAttributeTypeId": 1124,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1124
   },
   {
     "cardId": 560,
-    "cardAttributeTypeId": 1063,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1063
   },
   {
     "cardId": 560,
-    "cardAttributeTypeId": 1013,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1013
   },
   {
     "cardId": 560,
-    "cardAttributeTypeId": 1125,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1125
   },
   {
     "cardId": 561,
-    "cardAttributeTypeId": 1064,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1064
   },
   {
     "cardId": 561,
-    "cardAttributeTypeId": 1108,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1108
   },
   {
     "cardId": 561,
-    "cardAttributeTypeId": 1126,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1126
   },
   {
     "cardId": 562,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 562,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 563,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 563,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 564,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 564,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 565,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 565,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 566,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 566,
-    "cardAttributeTypeId": 28,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 28
   },
   {
     "cardId": 567,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 568,
-    "cardAttributeTypeId": 2,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 2
   },
   {
     "cardId": 569,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 569,
-    "cardAttributeTypeId": 42,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 42
   },
   {
     "cardId": 570,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 570,
-    "cardAttributeTypeId": 21,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 21
   },
   {
     "cardId": 571,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 572,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 573,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 574,
-    "cardAttributeTypeId": 3,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 3
   },
   {
     "cardId": 574,
-    "cardAttributeTypeId": 15,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 15
   },
   {
     "cardId": 575,
-    "cardAttributeTypeId": 5,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 5
   },
   {
     "cardId": 575,
-    "cardAttributeTypeId": 31,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 31
   },
   {
     "cardId": 576,
-    "cardAttributeTypeId": 1,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1
   },
   {
     "cardId": 576,
-    "cardAttributeTypeId": 23,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 23
   },
   {
     "cardId": 576,
-    "cardAttributeTypeId": 1077,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 1077
   },
   {
     "cardId": 577,
-    "cardAttributeTypeId": 4,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 4
   },
   {
     "cardId": 577,
-    "cardAttributeTypeId": 7,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 7
   },
   {
     "cardId": 578,
-    "cardAttributeTypeId": 11,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 11
   },
   {
     "cardId": 579,
-    "cardAttributeTypeId": 6,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 6
   },
   {
     "cardId": 580,
-    "cardAttributeTypeId": 9,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 9
   },
   {
     "cardId": 580,
-    "cardAttributeTypeId": 41,
-    "": "",
-    "※_カード効果区分シートを更新後、Apps Script の「GenerateCardAttributesTable」を実行する": ""
+    "cardAttributeTypeId": 41
   }
 ]
