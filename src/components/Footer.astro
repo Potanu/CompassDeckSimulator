@@ -3,12 +3,17 @@ import '../styles/footer.css';
 import RoleIcon from './RoleIcon.astro';
 import MedalSettingsPanel from "./MedalSettingsPanel.astro";
 
-import { HeroRoleType } from "./types/heros";
+import { HeroRoleType } from "../types/heros";
 import { ImageAsset } from '../types/common';
 import { getAllHero } from "../accessors/heros/getData.ts";
 import { getImageAssetById } from "../accessors/common/getData.ts";
 
-const SETTING_MEDAL_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(ImageAsset.SETTING_MEDAL).imagePath}`;
+const getAssetPath = (asset: ImageAsset) => {
+  const imageAsset = getImageAssetById(asset);
+  return imageAsset ? `/CompassDeckSimulator/${imageAsset.imagePath}` : '';
+};
+
+const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
 ---
 <footer class="footer">
   <div class="footer-content">
@@ -39,42 +44,54 @@ const SETTING_MEDAL_IMAGE_PATH = `/CompassDeckSimulator/${getImageAssetById(Imag
 
 <!-- ヒーロー選択ドロップダウン -->
 <script>
-  const dropdown = document.querySelector('.dropdown');
-  const trigger = dropdown.querySelector('.dropdown-trigger');
-  const menu = dropdown.querySelector('.dropdown-menu');
-  const triggerLabel = document.querySelector('.trigger-content');
-  const items = document.querySelectorAll('.dropdown-item');
-  const arrow = trigger.querySelector('.dropdown-trigger-arrow');
+  const dropdown = document.querySelector<HTMLElement>('.dropdown');
+  const trigger = dropdown?.querySelector<HTMLButtonElement>('.dropdown-trigger');
+  const menu = dropdown?.querySelector<HTMLElement>('.dropdown-menu');
+  const triggerLabel = document.querySelector<HTMLElement>('.trigger-content');
+  const items = document.querySelectorAll<HTMLElement>('.dropdown-item');
+  const arrow = trigger?.querySelector<HTMLElement>('.dropdown-trigger-arrow');
 
   const ARROW_CLOSED = '▼';
   const ARROW_OPEN = '▲';
 
-  arrow.textContent = ARROW_CLOSED;
+  if (arrow) {
+    arrow.textContent = ARROW_CLOSED;
+  }
 
   // 項目クリックでラベル更新＆閉じる
-  items.forEach(item => {
+  items.forEach((item) => {
     item.addEventListener('click', () => {
-    const label = item.querySelector('span').textContent;
-    triggerLabel.textContent = label;
-    document.body.classList.remove('dropdown-open');
-    arrow.textContent = ARROW_CLOSED;
-    menu.classList.remove('is-active');
+      const labelSpan = item.querySelector('span');
+      const label = labelSpan?.textContent ?? '未選択';
+      if (triggerLabel) {
+        triggerLabel.textContent = label;
+      }
+      document.body.classList.remove('dropdown-open');
+      if (arrow) {
+        arrow.textContent = ARROW_CLOSED;
+      }
+      menu?.classList.remove('is-active');
     });
   });
 
   // トリガークリックで開閉
-  trigger.addEventListener('click', () => {
-    menu.classList.toggle('is-active');
-    arrow.textContent = menu.classList.contains('is-active') ? ARROW_OPEN : ARROW_CLOSED;
+  trigger?.addEventListener('click', () => {
+    menu?.classList.toggle('is-active');
+    if (arrow) {
+      arrow.textContent = menu?.classList.contains('is-active') ? ARROW_OPEN : ARROW_CLOSED;
+    }
   });
 
   // メニュー外をクリックしたら閉じる
   document.addEventListener(
     'pointerdown',
     (e) => {
-      if (!menu.contains(e.target) && !trigger.contains(e.target)) {
+      const target = e.target;
+      if (target instanceof Node && menu && trigger && !menu.contains(target) && !trigger.contains(target)) {
         menu.classList.remove('is-active');
-        arrow.textContent = ARROW_CLOSED;
+        if (arrow) {
+          arrow.textContent = ARROW_CLOSED;
+        }
       }
     },
     true

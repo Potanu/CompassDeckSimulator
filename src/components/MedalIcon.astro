@@ -3,32 +3,41 @@ import '../styles/medal-icon.css';
 import { HeroMedalType } from "../types/heros";
 import { ImageAsset } from '../types/common';
 import { getImageAssetById } from "../accessors/common/getData.ts";
-import { getHeroMedalTypeById, getHeroMedalColorTypeById } from "../accessors/heros/getData.ts"
+import { getHeroMedalTypeById, getHeroMedalColorTypeById } from "../accessors/heros/getData.ts";
 
-const medalIcons: Record<HeroMedalType, string> = {} as const;
-const assetPath = (asset: ImageAsset) => `/CompassDeckSimulator/${getImageAssetById(asset).imagePath}`;
-medalIcons[HeroMedalType.ATK_UP]             = assetPath(ImageAsset.SWORD);
-medalIcons[HeroMedalType.DEF_UP]             = assetPath(ImageAsset.SHIELD);
-medalIcons[HeroMedalType.HP_UP]              = assetPath(ImageAsset.HEART);
-medalIcons[HeroMedalType.MOVE_SPEED_UP]      = assetPath(ImageAsset.SHOES);
-medalIcons[HeroMedalType.HS_GAIN_UP]         = assetPath(ImageAsset.HUMAN);
-medalIcons[HeroMedalType.COOLDOWN_REDUCTION] = assetPath(ImageAsset.CLOCK);
-medalIcons[HeroMedalType.CAPTURE_SPEED_UP]   = assetPath(ImageAsset.KEY);
-medalIcons[HeroMedalType.RESIST_FIRE_UP]     = assetPath(ImageAsset.FIRE);
-medalIcons[HeroMedalType.RESIST_WATER_UP]    = assetPath(ImageAsset.WATER);
-medalIcons[HeroMedalType.RESIST_WOOD_UP]     = assetPath(ImageAsset.LEAF);
-medalIcons[HeroMedalType.RESIST_STUN_UP]     = assetPath(ImageAsset.BOLT);
-medalIcons[HeroMedalType.RESIST_SILENT_UP]   = assetPath(ImageAsset.SPEECH_BUBBLE);
-medalIcons[HeroMedalType.RESIST_POISON_UP]   = assetPath(ImageAsset.BEAKER);
+const getAssetPath = (asset: ImageAsset) => {
+  const imageAsset = getImageAssetById(asset);
+  return imageAsset ? `/CompassDeckSimulator/${imageAsset.imagePath}` : '';
+};
 
-const { type, level = 1, color = 1, isShowLabel = true } = Astro.props;
+const medalIcons: Record<HeroMedalType, string> = {
+  [HeroMedalType.ATK_UP]: getAssetPath(ImageAsset.SWORD),
+  [HeroMedalType.DEF_UP]: getAssetPath(ImageAsset.SHIELD),
+  [HeroMedalType.HP_UP]: getAssetPath(ImageAsset.HEART),
+  [HeroMedalType.MOVE_SPEED_UP]: getAssetPath(ImageAsset.SHOES),
+  [HeroMedalType.HS_GAIN_UP]: getAssetPath(ImageAsset.HUMAN),
+  [HeroMedalType.COOLDOWN_REDUCTION]: getAssetPath(ImageAsset.CLOCK),
+  [HeroMedalType.CAPTURE_SPEED_UP]: getAssetPath(ImageAsset.KEY),
+  [HeroMedalType.RESIST_FIRE_UP]: getAssetPath(ImageAsset.FIRE),
+  [HeroMedalType.RESIST_WATER_UP]: getAssetPath(ImageAsset.WATER),
+  [HeroMedalType.RESIST_WOOD_UP]: getAssetPath(ImageAsset.LEAF),
+  [HeroMedalType.RESIST_STUN_UP]: getAssetPath(ImageAsset.BOLT),
+  [HeroMedalType.RESIST_SILENT_UP]: getAssetPath(ImageAsset.SPEECH_BUBBLE),
+  [HeroMedalType.RESIST_POISON_UP]: getAssetPath(ImageAsset.BEAKER),
+};
+
+const props = Astro.props as { type?: HeroMedalType; level?: number; color?: number; isShowLabel?: boolean };
+const type = props.type ?? HeroMedalType.ATK_UP;
+const level = props.level ?? 1;
+const color = props.color ?? 1;
+const isShowLabel = props.isShowLabel ?? true;
 ---
 
 <div class="medal-icon">
   <!-- メダル種類変更 -->
   <button class="medal-main-button">
-    <div class="base" style={`background: ${getHeroMedalColorTypeById(color).color};`} />
-    <img src={medalIcons[type]} class="front" />
+    <div class="base" style={`background: ${getHeroMedalColorTypeById(color)?.color ?? '#999'};`} />
+    <img src={medalIcons[type] ?? ''} class="front" />
   </button>
 
   <!-- レベル変更 -->
@@ -41,7 +50,7 @@ const { type, level = 1, color = 1, isShowLabel = true } = Astro.props;
   <!-- メダル説明表示切替 -->
   {isShowLabel == true && (
     <div class="medal-label">
-      {getHeroMedalTypeById(type).label}
+      {getHeroMedalTypeById(type)?.label ?? '不明'}
     </div>
   )}
 </div>

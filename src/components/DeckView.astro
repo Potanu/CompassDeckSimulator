@@ -120,17 +120,19 @@ import DeckListView from "./DeckListView.astro";
 <script>
 const overlay = document.getElementById("deckListOverlay");
 
-document.querySelectorAll(".openDeckList").forEach(button => {
+if (overlay) {
+  document.querySelectorAll<HTMLButtonElement>(".openDeckList").forEach((button) => {
     button.addEventListener("click", () => {
-        overlay.classList.remove("hidden");
+      overlay.classList.remove("hidden");
     });
-});
+  });
 
-overlay.addEventListener("click", (e) => {
+  overlay.addEventListener("click", (e) => {
     if (e.target === overlay) {
-        overlay.classList.add("hidden");
+      overlay.classList.add("hidden");
     }
-});
+  });
+}
 </script>
 
 <style>

@@ -10,45 +10,58 @@ import cardElements from "../data/cards/m_card_element_types.json";
 import cardCaterories from "../data/cards/m_card_category_types.json";
 import cardCastTimes from "../data/cards/m_card_cast_time_types.json";
 
-const cardRarityMap = Object.fromEntries(cardRarities.map(x => [x.id, x]));
-const cardAttributeTypeMap = Object.fromEntries(cardAttributeTypes.map(x => [x.id, x]));
-const cardSkillMap = Object.fromEntries(cardSkills.map(x => [x.id, x]));
-const cardElementMap = Object.fromEntries(cardElements.map(x => [x.id, x]));
-const cardCategoryMap = Object.fromEntries(cardCaterories.map(x => [x.id, x]));
-const cardCastTimeMap = Object.fromEntries(cardCastTimes.map(x => [x.id, x]));
+type CardAttributeTypeRow = (typeof cardAttributeTypes)[number];
+type CardStatusRow = (typeof cardStatuses)[number];
 
-const cardAttributeMap = {};
-cardAttributes.forEach(attribute => {
+type CardAttributeMap = Record<number, CardAttributeTypeRow | undefined>;
+type CardStatusMap = Record<number, {
+  cooldownTime: number;
+  attack: number;
+  defense: number;
+  health: number;
+  abilityLabel: string;
+}>;
+
+const cardRarityMap = Object.fromEntries(cardRarities.map((x) => [x.id, x]));
+const cardAttributeTypeMap = Object.fromEntries(cardAttributeTypes.map((x) => [x.id, x]));
+const cardSkillMap = Object.fromEntries(cardSkills.map((x) => [x.id, x]));
+const cardElementMap = Object.fromEntries(cardElements.map((x) => [x.id, x]));
+const cardCategoryMap = Object.fromEntries(cardCaterories.map((x) => [x.id, x]));
+const cardCastTimeMap = Object.fromEntries(cardCastTimes.map((x) => [x.id, x]));
+
+const cardAttributeMap: CardAttributeMap = {};
+cardAttributes.forEach((attribute) => {
   if (!cardAttributeMap[attribute.cardId]) {
     cardAttributeMap[attribute.cardId] = cardAttributeTypeMap[attribute.cardAttributeTypeId];
   }
 });
 
-const cardStatusMap = {};
-cardStatuses.forEach(x => {
+const cardStatusMap: CardStatusMap = {};
+cardStatuses.forEach((x) => {
   cardStatusMap[x.card_id] = {
     cooldownTime: x.cooldownTime,
     attack: x.attack,
     defense: x.defense,
     health: x.health,
-    abilityLabel: x.abilityLabel
+    abilityLabel: x.abilityLabel,
   };
 });
 ---
 
 <div class="deck-list-view">
   {cards.map(card => (
-    <details class="item">
+    <details class="item" data-rarity-id={card.cardRarityId} data-attack={cardStatusMap[card.id]?.attack ?? 0} data-defense={cardStatusMap[card.id]?.defense ?? 0} data-health={cardStatusMap[card.id]?.health ?? 0}>
 
       <summary>
-        <span class="rarity">
+        <span class={`rarity rarity-${card.cardRarityId}`}>
           {cardRarityMap[card.cardRarityId].label}
         </span>
         <span class="name">
           {card.label}
+          <span class={`dot dot-${card.cardElementId}`}></span>
         </span>
         <span class="attribute-type">
-          {cardAttributeMap[card.id].label}
+          {cardAttributeMap[card.id]?.label ?? "不明"}
         </span>
       </summary>
 
@@ -61,7 +74,7 @@ cardStatuses.forEach(x => {
 
       <div class="info-row cooldown-row">
         <span class="title">クール</span>
-        <span>{cardStatusMap[card.id].cooldownTime}秒</span>
+        <span>{cardStatusMap[card.id]?.cooldownTime ?? 0}秒</span>
 
         <span class="title">発動時間</span>
         <span>{cardCastTimeMap[card.cardCastTimeId].label}</span>
@@ -76,7 +89,7 @@ cardStatuses.forEach(x => {
               style={`width:attack`}
             ></div>
           </div>
-          <span>{cardStatusMap[card.id].attack}</span>
+          <span>{cardStatusMap[card.id]?.attack ?? 0}</span>
         </div>
 
         <div class="status-row">
@@ -87,7 +100,7 @@ cardStatuses.forEach(x => {
               style={`width:defense`}
             ></div>
           </div>
-          <span>{cardStatusMap[card.id].defense}</span>
+          <span>{cardStatusMap[card.id]?.defense ?? 0}</span>
         </div>
 
         <div class="status-row">
@@ -98,7 +111,7 @@ cardStatuses.forEach(x => {
               style={`width:hp/6`}
             ></div>
           </div>
-          <span>{cardStatusMap[card.id].health}</span>
+          <span>{cardStatusMap[card.id]?.health ?? 0}</span>
         </div>
       </div>
 
@@ -113,18 +126,85 @@ cardStatuses.forEach(x => {
   ))}
 </div>
 
+<div class="display-panel-overlay" aria-hidden="true">
+  <div class="display-panel">
+    <div class="panel-header">
+      <h2>カード検索</h2>
+      <button class="panel-close-btn" type="button">×</button>
+    </div>
+    <div class="panel-body">
+      <section class="panel-section">
+        <div class="section-title">属性</div>
+        <div class="chips-row">
+          <button type="button" class="chip active">火</button>
+          <button type="button" class="chip">水</button>
+          <button type="button" class="chip">木</button>
+          <button type="button" class="chip">無</button>
+        </div>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">レアリティ</div>
+        <div class="chips-grid">
+          <button type="button" class="chip">N</button>
+          <button type="button" class="chip">R</button>
+          <button type="button" class="chip">SR</button>
+          <button type="button" class="chip">UR</button>
+        </div>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">スキル</div>
+        <div class="chips-grid">
+          <button type="button" class="chip">近距離</button>
+          <button type="button" class="chip">遠距離</button>
+          <button type="button" class="chip">連続</button>
+          <button type="button" class="chip">周囲</button>
+          <button type="button" class="chip">回復</button>
+          <button type="button" class="chip">ガード</button>
+          <button type="button" class="chip">強化</button>
+          <button type="button" class="chip">弱体化</button>
+          <button type="button" class="chip">移動</button>
+          <button type="button" class="chip">設置</button>
+          <button type="button" class="chip">カウンター</button>
+          <button type="button" class="chip">その他</button>
+        </div>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">種類</div>
+        <div class="chips-grid">
+          <button type="button" class="chip">通常</button>
+          <button type="button" class="chip">コラボ</button>
+          <button type="button" class="chip">シーズン</button>
+          <button type="button" class="chip">イベント</button>
+        </div>
+      </section>
+      <section class="panel-section panel-bottom-section">
+        <div class="section-title">並び順</div>
+        <div class="sort-row">
+          <select>
+            <option>レアリティ順</option>
+            <option>攻撃力</option>
+            <option>防御力</option>
+            <option>体力順</option>
+          </select>
+          <button type="button" class="reset-btn">リセット</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
 <div class="button-area">
-    <button class="sort-btn">ソート</button>
+    <button class="display-toggle-btn">表示変更</button>
 </div>
 
 <script>
-document.querySelectorAll(".item").forEach((detail) => {
+document.querySelectorAll<HTMLDetailsElement>(".item").forEach((detail) => {
 
     detail.addEventListener("toggle", () => {
 
         if (!detail.open) return;
 
-        document.querySelectorAll(".item").forEach((other) => {
+        document.querySelectorAll<HTMLDetailsElement>(".item").forEach((other) => {
 
             if (other !== detail) {
                 other.open = false;
@@ -134,5 +214,75 @@ document.querySelectorAll(".item").forEach((detail) => {
 
     });
 
+});
+
+const overlay = document.querySelector<HTMLDivElement>(".display-panel-overlay");
+const openDisplayButton = document.querySelector<HTMLButtonElement>(".display-toggle-btn");
+const closeDisplayButton = document.querySelector<HTMLButtonElement>(".panel-close-btn");
+const chips = document.querySelectorAll<HTMLButtonElement>(".display-panel .chip");
+const resetButton = document.querySelector<HTMLButtonElement>(".reset-btn");
+const sortSelect = document.querySelector<HTMLSelectElement>(".sort-row select");
+
+openDisplayButton?.addEventListener("click", () => {
+    overlay?.classList.add("open");
+    overlay?.setAttribute("aria-hidden", "false");
+});
+
+const sortItems = () => {
+    const parent = document.querySelector<HTMLDivElement>(".deck-list-view");
+    if (!parent || !sortSelect) return;
+
+    const order = sortSelect.value;
+    const items = Array.from(parent.querySelectorAll<HTMLDetailsElement>(".item"));
+
+    const compare = (a: HTMLDetailsElement, b: HTMLDetailsElement) => {
+        const aRarity = Number(a.dataset.rarityId ?? 0);
+        const bRarity = Number(b.dataset.rarityId ?? 0);
+        const aAttack = Number(a.dataset.attack ?? 0);
+        const bAttack = Number(b.dataset.attack ?? 0);
+        const aDefense = Number(a.dataset.defense ?? 0);
+        const bDefense = Number(b.dataset.defense ?? 0);
+        const aHealth = Number(a.dataset.health ?? 0);
+        const bHealth = Number(b.dataset.health ?? 0);
+
+        switch (order) {
+            case "レアリティ順":
+                return bRarity - aRarity;
+            case "攻撃力":
+                return bAttack - aAttack;
+            case "防御力":
+                return bDefense - aDefense;
+            case "体力順":
+                return bHealth - aHealth;
+            default:
+                return 0;
+        }
+    };
+
+    if (order === "標準" || order === "カードレベル順" || order === "所持数順" || order === "入手順") {
+        return;
+    }
+
+    items.sort(compare);
+    items.forEach((item) => parent.appendChild(item));
+};
+
+closeDisplayButton?.addEventListener("click", () => {
+    overlay?.classList.remove("open");
+    overlay?.setAttribute("aria-hidden", "true");
+    sortItems();
+});
+
+chips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+        chip.classList.toggle("active");
+    });
+});
+
+resetButton?.addEventListener("click", () => {
+    chips.forEach((chip) => chip.classList.remove("active"));
+    if (sortSelect) {
+        sortSelect.selectedIndex = 0;
+    }
 });
 </script>
