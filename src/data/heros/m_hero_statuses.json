@@ -139,9 +139,9 @@
     "id": 18,
     "attack": 1.35,
     "defense": 0.9,
-    "health": 1.2,
+    "health": 1.25,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-07-24T15:00:00.000Z"
   },
   {
     "id": 19,
@@ -187,9 +187,9 @@
     "id": 24,
     "attack": 1.4,
     "defense": 1.45,
-    "health": 0.8,
+    "health": 0.9,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-06-27T15:00:00.000Z"
+    "updatedDate": "2026-07-24T15:00:00.000Z"
   },
   {
     "id": 25,
@@ -291,9 +291,9 @@
     "id": 37,
     "attack": 1.2,
     "defense": 1.45,
-    "health": 0.65,
+    "health": 0.7,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-07-24T15:00:00.000Z"
   },
   {
     "id": 38,
@@ -353,11 +353,11 @@
   },
   {
     "id": 45,
-    "attack": 1.45,
+    "attack": 1.5,
     "defense": 0.9,
     "health": 1.2,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-01-02T15:00:00.000Z"
+    "updatedDate": "2026-07-24T15:00:00.000Z"
   },
   {
     "id": 46,
@@ -467,9 +467,9 @@
     "id": 59,
     "attack": 1.25,
     "defense": 0.9,
-    "health": 1.2,
+    "health": 1.25,
     "createdDate": "2026-01-02T15:00:00.000Z",
-    "updatedDate": "2026-05-04T15:00:00.000Z"
+    "updatedDate": "2026-07-24T15:00:00.000Z"
   },
   {
     "id": 60,
