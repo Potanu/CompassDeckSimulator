@@ -46,11 +46,42 @@ cardStatuses.forEach((x) => {
     abilityLabel: x.abilityLabel,
   };
 });
+
+const maxAttack = Math.max(...cards.map((card) => cardStatusMap[card.id]?.attack ?? 0), 0);
+const maxDefense = Math.max(...cards.map((card) => cardStatusMap[card.id]?.defense ?? 0), 0);
+const maxHealth = Math.max(...cards.map((card) => cardStatusMap[card.id]?.health ?? 0), 0);
+
+const getBarWidthPercent = (value: number, maxValue: number) => {
+  if (!maxValue) return 0;
+  return Math.max(4, Math.round((value / maxValue) * 100));
+};
 ---
 
 <div class="deck-list-view">
-  {cards.map(card => (
-    <details class="item" data-rarity-id={card.cardRarityId} data-attack={cardStatusMap[card.id]?.attack ?? 0} data-defense={cardStatusMap[card.id]?.defense ?? 0} data-health={cardStatusMap[card.id]?.health ?? 0}>
+  {cards.map((card) => {
+    const attackValue = cardStatusMap[card.id]?.attack ?? 0;
+    const defenseValue = cardStatusMap[card.id]?.defense ?? 0;
+    const healthValue = cardStatusMap[card.id]?.health ?? 0;
+    const attackWidth = getBarWidthPercent(attackValue, maxAttack);
+    const defenseWidth = getBarWidthPercent(defenseValue, maxDefense);
+    const healthWidth = getBarWidthPercent(healthValue, maxHealth);
+
+    return (
+    <details
+      class="item"
+      data-card-id={card.id}
+      data-rarity-id={card.cardRarityId}
+      data-attack={cardStatusMap[card.id]?.attack ?? 0}
+      data-defense={cardStatusMap[card.id]?.defense ?? 0}
+      data-health={cardStatusMap[card.id]?.health ?? 0}
+      data-card-label={card.label}
+      data-card-skill-label={cardStatusMap[card.id]?.abilityLabel ?? ""}
+      data-card-cooldown={cardStatusMap[card.id]?.cooldownTime ?? 0}
+      data-card-cast-time={cardCastTimeMap[card.cardCastTimeId]?.label ?? ""}
+      data-card-attack={cardStatusMap[card.id]?.attack ?? 0}
+      data-card-defense={cardStatusMap[card.id]?.defense ?? 0}
+      data-card-health={cardStatusMap[card.id]?.health ?? 0}
+    >
 
       <summary>
         <span class={`rarity rarity-${card.cardRarityId}`}>
@@ -69,7 +100,7 @@ cardStatuses.forEach((x) => {
 
       <div class="info-row skill-row">
         <span class="title">スキル</span>
-        <span>{cardSkillMap[card.cardSkillId].label}</span>
+        <span>{cardStatusMap[card.id]?.abilityLabel ?? ""}</span>
       </div>
 
       <div class="info-row cooldown-row">
@@ -86,10 +117,10 @@ cardStatuses.forEach((x) => {
           <div class="bar">
             <div
               class="fill atk"
-              style={`width:attack`}
+              style={`width:${attackWidth}%`}
             ></div>
           </div>
-          <span>{cardStatusMap[card.id]?.attack ?? 0}</span>
+          <span>{attackValue}</span>
         </div>
 
         <div class="status-row">
@@ -97,10 +128,10 @@ cardStatuses.forEach((x) => {
           <div class="bar">
             <div
               class="fill def"
-              style={`width:defense`}
+              style={`width:${defenseWidth}%`}
             ></div>
           </div>
-          <span>{cardStatusMap[card.id]?.defense ?? 0}</span>
+          <span>{defenseValue}</span>
         </div>
 
         <div class="status-row">
@@ -108,10 +139,10 @@ cardStatuses.forEach((x) => {
           <div class="bar">
             <div
               class="fill hp"
-              style={`width:hp/6`}
+              style={`width:${healthWidth}%`}
             ></div>
           </div>
-          <span>{cardStatusMap[card.id]?.health ?? 0}</span>
+          <span>{healthValue}</span>
         </div>
       </div>
 
@@ -123,7 +154,8 @@ cardStatuses.forEach((x) => {
 
     </div>
     </details>
-  ))}
+    );
+  })}
 </div>
 
 <div class="display-panel-overlay" aria-hidden="true">
@@ -198,22 +230,40 @@ cardStatuses.forEach((x) => {
 </div>
 
 <script>
-document.querySelectorAll<HTMLDetailsElement>(".item").forEach((detail) => {
+const detailElements = document.querySelectorAll<HTMLDetailsElement>(".item");
 
+detailElements.forEach((detail) => {
     detail.addEventListener("toggle", () => {
-
         if (!detail.open) return;
 
         document.querySelectorAll<HTMLDetailsElement>(".item").forEach((other) => {
-
             if (other !== detail) {
                 other.open = false;
             }
-
         });
 
-    });
+        const cardId = detail.dataset.cardId;
+        const cardLabel = detail.dataset.cardLabel || "";
+        const skillLabel = detail.dataset.cardSkillLabel || "";
+        const cooldown = detail.dataset.cardCooldown || "0";
+        const castTime = detail.dataset.cardCastTime || "";
+        const attack = detail.dataset.cardAttack || "0";
+        const defense = detail.dataset.cardDefense || "0";
+        const health = detail.dataset.cardHealth || "0";
 
+        const detailState = {
+            cardId,
+            cardLabel,
+            skillLabel,
+            cooldown,
+            castTime,
+            attack,
+            defense,
+            health,
+        };
+
+        document.dispatchEvent(new CustomEvent("deck-list:select-card", { detail: detailState }));
+    });
 });
 
 const overlay = document.querySelector<HTMLDivElement>(".display-panel-overlay");
