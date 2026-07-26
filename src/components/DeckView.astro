@@ -1,113 +1,50 @@
 ---
 import '../styles/deck-view.css';
 import DeckListView from "./DeckListView.astro";
+import cards from "../data/cards/m_cards.json";
+import cardSkills from "../data/cards/m_card_skill_types.json";
+import cardStatuses from "../data/cards/m_card_statuses.json";
+
+const cardSkillMap = Object.fromEntries(cardSkills.map((skill) => [skill.id, skill]));
+const cardStatusMap = Object.fromEntries(cardStatuses.map((status) => [status.card_id, status]));
+const initialCards = [...cards]
+  .sort((a, b) => a.id - b.id)
+  .slice(0, 4);
 ---
 <deck-view class="deck-view">
-  	<div class="deck-view-content">
-		<div class="deck">
-			<button class="deck-card">Lv.50</button>
+  <div class="deck-view-content">
+    {initialCards.map((card, index) => {
+      const status = cardStatusMap[card.id];
+      const cooldownTime = status?.cooldownTime ?? 0;
+      const skillLabel = cardSkillMap[card.cardSkillId]?.label ?? "";
 
-			<div class="deck-info">
-				<div class="deck-name">
-					とある家庭用メカの反乱
-				</div>
+      return (
+        <div class="deck" data-card-id={card.id} data-slot-index={index}>
+          <button class="deck-card">Lv.50</button>
 
-				<div class="deck-status">
-					<div class="deck-category">
-						<span class="deck-tag">連続</span>
-					</div>
-					<div class="deck-ct">
-						<span class="deck-ct-label">CT</span>
-						<span class="deck-ct-current">21.5</span>
-						<span class="deck-ct-default">(24秒)</span>
-					</div>
-				</div>
-			</div>
+          <div class="deck-info">
+            <div class="deck-name">{card.label}</div>
 
-			<div class="deck-actions">
-				<button class="openDeckList">入れ替え</button>
-				<button>説明</button>
-			</div>
-		</div>
+            <div class="deck-status">
+              <div class="deck-category">
+                <span class="deck-tag">{skillLabel}</span>
+              </div>
+              <div class="deck-ct">
+                <span class="deck-ct-label">CT</span>
+                <span class="deck-ct-current">{cooldownTime}</span>
+                <span class="deck-ct-default">({cooldownTime}秒)</span>
+              </div>
+            </div>
+          </div>
 
-		<div class="deck">
-			<button class="deck-card">Lv.50</button>
-
-			<div class="deck-info">
-				<div class="deck-name">
-					とある家庭用メカの反乱
-				</div>
-
-				<div class="deck-status">
-					<div class="deck-category">
-						<span class="deck-tag">連続</span>
-					</div>
-					<div class="deck-ct">
-						<span class="deck-ct-label">CT</span>
-						<span class="deck-ct-current">21.5</span>
-						<span class="deck-ct-default">(24秒)</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="deck-actions">
-				<button class="openDeckList">入れ替え</button>
-				<button>説明</button>
-			</div>
-		</div>
-
-		<div class="deck">
-			<button class="deck-card">Lv.50</button>
-
-			<div class="deck-info">
-				<div class="deck-name">
-					とある家庭用メカの反乱
-				</div>
-
-				<div class="deck-status">
-					<div class="deck-category">
-						<span class="deck-tag">連続</span>
-					</div>
-					<div class="deck-ct">
-						<span class="deck-ct-label">CT</span>
-						<span class="deck-ct-current">21.5</span>
-						<span class="deck-ct-default">(24秒)</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="deck-actions">
-				<button class="openDeckList">入れ替え</button>
-				<button>説明</button>
-			</div>
-		</div>
-
-		<div class="deck">
-			<button class="deck-card">Lv.50</button>
-
-			<div class="deck-info">
-				<div class="deck-name">
-					とある家庭用メカの反乱
-				</div>
-
-				<div class="deck-status">
-					<div class="deck-category">
-						<span class="deck-tag">連続</span>
-					</div>
-					<div class="deck-ct">
-						<span class="deck-ct-label">CT</span>
-						<span class="deck-ct-current">21.5</span>
-						<span class="deck-ct-default">(24秒)</span>
-					</div>
-				</div>
-			</div>
-
-			<div class="deck-actions">
-				<button class="openDeckList">入れ替え</button>
-				<button>説明</button>
-			</div>
-		</div>
-  	</div>
+          <div class="deck-actions">
+            <button class="openDeckList">入れ替え</button>
+            <button>説明</button>
+          </div>
+        </div>
+      );
+    })}
+  </div>
 </deck-view>
 
 <!-- モーダル -->
@@ -117,22 +54,111 @@ import DeckListView from "./DeckListView.astro";
   </div>
 </div>
 
-<script>
+<script define:vars={{ cards, cardSkillMap, cardStatusMap }}>
 const overlay = document.getElementById("deckListOverlay");
+let selectedReplacementIndex = null;
+
+const getDeckElements = () => Array.from(document.querySelectorAll(".deck-view .deck"));
+
+const renderDeckCard = (deckElement, card) => {
+  const status = cardStatusMap[card.id];
+  const cooldownTime = status?.cooldownTime ?? 0;
+  const skillLabel = cardSkillMap[card.cardSkillId]?.label ?? "";
+
+  const deckButton = deckElement.querySelector(".deck-card");
+  const deckNameElement = deckElement.querySelector(".deck-name");
+  const deckSkillElement = deckElement.querySelector(".deck-category .deck-tag");
+  const cooldownCurrentElement = deckElement.querySelector(".deck-ct-current");
+  const cooldownDefaultElement = deckElement.querySelector(".deck-ct-default");
+
+  if (deckButton) {
+    deckButton.textContent = "Lv.50";
+  }
+  if (deckNameElement) {
+    deckNameElement.textContent = card.label;
+  }
+  if (deckSkillElement) {
+    deckSkillElement.textContent = skillLabel;
+  }
+  if (cooldownCurrentElement) {
+    cooldownCurrentElement.textContent = String(cooldownTime);
+  }
+  if (cooldownDefaultElement) {
+    cooldownDefaultElement.textContent = `(${cooldownTime}秒)`;
+  }
+
+  deckElement.dataset.cardId = String(card.id);
+};
+
+const publishDeckState = () => {
+  const cardIds = getDeckElements()
+    .map((deck) => Number(deck.dataset.cardId ?? 0))
+    .filter(Boolean);
+
+  document.dispatchEvent(new CustomEvent("deck-view:state-changed", {
+    detail: { cardIds },
+  }));
+};
+
+const replaceDeckCard = (slotIndex, cardId) => {
+  const deckElement = getDeckElements()[slotIndex];
+  const card = cards.find((item) => item.id === cardId);
+
+  if (!deckElement || !card) {
+    return;
+  }
+
+  renderDeckCard(deckElement, card);
+  publishDeckState();
+};
+
+const deckViewContainer = document.querySelector(".deck-view-content");
+if (deckViewContainer) {
+  const observer = new MutationObserver(() => {
+    publishDeckState();
+  });
+
+  observer.observe(deckViewContainer, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["data-card-id"],
+  });
+}
 
 if (overlay) {
-  document.querySelectorAll<HTMLButtonElement>(".openDeckList").forEach((button) => {
+  document.querySelectorAll(".openDeckList").forEach((button) => {
     button.addEventListener("click", () => {
-      overlay.classList.remove("hidden");
+      const deckElement = button.closest(".deck");
+      selectedReplacementIndex = Number(deckElement?.dataset.slotIndex ?? -1);
+
+      if (selectedReplacementIndex >= 0) {
+        overlay.classList.remove("hidden");
+      }
     });
   });
 
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) {
       overlay.classList.add("hidden");
+      selectedReplacementIndex = null;
     }
   });
 }
+
+document.addEventListener("deck-list:use-card", (event) => {
+  const cardId = event.detail?.cardId;
+
+  if (typeof cardId !== "number" || selectedReplacementIndex === null || selectedReplacementIndex < 0) {
+    return;
+  }
+
+  replaceDeckCard(selectedReplacementIndex, cardId);
+  overlay?.classList.add("hidden");
+  selectedReplacementIndex = null;
+});
+
+publishDeckState();
 </script>
 
 <style>

@@ -57,6 +57,7 @@
   inset: 0 auto 0 0;
   width: var(--green);
   background: #3cb043;
+  transition: width 0.2s ease;
 }
 
 .status-gauge-red {
@@ -79,4 +80,14 @@
   font-size: 14px;
   text-shadow: 0 0 2px black;
   padding-right: 0px;
+}
+
+.status-value {
+  font-size: 14px;
+}
+
+.status-max {
+  margin-left: 0.2rem;
+  font-size: 12px;
+  opacity: 0.9;
 }

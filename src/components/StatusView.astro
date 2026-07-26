@@ -1,29 +1,45 @@
 ---
 import '../styles/status-view.css';
+import cards from "../data/cards/m_cards.json";
+import cardStatuses from "../data/cards/m_card_statuses.json";
+
+const initialCards = [...cards]
+  .sort((a, b) => a.id - b.id)
+  .slice(0, 4);
+
+const cardStatusMap = Object.fromEntries(cardStatuses.map((status) => [status.card_id, status]));
+
+const maxAttack = Math.max(...cardStatuses.map((status) => status.attack), 0) * 2;
+const maxDefense = Math.max(...cardStatuses.map((status) => status.defense), 0) * 2;
+const maxHealth = Math.max(...cardStatuses.map((status) => status.health), 0) * 2;
+const totalAttack = initialCards.reduce((sum, card) => sum + (cardStatusMap[card.id]?.attack ?? 0), 0);
+const totalDefense = initialCards.reduce((sum, card) => sum + (cardStatusMap[card.id]?.defense ?? 0), 0);
+const totalHealth = initialCards.reduce((sum, card) => sum + (cardStatusMap[card.id]?.health ?? 0), 0);
 
 const statuses = [
   {
     name: "攻撃",
-    value: 864,
-    max: 753,
+    value: totalAttack,
+    max: maxAttack,
     green: 70,
     red: 8,
   },
   {
     name: "防御",
-    value: 721,
-    max: 680,
+    value: totalDefense,
+    max: maxDefense,
     green: 60,
     red: 5,
   },
   {
     name: "体力",
-    value: 1050,
-    max: 920,
+    value: totalHealth,
+    max: maxHealth,
     green: 85,
     red: 10,
   },
 ];
+
 ---
 
 <div class="status-view">
@@ -35,6 +51,7 @@ const statuses = [
     {statuses.map((status) => (
       <div
         class="status"
+        data-status-key={status.name === "攻撃" ? "attack" : status.name === "防御" ? "defense" : "health"}
         style={`--green:${status.green}%; --red:${status.red}%;`}
       >
         <div class="status-name">
@@ -46,11 +63,10 @@ const statuses = [
           <div class="status-gauge-red"></div>
 
           <div class="status-gauge-text">
-            <span class="status-value">{status.value}</span>
+            <span class="status-value">{status.max}</span>
             <span class="status-max">（{status.max}）</span>
           </div>
         </div>
       </div>
     ))}
   </div>
-</div>

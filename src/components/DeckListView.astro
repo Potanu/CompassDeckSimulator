@@ -278,6 +278,24 @@ const chips = document.querySelectorAll<HTMLButtonElement>(".display-panel .chip
 const resetButton = document.querySelector<HTMLButtonElement>(".reset-btn");
 const sortSelect = document.querySelector<HTMLSelectElement>(".sort-row select");
 const searchInput = document.querySelector<HTMLInputElement>(".search-input");
+
+const useButtons = document.querySelectorAll<HTMLButtonElement>(".use-btn");
+useButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const item = button.closest<HTMLDetailsElement>(".item");
+        const cardId = Number(item?.dataset.cardId ?? 0);
+
+        if (!cardId) {
+            return;
+        }
+
+        document.dispatchEvent(new CustomEvent("deck-list:use-card", {
+            detail: { cardId },
+        }));
+
+        document.getElementById("deckListOverlay")?.classList.add("hidden");
+    });
+});
 const filterGroupMap: Record<string, string> = {
     element: "elementId",
     rarity: "rarityId",
