@@ -70,7 +70,10 @@ const getBarWidthPercent = (value: number, maxValue: number) => {
     <details
       class="item"
       data-card-id={card.id}
+      data-element-id={card.cardElementId}
       data-rarity-id={card.cardRarityId}
+      data-skill-id={card.cardSkillId}
+      data-category-id={card.cardCategoryId}
       data-attack={cardStatusMap[card.id]?.attack ?? 0}
       data-defense={cardStatusMap[card.id]?.defense ?? 0}
       data-health={cardStatusMap[card.id]?.health ?? 0}
@@ -166,57 +169,59 @@ const getBarWidthPercent = (value: number, maxValue: number) => {
     </div>
     <div class="panel-body">
       <section class="panel-section">
+        <div class="section-title">検索</div>
+        <label class="search-input-wrap" for="card-search-input">
+          <span class="search-input-icon" aria-hidden="true">🔎</span>
+          <input
+            id="card-search-input"
+            class="search-input"
+            type="text"
+            placeholder="カード名やスキルで検索"
+            autocomplete="off"
+          />
+        </label>
+      </section>
+      <section class="panel-section">
         <div class="section-title">属性</div>
         <div class="chips-row">
-          <button type="button" class="chip active">火</button>
-          <button type="button" class="chip">水</button>
-          <button type="button" class="chip">木</button>
-          <button type="button" class="chip">無</button>
+          {cardElements.map((option) => (
+            <button type="button" class="chip" data-filter-group="element" data-filter-value={option.id}>{option.label}</button>
+          ))}
         </div>
       </section>
       <section class="panel-section">
         <div class="section-title">レアリティ</div>
         <div class="chips-grid">
-          <button type="button" class="chip">N</button>
-          <button type="button" class="chip">R</button>
-          <button type="button" class="chip">SR</button>
-          <button type="button" class="chip">UR</button>
+          {cardRarities.map((option) => (
+            <button type="button" class="chip" data-filter-group="rarity" data-filter-value={option.id}>{option.label}</button>
+          ))}
         </div>
       </section>
       <section class="panel-section">
         <div class="section-title">スキル</div>
         <div class="chips-grid">
-          <button type="button" class="chip">近距離</button>
-          <button type="button" class="chip">遠距離</button>
-          <button type="button" class="chip">連続</button>
-          <button type="button" class="chip">周囲</button>
-          <button type="button" class="chip">回復</button>
-          <button type="button" class="chip">ガード</button>
-          <button type="button" class="chip">強化</button>
-          <button type="button" class="chip">弱体化</button>
-          <button type="button" class="chip">移動</button>
-          <button type="button" class="chip">設置</button>
-          <button type="button" class="chip">カウンター</button>
-          <button type="button" class="chip">その他</button>
+          {cardSkills.map((option) => (
+            <button type="button" class="chip" data-filter-group="skill" data-filter-value={option.id}>{option.label}</button>
+          ))}
         </div>
       </section>
       <section class="panel-section">
         <div class="section-title">種類</div>
         <div class="chips-grid">
-          <button type="button" class="chip">通常</button>
-          <button type="button" class="chip">コラボ</button>
-          <button type="button" class="chip">シーズン</button>
-          <button type="button" class="chip">イベント</button>
+          {cardCaterories.map((option) => (
+            <button type="button" class="chip" data-filter-group="category" data-filter-value={option.id}>{option.label}</button>
+          ))}
         </div>
       </section>
       <section class="panel-section panel-bottom-section">
         <div class="section-title">並び順</div>
         <div class="sort-row">
           <select>
-            <option>レアリティ順</option>
-            <option>攻撃力</option>
-            <option>防御力</option>
-            <option>体力順</option>
+            <option value="標準">標準</option>
+            <option value="レアリティ順">レアリティ順</option>
+            <option value="攻撃力">攻撃力</option>
+            <option value="防御力">防御力</option>
+            <option value="体力順">体力順</option>
           </select>
           <button type="button" class="reset-btn">リセット</button>
         </div>
@@ -272,11 +277,60 @@ const closeDisplayButton = document.querySelector<HTMLButtonElement>(".panel-clo
 const chips = document.querySelectorAll<HTMLButtonElement>(".display-panel .chip");
 const resetButton = document.querySelector<HTMLButtonElement>(".reset-btn");
 const sortSelect = document.querySelector<HTMLSelectElement>(".sort-row select");
+const searchInput = document.querySelector<HTMLInputElement>(".search-input");
+const filterGroupMap: Record<string, string> = {
+    element: "elementId",
+    rarity: "rarityId",
+    skill: "skillId",
+    category: "categoryId",
+};
 
 openDisplayButton?.addEventListener("click", () => {
     overlay?.classList.add("open");
     overlay?.setAttribute("aria-hidden", "false");
 });
+
+const getActiveChipValues = () => {
+    const activeGroups: Record<string, number[]> = {};
+
+    chips.forEach((chip) => {
+        if (!chip.classList.contains("active")) return;
+
+        const group = chip.dataset.filterGroup;
+        const value = Number(chip.dataset.filterValue ?? 0);
+        if (!group || !value) return;
+
+        if (!activeGroups[group]) {
+            activeGroups[group] = [];
+        }
+        activeGroups[group].push(value);
+    });
+
+    return activeGroups;
+};
+
+const applyFilters = () => {
+    const parent = document.querySelector<HTMLDivElement>(".deck-list-view");
+    if (!parent) return;
+
+    const query = searchInput?.value.trim().toLowerCase() ?? "";
+    const activeGroups = getActiveChipValues();
+    const items = Array.from(parent.querySelectorAll<HTMLDetailsElement>(".item"));
+
+    items.forEach((item) => {
+        const cardLabel = item.dataset.cardLabel?.toLowerCase() ?? "";
+        const skillLabel = item.dataset.cardSkillLabel?.toLowerCase() ?? "";
+        const matchesSearch = !query || cardLabel.includes(query) || skillLabel.includes(query);
+
+        const matchesGroups = Object.entries(activeGroups).every(([group, values]) => {
+            const fieldName = filterGroupMap[group];
+            const itemValue = Number((item.dataset as Record<string, string>)[`${fieldName}`] ?? 0);
+            return values.includes(itemValue);
+        });
+
+        item.style.display = matchesSearch && matchesGroups ? "" : "none";
+    });
+};
 
 const sortItems = () => {
     const parent = document.querySelector<HTMLDivElement>(".deck-list-view");
@@ -318,6 +372,7 @@ const sortItems = () => {
 };
 
 closeDisplayButton?.addEventListener("click", () => {
+    applyFilters();
     overlay?.classList.remove("open");
     overlay?.setAttribute("aria-hidden", "true");
     sortItems();
@@ -334,5 +389,9 @@ resetButton?.addEventListener("click", () => {
     if (sortSelect) {
         sortSelect.selectedIndex = 0;
     }
+    if (searchInput) {
+        searchInput.value = "";
+    }
+    applyFilters();
 });
 </script>

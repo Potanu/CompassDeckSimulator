@@ -243,6 +243,34 @@
   color: #9ca3af;
 }
 
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #374151;
+  background: #111827;
+}
+
+.search-input-icon {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f9fafb;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
 .chips-row,
 .chips-grid {
   display: flex;
