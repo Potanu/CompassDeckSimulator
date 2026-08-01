@@ -16,7 +16,7 @@
   },
   {
     "id": 4,
-    "key": "CIRCLE",
+    "key": "RANGE",
     "label": "周"
   },
   {
@@ -238,6 +238,11 @@
     "id": 48,
     "key": "SYNC",
     "label": "共"
+  },
+  {
+    "id": 49,
+    "key": "CIRCLE",
+    "label": "円"
   },
   {
     "id": 1001,

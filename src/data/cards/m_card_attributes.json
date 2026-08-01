@@ -4058,5 +4058,57 @@
   {
     "cardId": 580,
     "cardAttributeTypeId": 41
+  },
+  {
+    "cardId": 581,
+    "cardAttributeTypeId": 49
+  },
+  {
+    "cardId": 581,
+    "cardAttributeTypeId": 8
+  },
+  {
+    "cardId": 582,
+    "cardAttributeTypeId": 2
+  },
+  {
+    "cardId": 582,
+    "cardAttributeTypeId": 22
+  },
+  {
+    "cardId": 582,
+    "cardAttributeTypeId": 42
+  },
+  {
+    "cardId": 583,
+    "cardAttributeTypeId": 1
+  },
+  {
+    "cardId": 583,
+    "cardAttributeTypeId": 21
+  },
+  {
+    "cardId": 583,
+    "cardAttributeTypeId": 36
+  },
+  {
+    "cardId": 584,
+    "cardAttributeTypeId": 6
+  },
+  {
+    "cardId": 585,
+    "cardAttributeTypeId": 5
+  },
+  {
+    "cardId": 586,
+    "cardAttributeTypeId": 1
+  },
+  {
+    "cardId": 586,
+    "cardAttributeTypeId": 21
+  },
+  {
+    "cardId": 586,
+    "cardAttributeTypeId": 36
   }
 ]

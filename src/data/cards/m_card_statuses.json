@@ -5798,5 +5798,65 @@
     "abilityLabel": "前方に瞬間移動して ライフを30％回復",
     "createdDate": "2026-05-04T15:00:00.000Z",
     "updatedDate": "2026-05-04T15:00:00.000Z"
+  },
+  {
+    "card_id": 581,
+    "cooldownTime": 42,
+    "attack": 60,
+    "defense": 23,
+    "health": 605,
+    "abilityLabel": "自身周囲に 敵デバフエリアを6秒展開\n(防御 大ダウン＆行動速度 中ダウン)",
+    "createdDate": "2026-07-31T15:00:00.000Z",
+    "updatedDate": "2026-07-31T15:00:00.000Z"
+  },
+  {
+    "card_id": 582,
+    "cooldownTime": 38,
+    "attack": 68,
+    "defense": 44,
+    "health": 356,
+    "abilityLabel": "遠くの敵に 広範囲の防御力無視攻撃\n(中ダメージ)",
+    "createdDate": "2026-07-31T15:00:00.000Z",
+    "updatedDate": "2026-07-31T15:00:00.000Z"
+  },
+  {
+    "card_id": 583,
+    "cooldownTime": 34,
+    "attack": 69,
+    "defense": 25,
+    "health": 473,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n(ブレイク成功で大ダメージ\n＋クールダウン時間34秒短縮)",
+    "createdDate": "2026-07-31T15:00:00.000Z",
+    "updatedDate": "2026-07-31T15:00:00.000Z"
+  },
+  {
+    "card_id": 584,
+    "cooldownTime": 20,
+    "attack": 58,
+    "defense": 41,
+    "health": 508,
+    "abilityLabel": "被ダメージを50％減らす(10秒間)\n+自身の残ライフ 25％減少",
+    "createdDate": "2026-07-31T15:00:00.000Z",
+    "updatedDate": "2026-07-31T15:00:00.000Z"
+  },
+  {
+    "card_id": 585,
+    "cooldownTime": 34,
+    "attack": 70,
+    "defense": 31,
+    "health": 437,
+    "abilityLabel": "ライフを 70％回復",
+    "createdDate": "2026-07-31T15:00:00.000Z",
+    "updatedDate": "2026-07-31T15:00:00.000Z"
+  },
+  {
+    "card_id": 586,
+    "cooldownTime": 30,
+    "attack": 58,
+    "defense": 13,
+    "health": 660,
+    "abilityLabel": "前方の敵に ガードブレイク攻撃\n(ブレイク成功で中ダメージ\n＋クールダウン時間20秒短縮)",
+    "createdDate": "2026-07-31T15:00:00.000Z",
+    "updatedDate": "2026-07-31T15:00:00.000Z"
   }
 ]
