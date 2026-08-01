@@ -99,7 +99,8 @@ export const Hero = {
    LANCER:                  98,     // ランサー
    FIRST:                   99,     // ✟ファースト✟
    REZE:                    100,    // レゼ
-   charles:                 101,    // シャルル・リヒター
+   CHARLES:                 101,    // シャルル・リヒター
+   ICHIHIME:                102,    // 一姫
 } as const;
 
 export type Hero = typeof Hero[keyof typeof Hero];

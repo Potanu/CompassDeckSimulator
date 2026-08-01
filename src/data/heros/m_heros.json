@@ -701,9 +701,16 @@
   },
   {
     "id": 101,
-    "key": "charles",
+    "key": "CHARLES",
     "label": "シャルル・リヒター",
     "heroRoleId": 2,
     "collaborationTitleId": 0
+  },
+  {
+    "id": 102,
+    "key": "ICHIHIME",
+    "label": "一姫",
+    "heroRoleId": 1,
+    "collaborationTitleId": 36
   }
 ]

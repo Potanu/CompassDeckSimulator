@@ -806,5 +806,13 @@
     "health": 0.95,
     "createdDate": "2026-05-30T15:00:00.000Z",
     "updatedDate": "2026-06-03T15:00:00.000Z"
+  },
+  {
+    "id": 102,
+    "attack": 1.35,
+    "defense": 0.75,
+    "health": 1.05,
+    "createdDate": "2026-07-31T15:00:00.000Z",
+    "updatedDate": "2026-07-31T15:00:00.000Z"
   }
 ]

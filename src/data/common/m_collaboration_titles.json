@@ -178,5 +178,10 @@
     "id": 35,
     "key": "FATE_STRANGE_FAKE",
     "label": "Fate/strange Fake"
+  },
+  {
+    "id": 36,
+    "key": "JANTAMA",
+    "label": "雀魂"
   }
 ]
