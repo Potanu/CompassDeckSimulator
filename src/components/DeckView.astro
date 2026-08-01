@@ -39,7 +39,7 @@ const initialCards = [...cards]
 
           <div class="deck-actions">
             <button class="openDeckList">入れ替え</button>
-            <button>説明</button>
+            <button class="openDeckDescription">説明</button>
           </div>
         </div>
       );
@@ -54,8 +54,19 @@ const initialCards = [...cards]
   </div>
 </div>
 
+<div id="deckDescriptionOverlay" class="overlay hidden">
+  <div class="overlay-content deck-description-content">
+    <div class="deck-description-header">
+      <button class="closeDeckDescription" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="deck-description-body deck-list-view"></div>
+  </div>
+</div>
+
 <script define:vars={{ cards, cardSkillMap, cardStatusMap }}>
 const overlay = document.getElementById("deckListOverlay");
+const descriptionOverlay = document.getElementById("deckDescriptionOverlay");
+const descriptionBody = descriptionOverlay?.querySelector(".deck-description-body");
 let selectedReplacementIndex = null;
 
 const getDeckElements = () => Array.from(document.querySelectorAll(".deck-view .deck"));
@@ -146,6 +157,44 @@ if (overlay) {
   });
 }
 
+const closeDescription = () => {
+  descriptionOverlay?.classList.add("hidden");
+  if (descriptionBody) {
+    descriptionBody.replaceChildren();
+  }
+};
+
+document.querySelectorAll(".openDeckDescription").forEach((button) => {
+  button.addEventListener("click", () => {
+    const deckElement = button.closest(".deck");
+    const cardId = deckElement?.dataset.cardId;
+    const card = cards.find((item) => String(item.id) === cardId);
+    const sourceItem = cardId
+      ? document.querySelector(`.deck-list-view .item[data-card-id="${cardId}"]`)
+      : null;
+
+    if (!card || !sourceItem || !descriptionOverlay || !descriptionBody) {
+      return;
+    }
+
+    const summary = sourceItem.querySelector("summary")?.cloneNode(true);
+    const detail = sourceItem.querySelector(".detail")?.cloneNode(true);
+
+    if (!summary || !detail) {
+      return;
+    }
+
+    descriptionBody.replaceChildren(summary, detail);
+    descriptionOverlay.classList.remove("hidden");
+  });
+});
+
+descriptionOverlay?.addEventListener("click", (event) => {
+  if (event.target === descriptionOverlay || event.target.closest(".closeDeckDescription")) {
+    closeDescription();
+  }
+});
+
 document.addEventListener("deck-list:use-card", (event) => {
   const cardId = event.detail?.cardId;
 
@@ -185,5 +234,42 @@ publishDeckState();
   background:#fff;
   border-radius:12px;
   padding:16px;
+}
+
+.deck-description-content {
+  width:90%;
+  max-width:420px;
+  max-height:90vh;
+  overflow:auto;
+}
+
+.deck-description-body {
+  width:100%;
+  border:0;
+}
+
+.deck-description-body summary {
+  cursor:default;
+}
+
+.deck-description-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.closeDeckDescription {
+  border:0;
+  background:transparent;
+  color:#333;
+  cursor:pointer;
+  font-size:24px;
+  line-height:1;
+}
+
+.deck-description-body .detail {
+  display:block;
 }
 </style>

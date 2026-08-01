@@ -9,32 +9,39 @@ const initialCards = [...cards]
 
 const cardStatusMap = Object.fromEntries(cardStatuses.map((status) => [status.card_id, status]));
 
-const maxAttack = Math.max(...cardStatuses.map((status) => status.attack), 0) * 2;
-const maxDefense = Math.max(...cardStatuses.map((status) => status.defense), 0) * 2;
-const maxHealth = Math.max(...cardStatuses.map((status) => status.health), 0) * 2;
-const totalAttack = initialCards.reduce((sum, card) => sum + (cardStatusMap[card.id]?.attack ?? 0), 0);
-const totalDefense = initialCards.reduce((sum, card) => sum + (cardStatusMap[card.id]?.defense ?? 0), 0);
-const totalHealth = initialCards.reduce((sum, card) => sum + (cardStatusMap[card.id]?.health ?? 0), 0);
+const getStatusTotals = (cardIds: number[]) => cardIds.reduce(
+  (totals, cardId) => {
+    const status = cardStatusMap[cardId];
+
+    totals.attack += status?.attack ?? 0;
+    totals.defense += status?.defense ?? 0;
+    totals.health += status?.health ?? 0;
+    return totals;
+  },
+  { attack: 0, defense: 0, health: 0 },
+);
+
+const initialTotals = getStatusTotals(initialCards.map((card) => card.id));
 
 const statuses = [
   {
     name: "攻撃",
-    value: totalAttack,
-    max: maxAttack,
+    key: "attack",
+    value: initialTotals.attack,
     green: 70,
     red: 8,
   },
   {
     name: "防御",
-    value: totalDefense,
-    max: maxDefense,
+    key: "defense",
+    value: initialTotals.defense,
     green: 60,
     red: 5,
   },
   {
     name: "体力",
-    value: totalHealth,
-    max: maxHealth,
+    key: "health",
+    value: initialTotals.health,
     green: 85,
     red: 10,
   },
@@ -51,7 +58,7 @@ const statuses = [
     {statuses.map((status) => (
       <div
         class="status"
-        data-status-key={status.name === "攻撃" ? "attack" : status.name === "防御" ? "defense" : "health"}
+        data-status-key={status.key}
         style={`--green:${status.green}%; --red:${status.red}%;`}
       >
         <div class="status-name">
@@ -63,10 +70,47 @@ const statuses = [
           <div class="status-gauge-red"></div>
 
           <div class="status-gauge-text">
-            <span class="status-value">{status.max}</span>
-            <span class="status-max">（{status.max}）</span>
+            <span class="status-value">{status.value}</span>
+            <span class="status-max">（{status.value}）</span>
           </div>
         </div>
       </div>
     ))}
   </div>
+</div>
+
+<script define:vars={{ cardStatuses, initialTotals }}>
+  const updateStatusValues = (totals) => {
+    document.querySelectorAll(".status-view .status[data-status-key]").forEach((statusElement) => {
+      const key = statusElement.dataset.statusKey;
+      const value = totals[key] ?? 0;
+      const valueElement = statusElement.querySelector(".status-value");
+      const maxElement = statusElement.querySelector(".status-max");
+
+      if (valueElement) {
+        valueElement.textContent = String(value);
+      }
+      if (maxElement) {
+        maxElement.textContent = `（${value}）`;
+      }
+    });
+  };
+
+  const getStatusTotals = (cardIds) => cardIds.reduce(
+    (totals, cardId) => {
+      const status = cardStatuses.find((item) => item.card_id === cardId);
+
+      totals.attack += status?.attack ?? 0;
+      totals.defense += status?.defense ?? 0;
+      totals.health += status?.health ?? 0;
+      return totals;
+    },
+    { attack: 0, defense: 0, health: 0 },
+  );
+
+  updateStatusValues(initialTotals);
+
+  document.addEventListener("deck-view:state-changed", (event) => {
+    updateStatusValues(getStatusTotals(event.detail?.cardIds ?? []));
+  });
+</script>
