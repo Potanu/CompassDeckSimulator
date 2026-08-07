@@ -1101,7 +1101,7 @@
   },
   {
     "id": 111,
-    "label": "紅薔薇の生命線 バレンティア",
+    "label": "紅薔薇の生命線 パレンティア",
     "cardElementId": 1,
     "cardRarityId": 3,
     "cardSkillId": 4,
@@ -1511,7 +1511,7 @@
   },
   {
     "id": 152,
-    "label": "まおうのせんべい！殺戮武闘ロボ",
+    "label": "まおうのせんぺい！殺戮武闘ロボ",
     "cardElementId": 1,
     "cardRarityId": 3,
     "cardSkillId": 12,
@@ -1881,7 +1881,7 @@
   },
   {
     "id": 189,
-    "label": "蔵土緑紗夢（くらどべり じゃむ）",
+    "label": "蔵土縁紗夢（くらどべり じゃむ）",
     "cardElementId": 1,
     "cardRarityId": 3,
     "cardSkillId": 3,
@@ -3511,7 +3511,7 @@
   },
   {
     "id": 352,
-    "label": "【ロックマンエグゼ】ショックウェ－ブ",
+    "label": "【ロックマンエグゼ】ショックウェーブ",
     "cardElementId": 2,
     "cardRarityId": 4,
     "cardSkillId": 1,
@@ -3791,7 +3791,7 @@
   },
   {
     "id": 380,
-    "label": "【ダンまち】ソード・オラトリオ",
+    "label": "【ダンまち】ソード・オラトリア",
     "cardElementId": 2,
     "cardRarityId": 4,
     "cardSkillId": 3,
@@ -3991,7 +3991,7 @@
   },
   {
     "id": 400,
-    "label": "【アイウォントアクト】ジャック・オー",
+    "label": "【アイウォントアウト】ジャック・オー",
     "cardElementId": 1,
     "cardRarityId": 4,
     "cardSkillId": 4,
@@ -4591,1076 +4591,6 @@
   },
   {
     "id": 460,
-    "label": "【妖華帝国総帥】桜華 忠臣",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 1,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 461,
-    "label": "【相棒の堕天使】13 †サーティーン†",
-    "cardElementId": 4,
-    "cardRarityId": 4,
-    "cardSkillId": 1,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 462,
-    "label": "【紅薔薇王女】マリア=s=レオンブルク",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 2,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 463,
-    "label": "【GB流正統後継者】ゲームバズーカガール",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 2,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 464,
-    "label": "【聖戦の軌跡】蒼の従者と紅の猟兵",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 4,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 465,
-    "label": "【1周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 466,
-    "label": "【皆で海水浴】夏空のガールズパーティ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 467,
-    "label": "【2周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 468,
-    "label": "【3周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 469,
-    "label": "【4周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 470,
-    "label": "【5周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 471,
-    "label": "【6周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 472,
-    "label": "【7周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 473,
-    "label": "【8周年ありがとう】全員集合記念パーティ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 474,
-    "label": "【オルレアンの乙女】ジャンヌダルク",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 7,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 475,
-    "label": "【ギャリギャリ女子高生】双挽乃保",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 7,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 476,
-    "label": "【絶望の指揮官】グスタフハイドリヒ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 7,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 477,
-    "label": "【楽団音楽家】ヴィオレッタノワール",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 7,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 478,
-    "label": "【おにんぎょうあそび】コクリコ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 8,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 479,
-    "label": "【刹那の殺し屋】ルチアーノ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 9,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 480,
-    "label": "【イタズラ発明家】ニコラテスラ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 10,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 481,
-    "label": "【レトロゲーマー】十文字アタリ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 10,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 482,
-    "label": "【おねむな麒麟児】ニコラテスラ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 10,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 483,
-    "label": "【蜘蛛縫組若頭】糸廻輪廻",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 10,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 484,
-    "label": "【見習い花火職人】深川まとい",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 485,
-    "label": "【虚無の管理人】Voidoll",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 486,
-    "label": "【夢見る☆魔法少女】リリカ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 487,
-    "label": "【連合宇宙軍大尉】ジャスティスハンコック",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 488,
-    "label": "【でんせつのはじまり】かけだし勇者",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 489,
-    "label": "【トリガーハッピー】メグメグ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 490,
-    "label": "【漆黒の堕天使】13 †サーティーン†",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 491,
-    "label": "【蒼王騎士団長】アダム=ユーリエフ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 492,
-    "label": "【可憐で苛烈な美少女忍者】輝龍院 きらら",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 493,
-    "label": "【ハイスペックニート】マルコス'55",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 494,
-    "label": "【愛と美のチェリーパイ】ポロロッチョ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 495,
-    "label": "【ティワロロ族の戦士】イスタカ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 496,
-    "label": "【心願のラ=ピュセル】ジャンヌダルク",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 497,
-    "label": "【ちゃぷちゃぷ女子高生】双挽乃保",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 498,
-    "label": "【摂理の管理人】Voidoll",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 499,
-    "label": "【薄氷の恩寵天使】ソーン=ユーリエフ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 500,
-    "label": "【スリープゲーマー】十文字アタリ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 501,
-    "label": "【ふたりは☆魔法少女】リリカ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 502,
-    "label": "【デビルミント鬼龍族】デルミン",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 503,
-    "label": "【流麗芸術家】ヴィオレッタノワール",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 504,
-    "label": "【デンジャラスガール】メグメグ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 505,
-    "label": "【アタッカー】大乱闘フェスティバル",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 506,
-    "label": "【夏祭りデート】深川まとい",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 507,
-    "label": "【寂寞の鎮魂歌】ルチアーノ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 508,
-    "label": "【おわらないとけい】コクリコ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 509,
-    "label": "【敏腕老執事】トマス",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 510,
-    "label": "【機密結社\"MMM\"首脳】零夜",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 511,
-    "label": "【ずっといっしょ☆魔法少女】ルルカ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 512,
-    "label": "【殲滅の軍団長】グスタフハイドリヒ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 513,
-    "label": "【イケぽっちゃり系伊達男】ピエール77世",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 514,
-    "label": "【伝説の英雄】ジャスティスハンコック",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 515,
-    "label": "【ガンナー】大乱闘フェスティバル",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 516,
-    "label": "【貴き紅薔薇】マリア=S=レオンブルク",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 517,
-    "label": "【兵器化傭兵】ニーズヘッグ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 518,
-    "label": "【でんせつのつるぎ】かけだし勇者",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 519,
-    "label": "【失墜の堕天使】13 †サーティーン†",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 520,
-    "label": "【パーフェクトニート】マルコス'55",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 521,
-    "label": "【狐面討魔士】狐ヶ咲亜麻色",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 522,
-    "label": "【美少女忍者ストリーマー】輝龍院 きらら",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 523,
-    "label": "【恋する不思議の乙女】青春アリス",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 524,
-    "label": "【天上天下唯我独尊】桜華 忠臣",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 525,
-    "label": "【スプリンター】大乱闘フェスティバル",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 526,
-    "label": "【護国氷雪騎士】アダム=ユーリエフ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 527,
-    "label": "【神鳥とともに在る者】イスタカ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 528,
-    "label": "【熱血刑事魂】イグニス=ウィル=ウィスプ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 529,
-    "label": "【救国の聖女】ジャンヌダルク",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 530,
-    "label": "【滅国の氷雪禁獣】ソーン=ユーリエフ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 531,
-    "label": "【__NULL DATA__】Bugdoll",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 532,
-    "label": "【もぐもぐ女子高生】双挽乃保",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 533,
-    "label": "【スプリントゲーマー】十文字アタリ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 534,
-    "label": "【ロストメモリーガール】メグメグ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 535,
-    "label": "【タンク】大乱闘フェスティバル",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 536,
-    "label": "【囚われの☆魔法少女】リリカ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 537,
-    "label": "【吸血鬼の王】ラヴィ・シュシュマルシュ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 3,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 538,
-    "label": "【チョコミント味のおいしいやつ】デルミン",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 539,
-    "label": "【秩序の管理人】Voidoll",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 540,
-    "label": "【上流大貴族】ヴィオレッタノワール",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 541,
-    "label": "【まいごのおるすばん】コクリコ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 542,
-    "label": "【ワテクシとチェリーパイ】ポロロッチョ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 543,
-    "label": "【エルフのおねえさん】ステリア･ララ･シルワ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 544,
-    "label": "【盗賊兄貴】アル･ダバブ=アルカティア",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 545,
-    "label": "【幻影の暗殺者】ルチアーノ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 546,
-    "label": "【妖毒同盟】桜華忠臣＆グスタフ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 547,
-    "label": "【不屈の軍人】ジャスティスハンコック",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 548,
-    "label": "【猛き天空王】ぶれいずどらごん",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 549,
-    "label": "【A.D.D.F.強襲部隊兵】クー・シー",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 550,
-    "label": "【くろぬりちょう】某",
-    "cardElementId": 4,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 551,
-    "label": "【お嬢様命】トマス",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 552,
-    "label": "【紅薔薇副団長】アミスター=バランディン",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 553,
-    "label": "【ナイショの★魔法少女】ルルカ",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 554,
-    "label": "【祓三姉妹次女】狐ヶ咲甘色",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 555,
-    "label": "【株式会社陰陽師】鬼ヶ式うら",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 556,
-    "label": "【永久の隣人】ステリア＆ラヴィ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 557,
-    "label": "【人類の敵】コラプス",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 558,
-    "label": "【夜華牡丹】深川まとい",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 559,
-    "label": "【さいきょーキラキラギャル】みりぽゆ",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 560,
-    "label": "【GBの意思を継ぐ者】ゲームバズーカガール",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 561,
-    "label": "【ビックリドッキリ発明家】ニコラテスラ",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 12,
-    "cardCategoryId": 3,
-    "cardCastTimeId": 1,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 562,
-    "label": "【#コンパスフェス】ふんわり気球旅行",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 4,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 563,
-    "label": "【#コンパス】ライブアリーナ 2021",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 4,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 564,
-    "label": "【#コンパスフェス】ぶんぶん疾走旅行",
-    "cardElementId": 3,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 4,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 565,
-    "label": "【#コンパスフェス】わくわく飛竜旅行",
-    "cardElementId": 2,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 4,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 566,
-    "label": "【#コンパスフェス】ぷかぷか航海旅行",
-    "cardElementId": 1,
-    "cardRarityId": 4,
-    "cardSkillId": 5,
-    "cardCategoryId": 4,
-    "cardCastTimeId": 2,
-    "collaborationTitleId": 0
-  },
-  {
-    "id": 567,
     "label": "【#コンパス2.0】アニメ キービジュアル",
     "cardElementId": 2,
     "cardRarityId": 4,
@@ -5670,7 +4600,7 @@
     "collaborationTitleId": 0
   },
   {
-    "id": 568,
+    "id": 461,
     "label": "アサシン",
     "cardElementId": 1,
     "cardRarityId": 3,
@@ -5680,7 +4610,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 569,
+    "id": 462,
     "label": "ジェスター・カルトゥーレ",
     "cardElementId": 1,
     "cardRarityId": 3,
@@ -5690,7 +4620,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 570,
+    "id": 463,
     "label": "オーランド・リーヴ",
     "cardElementId": 3,
     "cardRarityId": 3,
@@ -5700,7 +4630,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 571,
+    "id": 464,
     "label": "フランチェスカ・プレラーティ",
     "cardElementId": 2,
     "cardRarityId": 3,
@@ -5710,7 +4640,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 572,
+    "id": 465,
     "label": "【Fate/Strange Fake】To The City",
     "cardElementId": 2,
     "cardRarityId": 4,
@@ -5720,7 +4650,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 573,
+    "id": 466,
     "label": "【Fate/Strange Fake】慢心無き戦",
     "cardElementId": 4,
     "cardRarityId": 4,
@@ -5730,7 +4660,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 574,
+    "id": 467,
     "label": "【Fate/Strange Fake】造られし命達",
     "cardElementId": 3,
     "cardRarityId": 4,
@@ -5740,7 +4670,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 575,
+    "id": 468,
     "label": "【Fate/Strange Fake】時計塔の師弟",
     "cardElementId": 1,
     "cardRarityId": 4,
@@ -5750,7 +4680,7 @@
     "collaborationTitleId": 35
   },
   {
-    "id": 576,
+    "id": 469,
     "label": "【天罰の熾天使】†ファースト†",
     "cardElementId": 1,
     "cardRarityId": 4,
@@ -5760,7 +4690,7 @@
     "collaborationTitleId": 0
   },
   {
-    "id": 577,
+    "id": 470,
     "label": "【チェンソーマン】レゼ",
     "cardElementId": 3,
     "cardRarityId": 4,
@@ -5770,7 +4700,7 @@
     "collaborationTitleId": 28
   },
   {
-    "id": 578,
+    "id": 471,
     "label": "【チェンソーマン】チェンソーマン",
     "cardElementId": 1,
     "cardRarityId": 4,
@@ -5780,7 +4710,7 @@
     "collaborationTitleId": 28
   },
   {
-    "id": 579,
+    "id": 472,
     "label": "天使の悪魔",
     "cardElementId": 3,
     "cardRarityId": 3,
@@ -5790,7 +4720,7 @@
     "collaborationTitleId": 28
   },
   {
-    "id": 580,
+    "id": 473,
     "label": "ビーム",
     "cardElementId": 2,
     "cardRarityId": 3,
@@ -5800,7 +4730,7 @@
     "collaborationTitleId": 28
   },
   {
-    "id": 581,
+    "id": 474,
     "label": "【雀魂】夏の誘い",
     "cardElementId": 2,
     "cardRarityId": 4,
@@ -5810,7 +4740,7 @@
     "collaborationTitleId": 36
   },
   {
-    "id": 582,
+    "id": 475,
     "label": "【雀魂】一姫当千",
     "cardElementId": 1,
     "cardRarityId": 4,
@@ -5820,7 +4750,7 @@
     "collaborationTitleId": 36
   },
   {
-    "id": 583,
+    "id": 476,
     "label": "【雀魂】金と緋に浮かぶ",
     "cardElementId": 3,
     "cardRarityId": 4,
@@ -5830,7 +4760,7 @@
     "collaborationTitleId": 36
   },
   {
-    "id": 584,
+    "id": 477,
     "label": "琳琅（リンラン）",
     "cardElementId": 2,
     "cardRarityId": 3,
@@ -5840,7 +4770,7 @@
     "collaborationTitleId": 36
   },
   {
-    "id": 585,
+    "id": 478,
     "label": "ワン次郎",
     "cardElementId": 3,
     "cardRarityId": 3,
@@ -5850,7 +4780,7 @@
     "collaborationTitleId": 36
   },
   {
-    "id": 586,
+    "id": 479,
     "label": "八木唯",
     "cardElementId": 1,
     "cardRarityId": 3,
