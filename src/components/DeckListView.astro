@@ -1,55 +1,36 @@
 ---
 import '../styles/deck-list-view.css';
-import cards from "../data/cards/m_cards.json";
-import cardRarities from "../data/cards/m_card_rarity_types.json";
-import cardAttributeTypes from "../data/cards/m_card_attribute_types.json";
-import cardAttributes from "../data/cards/m_card_attributes.json";
-import cardStatuses from "../data/cards/m_card_statuses.json";
-import cardSkills from "../data/cards/m_card_skill_types.json";
-import cardElements from "../data/cards/m_card_element_types.json";
-import cardCaterories from "../data/cards/m_card_category_types.json";
-import cardCastTimes from "../data/cards/m_card_cast_time_types.json";
+import {
+  getAllCard,
+  getAllCardCategoryType,
+  getAllCardCastTimeType,
+  getAllCardElementType,
+  getAllCardRarityType,
+  getAllCardSkillType,
+  getCardAttributeTypeByCardId,
+  getCardCastTimeTypeById,
+  getCardCategoryTypeById,
+  getCardElementTypeById,
+  getCardRarityTypeById,
+  getCardSkillTypeById,
+  getCardStatusDisplayByCardId,
+} from "../accessors/cards/getData";
 
-type CardAttributeTypeRow = (typeof cardAttributeTypes)[number];
-type CardStatusRow = (typeof cardStatuses)[number];
+const cards = getAllCard();
+const cardRarities = getAllCardRarityType();
+const cardSkills = getAllCardSkillType();
+const cardElements = getAllCardElementType();
+const cardCaterories = getAllCardCategoryType();
+const cardCastTimes = getAllCardCastTimeType();
 
-type CardAttributeMap = Record<number, CardAttributeTypeRow | undefined>;
-type CardStatusMap = Record<number, {
-  cooldownTime: number;
-  attack: number;
-  defense: number;
-  health: number;
-  abilityLabel: string;
-}>;
+const cardStatusDisplayData = cards.map((card) => ({
+  cardId: card.id,
+  ...getCardStatusDisplayByCardId(card.id),
+}));
 
-const cardRarityMap = Object.fromEntries(cardRarities.map((x) => [x.id, x]));
-const cardAttributeTypeMap = Object.fromEntries(cardAttributeTypes.map((x) => [x.id, x]));
-const cardSkillMap = Object.fromEntries(cardSkills.map((x) => [x.id, x]));
-const cardElementMap = Object.fromEntries(cardElements.map((x) => [x.id, x]));
-const cardCategoryMap = Object.fromEntries(cardCaterories.map((x) => [x.id, x]));
-const cardCastTimeMap = Object.fromEntries(cardCastTimes.map((x) => [x.id, x]));
-
-const cardAttributeMap: CardAttributeMap = {};
-cardAttributes.forEach((attribute) => {
-  if (!cardAttributeMap[attribute.cardId]) {
-    cardAttributeMap[attribute.cardId] = cardAttributeTypeMap[attribute.cardAttributeTypeId];
-  }
-});
-
-const cardStatusMap: CardStatusMap = {};
-cardStatuses.forEach((x) => {
-  cardStatusMap[x.card_id] = {
-    cooldownTime: x.cooldownTime,
-    attack: x.attack,
-    defense: x.defense,
-    health: x.health,
-    abilityLabel: x.abilityLabel,
-  };
-});
-
-const maxAttack = Math.max(...cards.map((card) => cardStatusMap[card.id]?.attack ?? 0), 0);
-const maxDefense = Math.max(...cards.map((card) => cardStatusMap[card.id]?.defense ?? 0), 0);
-const maxHealth = Math.max(...cards.map((card) => cardStatusMap[card.id]?.health ?? 0), 0);
+const maxAttack = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).attack ?? 0), 0);
+const maxDefense = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).defense ?? 0), 0);
+const maxHealth = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).health ?? 0), 0);
 
 const getBarWidthPercent = (value: number, maxValue: number) => {
   if (!maxValue) return 0;
@@ -59,12 +40,16 @@ const getBarWidthPercent = (value: number, maxValue: number) => {
 
 <div class="deck-list-view">
   {cards.map((card) => {
-    const attackValue = cardStatusMap[card.id]?.attack ?? 0;
-    const defenseValue = cardStatusMap[card.id]?.defense ?? 0;
-    const healthValue = cardStatusMap[card.id]?.health ?? 0;
+    const status = cardStatusDisplayData.find((item) => item.cardId === card.id) ?? { cooldownTime: 0, attack: 0, defense: 0, health: 0, abilityLabel: "" };
+    const attackValue = status.attack;
+    const defenseValue = status.defense;
+    const healthValue = status.health;
     const attackWidth = getBarWidthPercent(attackValue, maxAttack);
     const defenseWidth = getBarWidthPercent(defenseValue, maxDefense);
     const healthWidth = getBarWidthPercent(healthValue, maxHealth);
+    const rarityLabel = getCardRarityTypeById(card.cardRarityId)?.label ?? "";
+    const castTimeLabel = getCardCastTimeTypeById(card.cardCastTimeId)?.label ?? "";
+    const attributeLabel = getCardAttributeTypeByCardId(card.id)?.label ?? "不明";
 
     return (
     <details
@@ -74,28 +59,28 @@ const getBarWidthPercent = (value: number, maxValue: number) => {
       data-rarity-id={card.cardRarityId}
       data-skill-id={card.cardSkillId}
       data-category-id={card.cardCategoryId}
-      data-attack={cardStatusMap[card.id]?.attack ?? 0}
-      data-defense={cardStatusMap[card.id]?.defense ?? 0}
-      data-health={cardStatusMap[card.id]?.health ?? 0}
+      data-attack={attackValue}
+      data-defense={defenseValue}
+      data-health={healthValue}
       data-card-label={card.label}
-      data-card-skill-label={cardStatusMap[card.id]?.abilityLabel ?? ""}
-      data-card-cooldown={cardStatusMap[card.id]?.cooldownTime ?? 0}
-      data-card-cast-time={cardCastTimeMap[card.cardCastTimeId]?.label ?? ""}
-      data-card-attack={cardStatusMap[card.id]?.attack ?? 0}
-      data-card-defense={cardStatusMap[card.id]?.defense ?? 0}
-      data-card-health={cardStatusMap[card.id]?.health ?? 0}
+      data-card-skill-label={status.abilityLabel}
+      data-card-cooldown={status.cooldownTime}
+      data-card-cast-time={castTimeLabel}
+      data-card-attack={attackValue}
+      data-card-defense={defenseValue}
+      data-card-health={healthValue}
     >
 
       <summary>
         <span class={`rarity rarity-${card.cardRarityId}`}>
-          {cardRarityMap[card.cardRarityId].label}
+          {rarityLabel}
         </span>
         <span class="name">
           {card.label}
           <span class={`dot dot-${card.cardElementId}`}></span>
         </span>
         <span class="attribute-type">
-          {cardAttributeMap[card.id]?.label ?? "不明"}
+          {attributeLabel}
         </span>
       </summary>
 
@@ -103,15 +88,15 @@ const getBarWidthPercent = (value: number, maxValue: number) => {
 
       <div class="info-row skill-row">
         <span class="title">スキル</span>
-        <span>{cardStatusMap[card.id]?.abilityLabel ?? ""}</span>
+        <span>{status.abilityLabel}</span>
       </div>
 
       <div class="info-row cooldown-row">
         <span class="title">クール</span>
-        <span>{cardStatusMap[card.id]?.cooldownTime ?? 0}秒</span>
+        <span>{status.cooldownTime}秒</span>
 
         <span class="title">発動時間</span>
-        <span>{cardCastTimeMap[card.cardCastTimeId].label}</span>
+        <span>{castTimeLabel}</span>
       </div>
 
       <div class="status">

@@ -29,9 +29,55 @@
   padding: 0.5rem;
 }
 
+.deck-card-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 .deck-card {
+  position: relative;
   width: var(--deck-card-width);
   height: var(--deck-card-height);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.deck-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.deck-card-level {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+
+.deck-level-select {
+  width: 100%;
+  font-size: 12px;
+  padding: 0.2rem 0.3rem;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
 }
 
 .deck-info {

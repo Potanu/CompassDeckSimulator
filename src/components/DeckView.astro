@@ -1,12 +1,60 @@
 ---
 import '../styles/deck-view.css';
 import DeckListView from "./DeckListView.astro";
-import cards from "../data/cards/m_cards.json";
-import cardSkills from "../data/cards/m_card_skill_types.json";
-import cardStatuses from "../data/cards/m_card_statuses.json";
+import {
+  getAllCard,
+  getAllCardCastTimeType,
+  getAllCardSkillType,
+  getCardElementTypeById,
+  getCardSkillTypeById,
+  getCardStatusDisplayByCardId,
+} from "../accessors/cards/getData";
+import { getImageAssetById } from "../accessors/common/getData";
+import { CardElementType } from "../types/cards/CardElementType";
+import { ImageAsset } from "../types/common/ImageAsset";
 
+const cards = getAllCard();
+const cardSkills = getAllCardSkillType();
+const cardCastTimeTypes = getAllCardCastTimeType();
 const cardSkillMap = Object.fromEntries(cardSkills.map((skill) => [skill.id, skill]));
-const cardStatusMap = Object.fromEntries(cardStatuses.map((status) => [status.card_id, status]));
+const cardCastTimeTypeMap = Object.fromEntries(cardCastTimeTypes.map((castTimeType) => [castTimeType.id, castTimeType]));
+const cardStatusDisplayData = cards.map((card) => ({
+  cardId: card.id,
+  ...getCardStatusDisplayByCardId(card.id),
+}));
+const levelOptions = [1, 20, 30, 40, 50, 60];
+const cardLevelStatusMap = Object.fromEntries(
+  cards.map((card) => [
+    card.id,
+    Object.fromEntries(levelOptions.map((level) => [String(level), getCardStatusDisplayByCardId(card.id, level)])),
+  ])
+);
+const imageAssetIdByElementId: Record<number, number> = {
+  [CardElementType.FIRE]: ImageAsset.CARD_RED,
+  [CardElementType.WATER]: ImageAsset.CARD_BLUE,
+  [CardElementType.WOOD]: ImageAsset.CARD_GREEN,
+  [CardElementType.NONE]: ImageAsset.CARD_PURPLE,
+};
+const getAssetUrl = (relativePath: string) => {
+  if (!relativePath) {
+    return "";
+  }
+
+  const basePath = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+  return `${basePath}${relativePath.replace(/^\/+/, "")}`;
+};
+const getDeckCardImagePath = (cardElementId: number) => {
+  const elementTypeId = getCardElementTypeById(cardElementId)?.id;
+  const assetId = elementTypeId != null ? imageAssetIdByElementId[elementTypeId] : undefined;
+  const imageAsset = assetId != null ? getImageAssetById(assetId) : undefined;
+  return imageAsset?.imagePath ? getAssetUrl(imageAsset.imagePath) : "";
+};
+const cardElementImagePaths = Object.fromEntries(
+  cards.map((card) => [card.cardElementId, getDeckCardImagePath(card.cardElementId)])
+);
+const maxAttack = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).attack ?? 0), 0);
+const maxDefense = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).defense ?? 0), 0);
+const maxHealth = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).health ?? 0), 0);
 const initialCards = [...cards]
   .sort((a, b) => a.id - b.id)
   .slice(0, 4);
@@ -14,13 +62,24 @@ const initialCards = [...cards]
 <deck-view class="deck-view">
   <div class="deck-view-content">
     {initialCards.map((card, index) => {
-      const status = cardStatusMap[card.id];
-      const cooldownTime = status?.cooldownTime ?? 0;
-      const skillLabel = cardSkillMap[card.cardSkillId]?.label ?? "";
+      const status = cardStatusDisplayData.find((item) => item.cardId === card.id) ?? { cooldownTime: 0, attack: 0, defense: 0, health: 0, abilityLabel: "" };
+      const cooldownTime = status.cooldownTime;
+      const skillLabel = getCardSkillTypeById(card.cardSkillId)?.label ?? "";
+      const imagePath = cardElementImagePaths[card.cardElementId] ?? "";
 
       return (
-        <div class="deck" data-card-id={card.id} data-slot-index={index}>
-          <button class="deck-card">Lv.50</button>
+        <div class="deck" data-card-id={card.id} data-slot-index={index} data-level="1">
+          <div class="deck-card-area">
+            <button class="deck-card" type="button" data-card-element-id={card.cardElementId}>
+              <img class="deck-card-image" src={imagePath} alt="" />
+              <span class="deck-card-level">Lv.1</span>
+            </button>
+            <select class="deck-level-select hidden" aria-label="レベル選択">
+              {levelOptions.map((level) => (
+                <option value={level}>Lv.{level}</option>
+              ))}
+            </select>
+          </div>
 
           <div class="deck-info">
             <div class="deck-name">{card.label}</div>
@@ -38,8 +97,8 @@ const initialCards = [...cards]
           </div>
 
           <div class="deck-actions">
-            <button class="openDeckList">入れ替え</button>
-            <button class="openDeckDescription">説明</button>
+            <button class="openDeckList" type="button">入れ替え</button>
+            <button class="openDeckDescription" type="button">説明</button>
           </div>
         </div>
       );
@@ -63,27 +122,54 @@ const initialCards = [...cards]
   </div>
 </div>
 
-<script define:vars={{ cards, cardSkillMap, cardStatusMap }}>
+<script define:vars={{ cards, cardSkillMap, cardCastTimeTypeMap, cardStatusDisplayData, cardElementImagePaths, levelOptions, cardLevelStatusMap, maxAttack, maxDefense, maxHealth }}>
 const overlay = document.getElementById("deckListOverlay");
 const descriptionOverlay = document.getElementById("deckDescriptionOverlay");
 const descriptionBody = descriptionOverlay?.querySelector(".deck-description-body");
 let selectedReplacementIndex = null;
 
 const getDeckElements = () => Array.from(document.querySelectorAll(".deck-view .deck"));
+const getDeckLevel = (deckElement) => Number(deckElement.dataset.level ?? 1);
+const setDeckLevel = (deckElement, level) => {
+  deckElement.dataset.level = String(level);
+  const levelSelect = deckElement.querySelector(".deck-level-select");
+  if (levelSelect) {
+    levelSelect.value = String(level);
+  }
+};
+const getStatusForLevel = (cardId, level) => {
+  const cardStatuses = cardLevelStatusMap[cardId] ?? {};
+  const selectedStatus = cardStatuses[String(level)] ?? cardStatuses["1"];
+  return selectedStatus ?? { cooldownTime: 0, attack: 0, defense: 0, health: 0, abilityLabel: "" };
+};
+const getGaugeWidthPercent = (value, maxValue) => {
+  if (!maxValue) return 0;
+  return Math.max(4, Math.round((value / maxValue) * 100));
+};
 
 const renderDeckCard = (deckElement, card) => {
-  const status = cardStatusMap[card.id];
-  const cooldownTime = status?.cooldownTime ?? 0;
+  const level = getDeckLevel(deckElement);
+  const status = getStatusForLevel(card.id, level);
+  const cooldownTime = status.cooldownTime;
   const skillLabel = cardSkillMap[card.cardSkillId]?.label ?? "";
 
   const deckButton = deckElement.querySelector(".deck-card");
+  const deckImage = deckElement.querySelector(".deck-card-image");
+  const deckLevelText = deckElement.querySelector(".deck-card-level");
   const deckNameElement = deckElement.querySelector(".deck-name");
   const deckSkillElement = deckElement.querySelector(".deck-category .deck-tag");
   const cooldownCurrentElement = deckElement.querySelector(".deck-ct-current");
   const cooldownDefaultElement = deckElement.querySelector(".deck-ct-default");
 
   if (deckButton) {
-    deckButton.textContent = "Lv.50";
+    deckButton.dataset.cardElementId = String(card.cardElementId);
+  }
+  if (deckImage) {
+    deckImage.src = cardElementImagePaths[card.cardElementId] ?? "";
+    deckImage.alt = card.label;
+  }
+  if (deckLevelText) {
+    deckLevelText.textContent = `Lv.${level}`;
   }
   if (deckNameElement) {
     deckNameElement.textContent = card.label;
@@ -102,12 +188,30 @@ const renderDeckCard = (deckElement, card) => {
 };
 
 const publishDeckState = () => {
-  const cardIds = getDeckElements()
+  const deckElements = getDeckElements();
+  const cardIds = deckElements
     .map((deck) => Number(deck.dataset.cardId ?? 0))
     .filter(Boolean);
+  const cardLevels = deckElements
+    .map((deck) => ({
+      cardId: Number(deck.dataset.cardId ?? 0),
+      level: getDeckLevel(deck),
+    }))
+    .filter((item) => Boolean(item.cardId));
+
+  const totals = cardLevels.reduce(
+    (acc, item) => {
+      const status = getStatusForLevel(item.cardId, item.level);
+      acc.attack += status.attack ?? 0;
+      acc.defense += status.defense ?? 0;
+      acc.health += status.health ?? 0;
+      return acc;
+    },
+    { attack: 0, defense: 0, health: 0 },
+  );
 
   document.dispatchEvent(new CustomEvent("deck-view:state-changed", {
-    detail: { cardIds },
+    detail: { cardIds, cardLevels, totals },
   }));
 };
 
@@ -122,6 +226,168 @@ const replaceDeckCard = (slotIndex, cardId) => {
   renderDeckCard(deckElement, card);
   publishDeckState();
 };
+
+const hideAllLevelSelects = () => {
+  document.querySelectorAll(".deck-level-select").forEach((select) => {
+    select.classList.add("hidden");
+    select.style.position = "";
+    select.style.left = "";
+    select.style.top = "";
+    select.style.width = "";
+    select.style.height = "";
+    select.style.zIndex = "";
+  });
+};
+
+const showLevelSelect = (deckElement) => {
+  const levelSelect = deckElement.querySelector(".deck-level-select");
+  const cardButton = deckElement.querySelector(".deck-card");
+  const cardImage = deckElement.querySelector(".deck-card-image");
+  if (levelSelect && (cardButton || cardImage)) {
+    hideAllLevelSelects();
+
+    const anchorRect = cardImage?.getBoundingClientRect() ?? cardButton?.getBoundingClientRect();
+    if (!anchorRect) {
+      return;
+    }
+
+    const width = Math.max(anchorRect.width, 80);
+    const height = Math.min(Math.max(anchorRect.height * 0.85, 32), 44);
+    const maxLeft = window.innerWidth - width - 8;
+    const left = Math.min(anchorRect.right + 8, maxLeft);
+    const top = Math.max(anchorRect.top, 8);
+
+    levelSelect.classList.remove("hidden");
+    levelSelect.style.position = "fixed";
+    levelSelect.style.left = `${Math.max(left, 8)}px`;
+    levelSelect.style.top = `${top}px`;
+    levelSelect.style.width = `${width}px`;
+    levelSelect.style.height = `${height}px`;
+    levelSelect.style.zIndex = "10000";
+    levelSelect.focus();
+  }
+};
+
+const hideLevelSelect = (deckElement) => {
+  const levelSelect = deckElement.querySelector(".deck-level-select");
+  if (levelSelect) {
+    levelSelect.classList.add("hidden");
+    levelSelect.style.position = "";
+    levelSelect.style.left = "";
+    levelSelect.style.top = "";
+    levelSelect.style.width = "";
+    levelSelect.style.height = "";
+    levelSelect.style.zIndex = "";
+  }
+};
+
+const updateDescriptionOverlay = (deckElement) => {
+  if (!descriptionOverlay || !descriptionBody) {
+    return;
+  }
+
+  const cardId = deckElement?.dataset.cardId;
+  const card = cards.find((item) => String(item.id) === cardId);
+  const sourceItem = cardId
+    ? document.querySelector(`.deck-list-view .item[data-card-id="${cardId}"]`)
+    : null;
+  const level = Number(deckElement?.dataset.level ?? 1);
+
+  if (!card || !descriptionOverlay || !descriptionBody) {
+    return;
+  }
+
+  const { summary, detail } = createDescriptionContent(card, level, sourceItem);
+  descriptionBody.replaceChildren(summary, detail);
+};
+
+const createDescriptionContent = (card, level, sourceItem) => {
+  const status = getStatusForLevel(card.id, level);
+  const summary = sourceItem?.querySelector("summary")?.cloneNode(true) ?? document.createElement("summary");
+  const detail = document.createElement("div");
+  detail.className = "detail";
+
+  const attackWidth = getGaugeWidthPercent(status.attack, maxAttack);
+  const defenseWidth = getGaugeWidthPercent(status.defense, maxDefense);
+  const healthWidth = getGaugeWidthPercent(status.health, maxHealth);
+  const castTimeLabel = cardCastTimeTypeMap[card.cardCastTimeId]?.label ?? "";
+
+  detail.innerHTML = `
+    <div class="info-row skill-row">
+      <span class="title">スキル</span>
+      <span>${status.abilityLabel}</span>
+    </div>
+    <div class="info-row cooldown-row">
+      <span class="title">クール</span>
+      <span>${status.cooldownTime ?? 0}秒</span>
+      <span class="title">発動時間</span>
+      <span>${castTimeLabel}</span>
+    </div>
+    <div class="status">
+      <div class="status-row">
+        <span>攻撃</span>
+        <div class="bar"><div class="fill atk" style="width:${attackWidth}%"></div></div>
+        <span>${status.attack ?? 0}</span>
+      </div>
+      <div class="status-row">
+        <span>防御</span>
+        <div class="bar"><div class="fill def" style="width:${defenseWidth}%"></div></div>
+        <span>${status.defense ?? 0}</span>
+      </div>
+      <div class="status-row">
+        <span>体力</span>
+        <div class="bar"><div class="fill hp" style="width:${healthWidth}%"></div></div>
+        <span>${status.health ?? 0}</span>
+      </div>
+    </div>
+  `;
+
+  return { summary, detail };
+};
+
+document.addEventListener("click", (event) => {
+  const target = event.target instanceof Element ? event.target : null;
+  const deckButton = target?.closest(".deck-card");
+  const levelSelect = target?.closest(".deck-level-select");
+
+  if (deckButton) {
+    event.preventDefault();
+    const deckElement = deckButton.closest(".deck");
+    if (deckElement) {
+      showLevelSelect(deckElement);
+    }
+    return;
+  }
+
+  if (!levelSelect) {
+    hideAllLevelSelects();
+  }
+});
+
+document.addEventListener("change", (event) => {
+  const levelSelect = event.target instanceof Element ? event.target.closest(".deck-level-select") : null;
+  if (!levelSelect) {
+    return;
+  }
+
+  const deckElement = levelSelect.closest(".deck");
+  if (!deckElement) {
+    return;
+  }
+
+  const level = Number(levelSelect.value || 1);
+  setDeckLevel(deckElement, level);
+  const cardId = Number(deckElement.dataset.cardId ?? 0);
+  const card = cards.find((item) => item.id === cardId);
+
+  if (card) {
+    renderDeckCard(deckElement, card);
+  }
+
+  publishDeckState();
+  hideLevelSelect(deckElement);
+  updateDescriptionOverlay(deckElement);
+});
 
 const deckViewContainer = document.querySelector(".deck-view-content");
 if (deckViewContainer) {
@@ -164,29 +430,27 @@ const closeDescription = () => {
   }
 };
 
-document.querySelectorAll(".openDeckDescription").forEach((button) => {
-  button.addEventListener("click", () => {
-    const deckElement = button.closest(".deck");
-    const cardId = deckElement?.dataset.cardId;
-    const card = cards.find((item) => String(item.id) === cardId);
-    const sourceItem = cardId
-      ? document.querySelector(`.deck-list-view .item[data-card-id="${cardId}"]`)
-      : null;
+document.addEventListener("click", (event) => {
+  const descriptionButton = event.target instanceof Element ? event.target.closest(".openDeckDescription") : null;
+  if (!descriptionButton) {
+    return;
+  }
 
-    if (!card || !sourceItem || !descriptionOverlay || !descriptionBody) {
-      return;
-    }
+  const deckElement = descriptionButton.closest(".deck");
+  const cardId = deckElement?.dataset.cardId;
+  const card = cards.find((item) => String(item.id) === cardId);
+  const sourceItem = cardId
+    ? document.querySelector(`.deck-list-view .item[data-card-id="${cardId}"]`)
+    : null;
+  const level = Number(deckElement?.dataset.level ?? 1);
 
-    const summary = sourceItem.querySelector("summary")?.cloneNode(true);
-    const detail = sourceItem.querySelector(".detail")?.cloneNode(true);
+  if (!card || !descriptionOverlay || !descriptionBody) {
+    return;
+  }
 
-    if (!summary || !detail) {
-      return;
-    }
-
-    descriptionBody.replaceChildren(summary, detail);
-    descriptionOverlay.classList.remove("hidden");
-  });
+  const { summary, detail } = createDescriptionContent(card, level, sourceItem);
+  descriptionBody.replaceChildren(summary, detail);
+  descriptionOverlay.classList.remove("hidden");
 });
 
 descriptionOverlay?.addEventListener("click", (event) => {

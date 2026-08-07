@@ -1,17 +1,29 @@
 ---
 import '../styles/status-view.css';
-import cards from "../data/cards/m_cards.json";
-import cardStatuses from "../data/cards/m_card_statuses.json";
+import { getAllCard, getCardStatusDisplayByCardId } from "../accessors/cards/getData";
+
+const cards = getAllCard();
+const levelOptions = [1, 20, 30, 40, 50, 60];
 
 const initialCards = [...cards]
   .sort((a, b) => a.id - b.id)
   .slice(0, 4);
 
-const cardStatusMap = Object.fromEntries(cardStatuses.map((status) => [status.card_id, status]));
+const maxAttack = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).attack ?? 0), 0);
+const maxDefense = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).defense ?? 0), 0);
+const maxHealth = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).health ?? 0), 0);
+const maximums = { attack: maxAttack * 10, defense: maxDefense * 10, health: maxHealth * 10 };
+const cardLevelStatusMap = Object.fromEntries(
+  cards.map((card) => [
+    card.id,
+    Object.fromEntries(levelOptions.map((level) => [String(level), getCardStatusDisplayByCardId(card.id, level)])),
+  ])
+);
 
-const getStatusTotals = (cardIds: number[]) => cardIds.reduce(
+const getStatusTotals = (cardIds: number[], levelByCardId: Record<number, number> = {}) => cardIds.reduce(
   (totals, cardId) => {
-    const status = cardStatusMap[cardId];
+    const level = levelByCardId[cardId] ?? 1;
+    const status = getCardStatusDisplayByCardId(cardId, level);
 
     totals.attack += status?.attack ?? 0;
     totals.defense += status?.defense ?? 0;
@@ -22,28 +34,32 @@ const getStatusTotals = (cardIds: number[]) => cardIds.reduce(
 );
 
 const initialTotals = getStatusTotals(initialCards.map((card) => card.id));
+const getGaugePercent = (value: number, maxValue: number) => {
+  if (!maxValue) return 0;
+  return Math.min(100, Math.round((value / maxValue) * 100));
+};
 
 const statuses = [
   {
     name: "攻撃",
     key: "attack",
     value: initialTotals.attack,
-    green: 70,
-    red: 8,
+    green: getGaugePercent(initialTotals.attack, maximums.attack),
+    red: 0,
   },
   {
     name: "防御",
     key: "defense",
     value: initialTotals.defense,
-    green: 60,
-    red: 5,
+    green: getGaugePercent(initialTotals.defense, maximums.defense),
+    red: 0,
   },
   {
     name: "体力",
     key: "health",
     value: initialTotals.health,
-    green: 85,
-    red: 10,
+    green: getGaugePercent(initialTotals.health, maximums.health),
+    red: 0,
   },
 ];
 
@@ -79,13 +95,16 @@ const statuses = [
   </div>
 </div>
 
-<script define:vars={{ cardStatuses, initialTotals }}>
+<script define:vars={{ initialTotals, maximums, cardLevelStatusMap: cardLevelStatusMap }}>
   const updateStatusValues = (totals) => {
     document.querySelectorAll(".status-view .status[data-status-key]").forEach((statusElement) => {
       const key = statusElement.dataset.statusKey;
       const value = totals[key] ?? 0;
+      const maxValue = maximums[key] ?? 0;
+      const percent = maxValue ? Math.min(100, Math.round((value / maxValue) * 100)) : 0;
       const valueElement = statusElement.querySelector(".status-value");
       const maxElement = statusElement.querySelector(".status-max");
+      const greenElement = statusElement.querySelector(".status-gauge-green");
 
       if (valueElement) {
         valueElement.textContent = String(value);
@@ -93,12 +112,16 @@ const statuses = [
       if (maxElement) {
         maxElement.textContent = `（${value}）`;
       }
+      if (greenElement) {
+        greenElement.style.width = `${percent}%`;
+      }
     });
   };
 
-  const getStatusTotals = (cardIds) => cardIds.reduce(
+  const getStatusTotals = (cardIds, levelByCardId = {}) => cardIds.reduce(
     (totals, cardId) => {
-      const status = cardStatuses.find((item) => item.card_id === cardId);
+      const level = levelByCardId[cardId] ?? 1;
+      const status = cardLevelStatusMap?.[cardId]?.[String(level)] ?? null;
 
       totals.attack += status?.attack ?? 0;
       totals.defense += status?.defense ?? 0;
@@ -111,6 +134,8 @@ const statuses = [
   updateStatusValues(initialTotals);
 
   document.addEventListener("deck-view:state-changed", (event) => {
-    updateStatusValues(getStatusTotals(event.detail?.cardIds ?? []));
+    const cardLevels = event.detail?.cardLevels ?? [];
+    const levelByCardId = Object.fromEntries(cardLevels.map((item) => [item.cardId, item.level]));
+    updateStatusValues(getStatusTotals(event.detail?.cardIds ?? [], levelByCardId));
   });
 </script>
