@@ -1,6 +1,7 @@
 ---
 import '../styles/status-view.css';
 import { getAllCard, getCardStatusDisplayByCardId } from "../accessors/cards/getData";
+import { getAllHeroStatus } from "../accessors/heros/getData.ts";
 
 const cards = getAllCard();
 const levelOptions = [1, 20, 30, 40, 50, 60];
@@ -39,6 +40,13 @@ const getGaugePercent = (value: number, maxValue: number) => {
   return Math.min(100, Math.round((value / maxValue) * 100));
 };
 
+const heroStatusMap = Object.fromEntries(getAllHeroStatus().map((row) => [row.id, row]));
+const rangeMaxByKey = {
+  attack: maximums.attack,
+  defense: maximums.defense,
+  health: maximums.health,
+};
+
 const statuses = [
   {
     name: "攻撃",
@@ -71,53 +79,32 @@ const statuses = [
       ■ デッキ総合力
     </div>
 
-    {statuses.map((status) => (
-      <div
-        class="status"
-        data-status-key={status.key}
-        style={`--green:${status.green}%; --red:${status.red}%;`}
-      >
-        <div class="status-name">
-          {status.name}
-        </div>
+    <div class="status-list-panel">
+      {statuses.map((status) => (
+        <div
+          class="status"
+          data-status-key={status.key}
+          style={`--green:${status.green}%; --red:${status.red}%;`}
+        >
+          <div class="status-name">
+            {status.name}
+          </div>
 
-        <div class="status-gauge">
-          <div class="status-gauge-green"></div>
-          <div class="status-gauge-red"></div>
-
-          <div class="status-gauge-text">
-            <span class="status-value">{status.value}</span>
-            <span class="status-max">（{status.value}）</span>
+          <div class="status-gauge">
+            <div class="status-gauge-green"></div>
+            <div class="status-gauge-diff"></div>
+            <div class="status-gauge-text">
+              <span class="status-value">{status.value}</span>
+              <span class="status-default">（{maximums[status.key as keyof typeof maximums]}）</span>
+            </div>
           </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
 </div>
 
-<script define:vars={{ initialTotals, maximums, cardLevelStatusMap: cardLevelStatusMap }}>
-  const updateStatusValues = (totals) => {
-    document.querySelectorAll(".status-view .status[data-status-key]").forEach((statusElement) => {
-      const key = statusElement.dataset.statusKey;
-      const value = totals[key] ?? 0;
-      const maxValue = maximums[key] ?? 0;
-      const percent = maxValue ? Math.min(100, Math.round((value / maxValue) * 100)) : 0;
-      const valueElement = statusElement.querySelector(".status-value");
-      const maxElement = statusElement.querySelector(".status-max");
-      const greenElement = statusElement.querySelector(".status-gauge-green");
-
-      if (valueElement) {
-        valueElement.textContent = String(value);
-      }
-      if (maxElement) {
-        maxElement.textContent = `（${value}）`;
-      }
-      if (greenElement) {
-        greenElement.style.width = `${percent}%`;
-      }
-    });
-  };
-
+<script define:vars={{ initialTotals, maximums, cardLevelStatusMap: cardLevelStatusMap, heroStatusMap: heroStatusMap }}>
   const getStatusTotals = (cardIds, levelByCardId = {}) => cardIds.reduce(
     (totals, cardId) => {
       const level = levelByCardId[cardId] ?? 1;
@@ -131,11 +118,95 @@ const statuses = [
     { attack: 0, defense: 0, health: 0 },
   );
 
+  let selectedHeroFactors = null;
+  let latestTotals = { ...initialTotals };
+
+  const getGaugePercent = (value, maxValue) => {
+    if (!maxValue) return 0;
+    return Math.min(100, Math.round((value / maxValue) * 100));
+  };
+
+  const updateStatusValues = (totals) => {
+    latestTotals = { ...totals };
+
+    document.querySelectorAll(".status-view .status[data-status-key]").forEach((statusElement) => {
+      const key = statusElement.dataset.statusKey;
+      const maxValue = maximums[key] ?? 0;
+      const baseValue = totals[key] ?? 0;
+      const heroFactor = selectedHeroFactors ? selectedHeroFactors[key] ?? 1 : null;
+
+      const displayedValue = heroFactor != null
+        ? Math.round(baseValue * heroFactor)
+        : Math.round(baseValue);
+
+      const valueElement = statusElement.querySelector(".status-value");
+      const defaultElement = statusElement.querySelector(".status-default");
+      const greenElement = statusElement.querySelector(".status-gauge-green");
+      const diffElement = statusElement.querySelector(".status-gauge-diff");
+
+      if (valueElement) {
+        valueElement.textContent = String(displayedValue);
+      }
+      if (defaultElement) {
+        defaultElement.textContent = `（${baseValue}）`;
+      }
+
+      const basePercent = getGaugePercent(baseValue, maxValue);
+      const displayedPercent = getGaugePercent(displayedValue, maxValue);
+      const gaugeWidth = displayedPercent;
+
+      if (greenElement) {
+        greenElement.style.width = `${gaugeWidth}%`;
+      }
+
+      if (diffElement) {
+        if (displayedValue > baseValue) {
+          const deltaPercent = displayedPercent - basePercent;
+          diffElement.style.left = `${basePercent}%`;
+          diffElement.style.width = `${Math.max(0, deltaPercent)}%`;
+          diffElement.style.background = "linear-gradient(90deg, #4ade80, #22c55e)";
+          diffElement.style.opacity = "1";
+        } else if (displayedValue < baseValue) {
+          const deltaPercent = basePercent - displayedPercent;
+          diffElement.style.left = `${displayedPercent}%`;
+          diffElement.style.width = `${Math.max(0, deltaPercent)}%`;
+          diffElement.style.background = "linear-gradient(90deg, #f87171, #ef4444)";
+          diffElement.style.opacity = "1";
+        } else {
+          diffElement.style.left = "0%";
+          diffElement.style.width = "0%";
+          diffElement.style.opacity = "0";
+        }
+      }
+    });
+  };
+
   updateStatusValues(initialTotals);
 
   document.addEventListener("deck-view:state-changed", (event) => {
     const cardLevels = event.detail?.cardLevels ?? [];
     const levelByCardId = Object.fromEntries(cardLevels.map((item) => [item.cardId, item.level]));
-    updateStatusValues(getStatusTotals(event.detail?.cardIds ?? [], levelByCardId));
+    const totals = getStatusTotals(event.detail?.cardIds ?? [], levelByCardId);
+
+    latestTotals = { ...totals };
+    updateStatusValues(totals);
+  });
+
+  document.addEventListener("footer:hero-selected", (event) => {
+    const heroId = Number(event.detail?.heroId ?? 0);
+    const factors = event.detail?.factors ?? null;
+    const heroStatus = heroStatusMap?.[heroId] ?? null;
+
+    if (heroStatus && factors) {
+      selectedHeroFactors = {
+        attack: factors.attack ?? heroStatus.attack ?? 1,
+        defense: factors.defense ?? heroStatus.defense ?? 1,
+        health: factors.health ?? heroStatus.health ?? 1,
+      };
+    } else {
+      selectedHeroFactors = null;
+    }
+
+    updateStatusValues(latestTotals);
   });
 </script>

@@ -5,8 +5,10 @@ import MedalSettingsPanel from "./MedalSettingsPanel.astro";
 
 import { HeroRoleType } from "../types/heros";
 import { ImageAsset } from '../types/common';
-import { getAllHero } from "../accessors/heros/getData.ts";
+import { getAllHero, getAllHeroStatus } from "../accessors/heros/getData.ts";
 import { getImageAssetById } from "../accessors/common/getData.ts";
+
+const heroStatuses = getAllHeroStatus();
 
 const getAssetPath = (asset: ImageAsset) => {
   const imageAsset = getImageAssetById(asset);
@@ -24,15 +26,25 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
           <span class="trigger-content">ヒーローを選択してね</span>
           <span class="dropdown-trigger-arrow" />
         </button>
-        <ul class="dropdown-menu">
-          {getAllHero().map((hero) =>(
-            <button class="dropdown-item" type="button">
-              <RoleIcon role={hero.heroRoleId} />
-              <span>{hero.label}</span>
-            </button>
-          
-          ))} 
-        </ul>
+        <div class="dropdown-menu">
+          {getAllHero().map((hero) => {
+            const heroStatus = heroStatuses.find((row) => row.id === hero.id) ?? { attack: 1, defense: 1, health: 1 };
+
+            return (
+              <button
+                class="dropdown-item"
+                type="button"
+                data-hero-id={hero.id}
+                data-hero-attack={heroStatus.attack ?? 1}
+                data-hero-defense={heroStatus.defense ?? 1}
+                data-hero-health={heroStatus.health ?? 1}
+              >
+                <RoleIcon role={hero.heroRoleId} />
+                <span>{hero.label}</span>
+              </button>
+            );
+          })} 
+        </div>
       </div>
       <!-- 詳細設定アイコン -->
       <button class="medalSetting" id="medal-settings-trigger">
@@ -63,9 +75,25 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
     item.addEventListener('click', () => {
       const labelSpan = item.querySelector('span');
       const label = labelSpan?.textContent ?? '未選択';
+      const heroId = Number(item.dataset.heroId ?? 0);
+
       if (triggerLabel) {
         triggerLabel.textContent = label;
       }
+
+      if (heroId > 0) {
+        document.dispatchEvent(new CustomEvent('footer:hero-selected', {
+          detail: {
+            heroId,
+            factors: {
+              attack: Number(item.dataset.heroAttack ?? 1),
+              defense: Number(item.dataset.heroDefense ?? 1),
+              health: Number(item.dataset.heroHealth ?? 1),
+            },
+          },
+        }));
+      }
+
       document.body.classList.remove('dropdown-open');
       if (arrow) {
         arrow.textContent = ARROW_CLOSED;

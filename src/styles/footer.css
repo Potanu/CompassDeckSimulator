@@ -38,7 +38,8 @@
 	overflow: visible;
 	background: #222;
 	flex: 1;
-	min-width: 0; 
+	min-width: 0;
+	z-index: 1;
 }
 
 .dropdown-wrapper {
@@ -111,6 +112,7 @@
 .dropdown-menu {
 	position: absolute;
 	bottom: 100%;
+	z-index: 1000;
 
 	background: #333333;
 	list-style: none;

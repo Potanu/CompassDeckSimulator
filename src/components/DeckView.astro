@@ -72,13 +72,13 @@ const initialCards = [...cards]
           <div class="deck-card-area">
             <button class="deck-card" type="button" data-card-element-id={card.cardElementId}>
               <img class="deck-card-image" src={imagePath} alt="" />
-              <span class="deck-card-level">Lv.1</span>
+              <span class="deck-card-level">Lv.{String(cardStatusDisplayData.find((item) => item.cardId === card.id)?.level ?? 1)}</span>
             </button>
-            <select class="deck-level-select hidden" aria-label="レベル選択">
+            <div class="deck-level-picker hidden" role="menu" aria-label="レベル選択">
               {levelOptions.map((level) => (
-                <option value={level}>Lv.{level}</option>
+                <button class="deck-level-option" type="button" data-level={level}>Lv.{level}</button>
               ))}
-            </select>
+            </div>
           </div>
 
           <div class="deck-info">
@@ -132,9 +132,11 @@ const getDeckElements = () => Array.from(document.querySelectorAll(".deck-view .
 const getDeckLevel = (deckElement) => Number(deckElement.dataset.level ?? 1);
 const setDeckLevel = (deckElement, level) => {
   deckElement.dataset.level = String(level);
-  const levelSelect = deckElement.querySelector(".deck-level-select");
-  if (levelSelect) {
-    levelSelect.value = String(level);
+  const levelPicker = deckElement.querySelector(".deck-level-picker");
+  if (levelPicker) {
+    levelPicker.querySelectorAll(".deck-level-option").forEach((option) => {
+      option.classList.toggle("active", String(option.dataset.level) === String(level));
+    });
   }
 };
 const getStatusForLevel = (cardId, level) => {
@@ -155,7 +157,7 @@ const renderDeckCard = (deckElement, card) => {
 
   const deckButton = deckElement.querySelector(".deck-card");
   const deckImage = deckElement.querySelector(".deck-card-image");
-  const deckLevelText = deckElement.querySelector(".deck-card-level");
+  const deckLevelElement = deckElement.querySelector(".deck-card-level");
   const deckNameElement = deckElement.querySelector(".deck-name");
   const deckSkillElement = deckElement.querySelector(".deck-category .deck-tag");
   const cooldownCurrentElement = deckElement.querySelector(".deck-ct-current");
@@ -168,8 +170,8 @@ const renderDeckCard = (deckElement, card) => {
     deckImage.src = cardElementImagePaths[card.cardElementId] ?? "";
     deckImage.alt = card.label;
   }
-  if (deckLevelText) {
-    deckLevelText.textContent = `Lv.${level}`;
+  if (deckLevelElement) {
+    deckLevelElement.textContent = `Lv.${level}`;
   }
   if (deckNameElement) {
     deckNameElement.textContent = card.label;
@@ -228,22 +230,23 @@ const replaceDeckCard = (slotIndex, cardId) => {
 };
 
 const hideAllLevelSelects = () => {
-  document.querySelectorAll(".deck-level-select").forEach((select) => {
-    select.classList.add("hidden");
-    select.style.position = "";
-    select.style.left = "";
-    select.style.top = "";
-    select.style.width = "";
-    select.style.height = "";
-    select.style.zIndex = "";
+  document.querySelectorAll(".deck-level-picker").forEach((picker) => {
+    picker.classList.add("hidden");
+    picker.style.position = "";
+    picker.style.left = "";
+    picker.style.top = "";
+    picker.style.width = "";
+    picker.style.maxHeight = "";
+    picker.style.zIndex = "";
+    picker.style.overflowY = "";
   });
 };
 
 const showLevelSelect = (deckElement) => {
-  const levelSelect = deckElement.querySelector(".deck-level-select");
+  const levelPicker = deckElement.querySelector(".deck-level-picker");
   const cardButton = deckElement.querySelector(".deck-card");
   const cardImage = deckElement.querySelector(".deck-card-image");
-  if (levelSelect && (cardButton || cardImage)) {
+  if (levelPicker && (cardButton || cardImage)) {
     hideAllLevelSelects();
 
     const anchorRect = cardImage?.getBoundingClientRect() ?? cardButton?.getBoundingClientRect();
@@ -251,33 +254,38 @@ const showLevelSelect = (deckElement) => {
       return;
     }
 
-    const width = Math.max(anchorRect.width, 80);
-    const height = Math.min(Math.max(anchorRect.height * 0.85, 32), 44);
-    const maxLeft = window.innerWidth - width - 8;
-    const left = Math.min(anchorRect.right + 8, maxLeft);
-    const top = Math.max(anchorRect.top, 8);
+    const width = Math.min(132, Math.max(112, anchorRect.width));
+    const maxLeft = window.innerWidth - width - 12;
+    const left = Math.min(Math.max(anchorRect.right + 8, 12), maxLeft);
+    const top = Math.min(Math.max(anchorRect.top + 4, 12), Math.max(12, window.innerHeight - 220 - 12));
 
-    levelSelect.classList.remove("hidden");
-    levelSelect.style.position = "fixed";
-    levelSelect.style.left = `${Math.max(left, 8)}px`;
-    levelSelect.style.top = `${top}px`;
-    levelSelect.style.width = `${width}px`;
-    levelSelect.style.height = `${height}px`;
-    levelSelect.style.zIndex = "10000";
-    levelSelect.focus();
+    levelPicker.classList.remove("hidden");
+    levelPicker.style.position = "fixed";
+    levelPicker.style.left = `${left}px`;
+    levelPicker.style.top = `${top}px`;
+    levelPicker.style.width = `${width}px`;
+    levelPicker.style.maxHeight = `${Math.min(window.innerHeight - 24, 220)}px`;
+    levelPicker.style.zIndex = "2147483647";
+    levelPicker.style.overflowY = "auto";
+
+    const currentLevel = getDeckLevel(deckElement);
+    levelPicker.querySelectorAll(".deck-level-option").forEach((option) => {
+      option.classList.toggle("active", String(option.dataset.level) === String(currentLevel));
+    });
   }
 };
 
 const hideLevelSelect = (deckElement) => {
-  const levelSelect = deckElement.querySelector(".deck-level-select");
-  if (levelSelect) {
-    levelSelect.classList.add("hidden");
-    levelSelect.style.position = "";
-    levelSelect.style.left = "";
-    levelSelect.style.top = "";
-    levelSelect.style.width = "";
-    levelSelect.style.height = "";
-    levelSelect.style.zIndex = "";
+  const levelPicker = deckElement.querySelector(".deck-level-picker");
+  if (levelPicker) {
+    levelPicker.classList.add("hidden");
+    levelPicker.style.position = "";
+    levelPicker.style.left = "";
+    levelPicker.style.top = "";
+    levelPicker.style.width = "";
+    levelPicker.style.maxHeight = "";
+    levelPicker.style.zIndex = "";
+    levelPicker.style.overflowY = "";
   }
 };
 
@@ -303,7 +311,35 @@ const updateDescriptionOverlay = (deckElement) => {
 
 const createDescriptionContent = (card, level, sourceItem) => {
   const status = getStatusForLevel(card.id, level);
-  const summary = sourceItem?.querySelector("summary")?.cloneNode(true) ?? document.createElement("summary");
+  const summary = document.createElement("summary");
+  const rarity = document.createElement("span");
+  const name = document.createElement("span");
+  const attribute = document.createElement("span");
+  const dot = document.createElement("span");
+
+  const sourceSummary = sourceItem?.querySelector("summary");
+  const sourceRarity = sourceSummary?.querySelector(".rarity");
+  const sourceName = sourceSummary?.querySelector(".name");
+  const sourceAttribute = sourceSummary?.querySelector(".attribute-type");
+  const sourceDot = sourceName?.querySelector(".dot");
+
+  rarity.className = sourceRarity?.className ?? "rarity";
+  rarity.textContent = sourceRarity?.textContent?.trim() ?? "";
+  name.className = sourceName?.className ?? "name";
+  name.textContent = sourceName?.textContent?.trim() ?? card.label;
+  attribute.className = sourceAttribute?.className ?? "attribute-type";
+  attribute.textContent = sourceAttribute?.textContent?.trim() ?? "";
+  dot.className = sourceDot?.className ?? "dot";
+
+  if (sourceName && sourceDot) {
+    name.appendChild(dot);
+    name.insertBefore(dot, name.firstChild);
+  }
+
+  summary.appendChild(rarity);
+  summary.appendChild(name);
+  summary.appendChild(attribute);
+
   const detail = document.createElement("div");
   detail.className = "detail";
 
@@ -348,7 +384,8 @@ const createDescriptionContent = (card, level, sourceItem) => {
 document.addEventListener("click", (event) => {
   const target = event.target instanceof Element ? event.target : null;
   const deckButton = target?.closest(".deck-card");
-  const levelSelect = target?.closest(".deck-level-select");
+  const levelOption = target?.closest(".deck-level-option");
+  const levelPicker = target?.closest(".deck-level-picker");
 
   if (deckButton) {
     event.preventDefault();
@@ -359,34 +396,28 @@ document.addEventListener("click", (event) => {
     return;
   }
 
-  if (!levelSelect) {
+  if (levelOption) {
+    const deckElement = levelOption.closest(".deck");
+    if (deckElement) {
+      const level = Number(levelOption.dataset.level || 1);
+      setDeckLevel(deckElement, level);
+      const cardId = Number(deckElement.dataset.cardId ?? 0);
+      const card = cards.find((item) => item.id === cardId);
+
+      if (card) {
+        renderDeckCard(deckElement, card);
+      }
+
+      publishDeckState();
+      hideLevelSelect(deckElement);
+      updateDescriptionOverlay(deckElement);
+    }
+    return;
+  }
+
+  if (!levelPicker) {
     hideAllLevelSelects();
   }
-});
-
-document.addEventListener("change", (event) => {
-  const levelSelect = event.target instanceof Element ? event.target.closest(".deck-level-select") : null;
-  if (!levelSelect) {
-    return;
-  }
-
-  const deckElement = levelSelect.closest(".deck");
-  if (!deckElement) {
-    return;
-  }
-
-  const level = Number(levelSelect.value || 1);
-  setDeckLevel(deckElement, level);
-  const cardId = Number(deckElement.dataset.cardId ?? 0);
-  const card = cards.find((item) => item.id === cardId);
-
-  if (card) {
-    renderDeckCard(deckElement, card);
-  }
-
-  publishDeckState();
-  hideLevelSelect(deckElement);
-  updateDescriptionOverlay(deckElement);
 });
 
 const deckViewContainer = document.querySelector(".deck-view-content");
@@ -435,6 +466,10 @@ document.addEventListener("click", (event) => {
   if (!descriptionButton) {
     return;
   }
+
+  event.preventDefault();
+  event.stopPropagation();
+  hideAllLevelSelects();
 
   const deckElement = descriptionButton.closest(".deck");
   const cardId = deckElement?.dataset.cardId;
@@ -513,7 +548,22 @@ publishDeckState();
 }
 
 .deck-description-body summary {
-  cursor:default;
+  cursor: default;
+  list-style: none;
+  display: block;
+}
+
+.deck-description-body.deck-list-view summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.deck-description-body.deck-list-view summary::marker {
+  display: none !important;
+}
+
+.deck-description-body.deck-list-view summary::after {
+  content: none !important;
+  display: none !important;
 }
 
 .deck-description-header {
