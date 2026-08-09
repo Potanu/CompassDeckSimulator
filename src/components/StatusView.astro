@@ -146,6 +146,9 @@ const statuses = [
 
       if (valueElement) {
         valueElement.textContent = String(displayedValue);
+        valueElement.classList.toggle("status-value-positive", displayedValue > baseValue);
+        valueElement.classList.toggle("status-value-negative", displayedValue < baseValue);
+        valueElement.classList.toggle("status-value-neutral", displayedValue === baseValue);
       }
       if (defaultElement) {
         defaultElement.textContent = `（${baseValue}）`;

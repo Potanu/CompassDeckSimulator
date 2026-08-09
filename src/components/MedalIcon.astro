@@ -2,49 +2,70 @@
 import '../styles/medal-icon.css';
 import { HeroMedalType } from "../types/heros";
 import { ImageAsset } from '../types/common';
-import { getImageAssetById } from "../accessors/common/getData.ts";
-import { getHeroMedalTypeById, getHeroMedalColorTypeById } from "../accessors/heros/getData.ts";
-
-const getAssetPath = (asset: ImageAsset) => {
-  const imageAsset = getImageAssetById(asset);
-  return imageAsset ? `/CompassDeckSimulator/${imageAsset.imagePath}` : '';
-};
-
-const medalIcons: Record<HeroMedalType, string> = {
-  [HeroMedalType.ATK_UP]: getAssetPath(ImageAsset.SWORD),
-  [HeroMedalType.DEF_UP]: getAssetPath(ImageAsset.SHIELD),
-  [HeroMedalType.HP_UP]: getAssetPath(ImageAsset.HEART),
-  [HeroMedalType.MOVE_SPEED_UP]: getAssetPath(ImageAsset.SHOES),
-  [HeroMedalType.HS_GAIN_UP]: getAssetPath(ImageAsset.HUMAN),
-  [HeroMedalType.COOLDOWN_REDUCTION]: getAssetPath(ImageAsset.CLOCK),
-  [HeroMedalType.CAPTURE_SPEED_UP]: getAssetPath(ImageAsset.KEY),
-  [HeroMedalType.RESIST_FIRE_UP]: getAssetPath(ImageAsset.FIRE),
-  [HeroMedalType.RESIST_WATER_UP]: getAssetPath(ImageAsset.WATER),
-  [HeroMedalType.RESIST_WOOD_UP]: getAssetPath(ImageAsset.LEAF),
-  [HeroMedalType.RESIST_STUN_UP]: getAssetPath(ImageAsset.BOLT),
-  [HeroMedalType.RESIST_SILENT_UP]: getAssetPath(ImageAsset.SPEECH_BUBBLE),
-  [HeroMedalType.RESIST_POISON_UP]: getAssetPath(ImageAsset.BEAKER),
-};
+import { getImageAssetPathById } from '../accessors/common/getData.ts';
+import { getAllHeroMedalType, getAllHeroMedalColorType, getHeroMedalTypeById, getHeroMedalColorTypeById, getHeroMedalTypeImagePathById } from "../accessors/heros/getData.ts";
 
 const props = Astro.props as { type?: HeroMedalType; level?: number; color?: number; isShowLabel?: boolean };
 const type = props.type ?? HeroMedalType.ATK_UP;
 const level = props.level ?? 1;
 const color = props.color ?? 1;
 const isShowLabel = props.isShowLabel ?? true;
+const levelOptions = [1, 2, 3].filter((value) => value !== level);
+const medalTypeOptions = getAllHeroMedalType();
+const medalColorOptions = getAllHeroMedalColorType();
+const medalTypeIconPaths = new Map(
+  medalTypeOptions.map((option) => [option.id, getHeroMedalTypeImagePathById(option.id)])
+);
 ---
 
-<div class="medal-icon">
+<div class="medal-icon" data-medal-type={type} data-medal-level={level} data-medal-color={color}>
+  <div class="medal-color-control">
+    <button
+      class="medal-color-button"
+      type="button"
+      data-color={color}
+      data-color-ids={medalColorOptions.map((option) => option.id).join(',')}
+      data-color-values={medalColorOptions.map((option) => `${option.id}:${option.color}`).join(',')}
+      aria-label="メダル色を変更"
+      style={`background: ${getHeroMedalColorTypeById(color)?.color ?? '#999'};`}
+    >
+      <img class="medal-color-dot" src={getImageAssetPathById(ImageAsset.PAINT)} alt="" />
+    </button>
+  </div>
+
   <!-- メダル種類変更 -->
-  <button class="medal-main-button">
-    <div class="base" style={`background: ${getHeroMedalColorTypeById(color)?.color ?? '#999'};`} />
-    <img src={medalIcons[type] ?? ''} class="front" />
-  </button>
+  <div class="medal-main-control">
+    <button class="medal-main-button" type="button">
+      <div class="base" style={`background: ${getHeroMedalColorTypeById(color)?.color ?? '#999'};`} />
+      <img src={getHeroMedalTypeImagePathById(type)} class="front" />
+    </button>
+    <div class="medal-type-menu" role="menu" aria-label="メダル種別選択">
+      {medalTypeOptions.map((option) => (
+        <button
+          class="medal-type-option"
+          type="button"
+          data-value={String(option.id)}
+          data-label={option.label}
+          data-image-path={medalTypeIconPaths.get(option.id) ?? ''}
+        >
+          {option.label}
+        </button>
+      ))}
+    </div>
+  </div>
 
   <!-- レベル変更 -->
   {level != null && (
-    <button class="medal-level-button"> 
-      +{level}
-    </button>
+    <div class="medal-level-control">
+      <button class="medal-level-button" data-level={level}>
+        +{level}
+      </button>
+      <div class="medal-level-menu" role="menu" aria-label="レベル選択">
+        {levelOptions.map((value) => (
+          <button class="medal-level-option" type="button" data-value={String(value)}>+{value}</button>
+        ))}
+      </div>
+    </div>
   )}
 
   <!-- メダル説明表示切替 -->

@@ -72,7 +72,7 @@
   min-height: 20px;
   height: 20px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #cbd5e1, #e2e8f0);
+  background: #64748b;
   overflow: hidden;
 }
 
@@ -114,11 +114,32 @@
 
 .status-value {
   font-size: 13px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.status-value-positive {
+  color: #15803d;
+  text-shadow: 0 0 2px rgba(21, 128, 61, 0.2);
+}
+
+.status-value-negative {
+  color: #b91c1c;
+  text-shadow: 0 0 2px rgba(185, 28, 28, 0.2);
+}
+
+.status-value-neutral {
+  color: #ffffff;
 }
 
 .status-default {
   margin-left: 0.1rem;
   font-size: 11px;
-  opacity: 0.95;
+  opacity: 1;
   flex-shrink: 0;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
 }

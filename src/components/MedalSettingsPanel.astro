@@ -1,9 +1,6 @@
 ---
 import '../styles/medal-settings-panel.css';
-import { ImageAsset } from '../types/common';
 import { HeroMedalType, HeroMedalColorType } from "../types/heros";
-import { getHeroRoleTypeById, getHeroMedalColorTypeById } from "../accessors/heros/getData.ts";
-import { getImageAssetById } from "../accessors/common/getData.ts";
 import MedalIcon from './MedalIcon.astro';
 ---
 <div id="medal-settings" class="medal-panel is-hidden">
@@ -20,39 +17,120 @@ import MedalIcon from './MedalIcon.astro';
 </div>
 
 <script>
-  // メダル本体
-  const medalButtons = document.querySelectorAll('.medal-main-button');
-
-  // +1〜3
-  const levelButtons = document.querySelectorAll('.medal-level-button');
-
-  // シート
-  const medalSheet = document.getElementById('medalTypeSheet');
-  const levelSheet = document.getElementById('medalLevelSheet');
-
-  // メダル種類変更
-  medalButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-      e.stopPropagation();
-
-      medalSheet?.classList.toggle('open');
-      levelSheet?.classList.remove('open');
+  const closeAllMenus = () => {
+    document.querySelectorAll('.medal-level-menu.open, .medal-type-menu.open').forEach((menu) => {
+      menu.classList.remove('open');
     });
+  };
+
+  document.querySelectorAll('.medal-icon').forEach((icon) => {
+    const trigger = icon.querySelector('.medal-level-button');
+    const menu = icon.querySelector('.medal-level-menu');
+    const typeTrigger = icon.querySelector('.medal-main-button');
+    const typeMenu = icon.querySelector('.medal-type-menu');
+    const colorButton = icon.querySelector('.medal-color-button') as HTMLButtonElement | null;
+    const iconBase = icon.querySelector('.base') as HTMLDivElement | null;
+    const iconImage = icon.querySelector('.medal-main-button .front') as HTMLImageElement | null;
+    const iconLabel = icon.querySelector('.medal-label');
+
+    if (trigger && menu) {
+      trigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+
+        const isOpen = menu.classList.contains('open');
+        closeAllMenus();
+
+        if (!isOpen) {
+          menu.classList.add('open');
+        }
+      });
+
+      menu.querySelectorAll('.medal-level-option').forEach((option) => {
+        option.addEventListener('click', (event) => {
+          event.stopPropagation();
+
+          const value = option.getAttribute('data-value');
+          if (value) {
+            trigger.textContent = `+${value}`;
+          }
+
+          menu.classList.remove('open');
+        });
+      });
+    }
+
+    if (colorButton) {
+      colorButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+
+        const colorIds = (colorButton.getAttribute('data-color-ids') ?? '')
+          .split(',')
+          .map((value) => Number(value))
+          .filter((value) => !Number.isNaN(value));
+        const colorValues = (colorButton.getAttribute('data-color-values') ?? '')
+          .split(',')
+          .filter(Boolean)
+          .map((entry) => {
+            const [id, color] = entry.split(':');
+            return [Number(id), color] as const;
+          });
+
+        if (colorIds.length === 0 || colorValues.length === 0) {
+          return;
+        }
+
+        const currentColor = Number(colorButton.getAttribute('data-color') ?? colorIds[0]);
+        const currentIndex = colorIds.indexOf(currentColor);
+        const nextIndex = (currentIndex + 1 + colorIds.length) % colorIds.length;
+        const nextColor = colorIds[nextIndex];
+        const nextColorValue = colorValues.find(([id]) => id === nextColor)?.[1] ?? '#999';
+
+        colorButton.setAttribute('data-color', String(nextColor));
+
+        colorButton.style.background = nextColorValue;
+
+        if (iconBase) {
+          iconBase.style.background = nextColorValue;
+        }
+      });
+    }
+
+    if (typeTrigger && typeMenu) {
+      typeTrigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+
+        const isOpen = typeMenu.classList.contains('open');
+        closeAllMenus();
+
+        if (!isOpen) {
+          typeMenu.classList.add('open');
+        }
+      });
+
+      typeMenu.querySelectorAll('.medal-type-option').forEach((option) => {
+        option.addEventListener('click', (event) => {
+          event.stopPropagation();
+
+          const value = option.getAttribute('data-value');
+          const label = option.getAttribute('data-label') ?? '不明';
+          const imagePath = option.getAttribute('data-image-path') ?? '';
+          const nextType = Number(value ?? 0);
+
+          if (!Number.isNaN(nextType) && iconImage && imagePath) {
+            iconImage.src = imagePath;
+          }
+
+          if (iconLabel) {
+            iconLabel.textContent = label;
+          }
+
+          typeMenu.classList.remove('open');
+        });
+      });
+    }
   });
 
-  // レベル変更
-  levelButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-      e.stopPropagation();
-
-      levelSheet?.classList.toggle('open');
-      medalSheet?.classList.remove('open');
-    });
-  });
-
-  // 外側クリックで閉じる
   document.addEventListener('click', () => {
-    medalSheet?.classList.remove('open');
-    levelSheet?.classList.remove('open');
+    closeAllMenus();
   });
 </script>
