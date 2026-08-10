@@ -12,6 +12,7 @@ import {
 import { getImageAssetById } from "../accessors/common/getData";
 import { CardElementType } from "../types/cards/CardElementType";
 import { ImageAsset } from "../types/common/ImageAsset";
+import heroMedalStats from "../data/heros/m_hero_medal_stats.json";
 
 const cards = getAllCard();
 const cardSkills = getAllCardSkillType();
@@ -72,7 +73,7 @@ const initialCards = [...cards]
           <div class="deck-card-area">
             <button class="deck-card" type="button" data-card-element-id={card.cardElementId}>
               <img class="deck-card-image" src={imagePath} alt="" />
-              <span class="deck-card-level">Lv.{String(cardStatusDisplayData.find((item) => item.cardId === card.id)?.level ?? 1)}</span>
+              <span class="deck-card-level">Lv.1</span>
             </button>
             <div class="deck-level-picker hidden" role="menu" aria-label="レベル選択">
               {levelOptions.map((level) => (
@@ -122,13 +123,42 @@ const initialCards = [...cards]
   </div>
 </div>
 
-<script define:vars={{ cards, cardSkillMap, cardCastTimeTypeMap, cardStatusDisplayData, cardElementImagePaths, levelOptions, cardLevelStatusMap, maxAttack, maxDefense, maxHealth }}>
+<script define:vars={{ cards, cardSkillMap, cardCastTimeTypeMap, cardStatusDisplayData, cardElementImagePaths, levelOptions, cardLevelStatusMap, maxAttack, maxDefense, maxHealth, heroMedalStats, cooldownReductionMedalType: 6 }}>
 const overlay = document.getElementById("deckListOverlay");
 const descriptionOverlay = document.getElementById("deckDescriptionOverlay");
 const descriptionBody = descriptionOverlay?.querySelector(".deck-description-body");
 let selectedReplacementIndex = null;
 
 const getDeckElements = () => Array.from(document.querySelectorAll(".deck-view .deck"));
+const heroMedalStatRows = Array.isArray(heroMedalStats) ? heroMedalStats : [];
+const getCooldownPercentFromMedals = () => {
+  const medalIcons = Array.from(document.querySelectorAll("#medal-settings .medal-icon"));
+
+  return medalIcons.reduce((totalPercent, icon) => {
+    const medalType = Number(icon.getAttribute("data-medal-type") ?? 0);
+    const medalLevel = Number(icon.getAttribute("data-medal-level") ?? 1);
+    const medalColor = Number(icon.getAttribute("data-medal-color") ?? 0);
+
+    if (medalType !== cooldownReductionMedalType) {
+      return totalPercent;
+    }
+
+    const sameColorCount = medalIcons.reduce((count, candidate) => {
+      const candidateColor = Number(candidate.getAttribute("data-medal-color") ?? 0);
+      return count + (candidateColor === medalColor ? 1 : 0);
+    }, 0);
+
+    const matchedStat = heroMedalStatRows.find((row) => {
+      return row.heroMedalId === medalType && row.level === medalLevel && row.count === sameColorCount;
+    });
+
+    return totalPercent + (matchedStat?.percent ?? 0);
+  }, 0);
+};
+const formatCooldownValue = (baseValue, percentTotal) => {
+  const value = Number(baseValue ?? 0) * (1 - (Number(percentTotal ?? 0) / 100));
+  return Number.isFinite(value) ? value.toFixed(1) : "0.0";
+};
 const getDeckLevel = (deckElement) => Number(deckElement.dataset.level ?? 1);
 const setDeckLevel = (deckElement, level) => {
   deckElement.dataset.level = String(level);
@@ -153,6 +183,8 @@ const renderDeckCard = (deckElement, card) => {
   const level = getDeckLevel(deckElement);
   const status = getStatusForLevel(card.id, level);
   const cooldownTime = status.cooldownTime;
+  const cooldownPercent = getCooldownPercentFromMedals();
+  const displayedCooldownTime = formatCooldownValue(cooldownTime, cooldownPercent);
   const skillLabel = cardSkillMap[card.cardSkillId]?.label ?? "";
 
   const deckButton = deckElement.querySelector(".deck-card");
@@ -180,13 +212,26 @@ const renderDeckCard = (deckElement, card) => {
     deckSkillElement.textContent = skillLabel;
   }
   if (cooldownCurrentElement) {
-    cooldownCurrentElement.textContent = String(cooldownTime);
+    cooldownCurrentElement.textContent = String(displayedCooldownTime);
   }
   if (cooldownDefaultElement) {
     cooldownDefaultElement.textContent = `(${cooldownTime}秒)`;
   }
 
   deckElement.dataset.cardId = String(card.id);
+};
+
+const refreshDeckCardDisplays = () => {
+  getDeckElements().forEach((deckElement) => {
+    const cardId = Number(deckElement.dataset.cardId ?? 0);
+    const card = cards.find((item) => item.id === cardId);
+
+    if (card) {
+      renderDeckCard(deckElement, card);
+    }
+  });
+
+  publishDeckState();
 };
 
 const publishDeckState = () => {
@@ -506,7 +551,17 @@ document.addEventListener("deck-list:use-card", (event) => {
   selectedReplacementIndex = null;
 });
 
-publishDeckState();
+document.addEventListener("medal-settings:changed", () => {
+  refreshDeckCardDisplays();
+});
+
+window.addEventListener("load", () => {
+  refreshDeckCardDisplays();
+});
+
+requestAnimationFrame(() => {
+  refreshDeckCardDisplays();
+});
 </script>
 
 <style>

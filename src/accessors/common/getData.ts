@@ -17,12 +17,12 @@ export function getCollaborationTitleById(id: number) {
 export function getAllImageAsset() {
   return imageAsset;
 }
-
+  
 export function getImageAssetById(id: number) {
   return maps.ImageAsset.get(id);
 }
 
 export function getImageAssetPathById(id: number) {
-  const imageAssetById = getImageAssetById(id);
-  return imageAssetById ? `/CompassDeckSimulator/${imageAssetById.imagePath}` : '';
+  const imageAsset = getImageAssetById(id);
+  return imageAsset ? `/CompassDeckSimulator/${imageAsset.imagePath}` : '';
 }

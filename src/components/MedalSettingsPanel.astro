@@ -23,6 +23,10 @@ import MedalIcon from './MedalIcon.astro';
     });
   };
 
+  const emitMedalSettingsChanged = () => {
+    document.dispatchEvent(new CustomEvent('medal-settings:changed'));
+  };
+
   document.querySelectorAll('.medal-icon').forEach((icon) => {
     const trigger = icon.querySelector('.medal-level-button');
     const menu = icon.querySelector('.medal-level-menu');
@@ -52,9 +56,11 @@ import MedalIcon from './MedalIcon.astro';
           const value = option.getAttribute('data-value');
           if (value) {
             trigger.textContent = `+${value}`;
+            icon.setAttribute('data-medal-level', String(value));
           }
 
           menu.classList.remove('open');
+          emitMedalSettingsChanged();
         });
       });
     }
@@ -86,8 +92,10 @@ import MedalIcon from './MedalIcon.astro';
         const nextColorValue = colorValues.find(([id]) => id === nextColor)?.[1] ?? '#999';
 
         colorButton.setAttribute('data-color', String(nextColor));
+        icon.setAttribute('data-medal-color', String(nextColor));
 
         colorButton.style.background = nextColorValue;
+        emitMedalSettingsChanged();
 
         if (iconBase) {
           iconBase.style.background = nextColorValue;
@@ -124,7 +132,12 @@ import MedalIcon from './MedalIcon.astro';
             iconLabel.textContent = label;
           }
 
+          if (!Number.isNaN(nextType)) {
+            icon.setAttribute('data-medal-type', String(nextType));
+          }
+
           typeMenu.classList.remove('open');
+          emitMedalSettingsChanged();
         });
       });
     }
@@ -133,4 +146,6 @@ import MedalIcon from './MedalIcon.astro';
   document.addEventListener('click', () => {
     closeAllMenus();
   });
+
+  emitMedalSettingsChanged();
 </script>

@@ -4,8 +4,7 @@ import heroMedalType from "../../data/heros/m_hero_medal_types.json";
 import heroMedalColorType from "../../data/heros/m_hero_medal_color_types.json";
 import heroStatus from "../../data/heros/m_hero_statuses.json";
 import { ImageAsset } from "../../types/common";
-import { HeroMedalType } from "../../types/heros";
-import { getImageAssetById } from "../common/getData.ts";
+import { getImageAssetById } from "../common/getData";
 
 const maps = {
   Hero: new Map(hero.map((row) => [row.id, row])),
@@ -23,12 +22,12 @@ export function getAllHeroStatus() {
   return heroStatus;
 }
 
-export function getHeroById(id: number) {
-  return maps.Hero.get(id);
-}
-
 export function getHeroStatusById(id: number) {
   return maps.HeroStatus.get(id);
+}
+
+export function getHeroById(id: number) {
+  return maps.Hero.get(id);
 }
 
 export function getAllHeroRoleType() {
@@ -42,34 +41,9 @@ export function getHeroRoleTypeById(id: number) {
 export function getAllHeroMedalType() {
   return heroMedalType;
 }
-
+  
 export function getHeroMedalTypeById(id: number) {
   return maps.HeroMedalType.get(id);
-}
-
-const medalTypeToImageAssetMap: Record<HeroMedalType, ImageAsset> = {
-  [HeroMedalType.ATK_UP]: ImageAsset.SWORD,
-  [HeroMedalType.DEF_UP]: ImageAsset.SHIELD,
-  [HeroMedalType.HP_UP]: ImageAsset.HEART,
-  [HeroMedalType.MOVE_SPEED_UP]: ImageAsset.SHOES,
-  [HeroMedalType.HS_GAIN_UP]: ImageAsset.HUMAN,
-  [HeroMedalType.COOLDOWN_REDUCTION]: ImageAsset.CLOCK,
-  [HeroMedalType.CAPTURE_SPEED_UP]: ImageAsset.KEY,
-  [HeroMedalType.RESIST_FIRE_UP]: ImageAsset.FIRE,
-  [HeroMedalType.RESIST_WATER_UP]: ImageAsset.WATER,
-  [HeroMedalType.RESIST_WOOD_UP]: ImageAsset.LEAF,
-  [HeroMedalType.RESIST_STUN_UP]: ImageAsset.BOLT,
-  [HeroMedalType.RESIST_SILENT_UP]: ImageAsset.SPEECH_BUBBLE,
-  [HeroMedalType.RESIST_POISON_UP]: ImageAsset.BEAKER,
-};
-
-export function getHeroMedalTypeImageAssetById(id: number) {
-  return medalTypeToImageAssetMap[id as HeroMedalType] ?? ImageAsset.NONE;
-}
-
-export function getHeroMedalTypeImagePathById(id: number) {
-  const imageAsset = getImageAssetById(getHeroMedalTypeImageAssetById(id));
-  return imageAsset ? `/CompassDeckSimulator/${imageAsset.imagePath}` : '';
 }
 
 export function getAllHeroMedalColorType() {
@@ -78,4 +52,29 @@ export function getAllHeroMedalColorType() {
   
 export function getHeroMedalColorTypeById(id: number) {
   return maps.HeroMedalColorType.get(id);
+}
+
+export function getHeroMedalTypeImageAssetById(id: number) {
+  const typeToImageAssetMap: Record<number, ImageAsset> = {
+    1: ImageAsset.SWORD,
+    2: ImageAsset.SHIELD,
+    3: ImageAsset.HEART,
+    4: ImageAsset.SHOES,
+    5: ImageAsset.HUMAN,
+    6: ImageAsset.CLOCK,
+    7: ImageAsset.KEY,
+    8: ImageAsset.FIRE,
+    9: ImageAsset.WATER,
+    10: ImageAsset.LEAF,
+    11: ImageAsset.BOLT,
+    12: ImageAsset.SPEECH_BUBBLE,
+    13: ImageAsset.BEAKER,
+  };
+
+  return typeToImageAssetMap[id] ?? ImageAsset.NONE;
+}
+
+export function getHeroMedalTypeImagePathById(id: number) {
+  const imageAsset = getImageAssetById(getHeroMedalTypeImageAssetById(id));
+  return imageAsset ? `/CompassDeckSimulator/${imageAsset.imagePath}` : '';
 }

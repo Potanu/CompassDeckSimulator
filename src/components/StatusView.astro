@@ -2,6 +2,9 @@
 import '../styles/status-view.css';
 import { getAllCard, getCardStatusDisplayByCardId } from "../accessors/cards/getData";
 import { getAllHeroStatus } from "../accessors/heros/getData.ts";
+import heroMedalStats from "../data/heros/m_hero_medal_stats.json";
+import cardLevelStatuses from "../data/cards/m_card_level_statuses.json";
+import { HeroMedalType } from "../types/heros";
 
 const cards = getAllCard();
 const levelOptions = [1, 20, 30, 40, 50, 60];
@@ -13,6 +16,9 @@ const initialCards = [...cards]
 const maxAttack = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).attack ?? 0), 0);
 const maxDefense = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).defense ?? 0), 0);
 const maxHealth = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).health ?? 0), 0);
+const cardLevelStatusMapById = Object.fromEntries(
+  cardLevelStatuses.map((row) => [row.card_id, row])
+);
 const maximums = { attack: maxAttack * 10, defense: maxDefense * 10, health: maxHealth * 10 };
 const cardLevelStatusMap = Object.fromEntries(
   cards.map((card) => [
@@ -104,15 +110,48 @@ const statuses = [
   </div>
 </div>
 
-<script define:vars={{ initialTotals, maximums, cardLevelStatusMap: cardLevelStatusMap, heroStatusMap: heroStatusMap }}>
+<script define:vars={{ initialTotals, maximums, cardLevelStatusMap: cardLevelStatusMap, heroStatusMap: heroStatusMap, heroMedalStats, cardLevelStatuses, heroMedalTypeIds: { attack: HeroMedalType.ATK_UP, defense: HeroMedalType.DEF_UP, health: HeroMedalType.HP_UP } }}>
+  const heroMedalStatRows = Array.isArray(heroMedalStats) ? heroMedalStats : [];
+  const cardLevelStatusRows = Array.isArray(cardLevelStatuses) ? cardLevelStatuses : [];
+
+  const getMedalPercentTotal = (medalTypeId) => {
+    const medalIcons = Array.from(document.querySelectorAll("#medal-settings .medal-icon"));
+
+    return medalIcons.reduce((totalPercent, icon) => {
+      const medalType = Number(icon.getAttribute("data-medal-type") ?? 0);
+      const medalLevel = Number(icon.getAttribute("data-medal-level") ?? 1);
+      const medalColor = Number(icon.getAttribute("data-medal-color") ?? 0);
+
+      if (medalType !== medalTypeId) {
+        return totalPercent;
+      }
+
+      const sameColorCount = medalIcons.reduce((count, candidate) => {
+        const candidateColor = Number(candidate.getAttribute("data-medal-color") ?? 0);
+        return count + (candidateColor === medalColor ? 1 : 0);
+      }, 0);
+
+      const matchedStat = heroMedalStatRows.find((row) => {
+        return row.heroMedalId === medalType && row.level === medalLevel && row.count === sameColorCount;
+      });
+
+      return totalPercent + (matchedStat?.percent ?? 0);
+    }, 0);
+  };
+
   const getStatusTotals = (cardIds, levelByCardId = {}) => cardIds.reduce(
     (totals, cardId) => {
       const level = levelByCardId[cardId] ?? 1;
       const status = cardLevelStatusMap?.[cardId]?.[String(level)] ?? null;
+      const levelStatusRow = cardLevelStatusRows.find((row) => row.card_id === cardId && row.level === level);
 
-      totals.attack += status?.attack ?? 0;
-      totals.defense += status?.defense ?? 0;
-      totals.health += status?.health ?? 0;
+      const attackValue = levelStatusRow?.attack ?? status?.attack ?? 0;
+      const defenseValue = levelStatusRow?.defense ?? status?.defense ?? 0;
+      const healthValue = levelStatusRow?.health ?? status?.health ?? 0;
+
+      totals.attack += attackValue;
+      totals.defense += defenseValue;
+      totals.health += healthValue;
       return totals;
     },
     { attack: 0, defense: 0, health: 0 },
@@ -135,8 +174,11 @@ const statuses = [
       const baseValue = totals[key] ?? 0;
       const heroFactor = selectedHeroFactors ? selectedHeroFactors[key] ?? 1 : null;
 
+      const medalTypeId = heroMedalTypeIds[key] ?? 0;
+      const medalPercentTotal = getMedalPercentTotal(medalTypeId);
+      const percentageMultiplier = 1 + (medalPercentTotal / 100);
       const displayedValue = heroFactor != null
-        ? Math.round(baseValue * heroFactor)
+        ? Math.round(baseValue * heroFactor * percentageMultiplier)
         : Math.round(baseValue);
 
       const valueElement = statusElement.querySelector(".status-value");
@@ -210,6 +252,10 @@ const statuses = [
       selectedHeroFactors = null;
     }
 
+    updateStatusValues(latestTotals);
+  });
+
+  document.addEventListener("medal-settings:changed", () => {
     updateStatusValues(latestTotals);
   });
 </script>
