@@ -5,7 +5,7 @@ import MedalSettingsPanel from "./MedalSettingsPanel.astro";
 
 import { HeroRoleType } from "../types/heros";
 import { ImageAsset } from '../types/common';
-import { getAllHero, getAllHeroStatus } from "../accessors/heros/getData.ts";
+import { getAllHero, getAllHeroStatus, getHeroRoleTypeById } from "../accessors/heros/getData.ts";
 import { getImageAssetById } from "../accessors/common/getData.ts";
 
 const heroStatuses = getAllHeroStatus();
@@ -20,62 +20,117 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
 <footer class="footer">
   <div class="footer-content">
     <div class="dropdown-wrapper">
-      <!-- ヒーロー選択ドロップダウン -->
       <div class="dropdown">
-        <button id="dropdown-trigger" class="dropdown-trigger">
+        <button id="dropdown-trigger" class="dropdown-trigger" type="button">
           <span class="trigger-content">ヒーローを選択してね</span>
-          <span class="dropdown-trigger-arrow" />
         </button>
-        <div class="dropdown-menu">
-          {getAllHero().map((hero) => {
-            const heroStatus = heroStatuses.find((row) => row.id === hero.id) ?? { attack: 1, defense: 1, health: 1 };
+      </div>
 
+      <div class="level-button-wrap">
+        <button class="level-button" id="level-select-trigger" type="button" aria-label="レベル設定" aria-haspopup="listbox" aria-expanded="false">Lv.1</button>
+        <div id="level-select-menu" class="level-select-menu" role="listbox" aria-hidden="true">
+          {Array.from({ length: 9 }, (_, index) => {
+            const level = index + 1;
             return (
               <button
-                class="dropdown-item"
+                class="level-select-option"
                 type="button"
-                data-hero-id={hero.id}
-                data-hero-attack={heroStatus.attack ?? 1}
-                data-hero-defense={heroStatus.defense ?? 1}
-                data-hero-health={heroStatus.health ?? 1}
+                role="option"
+                data-level={level}
               >
-                <RoleIcon role={hero.heroRoleId} />
-                <span>{hero.label}</span>
+                Lv.{level}
               </button>
             );
-          })} 
+          })}
         </div>
       </div>
-      <!-- 詳細設定アイコン -->
-      <button class="medalSetting" id="medal-settings-trigger">
-        <img src= {SETTING_MEDAL_IMAGE_PATH} width="32" height="32" />
+
+      <button class="medalSetting" id="medal-settings-trigger" type="button" aria-label="メダル設定">
+        <img src={SETTING_MEDAL_IMAGE_PATH} width="32" height="32" alt="" />
       </button>
     </div>
   </div>
 </footer>
 
-<!-- ヒーロー選択ドロップダウン -->
+<div id="hero-select-overlay" class="hero-select-overlay" aria-hidden="true">
+  <div class="hero-select-modal" role="dialog" aria-modal="true" aria-label="ヒーロー選択">
+    <div class="hero-select-header">
+      <h2>ヒーローを選択</h2>
+      <button id="hero-select-close" class="hero-select-close" type="button" aria-label="閉じる">×</button>
+    </div>
+
+    <div class="hero-select-list">
+      {getAllHero().map((hero) => {
+        const heroStatus = heroStatuses.find((row) => row.id === hero.id) ?? { attack: 1, defense: 1, health: 1 };
+        const heroRole = getHeroRoleTypeById(hero.heroRoleId);
+
+        return (
+          <button
+            class="hero-select-item"
+            type="button"
+            data-hero-id={hero.id}
+            data-hero-attack={heroStatus.attack ?? 1}
+            data-hero-defense={heroStatus.defense ?? 1}
+            data-hero-health={heroStatus.health ?? 1}
+          >
+            <span class="hero-select-item-name">{hero.label}</span>
+            <div class="hero-select-item-role">
+              <RoleIcon role={hero.heroRoleId} size={28} />
+              <span>{heroRole?.label ?? "不明"}</span>
+            </div>
+          </button>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
 <script>
-  const dropdown = document.querySelector<HTMLElement>('.dropdown');
-  const trigger = dropdown?.querySelector<HTMLButtonElement>('.dropdown-trigger');
-  const menu = dropdown?.querySelector<HTMLElement>('.dropdown-menu');
+  const trigger = document.getElementById('dropdown-trigger');
+  const overlay = document.getElementById('hero-select-overlay');
+  const levelButton = document.getElementById('level-select-trigger');
+  const levelMenu = document.getElementById('level-select-menu');
+  const levelOptions = document.querySelectorAll<HTMLElement>('.level-select-option');
+  const modal = overlay?.querySelector<HTMLElement>('.hero-select-modal');
+  const closeButton = document.getElementById('hero-select-close');
   const triggerLabel = document.querySelector<HTMLElement>('.trigger-content');
-  const items = document.querySelectorAll<HTMLElement>('.dropdown-item');
-  const arrow = trigger?.querySelector<HTMLElement>('.dropdown-trigger-arrow');
+  const items = document.querySelectorAll<HTMLElement>('.hero-select-item');
 
-  const ARROW_CLOSED = '▼';
-  const ARROW_OPEN = '▲';
+  const openHeroSelector = () => {
+    overlay?.classList.add('is-open');
+    overlay?.setAttribute('aria-hidden', 'false');
+  };
 
-  if (arrow) {
-    arrow.textContent = ARROW_CLOSED;
-  }
+  const closeHeroSelector = () => {
+    overlay?.classList.remove('is-open');
+    overlay?.setAttribute('aria-hidden', 'true');
+  };
 
-  // 項目クリックでラベル更新＆閉じる
+  trigger?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    openHeroSelector();
+  });
+
+  closeButton?.addEventListener('click', () => {
+    closeHeroSelector();
+  });
+
+  overlay?.addEventListener('click', (event) => {
+    if (event.target === overlay) {
+      closeHeroSelector();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && overlay?.classList.contains('is-open')) {
+      closeHeroSelector();
+    }
+  });
+
   items.forEach((item) => {
     item.addEventListener('click', () => {
-      const labelSpan = item.querySelector('span');
-      const label = labelSpan?.textContent ?? '未選択';
       const heroId = Number(item.dataset.heroId ?? 0);
+      const label = item.querySelector<HTMLElement>('.hero-select-item-name')?.textContent ?? '未選択';
 
       if (triggerLabel) {
         triggerLabel.textContent = label;
@@ -94,36 +149,85 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
         }));
       }
 
-      document.body.classList.remove('dropdown-open');
-      if (arrow) {
-        arrow.textContent = ARROW_CLOSED;
-      }
-      menu?.classList.remove('is-active');
+      closeHeroSelector();
     });
   });
 
-  // トリガークリックで開閉
-  trigger?.addEventListener('click', () => {
-    menu?.classList.toggle('is-active');
-    if (arrow) {
-      arrow.textContent = menu?.classList.contains('is-active') ? ARROW_OPEN : ARROW_CLOSED;
+  const closeLevelMenu = () => {
+    levelMenu?.classList.remove('is-open');
+    levelMenu?.setAttribute('aria-hidden', 'true');
+    levelButton?.setAttribute('aria-expanded', 'false');
+  };
+
+  const positionLevelMenu = () => {
+    if (!levelButton || !levelMenu) return;
+
+    const rect = levelButton.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+    const viewportWidth = window.innerWidth;
+    const menuWidth = Math.min(108, viewportWidth - 32);
+    const menuHeight = Math.min(9 * 26 + 8 * 4 + 12, viewportHeight - 32);
+    const spaceBelow = viewportHeight - rect.bottom - 16;
+    const spaceAbove = rect.top - 16;
+    const openAbove = spaceBelow < menuHeight && spaceAbove > spaceBelow;
+
+    const left = Math.min(
+      viewportWidth - menuWidth - 16,
+      Math.max(16, rect.left + rect.width / 2 - menuWidth / 2)
+    );
+    const top = openAbove
+      ? Math.max(16, rect.top - menuHeight - 8)
+      : Math.min(viewportHeight - menuHeight - 16, rect.bottom + 8);
+
+    levelMenu.style.left = `${left}px`;
+    levelMenu.style.top = `${top}px`;
+    levelMenu.style.width = `${menuWidth}px`;
+  };
+
+  const openLevelMenu = () => {
+    if (!levelButton || !levelMenu) return;
+    positionLevelMenu();
+    levelMenu.classList.add('is-open');
+    levelMenu.setAttribute('aria-hidden', 'false');
+    levelButton.setAttribute('aria-expanded', 'true');
+  };
+
+  levelButton?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    if (levelMenu?.classList.contains('is-open')) {
+      closeLevelMenu();
+    } else {
+      openLevelMenu();
     }
   });
 
-  // メニュー外をクリックしたら閉じる
-  document.addEventListener(
-    'pointerdown',
-    (e) => {
-      const target = e.target;
-      if (target instanceof Node && menu && trigger && !menu.contains(target) && !trigger.contains(target)) {
-        menu.classList.remove('is-active');
-        if (arrow) {
-          arrow.textContent = ARROW_CLOSED;
-        }
+  levelOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+      const level = Number(option.dataset.level ?? 1);
+      if (levelButton) {
+        levelButton.textContent = `Lv.${level}`;
       }
-    },
-    true
-  );
+      document.dispatchEvent(new CustomEvent('footer:level-selected', {
+        detail: { level },
+      }));
+      closeLevelMenu();
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (levelMenu?.classList.contains('is-open')) {
+      positionLevelMenu();
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Node)) return;
+    if (levelButton?.contains(target) || levelMenu?.contains(target)) {
+      return;
+    }
+    closeLevelMenu();
+  });
 </script>
 
 <!-- 詳細設定アイコン -->

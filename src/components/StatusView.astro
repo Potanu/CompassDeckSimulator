@@ -27,14 +27,27 @@ const cardLevelStatusMap = Object.fromEntries(
   ])
 );
 
-const getStatusTotals = (cardIds: number[], levelByCardId: Record<number, number> = {}) => cardIds.reduce(
+const getTeamLevelMultiplier = (key: "attack" | "defense" | "health", level: number) => {
+  if (level <= 1) {
+    return 1;
+  }
+
+  const rate = key === "attack" ? 0.1 : 0.15;
+  return 1 + (rate * (level - 1) / 8);
+};
+
+const getTeamLevelAdjustedValue = (key: "attack" | "defense" | "health", level: number, value: number) => {
+  return Math.round(Number(value ?? 0) * getTeamLevelMultiplier(key, level));
+};
+
+const getStatusTotals = (cardIds: number[], levelByCardId: Record<number, number> = {}, teamLevel = 1) => cardIds.reduce(
   (totals, cardId) => {
     const level = levelByCardId[cardId] ?? 1;
     const status = getCardStatusDisplayByCardId(cardId, level);
 
-    totals.attack += status?.attack ?? 0;
-    totals.defense += status?.defense ?? 0;
-    totals.health += status?.health ?? 0;
+    totals.attack += getTeamLevelAdjustedValue("attack", teamLevel, status?.attack ?? 0);
+    totals.defense += getTeamLevelAdjustedValue("defense", teamLevel, status?.defense ?? 0);
+    totals.health += getTeamLevelAdjustedValue("health", teamLevel, status?.health ?? 0);
     return totals;
   },
   { attack: 0, defense: 0, health: 0 },
@@ -139,19 +152,32 @@ const statuses = [
     }, 0);
   };
 
-  const getStatusTotals = (cardIds, levelByCardId = {}) => cardIds.reduce(
+  const getBaseStatusValue = (cardId, level, key) => {
+    const normalizedLevel = Number(level ?? 1);
+    const exactStatus = cardLevelStatusMap?.[cardId]?.[String(normalizedLevel)] ?? null;
+    const exactLevelStatusRow = cardLevelStatusRows.find((row) => row.card_id === cardId && row.level === normalizedLevel);
+    const fallbackStatus = cardLevelStatusMap?.[cardId]?.["1"] ?? null;
+    const fallbackLevelStatusRow = cardLevelStatusRows.find((row) => row.card_id === cardId && row.level === 1);
+
+    if (key === "attack") {
+      return exactLevelStatusRow?.attack ?? exactStatus?.attack ?? fallbackLevelStatusRow?.attack ?? fallbackStatus?.attack ?? 0;
+    }
+    if (key === "defense") {
+      return exactLevelStatusRow?.defense ?? exactStatus?.defense ?? fallbackLevelStatusRow?.defense ?? fallbackStatus?.defense ?? 0;
+    }
+    return exactLevelStatusRow?.health ?? exactStatus?.health ?? fallbackLevelStatusRow?.health ?? fallbackStatus?.health ?? 0;
+  };
+
+  const getStatusTotals = (cardIds, levelByCardId = {}, teamLevel = 1) => cardIds.reduce(
     (totals, cardId) => {
-      const level = levelByCardId[cardId] ?? 1;
-      const status = cardLevelStatusMap?.[cardId]?.[String(level)] ?? null;
-      const levelStatusRow = cardLevelStatusRows.find((row) => row.card_id === cardId && row.level === level);
+      const level = Number(levelByCardId[cardId] ?? 1);
+      const attackValue = getBaseStatusValue(cardId, level, "attack");
+      const defenseValue = getBaseStatusValue(cardId, level, "defense");
+      const healthValue = getBaseStatusValue(cardId, level, "health");
 
-      const attackValue = levelStatusRow?.attack ?? status?.attack ?? 0;
-      const defenseValue = levelStatusRow?.defense ?? status?.defense ?? 0;
-      const healthValue = levelStatusRow?.health ?? status?.health ?? 0;
-
-      totals.attack += attackValue;
-      totals.defense += defenseValue;
-      totals.health += healthValue;
+      totals.attack += Math.round(Number(attackValue ?? 0) * (teamLevel <= 1 ? 1 : 1 + (0.1 * (teamLevel - 1) / 8)));
+      totals.defense += Math.round(Number(defenseValue ?? 0) * (teamLevel <= 1 ? 1 : 1 + (0.15 * (teamLevel - 1) / 8)));
+      totals.health += Math.round(Number(healthValue ?? 0) * (teamLevel <= 1 ? 1 : 1 + (0.15 * (teamLevel - 1) / 8)));
       return totals;
     },
     { attack: 0, defense: 0, health: 0 },
@@ -177,9 +203,10 @@ const statuses = [
       const medalTypeId = heroMedalTypeIds[key] ?? 0;
       const medalPercentTotal = getMedalPercentTotal(medalTypeId);
       const percentageMultiplier = 1 + (medalPercentTotal / 100);
-      const displayedValue = heroFactor != null
-        ? Math.round(baseValue * heroFactor * percentageMultiplier)
-        : Math.round(baseValue);
+      const rawValue = heroFactor != null
+        ? baseValue * heroFactor * percentageMultiplier
+        : baseValue;
+      const displayedValue = Math.round(rawValue);
 
       const valueElement = statusElement.querySelector(".status-value");
       const defaultElement = statusElement.querySelector(".status-default");
@@ -231,7 +258,8 @@ const statuses = [
   document.addEventListener("deck-view:state-changed", (event) => {
     const cardLevels = event.detail?.cardLevels ?? [];
     const levelByCardId = Object.fromEntries(cardLevels.map((item) => [item.cardId, item.level]));
-    const totals = getStatusTotals(event.detail?.cardIds ?? [], levelByCardId);
+    const teamLevel = Number(event.detail?.teamLevel ?? 1);
+    const totals = event.detail?.totals ?? getStatusTotals(event.detail?.cardIds ?? [], levelByCardId, teamLevel);
 
     latestTotals = { ...totals };
     updateStatusValues(totals);

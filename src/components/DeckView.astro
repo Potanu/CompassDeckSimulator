@@ -171,8 +171,31 @@ const setDeckLevel = (deckElement, level) => {
 };
 const getStatusForLevel = (cardId, level) => {
   const cardStatuses = cardLevelStatusMap[cardId] ?? {};
-  const selectedStatus = cardStatuses[String(level)] ?? cardStatuses["1"];
+  const resolvedLevel = level in cardStatuses ? String(level) : (level <= 20 ? "1" : String(level));
+  const selectedStatus = cardStatuses[resolvedLevel] ?? cardStatuses["1"];
   return selectedStatus ?? { cooldownTime: 0, attack: 0, defense: 0, health: 0, abilityLabel: "" };
+};
+const getTeamLevelMultiplier = (key, level) => {
+  if (level <= 1) {
+    return 1;
+  }
+
+  const rate = key === "attack" ? 0.1 : 0.15;
+  return 1 + (rate * (level - 1) / 8);
+};
+const getTeamLevelAdjustedValue = (key, level, value) => {
+  return Math.round(Number(value ?? 0) * getTeamLevelMultiplier(key, level));
+};
+const getLevelMultiplier = (key, level) => {
+  if (level <= 1) {
+    return 1;
+  }
+
+  const rate = key === "attack" ? 0.1 : 0.15;
+  return 1 + (rate * (level - 1) / 8);
+};
+const getLevelAdjustedValue = (key, level, value) => {
+  return Math.round(Number(value ?? 0) * getLevelMultiplier(key, level));
 };
 const getGaugeWidthPercent = (value, maxValue) => {
   if (!maxValue) return 0;
@@ -234,6 +257,8 @@ const refreshDeckCardDisplays = () => {
   publishDeckState();
 };
 
+let selectedTeamLevel = 1;
+
 const publishDeckState = () => {
   const deckElements = getDeckElements();
   const cardIds = deckElements
@@ -249,16 +274,16 @@ const publishDeckState = () => {
   const totals = cardLevels.reduce(
     (acc, item) => {
       const status = getStatusForLevel(item.cardId, item.level);
-      acc.attack += status.attack ?? 0;
-      acc.defense += status.defense ?? 0;
-      acc.health += status.health ?? 0;
+      acc.attack += getTeamLevelAdjustedValue("attack", selectedTeamLevel, status.attack ?? 0);
+      acc.defense += getTeamLevelAdjustedValue("defense", selectedTeamLevel, status.defense ?? 0);
+      acc.health += getTeamLevelAdjustedValue("health", selectedTeamLevel, status.health ?? 0);
       return acc;
     },
     { attack: 0, defense: 0, health: 0 },
   );
 
   document.dispatchEvent(new CustomEvent("deck-view:state-changed", {
-    detail: { cardIds, cardLevels, totals },
+    detail: { cardIds, cardLevels, totals, teamLevel: selectedTeamLevel },
   }));
 };
 
@@ -388,9 +413,12 @@ const createDescriptionContent = (card, level, sourceItem) => {
   const detail = document.createElement("div");
   detail.className = "detail";
 
-  const attackWidth = getGaugeWidthPercent(status.attack, maxAttack);
-  const defenseWidth = getGaugeWidthPercent(status.defense, maxDefense);
-  const healthWidth = getGaugeWidthPercent(status.health, maxHealth);
+  const attackValue = getLevelAdjustedValue("attack", level, status.attack ?? 0);
+  const defenseValue = getLevelAdjustedValue("defense", level, status.defense ?? 0);
+  const healthValue = getLevelAdjustedValue("health", level, status.health ?? 0);
+  const attackWidth = getGaugeWidthPercent(attackValue, maxAttack);
+  const defenseWidth = getGaugeWidthPercent(defenseValue, maxDefense);
+  const healthWidth = getGaugeWidthPercent(healthValue, maxHealth);
   const castTimeLabel = cardCastTimeTypeMap[card.cardCastTimeId]?.label ?? "";
 
   detail.innerHTML = `
@@ -408,17 +436,17 @@ const createDescriptionContent = (card, level, sourceItem) => {
       <div class="status-row">
         <span>攻撃</span>
         <div class="bar"><div class="fill atk" style="width:${attackWidth}%"></div></div>
-        <span>${status.attack ?? 0}</span>
+        <span>${attackValue}</span>
       </div>
       <div class="status-row">
         <span>防御</span>
         <div class="bar"><div class="fill def" style="width:${defenseWidth}%"></div></div>
-        <span>${status.defense ?? 0}</span>
+        <span>${defenseValue}</span>
       </div>
       <div class="status-row">
         <span>体力</span>
         <div class="bar"><div class="fill hp" style="width:${healthWidth}%"></div></div>
-        <span>${status.health ?? 0}</span>
+        <span>${healthValue}</span>
       </div>
     </div>
   `;
@@ -553,6 +581,15 @@ document.addEventListener("deck-list:use-card", (event) => {
 
 document.addEventListener("medal-settings:changed", () => {
   refreshDeckCardDisplays();
+});
+
+document.addEventListener("footer:level-selected", (event) => {
+  const level = Number(event.detail?.level ?? 1);
+  if (!Number.isFinite(level) || level < 1) {
+    return;
+  }
+  selectedTeamLevel = level;
+  publishDeckState();
 });
 
 window.addEventListener("load", () => {
