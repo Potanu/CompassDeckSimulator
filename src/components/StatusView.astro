@@ -17,7 +17,7 @@ const maxAttack = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(c
 const maxDefense = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).defense ?? 0), 0);
 const maxHealth = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(card.id, 60).health ?? 0), 0);
 const cardLevelStatusMapById = Object.fromEntries(
-  cardLevelStatuses.map((row) => [row.card_id, row])
+  cardLevelStatuses.map((row) => [row.cardId, row])
 );
 const maximums = { attack: maxAttack * 10, defense: maxDefense * 10, health: maxHealth * 10 };
 const cardLevelStatusMap = Object.fromEntries(
@@ -155,9 +155,9 @@ const statuses = [
   const getBaseStatusValue = (cardId, level, key) => {
     const normalizedLevel = Number(level ?? 1);
     const exactStatus = cardLevelStatusMap?.[cardId]?.[String(normalizedLevel)] ?? null;
-    const exactLevelStatusRow = cardLevelStatusRows.find((row) => row.card_id === cardId && row.level === normalizedLevel);
+    const exactLevelStatusRow = cardLevelStatusRows.find((row) => row.cardId === cardId && row.level === normalizedLevel);
     const fallbackStatus = cardLevelStatusMap?.[cardId]?.["1"] ?? null;
-    const fallbackLevelStatusRow = cardLevelStatusRows.find((row) => row.card_id === cardId && row.level === 1);
+    const fallbackLevelStatusRow = cardLevelStatusRows.find((row) => row.cardId === cardId && row.level === 1);
 
     if (key === "attack") {
       return exactLevelStatusRow?.attack ?? exactStatus?.attack ?? fallbackLevelStatusRow?.attack ?? fallbackStatus?.attack ?? 0;

@@ -23,8 +23,8 @@ export function getAllCard() {
 
 export function getCardStatusDisplayByCardId(id: number, level = 1) {
   const card = cards.find((item) => item.id === id);
-  const cardStatus = cardStatuses.find((item) => item.card_id === id);
-  const matchingLevelStatuses = cardLevelStatuses.filter((item) => item.card_id === id);
+  const cardStatus = cardStatuses.find((item) => item.cardId === id);
+  const matchingLevelStatuses = cardLevelStatuses.filter((item) => item.cardId === id);
   const levelStatus = matchingLevelStatuses.find((item) => item.level === level)
     ?? matchingLevelStatuses.find((item) => item.level === 1)
     ?? matchingLevelStatuses[0];
