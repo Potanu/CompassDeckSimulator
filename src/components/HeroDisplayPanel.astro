@@ -1,0 +1,118 @@
+---
+import '../styles/footer.css';
+import { getAllHeroRoleType } from '../accessors/heros/getData.ts';
+
+const heroRoleFilterOptions = getAllHeroRoleType();
+---
+
+<div id="hero-display-overlay" class="display-panel-overlay" aria-hidden="true">
+  <div class="display-panel" role="dialog" aria-modal="true" aria-label="ヒーロー検索">
+    <div class="panel-header">
+      <h2>ヒーロー検索</h2>
+      <button id="hero-display-close" class="panel-close-btn" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="panel-body">
+      <section class="panel-section">
+        <div class="section-title">検索</div>
+        <label class="search-input-wrap" for="hero-search-input">
+          <span class="search-input-icon" aria-hidden="true">🔎</span>
+          <input id="hero-search-input" class="search-input" type="text" placeholder="ヒーロー名で検索" autocomplete="off" />
+        </label>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">ロール</div>
+        <div class="chips-grid">
+          {heroRoleFilterOptions.map((role) => (
+            <button type="button" class="chip" data-filter-group="role" data-filter-value={role.id}>{role.label}</button>
+          ))}
+        </div>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">種類</div>
+        <div class="chips-grid">
+          <button type="button" class="chip" data-filter-group="collaboration" data-filter-value="normal">通常</button>
+          <button type="button" class="chip" data-filter-group="collaboration" data-filter-value="collaboration">コラボ</button>
+        </div>
+      </section>
+      <section class="panel-section panel-bottom-section">
+        <div class="section-title">並び順</div>
+        <div class="sort-row">
+          <select id="hero-sort-select">
+            <option value="standard">標準</option>
+            <option value="attack">攻撃</option>
+            <option value="defense">防御</option>
+            <option value="health">体力</option>
+          </select>
+          <button id="hero-filter-reset" class="reset-btn" type="button">リセット</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+  const displayOverlay = document.getElementById('hero-display-overlay');
+  const displayClose = document.getElementById('hero-display-close');
+  const heroSearchInput = document.querySelector<HTMLInputElement>('#hero-search-input');
+  const heroSortSelect = document.querySelector<HTMLSelectElement>('#hero-sort-select');
+  const heroFilterReset = document.getElementById('hero-filter-reset');
+  const heroFilterChips = displayOverlay?.querySelectorAll<HTMLElement>('.chip') ?? document.querySelectorAll<HTMLElement>('__no-match__');
+
+  const getHeroFilterValues = (group: string) => Array.from(heroFilterChips)
+    .filter((chip) => chip.classList.contains('active') && chip.dataset.filterGroup === group)
+    .map((chip) => chip.dataset.filterValue ?? '');
+
+  const dispatchFiltersChanged = () => {
+    document.dispatchEvent(new CustomEvent('hero-display:filters-changed', {
+      detail: {
+        query: heroSearchInput?.value.trim().toLowerCase() ?? '',
+        roles: getHeroFilterValues('role'),
+        collaborations: getHeroFilterValues('collaboration'),
+      },
+    }));
+  };
+
+  const closeDisplayPanel = () => {
+    displayOverlay?.classList.remove('open');
+    displayOverlay?.setAttribute('aria-hidden', 'true');
+  };
+
+  document.addEventListener('hero-display:open', () => {
+    displayOverlay?.classList.add('open');
+    displayOverlay?.setAttribute('aria-hidden', 'false');
+  });
+
+  displayClose?.addEventListener('click', closeDisplayPanel);
+  displayOverlay?.addEventListener('click', (event) => {
+    if (event.target === displayOverlay) closeDisplayPanel();
+  });
+
+  document.addEventListener('hero-select:closed', closeDisplayPanel);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && displayOverlay?.classList.contains('open')) closeDisplayPanel();
+  });
+
+  heroFilterChips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      chip.classList.toggle('active');
+      dispatchFiltersChanged();
+    });
+  });
+
+  heroSearchInput?.addEventListener('input', dispatchFiltersChanged);
+  heroSortSelect?.addEventListener('change', () => {
+    document.dispatchEvent(new CustomEvent('hero-display:sort-changed', {
+      detail: { sortKey: heroSortSelect.value },
+    }));
+  });
+
+  heroFilterReset?.addEventListener('click', () => {
+    heroFilterChips.forEach((chip) => chip.classList.remove('active'));
+    if (heroSearchInput) heroSearchInput.value = '';
+    if (heroSortSelect) heroSortSelect.value = 'standard';
+    dispatchFiltersChanged();
+    document.dispatchEvent(new CustomEvent('hero-display:sort-changed', {
+      detail: { sortKey: 'standard' },
+    }));
+  });
+</script>

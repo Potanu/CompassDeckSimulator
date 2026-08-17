@@ -3,6 +3,7 @@ import heroRoleType from "../../data/heros/m_hero_role_types.json";
 import heroMedalType from "../../data/heros/m_hero_medal_types.json";
 import heroMedalColorType from "../../data/heros/m_hero_medal_color_types.json";
 import heroStatus from "../../data/heros/m_hero_statuses.json";
+import heroDetails from "../../data/heros/m_hero_details.json";
 import { ImageAsset } from "../../types/common";
 import { getImageAssetById } from "../common/getData";
 
@@ -12,6 +13,7 @@ const maps = {
   HeroMedalType: new Map(heroMedalType.map((row) => [row.id, row])),
   HeroMedalColorType: new Map(heroMedalColorType.map((row) => [row.id, row])),
   HeroStatus: new Map(heroStatus.map((row) => [row.id, row])),
+  HeroDetail: new Map(heroDetails.map((row) => [row.heroId, row])),
 };
 
 export function getAllHero() {
@@ -24,6 +26,10 @@ export function getAllHeroStatus() {
 
 export function getHeroStatusById(id: number) {
   return maps.HeroStatus.get(id);
+}
+
+export function getHeroDetailByHeroId(id: number) {
+  return maps.HeroDetail.get(id);
 }
 
 export function getHeroById(id: number) {

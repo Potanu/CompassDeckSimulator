@@ -1,14 +1,14 @@
 ---
 import '../styles/footer.css';
-import RoleIcon from './RoleIcon.astro';
 import MedalSettingsPanel from "./MedalSettingsPanel.astro";
+import HeroSelectView from './HeroSelectView.astro';
+import HeroDisplayPanel from './HeroDisplayPanel.astro';
 
-import { HeroRoleType } from "../types/heros";
 import { ImageAsset } from '../types/common';
-import { getAllHero, getAllHeroStatus, getHeroRoleTypeById } from "../accessors/heros/getData.ts";
 import { getImageAssetById } from "../accessors/common/getData.ts";
 
-const heroStatuses = getAllHeroStatus();
+const MIN_HERO_LEVEL = 1;
+const MAX_HERO_LEVEL = 9;
 
 const getAssetPath = (asset: ImageAsset) => {
   const imageAsset = getImageAssetById(asset);
@@ -27,10 +27,10 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
       </div>
 
       <div class="level-button-wrap">
-        <button class="level-button" id="level-select-trigger" type="button" aria-label="レベル設定" aria-haspopup="listbox" aria-expanded="false">Lv.1</button>
+        <button class="level-button" id="level-select-trigger" type="button" aria-label="レベル設定" aria-haspopup="listbox" aria-expanded="false">Lv.{MIN_HERO_LEVEL}</button>
         <div id="level-select-menu" class="level-select-menu" role="listbox" aria-hidden="true">
-          {Array.from({ length: 9 }, (_, index) => {
-            const level = index + 1;
+          {Array.from({ length: MAX_HERO_LEVEL - MIN_HERO_LEVEL + 1 }, (_, index) => {
+            const level = index + MIN_HERO_LEVEL;
             return (
               <button
                 class="level-select-option"
@@ -52,106 +52,22 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
   </div>
 </footer>
 
-<div id="hero-select-overlay" class="hero-select-overlay" aria-hidden="true">
-  <div class="hero-select-modal" role="dialog" aria-modal="true" aria-label="ヒーロー選択">
-    <div class="hero-select-header">
-      <h2>ヒーローを選択</h2>
-      <button id="hero-select-close" class="hero-select-close" type="button" aria-label="閉じる">×</button>
-    </div>
-
-    <div class="hero-select-list">
-      {getAllHero().map((hero) => {
-        const heroStatus = heroStatuses.find((row) => row.id === hero.id) ?? { attack: 1, defense: 1, health: 1 };
-        const heroRole = getHeroRoleTypeById(hero.heroRoleId);
-
-        return (
-          <button
-            class="hero-select-item"
-            type="button"
-            data-hero-id={hero.id}
-            data-hero-attack={heroStatus.attack ?? 1}
-            data-hero-defense={heroStatus.defense ?? 1}
-            data-hero-health={heroStatus.health ?? 1}
-          >
-            <span class="hero-select-item-name">{hero.label}</span>
-            <div class="hero-select-item-role">
-              <RoleIcon role={hero.heroRoleId} size={28} />
-              <span>{heroRole?.label ?? "不明"}</span>
-            </div>
-          </button>
-        );
-      })}
-    </div>
-  </div>
-</div>
+<HeroSelectView />
+<HeroDisplayPanel />
 
 <script>
-  const trigger = document.getElementById('dropdown-trigger');
-  const overlay = document.getElementById('hero-select-overlay');
   const levelButton = document.getElementById('level-select-trigger');
   const levelMenu = document.getElementById('level-select-menu');
   const levelOptions = document.querySelectorAll<HTMLElement>('.level-select-option');
-  const modal = overlay?.querySelector<HTMLElement>('.hero-select-modal');
-  const closeButton = document.getElementById('hero-select-close');
-  const triggerLabel = document.querySelector<HTMLElement>('.trigger-content');
-  const items = document.querySelectorAll<HTMLElement>('.hero-select-item');
-
-  const openHeroSelector = () => {
-    overlay?.classList.add('is-open');
-    overlay?.setAttribute('aria-hidden', 'false');
-  };
-
-  const closeHeroSelector = () => {
-    overlay?.classList.remove('is-open');
-    overlay?.setAttribute('aria-hidden', 'true');
-  };
-
-  trigger?.addEventListener('click', (event) => {
-    event.stopPropagation();
-    openHeroSelector();
-  });
-
-  closeButton?.addEventListener('click', () => {
-    closeHeroSelector();
-  });
-
-  overlay?.addEventListener('click', (event) => {
-    if (event.target === overlay) {
-      closeHeroSelector();
-    }
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && overlay?.classList.contains('is-open')) {
-      closeHeroSelector();
-    }
-  });
-
-  items.forEach((item) => {
-    item.addEventListener('click', () => {
-      const heroId = Number(item.dataset.heroId ?? 0);
-      const label = item.querySelector<HTMLElement>('.hero-select-item-name')?.textContent ?? '未選択';
-
-      if (triggerLabel) {
-        triggerLabel.textContent = label;
-      }
-
-      if (heroId > 0) {
-        document.dispatchEvent(new CustomEvent('footer:hero-selected', {
-          detail: {
-            heroId,
-            factors: {
-              attack: Number(item.dataset.heroAttack ?? 1),
-              defense: Number(item.dataset.heroDefense ?? 1),
-              health: Number(item.dataset.heroHealth ?? 1),
-            },
-          },
-        }));
-      }
-
-      closeHeroSelector();
-    });
-  });
+  const MIN_HERO_LEVEL = 1;
+  const MAX_HERO_LEVEL = 9;
+  const DEFAULT_HERO_LEVEL = MIN_HERO_LEVEL;
+  const LEVEL_MENU_WIDTH_PX = 108;
+  const LEVEL_MENU_OPTION_HEIGHT_PX = 26;
+  const LEVEL_MENU_OPTION_GAP_PX = 4;
+  const LEVEL_MENU_PADDING_PX = 6;
+  const VIEWPORT_EDGE_PADDING_PX = 16;
+  const LEVEL_MENU_OFFSET_PX = 8;
 
   const closeLevelMenu = () => {
     levelMenu?.classList.remove('is-open');
@@ -165,19 +81,26 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
     const rect = levelButton.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
-    const menuWidth = Math.min(108, viewportWidth - 32);
-    const menuHeight = Math.min(9 * 26 + 8 * 4 + 12, viewportHeight - 32);
-    const spaceBelow = viewportHeight - rect.bottom - 16;
-    const spaceAbove = rect.top - 16;
+    const levelOptionCount = MAX_HERO_LEVEL - MIN_HERO_LEVEL + 1;
+    const levelMenuContentHeight = levelOptionCount * LEVEL_MENU_OPTION_HEIGHT_PX;
+    const levelMenuGapHeight = (levelOptionCount - 1) * LEVEL_MENU_OPTION_GAP_PX;
+    const levelMenuPaddingHeight = LEVEL_MENU_PADDING_PX * 2;
+    const menuWidth = Math.min(LEVEL_MENU_WIDTH_PX, viewportWidth - VIEWPORT_EDGE_PADDING_PX * 2);
+    const menuHeight = Math.min(
+      levelMenuContentHeight + levelMenuGapHeight + levelMenuPaddingHeight,
+      viewportHeight - VIEWPORT_EDGE_PADDING_PX * 2
+    );
+    const spaceBelow = viewportHeight - rect.bottom - VIEWPORT_EDGE_PADDING_PX;
+    const spaceAbove = rect.top - VIEWPORT_EDGE_PADDING_PX;
     const openAbove = spaceBelow < menuHeight && spaceAbove > spaceBelow;
 
     const left = Math.min(
-      viewportWidth - menuWidth - 16,
-      Math.max(16, rect.left + rect.width / 2 - menuWidth / 2)
+      viewportWidth - menuWidth - VIEWPORT_EDGE_PADDING_PX,
+      Math.max(VIEWPORT_EDGE_PADDING_PX, rect.left + rect.width / 2 - menuWidth / 2)
     );
     const top = openAbove
-      ? Math.max(16, rect.top - menuHeight - 8)
-      : Math.min(viewportHeight - menuHeight - 16, rect.bottom + 8);
+      ? Math.max(VIEWPORT_EDGE_PADDING_PX, rect.top - menuHeight - LEVEL_MENU_OFFSET_PX)
+      : Math.min(viewportHeight - menuHeight - VIEWPORT_EDGE_PADDING_PX, rect.bottom + LEVEL_MENU_OFFSET_PX);
 
     levelMenu.style.left = `${left}px`;
     levelMenu.style.top = `${top}px`;
@@ -203,7 +126,7 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
 
   levelOptions.forEach((option) => {
     option.addEventListener('click', () => {
-      const level = Number(option.dataset.level ?? 1);
+      const level = Number(option.dataset.level ?? DEFAULT_HERO_LEVEL);
       if (levelButton) {
         levelButton.textContent = `Lv.${level}`;
       }

@@ -1,0 +1,153 @@
+---
+import '../styles/deck-list-view.css';
+import {
+  getAllCardCategoryType,
+  getAllCardElementType,
+  getAllCardRarityType,
+  getAllCardSkillType,
+} from '../accessors/cards/getData';
+
+const cardRarities = getAllCardRarityType();
+const cardSkills = getAllCardSkillType();
+const cardElements = getAllCardElementType();
+const cardCategories = getAllCardCategoryType();
+---
+
+<div class="display-panel-overlay" aria-hidden="true">
+  <div class="display-panel" role="dialog" aria-modal="true" aria-label="カード検索">
+    <div class="panel-header">
+      <h2>カード検索</h2>
+      <button class="panel-close-btn" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="panel-body">
+      <section class="panel-section">
+        <div class="section-title">検索</div>
+        <label class="search-input-wrap" for="card-search-input">
+          <span class="search-input-icon" aria-hidden="true">🔎</span>
+          <input
+            id="card-search-input"
+            class="search-input"
+            type="text"
+            placeholder="カード名やスキルで検索"
+            autocomplete="off"
+          />
+        </label>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">属性</div>
+        <div class="chips-row">
+          {cardElements.map((option) => (
+            <button type="button" class="chip" data-filter-group="element" data-filter-value={option.id}>{option.label}</button>
+          ))}
+        </div>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">レアリティ</div>
+        <div class="chips-grid">
+          {cardRarities.map((option) => (
+            <button type="button" class="chip" data-filter-group="rarity" data-filter-value={option.id}>{option.label}</button>
+          ))}
+        </div>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">スキル</div>
+        <div class="chips-grid">
+          {cardSkills.map((option) => (
+            <button type="button" class="chip" data-filter-group="skill" data-filter-value={option.id}>{option.label}</button>
+          ))}
+        </div>
+      </section>
+      <section class="panel-section">
+        <div class="section-title">種類</div>
+        <div class="chips-grid">
+          {cardCategories.map((option) => (
+            <button type="button" class="chip" data-filter-group="category" data-filter-value={option.id}>{option.label}</button>
+          ))}
+        </div>
+      </section>
+      <section class="panel-section panel-bottom-section">
+        <div class="section-title">並び順</div>
+        <div class="sort-row">
+          <select aria-label="カードの並び順">
+            <option value="標準">標準</option>
+            <option value="レアリティ順">レアリティ順</option>
+            <option value="攻撃力">攻撃力</option>
+            <option value="防御力">防御力</option>
+            <option value="体力順">体力順</option>
+          </select>
+          <button type="button" class="reset-btn">リセット</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="button-area">
+  <button class="display-toggle-btn" type="button">表示変更</button>
+</div>
+
+<script>
+  const overlay = document.querySelector<HTMLDivElement>('.display-panel-overlay');
+  const openDisplayButton = document.querySelector<HTMLButtonElement>('.display-toggle-btn');
+  const closeDisplayButton = overlay?.querySelector<HTMLButtonElement>('.panel-close-btn') ?? null;
+  const chips = overlay?.querySelectorAll<HTMLButtonElement>('.chip') ?? document.querySelectorAll<HTMLButtonElement>('__no-match__');
+  const resetButton = overlay?.querySelector<HTMLButtonElement>('.reset-btn') ?? null;
+  const sortSelect = overlay?.querySelector<HTMLSelectElement>('.sort-row select') ?? null;
+  const searchInput = overlay?.querySelector<HTMLInputElement>('.search-input') ?? null;
+
+  const dispatchFiltersChanged = () => {
+    const activeFilters = Array.from(chips)
+      .filter((chip) => chip.classList.contains('active'))
+      .map((chip) => ({ group: chip.dataset.filterGroup, value: chip.dataset.filterValue }));
+
+    document.dispatchEvent(new CustomEvent('card-display:filters-changed', {
+      detail: {
+        query: searchInput?.value.trim().toLowerCase() ?? '',
+        activeFilters,
+      },
+    }));
+  };
+
+  const closeDisplayPanel = () => {
+    overlay?.classList.remove('open');
+    overlay?.setAttribute('aria-hidden', 'true');
+  };
+
+  openDisplayButton?.addEventListener('click', () => {
+    overlay?.classList.add('open');
+    overlay?.setAttribute('aria-hidden', 'false');
+  });
+
+  closeDisplayButton?.addEventListener('click', closeDisplayPanel);
+  overlay?.addEventListener('click', (event) => {
+    if (event.target === overlay) closeDisplayPanel();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && overlay?.classList.contains('open')) closeDisplayPanel();
+  });
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      chip.classList.toggle('active');
+      dispatchFiltersChanged();
+    });
+  });
+
+  searchInput?.addEventListener('input', dispatchFiltersChanged);
+  sortSelect?.addEventListener('change', () => {
+    document.dispatchEvent(new CustomEvent('card-display:sort-changed', {
+      detail: { order: sortSelect.value },
+    }));
+  });
+
+  resetButton?.addEventListener('click', () => {
+    chips.forEach((chip) => chip.classList.remove('active'));
+    if (sortSelect) sortSelect.selectedIndex = 0;
+    if (searchInput) searchInput.value = '';
+    dispatchFiltersChanged();
+    document.dispatchEvent(new CustomEvent('card-display:sort-changed', {
+      detail: { order: '標準' },
+    }));
+  });
+</script>

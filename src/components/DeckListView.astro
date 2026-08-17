@@ -1,27 +1,15 @@
 ---
 import '../styles/deck-list-view.css';
+import DeckDisplayPanel from './DeckDisplayPanel.astro';
 import {
   getAllCard,
-  getAllCardCategoryType,
-  getAllCardCastTimeType,
-  getAllCardElementType,
-  getAllCardRarityType,
-  getAllCardSkillType,
   getCardAttributeTypeByCardId,
   getCardCastTimeTypeById,
-  getCardCategoryTypeById,
-  getCardElementTypeById,
   getCardRarityTypeById,
-  getCardSkillTypeById,
   getCardStatusDisplayByCardId,
 } from "../accessors/cards/getData";
 
 const cards = getAllCard();
-const cardRarities = getAllCardRarityType();
-const cardSkills = getAllCardSkillType();
-const cardElements = getAllCardElementType();
-const cardCaterories = getAllCardCategoryType();
-const cardCastTimes = getAllCardCastTimeType();
 
 const cardStatusDisplayData = cards.map((card) => ({
   cardId: card.id,
@@ -146,78 +134,7 @@ const getBarWidthPercent = (value: number, maxValue: number) => {
   })}
 </div>
 
-<div class="display-panel-overlay" aria-hidden="true">
-  <div class="display-panel">
-    <div class="panel-header">
-      <h2>カード検索</h2>
-      <button class="panel-close-btn" type="button">×</button>
-    </div>
-    <div class="panel-body">
-      <section class="panel-section">
-        <div class="section-title">検索</div>
-        <label class="search-input-wrap" for="card-search-input">
-          <span class="search-input-icon" aria-hidden="true">🔎</span>
-          <input
-            id="card-search-input"
-            class="search-input"
-            type="text"
-            placeholder="カード名やスキルで検索"
-            autocomplete="off"
-          />
-        </label>
-      </section>
-      <section class="panel-section">
-        <div class="section-title">属性</div>
-        <div class="chips-row">
-          {cardElements.map((option) => (
-            <button type="button" class="chip" data-filter-group="element" data-filter-value={option.id}>{option.label}</button>
-          ))}
-        </div>
-      </section>
-      <section class="panel-section">
-        <div class="section-title">レアリティ</div>
-        <div class="chips-grid">
-          {cardRarities.map((option) => (
-            <button type="button" class="chip" data-filter-group="rarity" data-filter-value={option.id}>{option.label}</button>
-          ))}
-        </div>
-      </section>
-      <section class="panel-section">
-        <div class="section-title">スキル</div>
-        <div class="chips-grid">
-          {cardSkills.map((option) => (
-            <button type="button" class="chip" data-filter-group="skill" data-filter-value={option.id}>{option.label}</button>
-          ))}
-        </div>
-      </section>
-      <section class="panel-section">
-        <div class="section-title">種類</div>
-        <div class="chips-grid">
-          {cardCaterories.map((option) => (
-            <button type="button" class="chip" data-filter-group="category" data-filter-value={option.id}>{option.label}</button>
-          ))}
-        </div>
-      </section>
-      <section class="panel-section panel-bottom-section">
-        <div class="section-title">並び順</div>
-        <div class="sort-row">
-          <select>
-            <option value="標準">標準</option>
-            <option value="レアリティ順">レアリティ順</option>
-            <option value="攻撃力">攻撃力</option>
-            <option value="防御力">防御力</option>
-            <option value="体力順">体力順</option>
-          </select>
-          <button type="button" class="reset-btn">リセット</button>
-        </div>
-      </section>
-    </div>
-  </div>
-</div>
-
-<div class="button-area">
-    <button class="display-toggle-btn">表示変更</button>
-</div>
+<DeckDisplayPanel />
 
 <script>
 const detailElements = document.querySelectorAll<HTMLDetailsElement>(".item");
@@ -256,14 +173,6 @@ detailElements.forEach((detail) => {
     });
 });
 
-const overlay = document.querySelector<HTMLDivElement>(".display-panel-overlay");
-const openDisplayButton = document.querySelector<HTMLButtonElement>(".display-toggle-btn");
-const closeDisplayButton = document.querySelector<HTMLButtonElement>(".panel-close-btn");
-const chips = document.querySelectorAll<HTMLButtonElement>(".display-panel .chip");
-const resetButton = document.querySelector<HTMLButtonElement>(".reset-btn");
-const sortSelect = document.querySelector<HTMLSelectElement>(".sort-row select");
-const searchInput = document.querySelector<HTMLInputElement>(".search-input");
-
 const useButtons = document.querySelectorAll<HTMLButtonElement>(".use-btn");
 useButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -288,36 +197,23 @@ const filterGroupMap: Record<string, string> = {
     category: "categoryId",
 };
 
-openDisplayButton?.addEventListener("click", () => {
-    overlay?.classList.add("open");
-    overlay?.setAttribute("aria-hidden", "false");
-});
+type ActiveFilter = { group?: string; value?: string };
 
-const getActiveChipValues = () => {
+const applyFilters = (query: string, activeFilters: ActiveFilter[]) => {
+    const parent = document.querySelector<HTMLDivElement>(".deck-list-view");
+    if (!parent) return;
+
     const activeGroups: Record<string, number[]> = {};
-
-    chips.forEach((chip) => {
-        if (!chip.classList.contains("active")) return;
-
-        const group = chip.dataset.filterGroup;
-        const value = Number(chip.dataset.filterValue ?? 0);
-        if (!group || !value) return;
+    activeFilters.forEach(({ group, value }) => {
+        const numericValue = Number(value ?? 0);
+        if (!group || !numericValue) return;
 
         if (!activeGroups[group]) {
             activeGroups[group] = [];
         }
-        activeGroups[group].push(value);
+        activeGroups[group].push(numericValue);
     });
 
-    return activeGroups;
-};
-
-const applyFilters = () => {
-    const parent = document.querySelector<HTMLDivElement>(".deck-list-view");
-    if (!parent) return;
-
-    const query = searchInput?.value.trim().toLowerCase() ?? "";
-    const activeGroups = getActiveChipValues();
     const items = Array.from(parent.querySelectorAll<HTMLDetailsElement>(".item"));
 
     items.forEach((item) => {
@@ -335,11 +231,10 @@ const applyFilters = () => {
     });
 };
 
-const sortItems = () => {
+const sortItems = (order: string) => {
     const parent = document.querySelector<HTMLDivElement>(".deck-list-view");
-    if (!parent || !sortSelect) return;
+    if (!parent) return;
 
-    const order = sortSelect.value;
     const items = Array.from(parent.querySelectorAll<HTMLDetailsElement>(".item"));
 
     const compare = (a: HTMLDetailsElement, b: HTMLDetailsElement) => {
@@ -374,27 +269,13 @@ const sortItems = () => {
     items.forEach((item) => parent.appendChild(item));
 };
 
-closeDisplayButton?.addEventListener("click", () => {
-    applyFilters();
-    overlay?.classList.remove("open");
-    overlay?.setAttribute("aria-hidden", "true");
-    sortItems();
+document.addEventListener("card-display:filters-changed", (event) => {
+    const detail = (event as CustomEvent).detail ?? {};
+    applyFilters(detail.query ?? "", detail.activeFilters ?? []);
 });
 
-chips.forEach((chip) => {
-    chip.addEventListener("click", () => {
-        chip.classList.toggle("active");
-    });
-});
-
-resetButton?.addEventListener("click", () => {
-    chips.forEach((chip) => chip.classList.remove("active"));
-    if (sortSelect) {
-        sortSelect.selectedIndex = 0;
-    }
-    if (searchInput) {
-        searchInput.value = "";
-    }
-    applyFilters();
+document.addEventListener("card-display:sort-changed", (event) => {
+    const detail = (event as CustomEvent).detail ?? {};
+    sortItems(detail.order ?? "標準");
 });
 </script>

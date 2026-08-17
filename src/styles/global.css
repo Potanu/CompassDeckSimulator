@@ -50,7 +50,8 @@ main {
   flex-direction: column;
   gap: 0.2rem;
   min-height: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 * {

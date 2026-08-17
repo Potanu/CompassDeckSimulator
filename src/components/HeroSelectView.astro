@@ -1,0 +1,174 @@
+---
+import RoleIcon from './RoleIcon.astro';
+import '../styles/footer.css';
+import { getAllHero, getAllHeroStatus, getHeroDetailByHeroId, getHeroRoleTypeById } from '../accessors/heros/getData.ts';
+
+const heroStatuses = getAllHeroStatus();
+const NO_COLLABORATION_TITLE_ID = 0;
+---
+
+<div id="hero-select-overlay" class="hero-select-overlay" aria-hidden="true">
+  <div class="hero-select-modal" role="dialog" aria-modal="true" aria-label="ヒーロー選択">
+    <div class="hero-select-header">
+      <h2>ヒーロー検索</h2>
+      <div class="hero-select-header-actions">
+        <button id="hero-select-close" class="hero-select-close" type="button" aria-label="閉じる">×</button>
+      </div>
+    </div>
+
+    <div class="hero-select-list">
+      {getAllHero().map((hero) => {
+        const heroStatus = heroStatuses.find((row) => row.id === hero.id) ?? { attack: 1, defense: 1, health: 1 };
+        const heroRole = getHeroRoleTypeById(hero.heroRoleId);
+        const heroDetail = getHeroDetailByHeroId(hero.id);
+
+        return (
+          <details
+            class="hero-select-item"
+            data-hero-id={hero.id}
+            data-hero-attack={heroStatus.attack ?? 1}
+            data-hero-defense={heroStatus.defense ?? 1}
+            data-hero-health={heroStatus.health ?? 1}
+            data-hero-role={hero.heroRoleId}
+            data-hero-collaboration={hero.collaborationTitleId > NO_COLLABORATION_TITLE_ID ? "collaboration" : "normal"}
+          >
+            <summary>
+              <span class="hero-select-item-name">{hero.label}</span>
+              <div class="hero-select-item-role">
+                <RoleIcon role={hero.heroRoleId} size={28} />
+                <span>{heroRole?.label ?? "不明"}</span>
+              </div>
+            </summary>
+            <div class="hero-select-item-detail">
+              <div class="hero-select-detail-field hero-select-ability-field">
+                <h3>ヒーロースキル</h3>
+                <p>{heroDetail?.skill}</p>
+              </div>
+              <div class="hero-select-detail-field hero-select-ability-field">
+                <h3>ヒーローアビリティ</h3>
+                <p>{heroDetail?.ability}</p>
+              </div>
+              <div class="hero-select-detail-field hero-select-ability-field">
+                <h3>ヒーローアクション</h3>
+                <p>{heroDetail?.action}</p>
+              </div>
+              <div class="hero-select-detail-field hero-select-card-speed">
+                <h3>カードスキル発動時間</h3>
+                <div class="hero-select-speed-grid">
+                  <span>近 <strong>{heroDetail?.nearCardSpeed}</strong></span>
+                  <span>遠 <strong>{heroDetail?.farCardSpeed}</strong></span>
+                  <span>周 <strong>{heroDetail?.circleCardSpeed}</strong></span>
+                  <span>連 <strong>{heroDetail?.rushCardSpeed}</strong></span>
+                </div>
+              </div>
+              <div class="hero-select-detail-field hero-select-description">
+                <h3>ヒーロー紹介</h3>
+                <span>{heroDetail?.description1}</span>
+                <span>{heroDetail?.description2}</span>
+                <span>{heroDetail?.description3}</span>
+              </div>
+            </div>
+          </details>
+        );
+      })}
+    </div>
+  </div>
+
+  <div class="button-area hero-button-area">
+    <button id="hero-display-toggle" class="display-toggle-btn" type="button">表示変更</button>
+  </div>
+</div>
+
+<script>
+  const trigger = document.getElementById('dropdown-trigger');
+  const overlay = document.getElementById('hero-select-overlay');
+  const closeButton = document.getElementById('hero-select-close');
+  const displayToggle = document.getElementById('hero-display-toggle');
+  const triggerLabel = document.querySelector<HTMLElement>('.trigger-content');
+  const items = document.querySelectorAll<HTMLElement>('.hero-select-item');
+
+  const openHeroSelector = () => {
+    overlay?.classList.add('is-open');
+    overlay?.setAttribute('aria-hidden', 'false');
+  };
+
+  const closeHeroSelector = () => {
+    overlay?.classList.remove('is-open');
+    overlay?.setAttribute('aria-hidden', 'true');
+    document.dispatchEvent(new CustomEvent('hero-select:closed'));
+  };
+
+  const applyHeroFilters = (event: Event) => {
+    const { query = '', roles = [], collaborations = [] } = (event as CustomEvent).detail ?? {};
+
+    items.forEach((item) => {
+      const label = item.querySelector<HTMLElement>('.hero-select-item-name')?.textContent?.toLowerCase() ?? '';
+      const matchesQuery = !query || label.includes(query);
+      const matchesRole = !roles.length || roles.includes(item.dataset.heroRole ?? '');
+      const matchesCollaboration = !collaborations.length || collaborations.includes(item.dataset.heroCollaboration ?? '');
+      item.style.display = matchesQuery && matchesRole && matchesCollaboration ? '' : 'none';
+    });
+  };
+
+  const sortHeroItems = (event: Event) => {
+    const parent = document.querySelector<HTMLElement>('.hero-select-list');
+    const sortKey = (event as CustomEvent).detail?.sortKey ?? 'standard';
+    if (!parent) return;
+
+    const heroItems = Array.from(parent.querySelectorAll<HTMLElement>('.hero-select-item'));
+    const getValue = (item: HTMLElement) => sortKey === 'standard'
+      ? Number(item.dataset.heroId ?? 0)
+      : Number(item.dataset[`hero${sortKey.charAt(0).toUpperCase()}${sortKey.slice(1)}`] ?? 0);
+
+    heroItems.sort((a, b) => sortKey === 'standard' ? getValue(a) - getValue(b) : getValue(b) - getValue(a));
+    heroItems.forEach((item) => parent.appendChild(item));
+  };
+
+  trigger?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    openHeroSelector();
+  });
+
+  closeButton?.addEventListener('click', closeHeroSelector);
+  displayToggle?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    document.dispatchEvent(new CustomEvent('hero-display:open'));
+  });
+
+  overlay?.addEventListener('click', (event) => {
+    if (event.target === overlay) closeHeroSelector();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    if (overlay?.classList.contains('is-open')) closeHeroSelector();
+  });
+
+  items.forEach((item) => {
+    item.addEventListener('click', () => {
+      const heroId = Number(item.dataset.heroId ?? 0);
+      const label = item.querySelector<HTMLElement>('.hero-select-item-name')?.textContent ?? '未選択';
+      if (triggerLabel) triggerLabel.textContent = label;
+
+      if (heroId > 0) {
+        document.dispatchEvent(new CustomEvent('footer:hero-selected', {
+          detail: {
+            heroId,
+            factors: {
+              attack: Number(item.dataset.heroAttack ?? 1),
+              defense: Number(item.dataset.heroDefense ?? 1),
+              health: Number(item.dataset.heroHealth ?? 1),
+            },
+          },
+        }));
+      }
+
+      items.forEach((other) => {
+        if (other !== item && other instanceof HTMLDetailsElement) other.open = false;
+      });
+    });
+  });
+
+  document.addEventListener('hero-display:filters-changed', applyHeroFilters);
+  document.addEventListener('hero-display:sort-changed', sortHeroItems);
+</script>
