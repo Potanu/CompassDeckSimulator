@@ -95,6 +95,36 @@ const cardCategories = getAllCardCategoryType();
   const sortSelect = overlay?.querySelector<HTMLSelectElement>('.sort-row select') ?? null;
   const searchInput = overlay?.querySelector<HTMLInputElement>('.search-input') ?? null;
 
+  const fitChipLabels = () => {
+    if (!overlay?.classList.contains('open')) return;
+
+    const context = document.createElement('canvas').getContext('2d');
+    if (!context) return;
+
+    chips.forEach((chip) => {
+      chip.style.fontSize = '';
+      const style = getComputedStyle(chip);
+      const fontSize = Number.parseFloat(style.fontSize);
+      const horizontalPadding = Number.parseFloat(style.paddingLeft) + Number.parseFloat(style.paddingRight);
+      const availableWidth = chip.clientWidth - horizontalPadding - 2;
+
+      context.font = style.font;
+      const textWidth = context.measureText(chip.textContent ?? '').width;
+      if (textWidth > availableWidth) {
+        chip.style.fontSize = `${Math.max(1, fontSize * availableWidth / textWidth)}px`;
+      }
+    });
+  };
+
+  const scheduleChipLabelFit = () => {
+    requestAnimationFrame(() => requestAnimationFrame(fitChipLabels));
+  };
+
+  if (overlay) {
+    new ResizeObserver(scheduleChipLabelFit).observe(overlay);
+  }
+  document.fonts.ready.then(scheduleChipLabelFit);
+
   const dispatchFiltersChanged = () => {
     const activeFilters = Array.from(chips)
       .filter((chip) => chip.classList.contains('active'))
@@ -116,6 +146,7 @@ const cardCategories = getAllCardCategoryType();
   openDisplayButton?.addEventListener('click', () => {
     overlay?.classList.add('open');
     overlay?.setAttribute('aria-hidden', 'false');
+    scheduleChipLabelFit();
   });
 
   closeDisplayButton?.addEventListener('click', closeDisplayPanel);

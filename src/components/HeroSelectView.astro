@@ -5,6 +5,9 @@ import { getAllHero, getAllHeroStatus, getHeroDetailByHeroId, getHeroRoleTypeByI
 
 const heroStatuses = getAllHeroStatus();
 const NO_COLLABORATION_TITLE_ID = 0;
+const HERO_STATUS_MAX = 1.5;
+const getHeroStatusValue = (value: number | undefined) => Math.min(HERO_STATUS_MAX, Math.max(0, value ?? 0));
+const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(value) / HERO_STATUS_MAX * 100;
 ---
 
 <div id="hero-select-overlay" class="hero-select-overlay" aria-hidden="true">
@@ -21,6 +24,11 @@ const NO_COLLABORATION_TITLE_ID = 0;
         const heroStatus = heroStatuses.find((row) => row.id === hero.id) ?? { attack: 1, defense: 1, health: 1 };
         const heroRole = getHeroRoleTypeById(hero.heroRoleId);
         const heroDetail = getHeroDetailByHeroId(hero.id);
+        const statusGauges = [
+          { label: '攻撃', value: heroStatus.attack },
+          { label: '防御', value: heroStatus.defense },
+          { label: '体力', value: heroStatus.health },
+        ];
 
         return (
           <details
@@ -40,6 +48,27 @@ const NO_COLLABORATION_TITLE_ID = 0;
               </div>
             </summary>
             <div class="hero-select-item-detail">
+              <div class="hero-select-detail-field hero-select-status-field">
+                <h3>ステータス</h3>
+                <div class="hero-select-status-gauges">
+                  {statusGauges.map((status) => (
+                    <div class="hero-select-status-row">
+                      <span>{status.label}</span>
+                      <div
+                        class="hero-select-status-gauge"
+                        role="progressbar"
+                        aria-label={`${status.label} ${getHeroStatusValue(status.value).toFixed(2)}`}
+                        aria-valuemin="0"
+                        aria-valuemax={HERO_STATUS_MAX}
+                        aria-valuenow={getHeroStatusValue(status.value)}
+                      >
+                        <div class="hero-select-status-gauge-fill" style={`width: ${getHeroStatusPercent(status.value)}%`}></div>
+                      </div>
+                      <span class="hero-select-status-value">× {getHeroStatusValue(status.value).toFixed(2)}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
               <div class="hero-select-detail-field hero-select-ability-field">
                 <h3>ヒーロースキル</h3>
                 <p>{heroDetail?.skill}</p>

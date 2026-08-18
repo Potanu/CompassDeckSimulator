@@ -532,6 +532,47 @@
   font-size: 0.74rem;
 }
 
+.hero-select-status-field {
+  display: grid;
+  gap: 6px;
+}
+
+.hero-select-status-field h3 {
+  margin: 0;
+}
+
+.hero-select-status-gauges {
+  display: grid;
+  gap: 5px;
+}
+
+.hero-select-status-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 52px;
+  align-items: center;
+  gap: 7px;
+  color: #475569;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.hero-select-status-gauge {
+  height: 8px;
+  overflow: hidden;
+  background: #3f3f3f;
+}
+
+.hero-select-status-gauge-fill {
+  height: 100%;
+  background: #ff5e3a;
+}
+
+.hero-select-status-value {
+  text-align: right;
+  color: #334155;
+  font-variant-numeric: tabular-nums;
+}
+
 .hero-select-ability-field {
   position: relative;
   padding: 10px 11px 10px 14px;

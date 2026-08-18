@@ -58,6 +58,36 @@ const heroRoleFilterOptions = getAllHeroRoleType();
   const heroFilterReset = document.getElementById('hero-filter-reset');
   const heroFilterChips = displayOverlay?.querySelectorAll<HTMLElement>('.chip') ?? document.querySelectorAll<HTMLElement>('__no-match__');
 
+  const fitChipLabels = () => {
+    if (!displayOverlay?.classList.contains('open')) return;
+
+    const context = document.createElement('canvas').getContext('2d');
+    if (!context) return;
+
+    heroFilterChips.forEach((chip) => {
+      chip.style.fontSize = '';
+      const style = getComputedStyle(chip);
+      const fontSize = Number.parseFloat(style.fontSize);
+      const horizontalPadding = Number.parseFloat(style.paddingLeft) + Number.parseFloat(style.paddingRight);
+      const availableWidth = chip.clientWidth - horizontalPadding - 2;
+
+      context.font = style.font;
+      const textWidth = context.measureText(chip.textContent ?? '').width;
+      if (textWidth > availableWidth) {
+        chip.style.fontSize = `${Math.max(1, fontSize * availableWidth / textWidth)}px`;
+      }
+    });
+  };
+
+  const scheduleChipLabelFit = () => {
+    requestAnimationFrame(() => requestAnimationFrame(fitChipLabels));
+  };
+
+  if (displayOverlay) {
+    new ResizeObserver(scheduleChipLabelFit).observe(displayOverlay);
+  }
+  document.fonts.ready.then(scheduleChipLabelFit);
+
   const getHeroFilterValues = (group: string) => Array.from(heroFilterChips)
     .filter((chip) => chip.classList.contains('active') && chip.dataset.filterGroup === group)
     .map((chip) => chip.dataset.filterValue ?? '');
@@ -80,6 +110,7 @@ const heroRoleFilterOptions = getAllHeroRoleType();
   document.addEventListener('hero-display:open', () => {
     displayOverlay?.classList.add('open');
     displayOverlay?.setAttribute('aria-hidden', 'false');
+    scheduleChipLabelFit();
   });
 
   displayClose?.addEventListener('click', closeDisplayPanel);
