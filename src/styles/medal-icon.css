@@ -171,7 +171,8 @@
 }
 
 .medal-icon .medal-type-menu {
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   min-width: 148px;
   max-width: min(148px, calc(100vw - 24px));
 }

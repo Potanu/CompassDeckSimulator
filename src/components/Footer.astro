@@ -166,7 +166,12 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
   });
 
     // パネル外クリックで閉じる
-  document.addEventListener("click", () => {
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target instanceof Node && panel?.contains(target)) {
+      return;
+    }
+
     if (!panel?.classList.contains("is-hidden")) {
       trigger?.classList.remove('is-active');
       panel?.classList.add("is-hidden");
