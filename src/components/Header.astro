@@ -1,8 +1,36 @@
 ---
 import '../styles/header.css';
+import updates from '../data/l_updates.json';
+import UpdateHistory from './UpdateHistoryView.astro';
+
+const formatUpdateDate = (date: string) => {
+	const parts = new Intl.DateTimeFormat('ja-JP', {
+		year: 'numeric',
+		month: 'numeric',
+		day: 'numeric',
+		timeZone: 'Asia/Tokyo',
+	}).formatToParts(new Date(date));
+	const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+	return `${values.year}/${values.month}/${values.day}`;
+};
+
+const latestUpdate = updates.at(-1);
+const updatedDate = latestUpdate?.updatedDate
+	? formatUpdateDate(latestUpdate.updatedDate)
+	: '';
 ---
 <header class="header">
-<div class="header-content">
-ヘッダー領域
-</div>
+	<div class="header-content">
+		<strong class="site-title">Compass Deck Simulator</strong>
+		<div class="header-actions">
+			<button class="updates-button" type="button">更新履歴</button>
+			<div class="update-meta" aria-label="サイトの更新情報">
+				<span class="update-label">最終更新日：</span>
+				<span>{updatedDate}</span>
+				<span class="update-label">バージョン：</span>
+				<span>{latestUpdate?.gameVersion}</span>
+			</div>
+		</div>
+	</div>
+	<UpdateHistory />
 </header>

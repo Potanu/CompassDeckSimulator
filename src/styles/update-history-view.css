@@ -1,0 +1,68 @@
+/* =========================================================
+   Update History Components
+   ========================================================= */
+
+.updates-dialog {
+	width: min(28rem, calc(100% - 2rem));
+	max-height: min(32rem, calc(100dvh - 2rem));
+	padding: 1rem;
+	border: 1px solid #cbd5e1;
+	border-radius: 6px;
+	color: #1e293b;
+	box-shadow: 0 12px 32px rgb(15 23 42 / 20%);
+}
+
+.updates-dialog::backdrop {
+	background-color: rgb(15 23 42 / 35%);
+}
+
+.updates-dialog-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.updates-dialog h2 {
+	margin: 0;
+	font-size: 16px;
+}
+
+.updates-dialog-close {
+	width: 1.75rem;
+	height: 1.75rem;
+	padding: 0;
+	border: 0;
+	border-radius: 4px;
+	background-color: #334155;
+	color: #f8fafc;
+	font-size: 20px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.updates-dialog-close:hover {
+	background-color: #0f172a;
+}
+
+.updates-list {
+	display: grid;
+	gap: 0.75rem;
+	margin: 1rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.updates-list li {
+	display: grid;
+	gap: 0.2rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.update-list-meta {
+	display: flex;
+	gap: 0.6rem;
+	color: #64748b;
+	font-size: 11px;
+}

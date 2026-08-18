@@ -109,8 +109,14 @@ const initialCards = [...cards]
 
 <!-- モーダル -->
 <div id="deckListOverlay" class="overlay hidden">
-  <div class="overlay-content">
-    <DeckListView />
+  <div class="overlay-content deck-list-overlay-content">
+    <div class="deck-list-overlay-header">
+      <h2>カード一覧</h2>
+      <button class="closeDeckList" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="deck-list-scroll-area">
+      <DeckListView />
+    </div>
   </div>
 </div>
 
@@ -127,6 +133,7 @@ const initialCards = [...cards]
 const overlay = document.getElementById("deckListOverlay");
 const descriptionOverlay = document.getElementById("deckDescriptionOverlay");
 const descriptionBody = descriptionOverlay?.querySelector(".deck-description-body");
+const closeDeckListButton = overlay?.querySelector(".closeDeckList");
 let selectedReplacementIndex = null;
 
 const getDeckElements = () => Array.from(document.querySelectorAll(".deck-view .deck"));
@@ -508,6 +515,11 @@ if (deckViewContainer) {
 }
 
 if (overlay) {
+  const closeDeckList = () => {
+    overlay.classList.add("hidden");
+    selectedReplacementIndex = null;
+  };
+
   document.querySelectorAll(".openDeckList").forEach((button) => {
     button.addEventListener("click", () => {
       const deckElement = button.closest(".deck");
@@ -521,8 +533,15 @@ if (overlay) {
 
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) {
-      overlay.classList.add("hidden");
-      selectedReplacementIndex = null;
+      closeDeckList();
+    }
+  });
+
+  closeDeckListButton?.addEventListener("click", closeDeckList);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !overlay.classList.contains("hidden")) {
+      closeDeckList();
     }
   });
 }
@@ -625,6 +644,59 @@ requestAnimationFrame(() => {
   background:#fff;
   border-radius:12px;
   padding:16px;
+}
+
+.deck-list-overlay-content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 90vh;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.deck-list-overlay-header {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  margin: -16px -16px 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.deck-list-scroll-area {
+  flex: 0 1 auto;
+  height: calc(90vh - 96px);
+  max-height: calc(90vh - 96px);
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.deck-list-scroll-area > .deck-list-view {
+  width: 100%;
+}
+
+.deck-list-overlay-header h2 {
+  flex: 1;
+  margin: 0;
+  color: #111827;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.closeDeckList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  border: none;
+  border-radius: 999px;
+  background: #f3f4f6;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .deck-description-content {

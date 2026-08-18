@@ -405,6 +405,10 @@
   gap: 6px;
 }
 
+.display-panel .hero-role-chips-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .hero-filter-chip {
   min-height: 32px;
   padding: 4px 7px;
@@ -571,6 +575,42 @@
   text-align: right;
   color: #334155;
   font-variant-numeric: tabular-nums;
+}
+
+.hero-select-extra-detail {
+  border: 1px solid #dbe4ee;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.hero-select-extra-detail summary {
+  padding: 9px 11px;
+  color: #334155;
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 800;
+  list-style: none;
+}
+
+.hero-select-extra-detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.hero-select-extra-detail summary::after {
+  content: '＋';
+  float: right;
+  color: #64748b;
+}
+
+.hero-select-extra-detail[open] summary::after {
+  content: '−';
+}
+
+.hero-select-extra-detail-content {
+  display: grid;
+  gap: 6px;
+  padding: 0 6px 6px;
 }
 
 .hero-select-ability-field {

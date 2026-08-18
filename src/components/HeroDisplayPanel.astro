@@ -21,7 +21,7 @@ const heroRoleFilterOptions = getAllHeroRoleType();
       </section>
       <section class="panel-section">
         <div class="section-title">ロール</div>
-        <div class="chips-grid">
+        <div class="chips-grid hero-role-chips-grid">
           {heroRoleFilterOptions.map((role) => (
             <button type="button" class="chip" data-filter-group="role" data-filter-value={role.id}>{role.label}</button>
           ))}
@@ -29,7 +29,7 @@ const heroRoleFilterOptions = getAllHeroRoleType();
       </section>
       <section class="panel-section">
         <div class="section-title">種類</div>
-        <div class="chips-grid">
+        <div class="chips-grid hero-role-chips-grid">
           <button type="button" class="chip" data-filter-group="collaboration" data-filter-value="normal">通常</button>
           <button type="button" class="chip" data-filter-group="collaboration" data-filter-value="collaboration">コラボ</button>
         </div>

@@ -35,7 +35,7 @@ const cardCategories = getAllCardCategoryType();
       </section>
       <section class="panel-section">
         <div class="section-title">属性</div>
-        <div class="chips-row">
+        <div class="chips-grid">
           {cardElements.map((option) => (
             <button type="button" class="chip" data-filter-group="element" data-filter-value={option.id}>{option.label}</button>
           ))}
@@ -45,7 +45,7 @@ const cardCategories = getAllCardCategoryType();
         <div class="section-title">レアリティ</div>
         <div class="chips-grid">
           {cardRarities.map((option) => (
-            <button type="button" class="chip" data-filter-group="rarity" data-filter-value={option.id}>{option.label}</button>
+            <button type="button" class:list={{ chip: true, active: option.label === 'UR' }} data-filter-group="rarity" data-filter-value={option.id}>{option.label}</button>
           ))}
         </div>
       </section>
@@ -181,4 +181,6 @@ const cardCategories = getAllCardCategoryType();
       detail: { order: '標準' },
     }));
   });
+
+  requestAnimationFrame(dispatchFiltersChanged);
 </script>

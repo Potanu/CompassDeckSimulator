@@ -69,33 +69,38 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
                   ))}
                 </div>
               </div>
-              <div class="hero-select-detail-field hero-select-ability-field">
-                <h3>ヒーロースキル</h3>
-                <p>{heroDetail?.skill}</p>
-              </div>
-              <div class="hero-select-detail-field hero-select-ability-field">
-                <h3>ヒーローアビリティ</h3>
-                <p>{heroDetail?.ability}</p>
-              </div>
-              <div class="hero-select-detail-field hero-select-ability-field">
-                <h3>ヒーローアクション</h3>
-                <p>{heroDetail?.action}</p>
-              </div>
-              <div class="hero-select-detail-field hero-select-card-speed">
-                <h3>カードスキル発動時間</h3>
-                <div class="hero-select-speed-grid">
-                  <span>近 <strong>{heroDetail?.nearCardSpeed}</strong></span>
-                  <span>遠 <strong>{heroDetail?.farCardSpeed}</strong></span>
-                  <span>周 <strong>{heroDetail?.circleCardSpeed}</strong></span>
-                  <span>連 <strong>{heroDetail?.rushCardSpeed}</strong></span>
+              <details class="hero-select-extra-detail">
+                <summary>詳細を表示</summary>
+                <div class="hero-select-extra-detail-content">
+                  <div class="hero-select-detail-field hero-select-ability-field">
+                    <h3>ヒーロースキル</h3>
+                    <p>{heroDetail?.skill}</p>
+                  </div>
+                  <div class="hero-select-detail-field hero-select-ability-field">
+                    <h3>ヒーローアビリティ</h3>
+                    <p>{heroDetail?.ability}</p>
+                  </div>
+                  <div class="hero-select-detail-field hero-select-ability-field">
+                    <h3>ヒーローアクション</h3>
+                    <p>{heroDetail?.action}</p>
+                  </div>
+                  <div class="hero-select-detail-field hero-select-card-speed">
+                    <h3>カードスキル発動時間</h3>
+                    <div class="hero-select-speed-grid">
+                      <span>近 <strong>{heroDetail?.nearCardSpeed}</strong></span>
+                      <span>遠 <strong>{heroDetail?.farCardSpeed}</strong></span>
+                      <span>周 <strong>{heroDetail?.circleCardSpeed}</strong></span>
+                      <span>連 <strong>{heroDetail?.rushCardSpeed}</strong></span>
+                    </div>
+                  </div>
+                  <div class="hero-select-detail-field hero-select-description">
+                    <h3>ヒーロー紹介</h3>
+                    <span>{heroDetail?.description1}</span>
+                    <span>{heroDetail?.description2}</span>
+                    <span>{heroDetail?.description3}</span>
+                  </div>
                 </div>
-              </div>
-              <div class="hero-select-detail-field hero-select-description">
-                <h3>ヒーロー紹介</h3>
-                <span>{heroDetail?.description1}</span>
-                <span>{heroDetail?.description2}</span>
-                <span>{heroDetail?.description3}</span>
-              </div>
+              </details>
             </div>
           </details>
         );
@@ -195,6 +200,8 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
       items.forEach((other) => {
         if (other !== item && other instanceof HTMLDetailsElement) other.open = false;
       });
+
+      item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
   });
 

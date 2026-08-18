@@ -1,0 +1,44 @@
+---
+import '../styles/update-history-view.css';
+import updates from '../data/l_updates.json';
+
+const formatUpdateDate = (date: string) => {
+	const parts = new Intl.DateTimeFormat('ja-JP', {
+		year: 'numeric',
+		month: 'numeric',
+		day: 'numeric',
+		timeZone: 'Asia/Tokyo',
+	}).formatToParts(new Date(date));
+	const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+	return `${values.year}/${values.month}/${values.day}`;
+};
+---
+<dialog class="updates-dialog">
+	<div class="updates-dialog-header">
+		<h2>更新履歴</h2>
+		<button class="updates-dialog-close" type="button" aria-label="更新履歴を閉じる">×</button>
+	</div>
+	<ul class="updates-list">
+		{updates.filter((update) => update.updatedDate && update.gameVersion).map((update) => (
+			<li>
+				<div class="update-list-meta">
+					<time datetime={update.updatedDate}>{formatUpdateDate(update.updatedDate)}</time>
+					<span>Ver. {update.gameVersion}</span>
+				</div>
+				<strong>{update.title}</strong>
+			</li>
+		))}
+	</ul>
+</dialog>
+
+<script>
+	const updatesButton = document.querySelector<HTMLButtonElement>('.updates-button');
+	const updatesDialog = document.querySelector<HTMLDialogElement>('.updates-dialog');
+	const updatesDialogClose = document.querySelector<HTMLButtonElement>('.updates-dialog-close');
+
+	updatesButton?.addEventListener('click', () => updatesDialog?.showModal());
+	updatesDialogClose?.addEventListener('click', () => updatesDialog?.close());
+	updatesDialog?.addEventListener('click', (event) => {
+		if (event.target === updatesDialog) updatesDialog.close();
+	});
+</script>
