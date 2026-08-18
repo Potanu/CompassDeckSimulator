@@ -29,20 +29,23 @@
 }
 
 .updates-dialog-close {
-	width: 1.75rem;
-	height: 1.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
 	padding: 0;
 	border: 0;
-	border-radius: 4px;
-	background-color: #334155;
-	color: #f8fafc;
-	font-size: 20px;
+	border-radius: 999px;
+	background: #f3f4f6;
+	color: #111827;
+	font-size: 1.2rem;
 	line-height: 1;
 	cursor: pointer;
 }
 
 .updates-dialog-close:hover {
-	background-color: #0f172a;
+	background: #e5e7eb;
 }
 
 .updates-list {
@@ -54,10 +57,38 @@
 }
 
 .updates-list li {
-	display: grid;
-	gap: 0.2rem;
 	padding-bottom: 0.75rem;
 	border-bottom: 1px solid #e2e8f0;
+}
+
+.update-entry summary {
+	display: grid;
+	gap: 0.2rem;
+	padding: 0.25rem 0.2rem;
+	border-radius: 4px;
+	background-color: #f8fafc;
+	cursor: pointer;
+	list-style-position: inside;
+}
+
+.update-entry summary:hover {
+	background-color: #f1f5f9;
+}
+
+.update-entry summary::marker {
+	color: #64748b;
+}
+
+.update-body {
+	margin: 0.75rem 0.2rem 0;
+	padding: 0.65rem 0.75rem;
+	border-left: 3px solid #60a5fa;
+	border-radius: 0 4px 4px 0;
+	background-color: #eff6ff;
+	color: #334155;
+	font-size: 12px;
+	line-height: 1.5;
+	white-space: pre-wrap;
 }
 
 .update-list-meta {

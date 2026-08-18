@@ -12,6 +12,10 @@ const formatUpdateDate = (date: string) => {
 	const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
 	return `${values.year}/${values.month}/${values.day}`;
 };
+
+const updateHistory = updates
+	.filter((update) => update.updatedDate && update.gameVersion)
+	.sort((left, right) => right.id - left.id);
 ---
 <dialog class="updates-dialog">
 	<div class="updates-dialog-header">
@@ -19,13 +23,18 @@ const formatUpdateDate = (date: string) => {
 		<button class="updates-dialog-close" type="button" aria-label="更新履歴を閉じる">×</button>
 	</div>
 	<ul class="updates-list">
-		{updates.filter((update) => update.updatedDate && update.gameVersion).map((update) => (
+		{updateHistory.map((update) => (
 			<li>
-				<div class="update-list-meta">
-					<time datetime={update.updatedDate}>{formatUpdateDate(update.updatedDate)}</time>
-					<span>Ver. {update.gameVersion}</span>
-				</div>
-				<strong>{update.title}</strong>
+				<details class="update-entry">
+					<summary>
+						<div class="update-list-meta">
+							<time datetime={update.updatedDate}>{formatUpdateDate(update.updatedDate)}</time>
+							<span>Ver. {update.gameVersion}</span>
+						</div>
+						<strong>{update.title}</strong>
+					</summary>
+					<p class="update-body">{update.body}</p>
+				</details>
 			</li>
 		))}
 	</ul>
