@@ -3,7 +3,10 @@
    ========================================================= */
 
 .updates-dialog {
+	display: flex;
+	flex-direction: column;
 	width: min(28rem, calc(100% - 2rem));
+	height: min(32rem, calc(100dvh - 2rem));
 	max-height: min(32rem, calc(100dvh - 2rem));
 	padding: 1rem;
 	border: 1px solid #cbd5e1;
@@ -12,12 +15,17 @@
 	box-shadow: 0 12px 32px rgb(15 23 42 / 20%);
 }
 
+.updates-dialog:not([open]) {
+	display: none;
+}
+
 .updates-dialog::backdrop {
 	background-color: rgb(15 23 42 / 35%);
 }
 
 .updates-dialog-header {
 	display: flex;
+	flex: 0 0 auto;
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
@@ -26,6 +34,20 @@
 .updates-dialog h2 {
 	margin: 0;
 	font-size: 16px;
+}
+
+.update-history-notices {
+	flex: 0 0 auto;
+	margin-top: 0.6rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 1px solid #e5e7eb;
+	color: #64748b;
+	font-size: 11px;
+	line-height: 1.4;
+}
+
+.update-history-notices p {
+	margin: 0;
 }
 
 .updates-dialog-close {
@@ -49,6 +71,9 @@
 }
 
 .updates-list {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
 	display: grid;
 	gap: 0.75rem;
 	margin: 1rem 0 0;

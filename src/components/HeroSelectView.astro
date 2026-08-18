@@ -19,8 +19,9 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
       </div>
     </div>
 
-    <div class="hero-select-list">
-      {getAllHero().map((hero) => {
+    <div class="hero-select-scroll-area">
+      <div class="hero-select-list">
+        {getAllHero().map((hero) => {
         const heroStatus = heroStatuses.find((row) => row.id === hero.id) ?? { attack: 1, defense: 1, health: 1 };
         const heroRole = getHeroRoleTypeById(hero.heroRoleId);
         const heroDetail = getHeroDetailByHeroId(hero.id);
@@ -30,7 +31,7 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
           { label: '体力', value: heroStatus.health },
         ];
 
-        return (
+          return (
           <details
             class="hero-select-item"
             data-hero-id={hero.id}
@@ -103,8 +104,9 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
               </details>
             </div>
           </details>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   </div>
 

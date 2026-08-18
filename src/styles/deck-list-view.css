@@ -17,7 +17,7 @@
 .button-area {
   position: fixed;
   right: 24px;
-  bottom: 40px;
+  bottom: 32px;
   z-index: 1000;
 }
 
