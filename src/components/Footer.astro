@@ -124,6 +124,12 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
     levelButton.setAttribute('aria-expanded', 'true');
   };
 
+  const updateActiveLevelOption = (level: number) => {
+    levelOptions.forEach((option) => {
+      option.classList.toggle('active', Number(option.dataset.level) === level);
+    });
+  };
+
   levelButton?.addEventListener('click', (event) => {
     event.stopPropagation();
     if (levelMenu?.classList.contains('is-open')) {
@@ -139,6 +145,7 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
       if (levelButton) {
         levelButton.textContent = `Lv.${level}`;
       }
+      updateActiveLevelOption(level);
       setPersistedCookie(HERO_LEVEL_COOKIE, level);
       document.dispatchEvent(new CustomEvent('footer:level-selected', {
         detail: { level },
@@ -155,6 +162,7 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
   if (levelButton) {
     levelButton.textContent = `Lv.${restoredLevel}`;
   }
+  updateActiveLevelOption(restoredLevel);
   document.dispatchEvent(new CustomEvent('footer:level-selected', {
     detail: { level: restoredLevel },
   }));
@@ -173,6 +181,8 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
     }
     closeLevelMenu();
   });
+
+  document.addEventListener('footer:close-level-menu', closeLevelMenu);
 </script>
 
 <!-- 詳細設定アイコン -->
@@ -183,6 +193,7 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
  // トリガークリックで開閉
   trigger?.addEventListener("click", (e) => {
     e.stopPropagation();
+    document.dispatchEvent(new CustomEvent('footer:close-level-menu'));
     trigger?.classList.toggle('is-active');
     panel?.classList.toggle("is-hidden");
   });
@@ -195,8 +206,10 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
     }
 
     if (!panel?.classList.contains("is-hidden")) {
+      event.preventDefault();
+      event.stopPropagation();
       trigger?.classList.remove('is-active');
       panel?.classList.add("is-hidden");
     }
-  });
+  }, true);
 </script>
