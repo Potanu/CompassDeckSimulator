@@ -3,13 +3,13 @@
    ========================================================= */
 
 .status-title {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
-  margin-top: 0.2rem;
-  margin-bottom: 0.12rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.25rem;
   padding-left: 0.3rem;
   color: #334155;
-  line-height: 1.05;
+  line-height: 1.2;
 }
 
 .status-view {
