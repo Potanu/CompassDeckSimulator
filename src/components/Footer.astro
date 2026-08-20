@@ -63,7 +63,7 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
   const MAX_HERO_LEVEL = 9;
   const DEFAULT_HERO_LEVEL = MIN_HERO_LEVEL;
   const LEVEL_MENU_WIDTH_PX = 108;
-  const LEVEL_MENU_OPTION_HEIGHT_PX = 26;
+  const LEVEL_MENU_OPTION_HEIGHT_PX = 52;
   const LEVEL_MENU_OPTION_GAP_PX = 4;
   const LEVEL_MENU_PADDING_PX = 6;
   const VIEWPORT_EDGE_PADDING_PX = 16;
@@ -82,14 +82,16 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
     const levelOptionCount = MAX_HERO_LEVEL - MIN_HERO_LEVEL + 1;
-    const levelMenuContentHeight = levelOptionCount * LEVEL_MENU_OPTION_HEIGHT_PX;
     const levelMenuGapHeight = (levelOptionCount - 1) * LEVEL_MENU_OPTION_GAP_PX;
-    const levelMenuPaddingHeight = LEVEL_MENU_PADDING_PX * 2;
+    const levelMenuFixedHeight = levelMenuGapHeight + (LEVEL_MENU_PADDING_PX * 2) + 2;
     const menuWidth = Math.min(LEVEL_MENU_WIDTH_PX, viewportWidth - VIEWPORT_EDGE_PADDING_PX * 2);
-    const menuHeight = Math.min(
-      levelMenuContentHeight + levelMenuGapHeight + levelMenuPaddingHeight,
-      viewportHeight - VIEWPORT_EDGE_PADDING_PX * 2
+    const availableMenuHeight = viewportHeight - VIEWPORT_EDGE_PADDING_PX * 2;
+    const optionHeight = Math.min(
+      LEVEL_MENU_OPTION_HEIGHT_PX,
+      Math.max(24, Math.floor((availableMenuHeight - levelMenuFixedHeight) / levelOptionCount))
     );
+    const menuHeight = (optionHeight * levelOptionCount) + levelMenuFixedHeight;
+    const optionFontSize = Math.min(16, Math.max(10, Math.round(optionHeight / 3)));
     const spaceBelow = viewportHeight - rect.bottom - VIEWPORT_EDGE_PADDING_PX;
     const spaceAbove = rect.top - VIEWPORT_EDGE_PADDING_PX;
     const openAbove = spaceBelow < menuHeight && spaceAbove > spaceBelow;
@@ -105,6 +107,9 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
     levelMenu.style.left = `${left}px`;
     levelMenu.style.top = `${top}px`;
     levelMenu.style.width = `${menuWidth}px`;
+	  levelMenu.style.height = `${menuHeight}px`;
+	  levelMenu.style.setProperty('--footer-level-option-height', `${optionHeight}px`);
+	  levelMenu.style.setProperty('--footer-level-option-font-size', `${optionFontSize}px`);
   };
 
   const openLevelMenu = () => {

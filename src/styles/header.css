@@ -5,9 +5,9 @@
 .header {
 	position: relative;
 	width: min(100%, var(--footer-width));
-	height: 28px;
+	height: 68px;
 	margin: 0 auto 0.2rem;
-	padding: 0;
+	padding: 10px;
 
 	display: flex;
 	align-items: center;
@@ -31,7 +31,7 @@
 	min-width: 0;
 	overflow: hidden;
 	color: #1e293b;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 1;
 	text-overflow: ellipsis;
@@ -46,24 +46,19 @@
 	gap: 0.75rem;
 }
 
-.update-meta {
-	display: grid;
-	grid-template-columns: 6em max-content;
-	align-items: center;
-	justify-content: end;
-	gap: 0.05rem;
+.updates-control {
+	position: relative;
+}
+
+.update-date {
+	position: absolute;
+	top: calc(100% + 0.25rem);
+	right: 0;
 	font-size: 11px;
+	color: #475569;
 	line-height: 1;
 	text-align: right;
 	white-space: nowrap;
-}
-
-.update-meta > span {
-	text-align: right;
-}
-
-.update-label {
-	text-align: left;
 }
 
 .updates-button {
@@ -79,9 +74,9 @@
 	align-items: center;
 	justify-content: center;
 	width: 76px;
-	height: 22px;
+	height: 30px;
 	padding: 0;
-	font-size: 11px;
+	font-size: 14px;
 	font-weight: 600;
 	line-height: 1;
 	text-align: center;
@@ -94,7 +89,7 @@
 
 @media (max-width: 520px) {
 	.header {
-		height: 28px;
+		height: 68px;
 	}
 
 	.header-content {
@@ -102,22 +97,20 @@
 	}
 
 	.site-title {
-		font-size: 12px;
+		font-size: 16px;
 	}
 
 	.header-actions {
 		gap: 0.45rem;
 	}
 
-	.update-meta {
-		min-width: 0;
-		gap: 0.35rem;
-		font-size: 10px;
-	}
-
 	.updates-button {
 		width: 68px;
-		height: 21px;
+		height: 30px;
+		font-size: 14px;
+	}
+
+	.update-date {
 		font-size: 10px;
 	}
 

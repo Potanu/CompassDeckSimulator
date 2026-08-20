@@ -21,14 +21,11 @@ const updatedDate = latestUpdate?.updatedDate
 ---
 <header class="header">
 	<div class="header-content">
-		<strong class="site-title">Compass Deck Simulator</strong>
+		<strong class="site-title">#コンパス デッキシミュレーター</strong>
 		<div class="header-actions">
-			<button class="updates-button" type="button">更新履歴</button>
-			<div class="update-meta" aria-label="サイトの更新情報">
-				<span class="update-label">最終更新日：</span>
-				<span>{updatedDate}</span>
-				<span class="update-label">バージョン：</span>
-				<span>{latestUpdate?.gameVersion}</span>
+			<div class="updates-control">
+				<button class="updates-button" type="button">更新履歴</button>
+				<span class="update-date" aria-label="サイトの最終更新日">最終更新日：{updatedDate}</span>
 			</div>
 		</div>
 	</div>

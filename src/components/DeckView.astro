@@ -313,9 +313,10 @@ const hideAllLevelSelects = () => {
     picker.style.left = "";
     picker.style.top = "";
     picker.style.width = "";
-    picker.style.maxHeight = "";
+	    picker.style.height = "";
+	    picker.style.removeProperty("--level-option-height");
+	    picker.style.removeProperty("--level-option-font-size");
     picker.style.zIndex = "";
-    picker.style.overflowY = "";
   });
 };
 
@@ -332,18 +333,24 @@ const showLevelSelect = (deckElement) => {
     }
 
     const width = Math.min(132, Math.max(112, anchorRect.width));
+    const availableHeight = Math.max(180, window.innerHeight - 24);
+    const pickerVerticalSpace = 20;
+    const optionHeight = Math.min(48, Math.floor((availableHeight - pickerVerticalSpace) / levelOptions.length));
+    const pickerHeight = (optionHeight * levelOptions.length) + pickerVerticalSpace;
+    const optionFontSize = Math.min(16, Math.max(11, Math.round(optionHeight / 3)));
     const maxLeft = window.innerWidth - width - 12;
     const left = Math.min(Math.max(anchorRect.right + 8, 12), maxLeft);
-    const top = Math.min(Math.max(anchorRect.top + 4, 12), Math.max(12, window.innerHeight - 220 - 12));
+    const top = Math.min(Math.max(anchorRect.top + 4, 12), Math.max(12, window.innerHeight - pickerHeight - 12));
 
     levelPicker.classList.remove("hidden");
     levelPicker.style.position = "fixed";
     levelPicker.style.left = `${left}px`;
     levelPicker.style.top = `${top}px`;
     levelPicker.style.width = `${width}px`;
-    levelPicker.style.maxHeight = `${Math.min(window.innerHeight - 24, 220)}px`;
+	    levelPicker.style.height = `${pickerHeight}px`;
+	    levelPicker.style.setProperty("--level-option-height", `${optionHeight}px`);
+	    levelPicker.style.setProperty("--level-option-font-size", `${optionFontSize}px`);
     levelPicker.style.zIndex = "2147483647";
-    levelPicker.style.overflowY = "auto";
 
     const currentLevel = getDeckLevel(deckElement);
     levelPicker.querySelectorAll(".deck-level-option").forEach((option) => {
@@ -360,9 +367,10 @@ const hideLevelSelect = (deckElement) => {
     levelPicker.style.left = "";
     levelPicker.style.top = "";
     levelPicker.style.width = "";
-    levelPicker.style.maxHeight = "";
+	    levelPicker.style.height = "";
+	    levelPicker.style.removeProperty("--level-option-height");
+	    levelPicker.style.removeProperty("--level-option-font-size");
     levelPicker.style.zIndex = "";
-    levelPicker.style.overflowY = "";
   }
 };
 

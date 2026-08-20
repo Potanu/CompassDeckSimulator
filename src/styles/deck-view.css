@@ -77,11 +77,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 0.2rem 0.45rem;
+  padding: 0.24rem 0.54rem;
   border-radius: 999px;
   background: rgba(15, 23, 42, 0.86);
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
   pointer-events: none;
@@ -101,8 +101,8 @@
   z-index: 2147483647;
   box-sizing: border-box;
   height: auto;
-  max-height: min(220px, calc(100vh - 24px));
-  overflow-y: auto;
+  max-height: none;
+  overflow: hidden;
 }
 
 .deck-level-option {
@@ -112,9 +112,9 @@
   border: 0;
   border-radius: 999px;
   padding: 0 0.35rem;
-  height: 24px;
-  min-height: 24px;
-  font-size: 12px;
+  height: var(--level-option-height, 48px);
+  min-height: var(--level-option-height, 48px);
+  font-size: var(--level-option-font-size, 16px);
   font-weight: 700;
   color: #334155;
   background: #f8fafc;
@@ -143,10 +143,11 @@
 }
 
 .deck-name {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #0f172a;
   line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .deck-status {
@@ -157,9 +158,9 @@
 }
 
 .deck-category {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1;
-  padding: 0.25rem 0.55rem;
+  padding: 0.3rem 0.65rem;
   border: 1px solid #cbd5e1;
   border-radius: 9999px;
   background: #f8fafc;
@@ -169,7 +170,7 @@
 .deck-ct {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 15px;
   gap: 0.35rem;
   color: #475569;
 }
@@ -197,12 +198,16 @@
 .deck-actions button {
   border: 0;
   border-radius: 999px;
-  padding: 0.4rem 0.65rem;
-  font-size: 11px;
+  min-width: 0;
+  padding: 0.48rem 0.78rem;
+  overflow: hidden;
+  font-size: 12px;
   font-weight: 700;
   color: #0f172a;
   background: #e2e8f0;
   cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .deck-actions button:hover {
