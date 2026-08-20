@@ -19,7 +19,7 @@ const maxHealth = Math.max(...cards.map((card) => getCardStatusDisplayByCardId(c
 const cardLevelStatusMapById = Object.fromEntries(
   cardLevelStatuses.map((row) => [row.cardId, row])
 );
-const maximums = { attack: maxAttack * 10, defense: maxDefense * 10, health: maxHealth * 10 };
+const maximums = { attack: maxAttack * 8, defense: maxDefense * 8, health: maxHealth * 8 };
 const cardLevelStatusMap = Object.fromEntries(
   cards.map((card) => [
     card.id,
