@@ -198,27 +198,16 @@ const getStatusForLevel = (cardId, level) => {
   const selectedStatus = cardStatuses[resolvedLevel] ?? cardStatuses["1"];
   return selectedStatus ?? { cooldownTime: 0, attack: 0, defense: 0, health: 0, abilityLabel: "" };
 };
-const getTeamLevelMultiplier = (key, level) => {
-  if (level <= 1) {
-    return 1;
-  }
-
-  const rate = key === "attack" ? 0.1 : 0.15;
-  return 1 + (rate * (level - 1) / 8);
-};
 const getTeamLevelAdjustedValue = (key, level, value) => {
-  return Math.round(Number(value ?? 0) * getTeamLevelMultiplier(key, level));
-};
-const getLevelMultiplier = (key, level) => {
   if (level <= 1) {
-    return 1;
+    return Math.round(Number(value ?? 0));
   }
 
   const rate = key === "attack" ? 0.1 : 0.15;
-  return 1 + (rate * (level - 1) / 8);
+  return Math.round(Number(value ?? 0) * (1 + (rate * (level - 1) / 8)));
 };
 const getLevelAdjustedValue = (key, level, value) => {
-  return Math.round(Number(value ?? 0) * getLevelMultiplier(key, level));
+  return getTeamLevelAdjustedValue(key, level, value);
 };
 const getGaugeWidthPercent = (value, maxValue) => {
   if (!maxValue) return 0;

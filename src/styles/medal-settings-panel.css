@@ -3,28 +3,29 @@
    ========================================================= */
 .medal-panel {
   position: fixed;
-
-	 top: 50%;
+  top: 50%;
   left: 50%;
-	 transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
   width: min(var(--footer-width), calc(100vw - 24px));
   max-width: 100%;
+  max-height: min(85dvh, 680px);
+  overflow: visible;
 
-  background: rgba(0, 0, 0, 0.82);
-  color: #fff;
+  background: #ffffff;
+  color: #111827;
 
-  padding: 24px 28px 40px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 
   z-index: var(--z-medal-settings-panel);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.3);
 }
 
 .medal-panel.is-hidden {
@@ -37,21 +38,22 @@
 .panel-title {
   display: flex;
   align-items: baseline;
-  align-self: flex-start;
+  align-self: stretch;
   gap: 8px;
-  padding-bottom: 4px;
+  padding: 0 4px 12px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .panel-title .main {
   font-size: 22px;
-  color: #ffffff;
+  color: #111827;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .panel-title .sub {
   font-size: 13px;
-  color: #b8b8b8;
+  color: #64748b;
   font-weight: 600;
 }
 
@@ -63,8 +65,10 @@
   justify-content: center;
   gap: 48px;
   width: 100%;
-  padding-top: 4px;
-  padding-bottom: 10px;
+  padding: 18px 12px 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
 }
 
 

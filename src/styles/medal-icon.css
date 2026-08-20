@@ -42,8 +42,8 @@
 
 .medal-icon .medal-color-control {
   position: absolute;
-  right: -16px;
-  top: -8px;
+  right: -22px;
+  top: -12px;
   z-index: 1;
 }
 
@@ -54,8 +54,8 @@
   align-items: center;
   justify-content: center;
 
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
 
   background: #13046bf0;
   color: #fff;
@@ -77,8 +77,8 @@
 }
 
 .medal-icon .medal-color-dot {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -176,7 +176,7 @@
   transform: translateX(-50%);
   min-width: 148px;
   max-width: min(148px, calc(100vw - 24px));
-	max-height: min(50vh, 420px);
+	max-height: min(42dvh, 360px);
 	overflow-y: auto;
 }
 
@@ -251,7 +251,8 @@
 
   white-space: nowrap;
 
-  color: #fff;
+  color: #334155;
   font-size: 13px;
+  font-weight: 600;
   line-height: 1.5;
 }

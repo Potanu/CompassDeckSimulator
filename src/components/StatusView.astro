@@ -5,6 +5,7 @@ import { getAllHeroStatus } from "../accessors/heros/getData.ts";
 import heroMedalStats from "../data/heros/m_hero_medal_stats.json";
 import cardLevelStatuses from "../data/cards/m_card_level_statuses.json";
 import { HeroMedalType } from "../types/heros";
+import { getTeamLevelAdjustedValue } from "../scripts/statusCalculation";
 
 const cards = getAllCard();
 const levelOptions = [1, 20, 30, 40, 50, 60];
@@ -26,19 +27,6 @@ const cardLevelStatusMap = Object.fromEntries(
     Object.fromEntries(levelOptions.map((level) => [String(level), getCardStatusDisplayByCardId(card.id, level)])),
   ])
 );
-
-const getTeamLevelMultiplier = (key: "attack" | "defense" | "health", level: number) => {
-  if (level <= 1) {
-    return 1;
-  }
-
-  const rate = key === "attack" ? 0.1 : 0.15;
-  return 1 + (rate * (level - 1) / 8);
-};
-
-const getTeamLevelAdjustedValue = (key: "attack" | "defense" | "health", level: number, value: number) => {
-  return Math.round(Number(value ?? 0) * getTeamLevelMultiplier(key, level));
-};
 
 const getStatusTotals = (cardIds: number[], levelByCardId: Record<number, number> = {}, teamLevel = 1) => cardIds.reduce(
   (totals, cardId) => {
@@ -175,9 +163,12 @@ const statuses = [
       const defenseValue = getBaseStatusValue(cardId, level, "defense");
       const healthValue = getBaseStatusValue(cardId, level, "health");
 
-      totals.attack += Math.round(Number(attackValue ?? 0) * (teamLevel <= 1 ? 1 : 1 + (0.1 * (teamLevel - 1) / 8)));
-      totals.defense += Math.round(Number(defenseValue ?? 0) * (teamLevel <= 1 ? 1 : 1 + (0.15 * (teamLevel - 1) / 8)));
-      totals.health += Math.round(Number(healthValue ?? 0) * (teamLevel <= 1 ? 1 : 1 + (0.15 * (teamLevel - 1) / 8)));
+      const teamLevelMultiplier = (key) => teamLevel <= 1
+        ? 1
+        : 1 + ((key === "attack" ? 0.1 : 0.15) * (teamLevel - 1) / 8);
+      totals.attack += Math.round(Number(attackValue ?? 0) * teamLevelMultiplier("attack"));
+      totals.defense += Math.round(Number(defenseValue ?? 0) * teamLevelMultiplier("defense"));
+      totals.health += Math.round(Number(healthValue ?? 0) * teamLevelMultiplier("health"));
       return totals;
     },
     { attack: 0, defense: 0, health: 0 },
