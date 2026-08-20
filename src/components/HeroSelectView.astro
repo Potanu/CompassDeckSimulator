@@ -116,6 +116,10 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
 </div>
 
 <script>
+  import { getPersistedCookie, setPersistedCookie } from '../scripts/cookieStorage';
+
+  const SELECTED_HERO_COOKIE = 'footer_selected_hero_id';
+
   const trigger = document.getElementById('dropdown-trigger');
   const overlay = document.getElementById('hero-select-overlay');
   const closeButton = document.getElementById('hero-select-close');
@@ -187,6 +191,7 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
       if (triggerLabel) triggerLabel.textContent = label;
 
       if (heroId > 0) {
+        setPersistedCookie(SELECTED_HERO_COOKIE, heroId);
         document.dispatchEvent(new CustomEvent('footer:hero-selected', {
           detail: {
             heroId,
@@ -210,7 +215,9 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
   document.addEventListener('hero-display:filters-changed', applyHeroFilters);
   document.addEventListener('hero-display:sort-changed', sortHeroItems);
 
-  const initialHeroItem = document.querySelector<HTMLElement>('.hero-select-item[data-hero-id="1"]');
+  const initialHeroId = Number(getPersistedCookie<number>(SELECTED_HERO_COOKIE) ?? 1);
+  const initialHeroItem = document.querySelector<HTMLElement>(`.hero-select-item[data-hero-id="${initialHeroId}"]`)
+    ?? document.querySelector<HTMLElement>('.hero-select-item[data-hero-id="1"]');
   if (initialHeroItem) {
     const heroId = Number(initialHeroItem.dataset.heroId);
     const label = initialHeroItem.querySelector<HTMLElement>('.hero-select-item-name')?.textContent ?? '未選択';

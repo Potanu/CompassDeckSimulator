@@ -238,6 +238,8 @@ const sortItems = (order: string) => {
     const items = Array.from(parent.querySelectorAll<HTMLDetailsElement>(".item"));
 
     const compare = (a: HTMLDetailsElement, b: HTMLDetailsElement) => {
+        const aId = Number(a.dataset.cardId ?? 0);
+        const bId = Number(b.dataset.cardId ?? 0);
         const aRarity = Number(a.dataset.rarityId ?? 0);
         const bRarity = Number(b.dataset.rarityId ?? 0);
         const aAttack = Number(a.dataset.attack ?? 0);
@@ -248,6 +250,8 @@ const sortItems = (order: string) => {
         const bHealth = Number(b.dataset.health ?? 0);
 
         switch (order) {
+            case "標準":
+                return aId - bId;
             case "レアリティ順":
                 return bRarity - aRarity;
             case "攻撃力":
@@ -261,7 +265,7 @@ const sortItems = (order: string) => {
         }
     };
 
-    if (order === "標準" || order === "カードレベル順" || order === "所持数順" || order === "入手順") {
+    if (order === "カードレベル順" || order === "所持数順" || order === "入手順") {
         return;
     }
 

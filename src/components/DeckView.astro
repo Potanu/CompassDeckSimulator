@@ -136,6 +136,22 @@ const descriptionBody = descriptionOverlay?.querySelector(".deck-description-bod
 const closeDeckListButton = overlay?.querySelector(".closeDeckList");
 let selectedReplacementIndex = null;
 
+const DECK_SLOTS_COOKIE = "deck_view_slots";
+const HERO_LEVEL_COOKIE = "footer_hero_level";
+const getPersistedCookie = (name) => {
+  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
+  if (!match) return null;
+  try {
+    return JSON.parse(decodeURIComponent(match[1]));
+  } catch {
+    return null;
+  }
+};
+const setPersistedCookie = (name, value) => {
+  const encoded = encodeURIComponent(JSON.stringify(value));
+  document.cookie = `${name}=${encoded};path=/;max-age=${60 * 60 * 24 * 365};samesite=lax`;
+};
+
 const getDeckElements = () => Array.from(document.querySelectorAll(".deck-view .deck"));
 const heroMedalStatRows = Array.isArray(heroMedalStats) ? heroMedalStats : [];
 const getCooldownPercentFromMedals = () => {
@@ -264,7 +280,29 @@ const refreshDeckCardDisplays = () => {
   publishDeckState();
 };
 
-let selectedTeamLevel = 1;
+let selectedTeamLevel = (() => {
+  const savedLevel = Number(getPersistedCookie(HERO_LEVEL_COOKIE) ?? 1);
+  return Number.isFinite(savedLevel) && savedLevel >= 1 ? savedLevel : 1;
+})();
+
+const restoreDeckSlotsFromCookie = () => {
+  const savedSlots = getPersistedCookie(DECK_SLOTS_COOKIE);
+  if (!Array.isArray(savedSlots)) return;
+
+  getDeckElements().forEach((deckElement) => {
+    const slotIndex = Number(deckElement.dataset.slotIndex ?? -1);
+    const entry = savedSlots[slotIndex];
+    if (!entry) return;
+
+    const card = cards.find((item) => item.id === entry.cardId);
+    if (!card) return;
+
+    const level = levelOptions.includes(entry.level) ? entry.level : 1;
+    setDeckLevel(deckElement, level);
+    renderDeckCard(deckElement, card);
+  });
+};
+restoreDeckSlotsFromCookie();
 
 const publishDeckState = () => {
   const deckElements = getDeckElements();
@@ -277,6 +315,8 @@ const publishDeckState = () => {
       level: getDeckLevel(deck),
     }))
     .filter((item) => Boolean(item.cardId));
+
+  setPersistedCookie(DECK_SLOTS_COOKIE, cardLevels);
 
   const totals = cardLevels.reduce(
     (acc, item) => {

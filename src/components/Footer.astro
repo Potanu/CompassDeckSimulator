@@ -56,6 +56,10 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
 <HeroDisplayPanel />
 
 <script>
+  import { getPersistedCookie, setPersistedCookie } from '../scripts/cookieStorage';
+
+  const HERO_LEVEL_COOKIE = 'footer_hero_level';
+
   const levelButton = document.getElementById('level-select-trigger');
   const levelMenu = document.getElementById('level-select-menu');
   const levelOptions = document.querySelectorAll<HTMLElement>('.level-select-option');
@@ -135,12 +139,25 @@ const SETTING_MEDAL_IMAGE_PATH = getAssetPath(ImageAsset.SETTING_MEDAL);
       if (levelButton) {
         levelButton.textContent = `Lv.${level}`;
       }
+      setPersistedCookie(HERO_LEVEL_COOKIE, level);
       document.dispatchEvent(new CustomEvent('footer:level-selected', {
         detail: { level },
       }));
       closeLevelMenu();
     });
   });
+
+  const restoredLevelRaw = Number(getPersistedCookie<number>(HERO_LEVEL_COOKIE) ?? DEFAULT_HERO_LEVEL);
+  const restoredLevel = Number.isFinite(restoredLevelRaw)
+    ? Math.min(MAX_HERO_LEVEL, Math.max(MIN_HERO_LEVEL, restoredLevelRaw))
+    : DEFAULT_HERO_LEVEL;
+
+  if (levelButton) {
+    levelButton.textContent = `Lv.${restoredLevel}`;
+  }
+  document.dispatchEvent(new CustomEvent('footer:level-selected', {
+    detail: { level: restoredLevel },
+  }));
 
   window.addEventListener('resize', () => {
     if (levelMenu?.classList.contains('is-open')) {

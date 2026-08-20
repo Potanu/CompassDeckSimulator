@@ -17,6 +17,12 @@ import MedalIcon from './MedalIcon.astro';
 </div>
 
 <script>
+  import { getPersistedCookie, setPersistedCookie } from '../scripts/cookieStorage';
+
+  const MEDAL_SETTINGS_COOKIE = 'medal_settings';
+
+  type MedalSettingEntry = { type: number; level: number; color: number };
+
   const closeAllMenus = () => {
     document.querySelectorAll('.medal-level-menu.open, .medal-type-menu.open').forEach((menu) => {
       menu.classList.remove('open');
@@ -27,7 +33,18 @@ import MedalIcon from './MedalIcon.astro';
     document.dispatchEvent(new CustomEvent('medal-settings:changed'));
   };
 
-  document.querySelectorAll('.medal-icon').forEach((icon) => {
+  const saveMedalSettings = () => {
+    const settings: MedalSettingEntry[] = Array.from(document.querySelectorAll('.medal-icon')).map((icon) => ({
+      type: Number(icon.getAttribute('data-medal-type') ?? 0),
+      level: Number(icon.getAttribute('data-medal-level') ?? 1),
+      color: Number(icon.getAttribute('data-medal-color') ?? 0),
+    }));
+    setPersistedCookie(MEDAL_SETTINGS_COOKIE, settings);
+  };
+
+  const savedMedalSettings = getPersistedCookie<MedalSettingEntry[]>(MEDAL_SETTINGS_COOKIE);
+
+  document.querySelectorAll('.medal-icon').forEach((icon, index) => {
     const trigger = icon.querySelector('.medal-level-button');
     const menu = icon.querySelector('.medal-level-menu');
     const typeTrigger = icon.querySelector('.medal-main-button');
@@ -36,6 +53,40 @@ import MedalIcon from './MedalIcon.astro';
     const iconBase = icon.querySelector('.base') as HTMLDivElement | null;
     const iconImage = icon.querySelector('.medal-main-button .front') as HTMLImageElement | null;
     const iconLabel = icon.querySelector('.medal-label');
+
+    const savedEntry = savedMedalSettings?.[index];
+    if (savedEntry) {
+      if (trigger) {
+        trigger.textContent = `+${savedEntry.level}`;
+      }
+      icon.setAttribute('data-medal-level', String(savedEntry.level));
+
+      const matchedTypeOption = typeMenu?.querySelector(`.medal-type-option[data-value="${savedEntry.type}"]`);
+      const savedLabel = matchedTypeOption?.getAttribute('data-label');
+      const savedImagePath = matchedTypeOption?.getAttribute('data-image-path');
+      if (savedImagePath && iconImage) {
+        iconImage.src = savedImagePath;
+      }
+      if (savedLabel && iconLabel) {
+        iconLabel.textContent = savedLabel;
+      }
+      icon.setAttribute('data-medal-type', String(savedEntry.type));
+
+      const colorValues = (colorButton?.getAttribute('data-color-values') ?? '')
+        .split(',')
+        .filter(Boolean)
+        .map((entry) => {
+          const [id, color] = entry.split(':');
+          return [Number(id), color] as const;
+        });
+      const savedColorValue = colorValues.find(([id]) => id === savedEntry.color)?.[1];
+      if (savedColorValue) {
+        colorButton?.setAttribute('data-color', String(savedEntry.color));
+        icon.setAttribute('data-medal-color', String(savedEntry.color));
+        if (colorButton) colorButton.style.background = savedColorValue;
+        if (iconBase) iconBase.style.background = savedColorValue;
+      }
+    }
 
     if (trigger && menu) {
       trigger.addEventListener('click', (event) => {
@@ -60,6 +111,7 @@ import MedalIcon from './MedalIcon.astro';
           }
 
           menu.classList.remove('open');
+          saveMedalSettings();
           emitMedalSettingsChanged();
         });
       });
@@ -95,6 +147,7 @@ import MedalIcon from './MedalIcon.astro';
         icon.setAttribute('data-medal-color', String(nextColor));
 
         colorButton.style.background = nextColorValue;
+        saveMedalSettings();
         emitMedalSettingsChanged();
 
         if (iconBase) {
@@ -137,6 +190,7 @@ import MedalIcon from './MedalIcon.astro';
           }
 
           typeMenu.classList.remove('open');
+          saveMedalSettings();
           emitMedalSettingsChanged();
         });
       });
