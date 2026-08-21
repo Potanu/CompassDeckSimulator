@@ -206,9 +206,6 @@ const getTeamLevelAdjustedValue = (key, level, value) => {
   const rate = key === "attack" ? 0.1 : 0.15;
   return Math.round(Number(value ?? 0) * (1 + (rate * (level - 1) / 8)));
 };
-const getLevelAdjustedValue = (key, level, value) => {
-  return getTeamLevelAdjustedValue(key, level, value);
-};
 const getGaugeWidthPercent = (value, maxValue) => {
   if (!maxValue) return 0;
   return Math.max(4, Math.round((value / maxValue) * 100));
@@ -457,9 +454,9 @@ const createDescriptionContent = (card, level, sourceItem) => {
   const detail = document.createElement("div");
   detail.className = "detail";
 
-  const attackValue = getLevelAdjustedValue("attack", level, status.attack ?? 0);
-  const defenseValue = getLevelAdjustedValue("defense", level, status.defense ?? 0);
-  const healthValue = getLevelAdjustedValue("health", level, status.health ?? 0);
+  const attackValue = Number(status.attack ?? 0);
+  const defenseValue = Number(status.defense ?? 0);
+  const healthValue = Number(status.health ?? 0);
   const attackWidth = getGaugeWidthPercent(attackValue, maxAttack);
   const defenseWidth = getGaugeWidthPercent(defenseValue, maxDefense);
   const healthWidth = getGaugeWidthPercent(healthValue, maxHealth);

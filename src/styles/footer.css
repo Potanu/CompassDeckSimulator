@@ -298,6 +298,14 @@
   z-index: calc(var(--z-footer) + 12);
 }
 
+@media (min-width: 768px) {
+  /* PC幅ではモーダル(min(90vw, 420px)を中央配置)の右下隅に合わせる */
+  .hero-button-area {
+    right: calc(50vw - min(45vw, 210px) + 16px);
+    bottom: calc(5vh + 16px);
+  }
+}
+
 .hero-display-toggle {
   min-height: 34px;
   padding: 0 10px;
@@ -503,6 +511,16 @@
 .hero-select-item[open] {
   background: #ffffff;
   border-color: #cbd5e1;
+}
+
+.hero-select-item.is-selected {
+  background: white;
+  border-color: #a5b4fc;
+  color: #111827;
+}
+
+.hero-select-item.is-selected:hover {
+  background: white;
 }
 
 .hero-select-item summary {

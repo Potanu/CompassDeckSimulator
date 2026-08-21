@@ -21,6 +21,14 @@
   z-index: 1000;
 }
 
+@media (min-width: 768px) {
+  /* PC幅ではモーダル(min(90vw, 420px)を中央配置)の右下隅に合わせる */
+  .button-area {
+    right: calc(50vw - min(45vw, 210px) + 16px);
+    bottom: calc(5vh + 16px);
+  }
+}
+
 .button-area .display-toggle-btn {
   padding: 0.6rem 0.9rem;
   border: none;

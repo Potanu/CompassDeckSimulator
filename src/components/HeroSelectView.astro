@@ -184,6 +184,10 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
     if (overlay?.classList.contains('is-open')) closeHeroSelector();
   });
 
+  const markSelectedHero = (selectedItem: HTMLElement) => {
+    items.forEach((item) => item.classList.toggle('is-selected', item === selectedItem));
+  };
+
   items.forEach((item) => {
     item.addEventListener('click', () => {
       const heroId = Number(item.dataset.heroId ?? 0);
@@ -192,6 +196,7 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
 
       if (heroId > 0) {
         setPersistedCookie(SELECTED_HERO_COOKIE, heroId);
+        markSelectedHero(item);
         document.dispatchEvent(new CustomEvent('footer:hero-selected', {
           detail: {
             heroId,
@@ -223,6 +228,7 @@ const getHeroStatusPercent = (value: number | undefined) => getHeroStatusValue(v
     const label = initialHeroItem.querySelector<HTMLElement>('.hero-select-item-name')?.textContent ?? '未選択';
 
     if (triggerLabel) triggerLabel.textContent = label;
+    markSelectedHero(initialHeroItem);
 
     document.dispatchEvent(new CustomEvent('footer:hero-selected', {
       detail: {
