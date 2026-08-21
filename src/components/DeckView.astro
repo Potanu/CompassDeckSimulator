@@ -183,9 +183,15 @@ const formatCooldownValue = (baseValue, percentTotal) => {
   return Number.isFinite(value) ? value.toFixed(1) : "0.0";
 };
 const getDeckLevel = (deckElement) => Number(deckElement.dataset.level ?? 1);
+// フッターより手前に表示するため body 直下に移動している場合もあるので、元のデッキとの紐づけで探す
+const findLevelPicker = (deckElement) => (
+  deckElement.querySelector(".deck-level-picker") ??
+  Array.from(document.querySelectorAll(".deck-level-picker")).find((picker) => picker._homeDeckElement === deckElement) ??
+  null
+);
 const setDeckLevel = (deckElement, level) => {
   deckElement.dataset.level = String(level);
-  const levelPicker = deckElement.querySelector(".deck-level-picker");
+  const levelPicker = findLevelPicker(deckElement);
   if (levelPicker) {
     levelPicker.querySelectorAll(".deck-level-option").forEach((option) => {
       option.classList.toggle("active", String(option.dataset.level) === String(level));
@@ -332,6 +338,19 @@ const replaceDeckCard = (slotIndex, cardId) => {
   publishDeckState();
 };
 
+const restoreLevelPickerHome = (picker) => {
+  if (picker.parentElement === document.body && picker._homeParent) {
+    if (picker._homeNextSibling && picker._homeNextSibling.parentNode === picker._homeParent) {
+      picker._homeParent.insertBefore(picker, picker._homeNextSibling);
+    } else {
+      picker._homeParent.appendChild(picker);
+    }
+  }
+  picker._homeParent = null;
+  picker._homeNextSibling = null;
+  picker._homeDeckElement = null;
+};
+
 const hideAllLevelSelects = () => {
   document.querySelectorAll(".deck-level-picker").forEach((picker) => {
     picker.classList.add("hidden");
@@ -343,15 +362,24 @@ const hideAllLevelSelects = () => {
 	    picker.style.removeProperty("--level-option-height");
 	    picker.style.removeProperty("--level-option-font-size");
     picker.style.zIndex = "";
+    restoreLevelPickerHome(picker);
   });
 };
 
 const showLevelSelect = (deckElement) => {
-  const levelPicker = deckElement.querySelector(".deck-level-picker");
+  const levelPicker = findLevelPicker(deckElement);
   const cardButton = deckElement.querySelector(".deck-card");
   const cardImage = deckElement.querySelector(".deck-card-image");
   if (levelPicker && (cardButton || cardImage)) {
     hideAllLevelSelects();
+
+    // 固定表示のフッターより手前に表示するため、.deck-view のスタッキングコンテキストから離脱させる
+    if (levelPicker.parentElement !== document.body) {
+      levelPicker._homeParent = levelPicker.parentElement;
+      levelPicker._homeNextSibling = levelPicker.nextSibling;
+      document.body.appendChild(levelPicker);
+    }
+    levelPicker._homeDeckElement = deckElement;
 
     const anchorRect = cardImage?.getBoundingClientRect() ?? cardButton?.getBoundingClientRect();
     if (!anchorRect) {
@@ -376,7 +404,7 @@ const showLevelSelect = (deckElement) => {
 	    levelPicker.style.height = `${pickerHeight}px`;
 	    levelPicker.style.setProperty("--level-option-height", `${optionHeight}px`);
 	    levelPicker.style.setProperty("--level-option-font-size", `${optionFontSize}px`);
-    levelPicker.style.zIndex = "2147483647";
+    levelPicker.style.zIndex = "calc(var(--z-footer) + 15)";
 
     const currentLevel = getDeckLevel(deckElement);
     levelPicker.querySelectorAll(".deck-level-option").forEach((option) => {
@@ -386,7 +414,7 @@ const showLevelSelect = (deckElement) => {
 };
 
 const hideLevelSelect = (deckElement) => {
-  const levelPicker = deckElement.querySelector(".deck-level-picker");
+  const levelPicker = findLevelPicker(deckElement);
   if (levelPicker) {
     levelPicker.classList.add("hidden");
     levelPicker.style.position = "";
@@ -397,6 +425,7 @@ const hideLevelSelect = (deckElement) => {
 	    levelPicker.style.removeProperty("--level-option-height");
 	    levelPicker.style.removeProperty("--level-option-font-size");
     levelPicker.style.zIndex = "";
+    restoreLevelPickerHome(levelPicker);
   }
 };
 
@@ -505,7 +534,7 @@ document.addEventListener("click", (event) => {
     event.preventDefault();
     const deckElement = deckButton.closest(".deck");
     if (deckElement) {
-      const levelPicker = deckElement.querySelector(".deck-level-picker");
+      const levelPicker = findLevelPicker(deckElement);
       if (levelPicker && !levelPicker.classList.contains("hidden")) {
         hideLevelSelect(deckElement);
       } else {
@@ -516,7 +545,7 @@ document.addEventListener("click", (event) => {
   }
 
   if (levelOption) {
-    const deckElement = levelOption.closest(".deck");
+    const deckElement = levelOption.closest(".deck") ?? levelPicker?._homeDeckElement ?? null;
     if (deckElement) {
       const level = Number(levelOption.dataset.level || 1);
       setDeckLevel(deckElement, level);
