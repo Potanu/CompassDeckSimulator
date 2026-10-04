@@ -101,6 +101,7 @@ export const Hero = {
    REZE:                    100,    // レゼ
    CHARLES:                 101,    // シャルル・リヒター
    ICHIHIME:                102,    // 一姫
+   EDWARD:                  103,    // エドワード・エルリック
 } as const;
 
 export type Hero = typeof Hero[keyof typeof Hero];

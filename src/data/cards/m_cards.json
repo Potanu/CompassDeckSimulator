@@ -4788,5 +4788,65 @@
     "cardCategoryId": 2,
     "cardCastTimeId": 1,
     "collaborationTitleId": 36
+  },
+  {
+    "id": 480,
+    "label": "【鋼の錬金術師FA】エルリック兄弟",
+    "cardElementId": 2,
+    "cardRarityId": 4,
+    "cardSkillId": 1,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 37
+  },
+  {
+    "id": 481,
+    "label": "【鋼の錬金術師FA】賢者の石",
+    "cardElementId": 1,
+    "cardRarityId": 4,
+    "cardSkillId": 4,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 37
+  },
+  {
+    "id": 482,
+    "label": "【鋼の錬金術師FA】お父様と人造人間",
+    "cardElementId": 3,
+    "cardRarityId": 4,
+    "cardSkillId": 6,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 37
+  },
+  {
+    "id": 483,
+    "label": "アルフォンス・エルリック",
+    "cardElementId": 2,
+    "cardRarityId": 3,
+    "cardSkillId": 5,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 37
+  },
+  {
+    "id": 484,
+    "label": "ロイ・マスタング",
+    "cardElementId": 3,
+    "cardRarityId": 3,
+    "cardSkillId": 1,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 37
+  },
+  {
+    "id": 485,
+    "label": "グリード",
+    "cardElementId": 1,
+    "cardRarityId": 3,
+    "cardSkillId": 7,
+    "cardCategoryId": 2,
+    "cardCastTimeId": 1,
+    "collaborationTitleId": 37
   }
 ]

@@ -25864,5 +25864,329 @@
     "health": 2558,
     "createdDate": "2026-08-05T15:00:00.000Z",
     "updatedDate": "2026-08-05T15:00:00.000Z"
+  },
+  {
+    "cardId": 480,
+    "level": 1,
+    "attack": 66,
+    "defense": 15,
+    "health": 534,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 480,
+    "level": 20,
+    "attack": 137,
+    "defense": 32,
+    "health": 1106,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 480,
+    "level": 30,
+    "attack": 174,
+    "defense": 40,
+    "health": 1407,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 480,
+    "level": 40,
+    "attack": 211,
+    "defense": 49,
+    "health": 1708,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 480,
+    "level": 50,
+    "attack": 249,
+    "defense": 57,
+    "health": 2009,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 480,
+    "level": 60,
+    "attack": 286,
+    "defense": 66,
+    "health": 2310,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 481,
+    "level": 1,
+    "attack": 46,
+    "defense": 38,
+    "health": 610,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 481,
+    "level": 20,
+    "attack": 95,
+    "defense": 79,
+    "health": 1264,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 481,
+    "level": 30,
+    "attack": 121,
+    "defense": 101,
+    "health": 1608,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 481,
+    "level": 40,
+    "attack": 146,
+    "defense": 122,
+    "health": 1952,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 481,
+    "level": 50,
+    "attack": 172,
+    "defense": 144,
+    "health": 2296,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 481,
+    "level": 60,
+    "attack": 198,
+    "defense": 165,
+    "health": 2640,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 482,
+    "level": 1,
+    "attack": 53,
+    "defense": 23,
+    "health": 682,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 482,
+    "level": 20,
+    "attack": 111,
+    "defense": 47,
+    "health": 1412,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 482,
+    "level": 30,
+    "attack": 141,
+    "defense": 60,
+    "health": 1796,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 482,
+    "level": 40,
+    "attack": 171,
+    "defense": 73,
+    "health": 2180,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 482,
+    "level": 50,
+    "attack": 201,
+    "defense": 86,
+    "health": 2564,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 482,
+    "level": 60,
+    "attack": 231,
+    "defense": 99,
+    "health": 2948,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 483,
+    "level": 1,
+    "attack": 71,
+    "defense": 22,
+    "health": 432,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 483,
+    "level": 20,
+    "attack": 137,
+    "defense": 42,
+    "health": 831,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 483,
+    "level": 30,
+    "attack": 172,
+    "defense": 52,
+    "health": 1042,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 483,
+    "level": 40,
+    "attack": 206,
+    "defense": 63,
+    "health": 1252,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 483,
+    "level": 50,
+    "attack": 241,
+    "defense": 73,
+    "health": 1462,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 483,
+    "level": 60,
+    "attack": 275,
+    "defense": 84,
+    "health": 1673,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 484,
+    "level": 1,
+    "attack": 66,
+    "defense": 36,
+    "health": 355,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 484,
+    "level": 20,
+    "attack": 127,
+    "defense": 68,
+    "health": 685,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 484,
+    "level": 30,
+    "attack": 159,
+    "defense": 86,
+    "health": 858,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 484,
+    "level": 40,
+    "attack": 191,
+    "defense": 103,
+    "health": 1031,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 484,
+    "level": 50,
+    "attack": 224,
+    "defense": 120,
+    "health": 1204,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 484,
+    "level": 60,
+    "attack": 256,
+    "defense": 138,
+    "health": 1377,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 485,
+    "level": 1,
+    "attack": 57,
+    "defense": 28,
+    "health": 508,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 485,
+    "level": 20,
+    "attack": 109,
+    "defense": 55,
+    "health": 979,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 485,
+    "level": 30,
+    "attack": 137,
+    "defense": 68,
+    "health": 1226,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 485,
+    "level": 40,
+    "attack": 164,
+    "defense": 82,
+    "health": 1474,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 485,
+    "level": 50,
+    "attack": 192,
+    "defense": 96,
+    "health": 1722,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 485,
+    "level": 60,
+    "attack": 220,
+    "defense": 110,
+    "health": 1970,
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
   }
 ]

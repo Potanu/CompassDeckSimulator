@@ -712,5 +712,12 @@
     "label": "一姫",
     "heroRoleId": 1,
     "collaborationTitleId": 36
+  },
+  {
+    "id": 103,
+    "key": "EDWARD",
+    "label": "エドワード・エルリック",
+    "heroRoleId": 4,
+    "collaborationTitleId": 37
   }
 ]

@@ -3351,5 +3351,47 @@
     "abilityLabel": "前方の敵に ガードブレイク攻撃\n(ブレイク成功で中ダメージ\n＋クールダウン時間20秒短縮)",
     "createdDate": "2026-07-31T15:00:00.000Z",
     "updatedDate": "2026-07-31T15:00:00.000Z"
+  },
+  {
+    "cardId": 480,
+    "cooldownTime": "",
+    "abilityLabel": "",
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 481,
+    "cooldownTime": "",
+    "abilityLabel": "",
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 482,
+    "cooldownTime": "",
+    "abilityLabel": "",
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 483,
+    "cooldownTime": 18,
+    "abilityLabel": "ライフを 30％回復\n(周囲の人数×10％回復量増加)",
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 484,
+    "cooldownTime": 26,
+    "abilityLabel": "前方に 強力な攻撃(中ダメージ)\n+炎上エリアを生成する\n　ショックウェーブ追撃(固定ダメージ)",
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
+  },
+  {
+    "cardId": 485,
+    "cooldownTime": 42,
+    "abilityLabel": "自分の防御力を 8秒間 極大アップ",
+    "createdDate": "2026-10-03T15:00:00.000Z",
+    "updatedDate": "2026-10-03T15:00:00.000Z"
   }
 ]

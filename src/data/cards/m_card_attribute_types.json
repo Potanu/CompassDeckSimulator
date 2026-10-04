@@ -248,5 +248,15 @@
     "id": 50,
     "key": "SOUL",
     "label": "魂"
+  },
+  {
+    "id": 51,
+    "key": "GATHERING",
+    "label": "集"
+  },
+  {
+    "id": 52,
+    "key": "FIRE",
+    "label": "炎"
   }
 ]

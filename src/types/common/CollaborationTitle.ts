@@ -36,6 +36,7 @@ export const CollaborationTitle = {
    POP_TEAM_EPIC:           34,     // ポプテピピック
    FATE_STRANGE_FAKE:       35,     // Fate/strange Fake
    JANTAMA:                 36,     // 雀魂
+   HAGAREN:                 37,     // 鋼の錬金術師FA
 } as const;
 
 export type CollaborationTitle = typeof CollaborationTitle[keyof typeof CollaborationTitle];

@@ -49,6 +49,8 @@ export const CardAttributeType = {
    SYNC:                    48,     // 共
    CIRCLE:                  49,     // 円
    SOUL:                    50,     // 魂
+   GATHERING:               51,     // 集
+   FIRE:                    52,     // 炎
 } as const;
 
 export type CardAttributeType = typeof CardAttributeType[keyof typeof CardAttributeType];
